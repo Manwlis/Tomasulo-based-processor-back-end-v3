@@ -1,0 +1,398 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="arxitektonikh1" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/Back_end - Behavioral C:|HRY415-project-2|code|Back-end.vhd/CDBunit_module - CDBunit - Behavioral</ClosedNode>
+         <ClosedNode>/Back_end - Behavioral C:|HRY415-project-2|code|Back-end.vhd/FU_arithmetic_module - FU_arithmetic - Behavioral</ClosedNode>
+         <ClosedNode>/Back_end - Behavioral C:|HRY415-project-2|code|Back-end.vhd/FU_logical_module - FU_logical - Behavioral</ClosedNode>
+         <ClosedNode>/Back_end - Behavioral C:|HRY415-project-2|code|Back-end.vhd/RS_unit_arithemtic_module - RS_unit_arithemtic - Behavioral</ClosedNode>
+         <ClosedNode>/Back_end - Behavioral C:|HRY415-project-2|code|Back-end.vhd/RS_unit_logical_module - RS_unit_logical - Behavioral</ClosedNode>
+         <ClosedNode>/Back_end - Behavioral C:|HRY415-project-2|code|Back-end.vhd/Register_File_module - Register_File - Behavioral</ClosedNode>
+         <ClosedNode>/Back_end - Behavioral C:|HRY415-project-2|code|Back_end.vhd/CDBunit_module - CDBunit - Behavioral</ClosedNode>
+         <ClosedNode>/Back_end - Behavioral C:|HRY415-project-2|code|Back_end.vhd/FU_arithmetic_module - FU_arithmetic - Behavioral</ClosedNode>
+         <ClosedNode>/Back_end - Behavioral C:|HRY415-project-2|code|Back_end.vhd/FU_logical_module - FU_logical - Behavioral</ClosedNode>
+         <ClosedNode>/Back_end - Behavioral C:|HRY415-project-2|code|Back_end.vhd/RS_unit_arithemtic_module - RS_unit_arithemtic - Behavioral</ClosedNode>
+         <ClosedNode>/Back_end - Behavioral C:|HRY415-project-2|code|Back_end.vhd/RS_unit_logical_module - RS_unit_logical - Behavioral</ClosedNode>
+         <ClosedNode>/Back_end - Behavioral C:|HRY415-project-2|code|Back_end.vhd/Register_File_module - Register_File - Behavioral</ClosedNode>
+         <ClosedNode>/CDBunit - Behavioral C:|HRY415-project-2|code|CDBunit.vhd</ClosedNode>
+         <ClosedNode>/CDBunit - Behavioral C:|arxitektonikh1|CDBunit.vhd</ClosedNode>
+         <ClosedNode>/CDBunit - Behavioral C:|arxitektonikh1|CDBunit.vhd/Q_mux - mux4to1_5bit - Behavioral</ClosedNode>
+         <ClosedNode>/CDBunit - Behavioral C:|arxitektonikh1|CDBunit.vhd/sel_reg - Reg2BitR - Behavioral</ClosedNode>
+         <ClosedNode>/CDBunit - Behavioral C:|arxitektonikh1|CDBunit.vhd/sel_reg - Reg2BitR - Behavioral/Reg1BitR0 - Reg1BitR - Behavioral</ClosedNode>
+         <ClosedNode>/CDBunit - Behavioral C:|arxitektonikh1|CDBunit.vhd/sel_reg - Reg2BitR - Behavioral/Reg1BitR1 - Reg1BitR - Behavioral</ClosedNode>
+         <ClosedNode>/CDBunit - Behavioral C:|arxitektonikh1|CDBunit.vhd/sel_reg - Reg4BitR - Behavioral/Reg1BitR0 - Reg1BitR - Behavioral</ClosedNode>
+         <ClosedNode>/CDBunit - Behavioral C:|arxitektonikh1|CDBunit.vhd/sel_reg - Reg4BitR - Behavioral/Reg1BitR1 - Reg1BitR - Behavioral</ClosedNode>
+         <ClosedNode>/CDBunit - Behavioral C:|arxitektonikh1|CDBunit.vhd/sel_reg - Reg4BitR - Behavioral/Reg1BitR2 - Reg1BitR - Behavioral</ClosedNode>
+         <ClosedNode>/CDBunit - Behavioral C:|arxitektonikh1|CDBunit.vhd/sel_reg - Reg4BitR - Behavioral/Reg1BitR3 - Reg1BitR - Behavioral</ClosedNode>
+         <ClosedNode>/CDBunit - Behavioral C:|arxitektonikh1|CDBunit.vhd/valid_reg - Reg1BitR - Behavioral</ClosedNode>
+         <ClosedNode>/CDBunit - Behavioral C:|arxitektonikh1|CDBunit.vhd/value_mux - mux4to1_32Bit - Behavioral</ClosedNode>
+         <ClosedNode>/CDBunit - Behavioral C:|arxitektonikh1|CDBunit.vhd/value_mux - mux4to1_32Bit - Behavioral/mux32Bit1 - mux32Bit - Behavioral</ClosedNode>
+         <ClosedNode>/CDBunit - Behavioral C:|arxitektonikh1|CDBunit.vhd/value_mux - mux4to1_32Bit - Behavioral/mux32Bit2 - mux32Bit - Behavioral</ClosedNode>
+         <ClosedNode>/FU_arithmetic - Behavioral C:|HRY415-project-2|code|FU_arithmetic.vhd</ClosedNode>
+         <ClosedNode>/FU_arithmetic - Behavioral C:|arxitektonikh1|FU_arithmetic.vhd</ClosedNode>
+         <ClosedNode>/FU_arithmetic - Behavioral C:|arxitektonikh1|FU_arithmetic.vhd/Result_mid_reg - Reg32BitR - Structural</ClosedNode>
+         <ClosedNode>/FU_arithmetic - Behavioral C:|arxitektonikh1|FU_arithmetic.vhd/Result_reg - Reg32BitR - Structural</ClosedNode>
+         <ClosedNode>/FU_arithmetic - Behavioral C:|arxitektonikh1|FU_arithmetic.vhd/Value_in1_reg - Reg32BitR - Structural/Reg4BitR0 - Reg4BitR - Behavioral</ClosedNode>
+         <ClosedNode>/FU_arithmetic - Behavioral C:|arxitektonikh1|FU_arithmetic.vhd/Value_in1_reg - Reg32BitR - Structural/Reg4BitR1 - Reg4BitR - Behavioral</ClosedNode>
+         <ClosedNode>/FU_arithmetic - Behavioral C:|arxitektonikh1|FU_arithmetic.vhd/Value_in1_reg - Reg32BitR - Structural/Reg4BitR2 - Reg4BitR - Behavioral</ClosedNode>
+         <ClosedNode>/FU_arithmetic - Behavioral C:|arxitektonikh1|FU_arithmetic.vhd/Value_in1_reg - Reg32BitR - Structural/Reg4BitR3 - Reg4BitR - Behavioral</ClosedNode>
+         <ClosedNode>/FU_arithmetic - Behavioral C:|arxitektonikh1|FU_arithmetic.vhd/Value_in1_reg - Reg32BitR - Structural/Reg4BitR4 - Reg4BitR - Behavioral</ClosedNode>
+         <ClosedNode>/FU_arithmetic - Behavioral C:|arxitektonikh1|FU_arithmetic.vhd/Value_in1_reg - Reg32BitR - Structural/Reg4BitR5 - Reg4BitR - Behavioral</ClosedNode>
+         <ClosedNode>/FU_arithmetic - Behavioral C:|arxitektonikh1|FU_arithmetic.vhd/Value_in1_reg - Reg32BitR - Structural/Reg4BitR6 - Reg4BitR - Behavioral</ClosedNode>
+         <ClosedNode>/FU_arithmetic - Behavioral C:|arxitektonikh1|FU_arithmetic.vhd/Value_in1_reg - Reg32BitR - Structural/Reg4BitR7 - Reg4BitR - Behavioral/Reg1BitR0 - Reg1BitR - Behavioral</ClosedNode>
+         <ClosedNode>/FU_arithmetic - Behavioral C:|arxitektonikh1|FU_arithmetic.vhd/Value_in1_reg - Reg32BitR - Structural/Reg4BitR7 - Reg4BitR - Behavioral/Reg1BitR1 - Reg1BitR - Behavioral</ClosedNode>
+         <ClosedNode>/FU_arithmetic - Behavioral C:|arxitektonikh1|FU_arithmetic.vhd/Value_in1_reg - Reg32BitR - Structural/Reg4BitR7 - Reg4BitR - Behavioral/Reg1BitR2 - Reg1BitR - Behavioral</ClosedNode>
+         <ClosedNode>/FU_arithmetic - Behavioral C:|arxitektonikh1|FU_arithmetic.vhd/Value_in1_reg - Reg32BitR - Structural/Reg4BitR7 - Reg4BitR - Behavioral/Reg1BitR3 - Reg1BitR - Behavioral</ClosedNode>
+         <ClosedNode>/FU_arithmetic - Behavioral C:|arxitektonikh1|FU_arithmetic.vhd/Value_in2_reg - Reg32BitR - Structural</ClosedNode>
+         <ClosedNode>/FU_arithmetic - Behavioral C:|arxitektonikh1|FU_arithmetic.vhd/op_reg - Reg2BitR - Behavioral</ClosedNode>
+         <ClosedNode>/FU_arithmetic - Behavioral C:|arxitektonikh1|FU_arithmetic.vhd/op_reg - Reg2BitR - Behavioral/Reg1BitR0 - Reg1BitR - Behavioral</ClosedNode>
+         <ClosedNode>/FU_arithmetic - Behavioral C:|arxitektonikh1|FU_arithmetic.vhd/q_mid_reg - Reg5BitR - Behavioral</ClosedNode>
+         <ClosedNode>/FU_arithmetic - Behavioral C:|arxitektonikh1|FU_arithmetic.vhd/q_reg - Reg5BitR - Behavioral</ClosedNode>
+         <ClosedNode>/FU_arithmetic - Behavioral C:|arxitektonikh1|FU_arithmetic.vhd/tag_reg - Reg5BitR - Behavioral</ClosedNode>
+         <ClosedNode>/FU_logical - Behavioral C:|HRY415-project-2|code|FU_logical.vhd</ClosedNode>
+         <ClosedNode>/FU_logical - Behavioral C:|arxitektonikh1|FU_logical.vhd</ClosedNode>
+         <ClosedNode>/FU_logical - Behavioral C:|arxitektonikh1|FU_logical.vhd/Result_reg - Reg32BitR - Structural</ClosedNode>
+         <ClosedNode>/FU_logical - Behavioral C:|arxitektonikh1|FU_logical.vhd/Value_in1_reg - Reg32BitR - Structural</ClosedNode>
+         <ClosedNode>/FU_logical - Behavioral C:|arxitektonikh1|FU_logical.vhd/Value_in2_reg - Reg32BitR - Structural</ClosedNode>
+         <ClosedNode>/FU_logical - Behavioral C:|arxitektonikh1|FU_logical.vhd/op_reg - Reg2BitR - Behavioral</ClosedNode>
+         <ClosedNode>/FU_logical - Behavioral C:|arxitektonikh1|FU_logical.vhd/q_reg - Reg32BitR - Structural</ClosedNode>
+         <ClosedNode>/FU_logical - Behavioral C:|arxitektonikh1|FU_logical.vhd/q_reg - Reg5BitR - Behavioral</ClosedNode>
+         <ClosedNode>/FU_logical - Behavioral C:|arxitektonikh1|FU_logical.vhd/tag_op_reg - Reg32BitR - Structural</ClosedNode>
+         <ClosedNode>/FU_logical - Behavioral C:|arxitektonikh1|FU_logical.vhd/tag_reg - Reg5BitR - Behavioral</ClosedNode>
+         <ClosedNode>/Q_block - Behavioral C:|arxitektonikh1|Q_block.vhd</ClosedNode>
+         <ClosedNode>/RS_reg_line - Behavioral C:|arxitektonikh1|RS_reg_line.vhd</ClosedNode>
+         <ClosedNode>/RS_unit_arithemtic - Behavioral C:|HRY415-project-2|code|RSUnitAr.vhd</ClosedNode>
+         <ClosedNode>/RS_unit_arithemtic - Behavioral C:|arxitektonikh1|RSUnitAr.vhd/RS_reg_lines - RS_reg_line - Behavioral</ClosedNode>
+         <ClosedNode>/RS_unit_arithemtic - Behavioral C:|arxitektonikh1|RSUnitAr.vhd/Vj_mux - mux4to1_32Bit - Behavioral</ClosedNode>
+         <ClosedNode>/RS_unit_arithemtic - Behavioral C:|arxitektonikh1|RSUnitAr.vhd/Vk_mux - mux4to1_32Bit - Behavioral</ClosedNode>
+         <ClosedNode>/RS_unit_logical - Behavioral C:|HRY415-project-2|code|RS_unit_logical.vhd</ClosedNode>
+         <ClosedNode>/RS_unit_logical - Behavioral C:|arxitektonikh1|RS_unit_logical.vhd</ClosedNode>
+         <ClosedNode>/RS_unit_logical - Behavioral C:|arxitektonikh1|RS_unit_logical.vhd/RS_reg_lines - RS_reg_line - Behavioral</ClosedNode>
+         <ClosedNode>/RS_unit_logical - Behavioral C:|arxitektonikh1|RS_unit_logical.vhd/Vj_mux - mux4to1_32Bit - Behavioral</ClosedNode>
+         <ClosedNode>/RS_unit_logical - Behavioral C:|arxitektonikh1|RS_unit_logical.vhd/Vk_mux - mux4to1_32Bit - Behavioral</ClosedNode>
+         <ClosedNode>/Reg2BitR - Behavioral C:|arxitektonikh1|Reg2BitR.vhd</ClosedNode>
+         <ClosedNode>/Reg2BitR - Behavioral C:|arxitektonikh1|Reg2BitR.vhd/Reg1BitR0 - Reg1BitR - Behavioral</ClosedNode>
+         <ClosedNode>/Reg2BitR - Behavioral C:|arxitektonikh1|Reg2BitR.vhd/Reg1BitR1 - Reg1BitR - Behavioral</ClosedNode>
+         <ClosedNode>/Reg32BitR - Structural C:|arxitektonikh1|Reg32BitR.vhd</ClosedNode>
+         <ClosedNode>/Reg32BitR - Structural C:|arxitektonikh1|Reg32BitR.vhd/Reg4BitR0 - Reg4BitR - Behavioral</ClosedNode>
+         <ClosedNode>/Reg32BitR - Structural C:|arxitektonikh1|Reg32BitR.vhd/Reg4BitR0 - Reg4BitR - Behavioral/Reg1BitR0 - Reg1BitR - Behavioral</ClosedNode>
+         <ClosedNode>/Reg32BitR - Structural C:|arxitektonikh1|Reg32BitR.vhd/Reg4BitR0 - Reg4BitR - Behavioral/Reg1BitR1 - Reg1BitR - Behavioral</ClosedNode>
+         <ClosedNode>/Reg32BitR - Structural C:|arxitektonikh1|Reg32BitR.vhd/Reg4BitR0 - Reg4BitR - Behavioral/Reg1BitR2 - Reg1BitR - Behavioral</ClosedNode>
+         <ClosedNode>/Reg32BitR - Structural C:|arxitektonikh1|Reg32BitR.vhd/Reg4BitR0 - Reg4BitR - Behavioral/Reg1BitR3 - Reg1BitR - Behavioral</ClosedNode>
+         <ClosedNode>/Reg32BitR - Structural C:|arxitektonikh1|Reg32BitR.vhd/Reg4BitR1 - Reg4BitR - Behavioral</ClosedNode>
+         <ClosedNode>/Reg32BitR - Structural C:|arxitektonikh1|Reg32BitR.vhd/Reg4BitR2 - Reg4BitR - Behavioral</ClosedNode>
+         <ClosedNode>/Reg32BitR - Structural C:|arxitektonikh1|Reg32BitR.vhd/Reg4BitR3 - Reg4BitR - Behavioral</ClosedNode>
+         <ClosedNode>/Reg32BitR - Structural C:|arxitektonikh1|Reg32BitR.vhd/Reg4BitR4 - Reg4BitR - Behavioral</ClosedNode>
+         <ClosedNode>/Reg32BitR - Structural C:|arxitektonikh1|Reg32BitR.vhd/Reg4BitR5 - Reg4BitR - Behavioral</ClosedNode>
+         <ClosedNode>/Reg32BitR - Structural C:|arxitektonikh1|Reg32BitR.vhd/Reg4BitR6 - Reg4BitR - Behavioral</ClosedNode>
+         <ClosedNode>/Reg32BitR - Structural C:|arxitektonikh1|Reg32BitR.vhd/Reg4BitR7 - Reg4BitR - Behavioral</ClosedNode>
+         <ClosedNode>/Reg32BitR - Structural C:|arxitektonikh1|Reg32BitR.vhd/Reg4BitR7 - Reg4BitR - Behavioral/Reg1BitR0 - Reg1BitR - Behavioral</ClosedNode>
+         <ClosedNode>/Reg32BitR - Structural C:|arxitektonikh1|Reg32BitR.vhd/Reg4BitR7 - Reg4BitR - Behavioral/Reg1BitR1 - Reg1BitR - Behavioral</ClosedNode>
+         <ClosedNode>/Reg32BitR - Structural C:|arxitektonikh1|Reg32BitR.vhd/Reg4BitR7 - Reg4BitR - Behavioral/Reg1BitR2 - Reg1BitR - Behavioral</ClosedNode>
+         <ClosedNode>/Reg5BitR - Behavioral C:|arxitektonikh1|Reg5BitR.vhd</ClosedNode>
+         <ClosedNode>/Register_File - Behavioral C:|HRY415-project-2|code|Register_File.vhd</ClosedNode>
+         <ClosedNode>/Register_File - Behavioral C:|arxitektonikh1|Register_File.vhd</ClosedNode>
+         <ClosedNode>/Register_File - Behavioral C:|arxitektonikh1|Register_File.vhd/Q_unit - Q_block - Behavioral</ClosedNode>
+         <ClosedNode>/Register_File - Behavioral C:|arxitektonikh1|Register_File.vhd/Q_unit - Q_block - Behavioral/Qreg - Reg5BitR - Behavioral</ClosedNode>
+         <ClosedNode>/Register_File - Behavioral C:|arxitektonikh1|Register_File.vhd/Q_unit - Q_block - Behavioral/demuxQ - demux5to32 - Structural</ClosedNode>
+         <ClosedNode>/Register_File - Behavioral C:|arxitektonikh1|Register_File.vhd/Q_unit - Q_block - Behavioral/muxQin - mux5Bit - Behavioral</ClosedNode>
+         <ClosedNode>/Register_File - Behavioral C:|arxitektonikh1|Register_File.vhd/Q_unit - Q_block - Behavioral/mux_forward - mux5Bit - Behavioral</ClosedNode>
+         <ClosedNode>/Register_File - Behavioral C:|arxitektonikh1|Register_File.vhd/Q_unit - Q_block - Behavioral/muxj - mux32to1_5Bit - Structural</ClosedNode>
+         <ClosedNode>/Register_File - Behavioral C:|arxitektonikh1|Register_File.vhd/Q_unit - Q_block - Behavioral/muxk - mux32to1_5Bit - Structural</ClosedNode>
+         <ClosedNode>/Register_File - Behavioral C:|arxitektonikh1|Register_File.vhd/V_unit - V_block - Behavioral</ClosedNode>
+         <ClosedNode>/Register_File - Behavioral C:|arxitektonikh1|Register_File.vhd/V_unit - V_block - Behavioral/Vreg - Reg32BitR - Structural</ClosedNode>
+         <ClosedNode>/Register_File - Behavioral C:|arxitektonikh1|Register_File.vhd/V_unit - V_block - Behavioral/Vreg - Reg32BitR - Structural/Reg4BitR0 - Reg4BitR - Behavioral/Reg1BitR0 - Reg1BitR - Behavioral</ClosedNode>
+         <ClosedNode>/Register_File - Behavioral C:|arxitektonikh1|Register_File.vhd/V_unit - V_block - Behavioral/Vreg - Reg32BitR - Structural/Reg4BitR0 - Reg4BitR - Behavioral/Reg1BitR2 - Reg1BitR - Behavioral</ClosedNode>
+         <ClosedNode>/Register_File - Behavioral C:|arxitektonikh1|Register_File.vhd/V_unit - V_block - Behavioral/Vreg - Reg32BitR - Structural/Reg4BitR0 - Reg4BitR - Behavioral/Reg1BitR3 - Reg1BitR - Behavioral</ClosedNode>
+         <ClosedNode>/Register_File - Behavioral C:|arxitektonikh1|Register_File.vhd/V_unit - V_block - Behavioral/Vreg - Reg32BitR - Structural/Reg4BitR1 - Reg4BitR - Behavioral</ClosedNode>
+         <ClosedNode>/Register_File - Behavioral C:|arxitektonikh1|Register_File.vhd/V_unit - V_block - Behavioral/Vreg - Reg32BitR - Structural/Reg4BitR2 - Reg4BitR - Behavioral</ClosedNode>
+         <ClosedNode>/Register_File - Behavioral C:|arxitektonikh1|Register_File.vhd/V_unit - V_block - Behavioral/Vreg - Reg32BitR - Structural/Reg4BitR3 - Reg4BitR - Behavioral</ClosedNode>
+         <ClosedNode>/Register_File - Behavioral C:|arxitektonikh1|Register_File.vhd/V_unit - V_block - Behavioral/Vreg - Reg32BitR - Structural/Reg4BitR4 - Reg4BitR - Behavioral</ClosedNode>
+         <ClosedNode>/Register_File - Behavioral C:|arxitektonikh1|Register_File.vhd/V_unit - V_block - Behavioral/Vreg - Reg32BitR - Structural/Reg4BitR5 - Reg4BitR - Behavioral/Reg1BitR0 - Reg1BitR - Behavioral</ClosedNode>
+         <ClosedNode>/Register_File - Behavioral C:|arxitektonikh1|Register_File.vhd/V_unit - V_block - Behavioral/Vreg - Reg32BitR - Structural/Reg4BitR5 - Reg4BitR - Behavioral/Reg1BitR1 - Reg1BitR - Behavioral</ClosedNode>
+         <ClosedNode>/Register_File - Behavioral C:|arxitektonikh1|Register_File.vhd/V_unit - V_block - Behavioral/Vreg - Reg32BitR - Structural/Reg4BitR5 - Reg4BitR - Behavioral/Reg1BitR2 - Reg1BitR - Behavioral</ClosedNode>
+         <ClosedNode>/Register_File - Behavioral C:|arxitektonikh1|Register_File.vhd/V_unit - V_block - Behavioral/Vreg - Reg32BitR - Structural/Reg4BitR5 - Reg4BitR - Behavioral/Reg1BitR3 - Reg1BitR - Behavioral</ClosedNode>
+         <ClosedNode>/Register_File - Behavioral C:|arxitektonikh1|Register_File.vhd/V_unit - V_block - Behavioral/Vreg - Reg32BitR - Structural/Reg4BitR6 - Reg4BitR - Behavioral</ClosedNode>
+         <ClosedNode>/Register_File - Behavioral C:|arxitektonikh1|Register_File.vhd/V_unit - V_block - Behavioral/Vreg - Reg32BitR - Structural/Reg4BitR7 - Reg4BitR - Behavioral</ClosedNode>
+         <ClosedNode>/Register_File - Behavioral C:|arxitektonikh1|Register_File.vhd/V_unit - V_block - Behavioral/mux_forward - mux32Bit - Behavioral</ClosedNode>
+         <ClosedNode>/Register_File - Behavioral C:|arxitektonikh1|Register_File.vhd/V_unit - V_block - Behavioral/muxj - mux32to1_32Bit - Behavioral/mux16to1_32Bit0 - mux16to1_32Bit - Behavioral/mux32Bit0 - mux32Bit - Behavioral</ClosedNode>
+         <ClosedNode>/Register_File - Behavioral C:|arxitektonikh1|Register_File.vhd/V_unit - V_block - Behavioral/muxj - mux32to1_32Bit - Behavioral/mux16to1_32Bit0 - mux16to1_32Bit - Behavioral/mux8to1_32Bit0 - mux8to1_32Bit - Behavioral</ClosedNode>
+         <ClosedNode>/Register_File - Behavioral C:|arxitektonikh1|Register_File.vhd/V_unit - V_block - Behavioral/muxj - mux32to1_32Bit - Behavioral/mux16to1_32Bit0 - mux16to1_32Bit - Behavioral/mux8to1_32Bit1 - mux8to1_32Bit - Behavioral</ClosedNode>
+         <ClosedNode>/Register_File - Behavioral C:|arxitektonikh1|Register_File.vhd/V_unit - V_block - Behavioral/muxj - mux32to1_32Bit - Behavioral/mux16to1_32Bit0 - mux16to1_32Bit - Behavioral/mux8to1_32Bit1 - mux8to1_32Bit - Behavioral/mux32Bit0 - mux32Bit - Behavioral</ClosedNode>
+         <ClosedNode>/Register_File - Behavioral C:|arxitektonikh1|Register_File.vhd/V_unit - V_block - Behavioral/muxj - mux32to1_32Bit - Behavioral/mux16to1_32Bit0 - mux16to1_32Bit - Behavioral/mux8to1_32Bit1 - mux8to1_32Bit - Behavioral/mux4to1_32Bit0 - mux4to1_32Bit - Behavioral</ClosedNode>
+         <ClosedNode>/Register_File - Behavioral C:|arxitektonikh1|Register_File.vhd/V_unit - V_block - Behavioral/muxj - mux32to1_32Bit - Behavioral/mux16to1_32Bit0 - mux16to1_32Bit - Behavioral/mux8to1_32Bit1 - mux8to1_32Bit - Behavioral/mux4to1_32Bit1 - mux4to1_32Bit - Behavioral</ClosedNode>
+         <ClosedNode>/Register_File - Behavioral C:|arxitektonikh1|Register_File.vhd/V_unit - V_block - Behavioral/muxj - mux32to1_32Bit - Behavioral/mux16to1_32Bit1 - mux16to1_32Bit - Behavioral</ClosedNode>
+         <ClosedNode>/Register_File - Behavioral C:|arxitektonikh1|Register_File.vhd/V_unit - V_block - Behavioral/muxj - mux32to1_32Bit - Behavioral/mux32Bit0 - mux32Bit - Behavioral</ClosedNode>
+         <ClosedNode>/Register_File - Behavioral C:|arxitektonikh1|Register_File.vhd/V_unit - V_block - Behavioral/muxk - mux32to1_32Bit - Behavioral</ClosedNode>
+         <ClosedNode>/V_block - Behavioral C:|arxitektonikh1|V_block.vhd</ClosedNode>
+         <ClosedNode>/V_block - Behavioral C:|arxitektonikh1|V_block.vhd/Vreg - Reg32BitR - Structural</ClosedNode>
+         <ClosedNode>/V_block - Behavioral C:|arxitektonikh1|V_block.vhd/mux_forward - mux32Bit - Behavioral</ClosedNode>
+         <ClosedNode>/V_block - Behavioral C:|arxitektonikh1|V_block.vhd/muxj - mux32to1_32Bit - Behavioral</ClosedNode>
+         <ClosedNode>/V_block - Behavioral C:|arxitektonikh1|V_block.vhd/muxj - mux32to1_32Bit - Behavioral/mux16to1_32Bit0 - mux16to1_32Bit - Behavioral</ClosedNode>
+         <ClosedNode>/V_block - Behavioral C:|arxitektonikh1|V_block.vhd/muxj - mux32to1_32Bit - Behavioral/mux16to1_32Bit1 - mux16to1_32Bit - Behavioral</ClosedNode>
+         <ClosedNode>/V_block - Behavioral C:|arxitektonikh1|V_block.vhd/muxk - mux32to1_32Bit - Behavioral/mux16to1_32Bit0 - mux16to1_32Bit - Behavioral</ClosedNode>
+         <ClosedNode>/V_block - Behavioral C:|arxitektonikh1|V_block.vhd/muxk - mux32to1_32Bit - Behavioral/mux16to1_32Bit1 - mux16to1_32Bit - Behavioral</ClosedNode>
+         <ClosedNode>/V_block - Behavioral C:|arxitektonikh1|V_block.vhd/muxk - mux32to1_32Bit - Behavioral/mux32Bit0 - mux32Bit - Behavioral</ClosedNode>
+         <ClosedNode>/mux16Bit - Behavioral C:|HRY415-project-2|code|mux16bit.vhd</ClosedNode>
+         <ClosedNode>/mux16Bit - Behavioral C:|arxitektonikh1|mux16bit.vhd</ClosedNode>
+         <ClosedNode>/mux16to1_5bit - Behavioral C:|arxitektonikh1|mux16to1_5bit.vhd/mux5Bit0 - mux5Bit - Behavioral</ClosedNode>
+         <ClosedNode>/mux16to1_5bit - Behavioral C:|arxitektonikh1|mux16to1_5bit.vhd/mux8to1_5Bit0 - mux8to1_5Bit - Behavioral</ClosedNode>
+         <ClosedNode>/mux16to1_5bit - Behavioral C:|arxitektonikh1|mux16to1_5bit.vhd/mux8to1_5Bit1 - mux8to1_5Bit - Behavioral</ClosedNode>
+         <ClosedNode>/mux2to1_2bit - Behavioral C:|arxitektonikh1|mux2to1_2bit.vhd</ClosedNode>
+         <ClosedNode>/mux32to1_32Bit - Behavioral C:|arxitektonikh1|mux32to1_32Bit.vhd</ClosedNode>
+         <ClosedNode>/mux32to1_32Bit - Behavioral C:|arxitektonikh1|mux32to1_32Bit.vhd/mux16to1_32Bit0 - mux16to1_32Bit - Behavioral</ClosedNode>
+         <ClosedNode>/mux32to1_32Bit - Behavioral C:|arxitektonikh1|mux32to1_32Bit.vhd/mux16to1_32Bit0 - mux16to1_32Bit - Behavioral/mux32Bit0 - mux32Bit - Behavioral</ClosedNode>
+         <ClosedNode>/mux32to1_32Bit - Behavioral C:|arxitektonikh1|mux32to1_32Bit.vhd/mux16to1_32Bit0 - mux16to1_32Bit - Behavioral/mux8to1_32Bit0 - mux8to1_32Bit - Behavioral</ClosedNode>
+         <ClosedNode>/mux32to1_32Bit - Behavioral C:|arxitektonikh1|mux32to1_32Bit.vhd/mux16to1_32Bit0 - mux16to1_32Bit - Behavioral/mux8to1_32Bit1 - mux8to1_32Bit - Behavioral</ClosedNode>
+         <ClosedNode>/mux32to1_32Bit - Behavioral C:|arxitektonikh1|mux32to1_32Bit.vhd/mux16to1_32Bit1 - mux16to1_32Bit - Behavioral</ClosedNode>
+         <ClosedNode>/mux32to1_32Bit - Behavioral C:|arxitektonikh1|mux32to1_32Bit.vhd/mux16to1_32Bit1 - mux16to1_32Bit - Behavioral/mux32Bit0 - mux32Bit - Behavioral</ClosedNode>
+         <ClosedNode>/mux32to1_32Bit - Behavioral C:|arxitektonikh1|mux32to1_32Bit.vhd/mux16to1_32Bit1 - mux16to1_32Bit - Behavioral/mux8to1_32Bit0 - mux8to1_32Bit - Behavioral</ClosedNode>
+         <ClosedNode>/mux32to1_32Bit - Behavioral C:|arxitektonikh1|mux32to1_32Bit.vhd/mux16to1_32Bit1 - mux16to1_32Bit - Behavioral/mux8to1_32Bit0 - mux8to1_32Bit - Behavioral/mux32Bit0 - mux32Bit - Behavioral</ClosedNode>
+         <ClosedNode>/mux32to1_32Bit - Behavioral C:|arxitektonikh1|mux32to1_32Bit.vhd/mux16to1_32Bit1 - mux16to1_32Bit - Behavioral/mux8to1_32Bit0 - mux8to1_32Bit - Behavioral/mux4to1_32Bit0 - mux4to1_32Bit - Behavioral</ClosedNode>
+         <ClosedNode>/mux32to1_32Bit - Behavioral C:|arxitektonikh1|mux32to1_32Bit.vhd/mux16to1_32Bit1 - mux16to1_32Bit - Behavioral/mux8to1_32Bit0 - mux8to1_32Bit - Behavioral/mux4to1_32Bit1 - mux4to1_32Bit - Behavioral</ClosedNode>
+         <ClosedNode>/mux32to1_32Bit - Behavioral C:|arxitektonikh1|mux32to1_32Bit.vhd/mux16to1_32Bit1 - mux16to1_32Bit - Behavioral/mux8to1_32Bit1 - mux8to1_32Bit - Behavioral/mux32Bit0 - mux32Bit - Behavioral</ClosedNode>
+         <ClosedNode>/mux32to1_32Bit - Behavioral C:|arxitektonikh1|mux32to1_32Bit.vhd/mux16to1_32Bit1 - mux16to1_32Bit - Behavioral/mux8to1_32Bit1 - mux8to1_32Bit - Behavioral/mux4to1_32Bit0 - mux4to1_32Bit - Behavioral</ClosedNode>
+         <ClosedNode>/mux32to1_32Bit - Behavioral C:|arxitektonikh1|mux32to1_32Bit.vhd/mux16to1_32Bit1 - mux16to1_32Bit - Behavioral/mux8to1_32Bit1 - mux8to1_32Bit - Behavioral/mux4to1_32Bit1 - mux4to1_32Bit - Behavioral/mux32Bit0 - mux32Bit - Behavioral</ClosedNode>
+         <ClosedNode>/mux32to1_32Bit - Behavioral C:|arxitektonikh1|mux32to1_32Bit.vhd/mux16to1_32Bit1 - mux16to1_32Bit - Behavioral/mux8to1_32Bit1 - mux8to1_32Bit - Behavioral/mux4to1_32Bit1 - mux4to1_32Bit - Behavioral/mux32Bit1 - mux32Bit - Behavioral</ClosedNode>
+         <ClosedNode>/mux32to1_32Bit - Behavioral C:|arxitektonikh1|mux32to1_32Bit.vhd/mux16to1_32Bit1 - mux16to1_32Bit - Behavioral/mux8to1_32Bit1 - mux8to1_32Bit - Behavioral/mux4to1_32Bit1 - mux4to1_32Bit - Behavioral/mux32Bit2 - mux32Bit - Behavioral</ClosedNode>
+         <ClosedNode>/mux32to1_32Bit - Behavioral C:|arxitektonikh1|mux32to1_32Bit.vhd/mux32Bit0 - mux32Bit - Behavioral</ClosedNode>
+         <ClosedNode>/mux32to1_5Bit - Structural C:|arxitektonikh1|mux32to1_5Bit.vhd</ClosedNode>
+         <ClosedNode>/mux4to1_5bit - Behavioral C:|arxitektonikh1|mux4to1_5bit.vhd</ClosedNode>
+         <ClosedNode>/mux5Bit - Behavioral C:|arxitektonikh1|mux5Bit.vhd</ClosedNode>
+         <ClosedNode>/mux8to1_5Bit - Behavioral C:|arxitektonikh1|mux8to1_5Bit.vhd/mux4to1_5Bit0 - mux4to1_5bit - Behavioral</ClosedNode>
+         <ClosedNode>/mux8to1_5Bit - Behavioral C:|arxitektonikh1|mux8to1_5Bit.vhd/mux4to1_5Bit1 - mux4to1_5bit - Behavioral</ClosedNode>
+         <ClosedNode>/mux8to1_5Bit - Behavioral C:|arxitektonikh1|mux8to1_5Bit.vhd/mux5Bit0 - mux5Bit - Behavioral</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Issue_unit_module - Issue_unit - Behavioral (C:/HRY415-project-2/code/Issue_unit.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001e7000000020000000000000000000000000200000064ffffffff000000810000000300000002000001e70000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>Issue_unit_module - Issue_unit - Behavioral (C:/HRY415-project-2/code/Issue_unit.vhd)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000013f000000010000000100000000000000000000000064ffffffff0000008100000000000000010000013f0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000001000000000000000000000000000000000000031a000000040101000100000000000000000000000064ffffffff0000008100000000000000040000004200000001000000000000002400000001000000000000006600000001000000000000024e0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>CDBunit.vhd</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>work</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000109000000010001000100000000000000000000000064ffffffff000000810000000000000001000001090000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/CDBunit - Behavioral C:|arxitektonikh1|CDBunit.vhd</ClosedNode>
+         <ClosedNode>/FU_aritmetic_test - behavior C:|HRY415-project-2|code|FU_aritmetic_test.vhd</ClosedNode>
+         <ClosedNode>/FU_aritmetic_test - behavior C:|arxitektonikh1|FU_aritmetic_test.vhd</ClosedNode>
+         <ClosedNode>/FU_aritmetic_test - behavior C:|arxitektonikh1|FU_aritmetic_test.vhd/uut - FU_arithmetic - Behavioral/Result_mid_reg - Reg32BitR - Structural</ClosedNode>
+         <ClosedNode>/FU_aritmetic_test - behavior C:|arxitektonikh1|FU_aritmetic_test.vhd/uut - FU_arithmetic - Behavioral/Result_reg - Reg32BitR - Structural</ClosedNode>
+         <ClosedNode>/FU_aritmetic_test - behavior C:|arxitektonikh1|FU_aritmetic_test.vhd/uut - FU_arithmetic - Behavioral/Value_in1_reg - Reg32BitR - Structural/Reg4BitR0 - Reg4BitR - Behavioral</ClosedNode>
+         <ClosedNode>/FU_aritmetic_test - behavior C:|arxitektonikh1|FU_aritmetic_test.vhd/uut - FU_arithmetic - Behavioral/Value_in1_reg - Reg32BitR - Structural/Reg4BitR1 - Reg4BitR - Behavioral</ClosedNode>
+         <ClosedNode>/FU_aritmetic_test - behavior C:|arxitektonikh1|FU_aritmetic_test.vhd/uut - FU_arithmetic - Behavioral/Value_in1_reg - Reg32BitR - Structural/Reg4BitR2 - Reg4BitR - Behavioral</ClosedNode>
+         <ClosedNode>/FU_aritmetic_test - behavior C:|arxitektonikh1|FU_aritmetic_test.vhd/uut - FU_arithmetic - Behavioral/Value_in1_reg - Reg32BitR - Structural/Reg4BitR3 - Reg4BitR - Behavioral</ClosedNode>
+         <ClosedNode>/FU_aritmetic_test - behavior C:|arxitektonikh1|FU_aritmetic_test.vhd/uut - FU_arithmetic - Behavioral/Value_in1_reg - Reg32BitR - Structural/Reg4BitR4 - Reg4BitR - Behavioral</ClosedNode>
+         <ClosedNode>/FU_aritmetic_test - behavior C:|arxitektonikh1|FU_aritmetic_test.vhd/uut - FU_arithmetic - Behavioral/Value_in1_reg - Reg32BitR - Structural/Reg4BitR5 - Reg4BitR - Behavioral</ClosedNode>
+         <ClosedNode>/FU_aritmetic_test - behavior C:|arxitektonikh1|FU_aritmetic_test.vhd/uut - FU_arithmetic - Behavioral/Value_in1_reg - Reg32BitR - Structural/Reg4BitR6 - Reg4BitR - Behavioral</ClosedNode>
+         <ClosedNode>/FU_aritmetic_test - behavior C:|arxitektonikh1|FU_aritmetic_test.vhd/uut - FU_arithmetic - Behavioral/Value_in1_reg - Reg32BitR - Structural/Reg4BitR7 - Reg4BitR - Behavioral/Reg1BitR0 - Reg1BitR - Behavioral</ClosedNode>
+         <ClosedNode>/FU_aritmetic_test - behavior C:|arxitektonikh1|FU_aritmetic_test.vhd/uut - FU_arithmetic - Behavioral/Value_in1_reg - Reg32BitR - Structural/Reg4BitR7 - Reg4BitR - Behavioral/Reg1BitR1 - Reg1BitR - Behavioral</ClosedNode>
+         <ClosedNode>/FU_aritmetic_test - behavior C:|arxitektonikh1|FU_aritmetic_test.vhd/uut - FU_arithmetic - Behavioral/Value_in1_reg - Reg32BitR - Structural/Reg4BitR7 - Reg4BitR - Behavioral/Reg1BitR2 - Reg1BitR - Behavioral</ClosedNode>
+         <ClosedNode>/FU_aritmetic_test - behavior C:|arxitektonikh1|FU_aritmetic_test.vhd/uut - FU_arithmetic - Behavioral/Value_in2_reg - Reg32BitR - Structural</ClosedNode>
+         <ClosedNode>/FU_aritmetic_test - behavior C:|arxitektonikh1|FU_aritmetic_test.vhd/uut - FU_arithmetic - Behavioral/op_reg - Reg2BitR - Behavioral</ClosedNode>
+         <ClosedNode>/FU_aritmetic_test - behavior C:|arxitektonikh1|FU_aritmetic_test.vhd/uut - FU_arithmetic - Behavioral/q_mid_reg - Reg5BitR - Behavioral</ClosedNode>
+         <ClosedNode>/FU_aritmetic_test - behavior C:|arxitektonikh1|FU_aritmetic_test.vhd/uut - FU_arithmetic - Behavioral/q_mid_reg - Reg5BitR - Behavioral/Reg1BitR0 - Reg1BitR - Behavioral</ClosedNode>
+         <ClosedNode>/FU_aritmetic_test - behavior C:|arxitektonikh1|FU_aritmetic_test.vhd/uut - FU_arithmetic - Behavioral/q_mid_reg - Reg5BitR - Behavioral/Reg1BitR1 - Reg1BitR - Behavioral</ClosedNode>
+         <ClosedNode>/FU_aritmetic_test - behavior C:|arxitektonikh1|FU_aritmetic_test.vhd/uut - FU_arithmetic - Behavioral/q_mid_reg - Reg5BitR - Behavioral/Reg1BitR2 - Reg1BitR - Behavioral</ClosedNode>
+         <ClosedNode>/FU_aritmetic_test - behavior C:|arxitektonikh1|FU_aritmetic_test.vhd/uut - FU_arithmetic - Behavioral/q_mid_reg - Reg5BitR - Behavioral/Reg1BitR3 - Reg1BitR - Behavioral</ClosedNode>
+         <ClosedNode>/FU_aritmetic_test - behavior C:|arxitektonikh1|FU_aritmetic_test.vhd/uut - FU_arithmetic - Behavioral/q_reg - Reg5BitR - Behavioral</ClosedNode>
+         <ClosedNode>/FU_aritmetic_test - behavior C:|arxitektonikh1|FU_aritmetic_test.vhd/uut - FU_arithmetic - Behavioral/tag_reg - Reg5BitR - Behavioral</ClosedNode>
+         <ClosedNode>/FU_logical - Behavioral C:|arxitektonikh1|FU_logical.vhd</ClosedNode>
+         <ClosedNode>/FU_logical_test - behavior C:|HRY415-project-2|code|FU_logical_test.vhd</ClosedNode>
+         <ClosedNode>/FU_logical_test - behavior C:|arxitektonikh1|FU_logical_test.vhd</ClosedNode>
+         <ClosedNode>/FU_logical_test - behavior C:|arxitektonikh1|FU_logical_test.vhd/uut - FU_logical - Behavioral/Result_reg - Reg32BitR - Structural</ClosedNode>
+         <ClosedNode>/FU_logical_test - behavior C:|arxitektonikh1|FU_logical_test.vhd/uut - FU_logical - Behavioral/Value_in1_reg - Reg32BitR - Structural</ClosedNode>
+         <ClosedNode>/FU_logical_test - behavior C:|arxitektonikh1|FU_logical_test.vhd/uut - FU_logical - Behavioral/Value_in2_reg - Reg32BitR - Structural</ClosedNode>
+         <ClosedNode>/FU_logical_test - behavior C:|arxitektonikh1|FU_logical_test.vhd/uut - FU_logical - Behavioral/op_reg - Reg2BitR - Behavioral</ClosedNode>
+         <ClosedNode>/FU_logical_test - behavior C:|arxitektonikh1|FU_logical_test.vhd/uut - FU_logical - Behavioral/q_reg - Reg5BitR - Behavioral</ClosedNode>
+         <ClosedNode>/FU_logical_test - behavior C:|arxitektonikh1|FU_logical_test.vhd/uut - FU_logical - Behavioral/tag_reg - Reg5BitR - Behavioral</ClosedNode>
+         <ClosedNode>/Issue_unit_test - behavior C:|HRY415-project-2|code|Issue_unit_test.vhd</ClosedNode>
+         <ClosedNode>/Issue_unit_test - behavior C:|arxitektonikh1|Issue_unit_test.vhd</ClosedNode>
+         <ClosedNode>/Qblock_test - behavior C:|HRY415-project-2|code|Qblock_test.vhd</ClosedNode>
+         <ClosedNode>/Qblock_test - behavior C:|arxitektonikh1|Qblock_test.vhd</ClosedNode>
+         <ClosedNode>/Qblock_test - behavior C:|arxitektonikh1|Qblock_test.vhd/uut - Q_block - Behavioral/Qreg - Reg5BitR - Behavioral</ClosedNode>
+         <ClosedNode>/Qblock_test - behavior C:|arxitektonikh1|Qblock_test.vhd/uut - Q_block - Behavioral/Qreg - Reg5BitR - Behavioral/Reg1BitR0 - Reg1BitR - Behavioral</ClosedNode>
+         <ClosedNode>/Qblock_test - behavior C:|arxitektonikh1|Qblock_test.vhd/uut - Q_block - Behavioral/Qreg - Reg5BitR - Behavioral/Reg1BitR1 - Reg1BitR - Behavioral</ClosedNode>
+         <ClosedNode>/Qblock_test - behavior C:|arxitektonikh1|Qblock_test.vhd/uut - Q_block - Behavioral/Qreg - Reg5BitR - Behavioral/Reg1BitR2 - Reg1BitR - Behavioral</ClosedNode>
+         <ClosedNode>/Qblock_test - behavior C:|arxitektonikh1|Qblock_test.vhd/uut - Q_block - Behavioral/Qreg - Reg5BitR - Behavioral/Reg1BitR3 - Reg1BitR - Behavioral</ClosedNode>
+         <ClosedNode>/Qblock_test - behavior C:|arxitektonikh1|Qblock_test.vhd/uut - Q_block - Behavioral/demuxQ - demux5to32 - Structural</ClosedNode>
+         <ClosedNode>/Qblock_test - behavior C:|arxitektonikh1|Qblock_test.vhd/uut - Q_block - Behavioral/muxQin - mux5Bit - Behavioral</ClosedNode>
+         <ClosedNode>/Qblock_test - behavior C:|arxitektonikh1|Qblock_test.vhd/uut - Q_block - Behavioral/mux_forward - mux5Bit - Behavioral</ClosedNode>
+         <ClosedNode>/Qblock_test - behavior C:|arxitektonikh1|Qblock_test.vhd/uut - Q_block - Behavioral/muxj - mux32to1_5Bit - Structural</ClosedNode>
+         <ClosedNode>/Qblock_test - behavior C:|arxitektonikh1|Qblock_test.vhd/uut - Q_block - Behavioral/muxk - mux32to1_5Bit - Structural</ClosedNode>
+         <ClosedNode>/RS_arithmetic_test - behavior C:|HRY415-project-2|code|RS_arithmetic_test.vhd</ClosedNode>
+         <ClosedNode>/RS_arithmetic_test - behavior C:|arxitektonikh1|RS_arithmetic_test.vhd</ClosedNode>
+         <ClosedNode>/RS_arithmetic_test - behavior C:|arxitektonikh1|RS_arithmetic_test.vhd/uut - RS_unit_arithemtic - Behavioral/RS_reg_lines - RS_reg_line - Behavioral</ClosedNode>
+         <ClosedNode>/RS_arithmetic_test - behavior C:|arxitektonikh1|RS_arithmetic_test.vhd/uut - RS_unit_arithemtic - Behavioral/Vj_mux - mux4to1_32Bit - Behavioral</ClosedNode>
+         <ClosedNode>/RS_arithmetic_test - behavior C:|arxitektonikh1|RS_arithmetic_test.vhd/uut - RS_unit_arithemtic - Behavioral/Vk_mux - mux4to1_32Bit - Behavioral</ClosedNode>
+         <ClosedNode>/RS_logical_test - behavior C:|HRY415-project-2|code|RS_logical_test.vhd</ClosedNode>
+         <ClosedNode>/RS_logical_test - behavior C:|arxitektonikh1|RS_logical_test.vhd/uut - RS_unit_logical - Behavioral/RS_reg_lines - RS_reg_line - Behavioral</ClosedNode>
+         <ClosedNode>/RS_logical_test - behavior C:|arxitektonikh1|RS_logical_test.vhd/uut - RS_unit_logical - Behavioral/Vj_mux - mux4to1_32Bit - Behavioral</ClosedNode>
+         <ClosedNode>/RS_logical_test - behavior C:|arxitektonikh1|RS_logical_test.vhd/uut - RS_unit_logical - Behavioral/Vk_mux - mux4to1_32Bit - Behavioral</ClosedNode>
+         <ClosedNode>/RS_reg_line - Behavioral C:|arxitektonikh1|RS_reg_line.vhd</ClosedNode>
+         <ClosedNode>/Reg32BitR - Structural C:|arxitektonikh1|Reg32BitR.vhd</ClosedNode>
+         <ClosedNode>/Register_File - Behavioral C:|arxitektonikh1|Register_File.vhd</ClosedNode>
+         <ClosedNode>/V_block_test - behavior C:|HRY415-project-2|code|V_block_test.vhd</ClosedNode>
+         <ClosedNode>/V_block_test - behavior C:|arxitektonikh1|V_block_test.vhd</ClosedNode>
+         <ClosedNode>/V_block_test - behavior C:|arxitektonikh1|V_block_test.vhd/uut - V_block - Behavioral/Vreg - Reg32BitR - Structural</ClosedNode>
+         <ClosedNode>/V_block_test - behavior C:|arxitektonikh1|V_block_test.vhd/uut - V_block - Behavioral/muxj - mux32to1_32Bit - Behavioral/mux16to1_32Bit0 - mux16to1_32Bit - Behavioral</ClosedNode>
+         <ClosedNode>/V_block_test - behavior C:|arxitektonikh1|V_block_test.vhd/uut - V_block - Behavioral/muxj - mux32to1_32Bit - Behavioral/mux16to1_32Bit1 - mux16to1_32Bit - Behavioral</ClosedNode>
+         <ClosedNode>/V_block_test - behavior C:|arxitektonikh1|V_block_test.vhd/uut - V_block - Behavioral/muxj - mux32to1_32Bit - Behavioral/mux32Bit0 - mux32Bit - Behavioral</ClosedNode>
+         <ClosedNode>/V_block_test - behavior C:|arxitektonikh1|V_block_test.vhd/uut - V_block - Behavioral/muxk - mux32to1_32Bit - Behavioral</ClosedNode>
+         <ClosedNode>/demux_test - behavior C:|HRY415-project-2|code|demux_test.vhd</ClosedNode>
+         <ClosedNode>/demux_test - behavior C:|arxitektonikh1|demux_test.vhd</ClosedNode>
+         <ClosedNode>/mux16Bit - Behavioral C:|arxitektonikh1|mux16bit.vhd</ClosedNode>
+         <ClosedNode>/mux32to1_32Bit - Behavioral C:|arxitektonikh1|mux32to1_32Bit.vhd</ClosedNode>
+         <ClosedNode>/mux32to1_32Bit - Behavioral C:|arxitektonikh1|mux32to1_32Bit.vhd/mux16to1_32Bit0 - mux16to1_32Bit - Behavioral</ClosedNode>
+         <ClosedNode>/mux32to1_32Bit - Behavioral C:|arxitektonikh1|mux32to1_32Bit.vhd/mux16to1_32Bit1 - mux16to1_32Bit - Behavioral</ClosedNode>
+         <ClosedNode>/mux32to1_32Bit - Behavioral C:|arxitektonikh1|mux32to1_32Bit.vhd/mux32Bit0 - mux32Bit - Behavioral</ClosedNode>
+         <ClosedNode>/rs_line_test - behavior C:|arxitektonikh1|rs_line_test.vhd</ClosedNode>
+         <ClosedNode>/test_CDBunit - behavior C:|arxitektonikh1|test_CDBunit.vhd</ClosedNode>
+         <ClosedNode>/test_CDBunit - behavior C:|arxitektonikh1|test_CDBunit.vhd/uut - CDBunit - Behavioral/Q_mux - mux4to1_5bit - Behavioral</ClosedNode>
+         <ClosedNode>/test_CDBunit - behavior C:|arxitektonikh1|test_CDBunit.vhd/uut - CDBunit - Behavioral/sel_reg - Reg4BitR - Behavioral</ClosedNode>
+         <ClosedNode>/test_CDBunit - behavior C:|arxitektonikh1|test_CDBunit.vhd/uut - CDBunit - Behavioral/valid_reg - Reg1BitR - Behavioral</ClosedNode>
+         <ClosedNode>/test_CDBunit - behavior C:|arxitektonikh1|test_CDBunit.vhd/uut - CDBunit - Behavioral/value_mux - mux4to1_32Bit - Behavioral</ClosedNode>
+         <ClosedNode>/test_RF - behavior C:|arxitektonikh1|test_RF.vhd</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>uut - Q_block - Behavioral (C:/HRY415-project-2/code/Q_block.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000206000000020000000000000000000000000200000064ffffffff000000810000000300000002000002060000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>uut - Q_block - Behavioral (C:/HRY415-project-2/code/Q_block.vhd)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000013f000000010000000100000000000000000000000064ffffffff0000008100000000000000010000013f0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>Implement Design/Map</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
+         <ClosedNode>Implement Design/Translate</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Synthesize - XST</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000012e000000010000000100000000000000000000000064ffffffff0000008100000000000000010000012e0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Synthesize - XST</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000013f000000010000000100000000000000000000000064ffffffff0000008100000000000000010000013f0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff00000000000000020000017a000000e101000000050100000002</SourceProcessView>
+   <CurrentView>Implementation</CurrentView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_PACKAGE_DECL" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000013f000000010000000100000000000000000000000064ffffffff0000008100000000000000010000013f0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_PACKAGE_BODY" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000013f000000010000000100000000000000000000000064ffffffff0000008100000000000000010000013f0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_PACKAGE_BODY" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" />
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+</Project>

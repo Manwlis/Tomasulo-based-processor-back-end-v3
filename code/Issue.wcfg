@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/arxitektonikh1/Issue_unit_test_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="issue_unit_test" />
+            <top_module name="std_logic_1164" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="19" />
+   <wave_markers>
+      <marker time="25000000" label="" />
+      <marker time="75000000" label="" />
+      <marker time="225000000" label="" />
+   </wave_markers>
+   <wvobject fp_name="/issue_unit_test/clock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/issue_unit_test/issue" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">issue</obj_property>
+      <obj_property name="ObjectShortName">issue</obj_property>
+   </wvobject>
+   <wvobject fp_name="/issue_unit_test/fu_type" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">fu_type[1:0]</obj_property>
+      <obj_property name="ObjectShortName">fu_type[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/issue_unit_test/available" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">available[2:0]</obj_property>
+      <obj_property name="ObjectShortName">available[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/issue_unit_test/accepted" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">accepted</obj_property>
+      <obj_property name="ObjectShortName">accepted</obj_property>
+   </wvobject>
+   <wvobject fp_name="/issue_unit_test/instr_valid" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">instr_valid</obj_property>
+      <obj_property name="ObjectShortName">instr_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/issue_unit_test/issuers" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">issuers[2:0]</obj_property>
+      <obj_property name="ObjectShortName">issuers[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/issue_unit_test/tag1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tag1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">tag1[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#008080</obj_property>
+   </wvobject>
+   <wvobject fp_name="/issue_unit_test/tag2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tag2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">tag2[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#008080</obj_property>
+   </wvobject>
+   <wvobject fp_name="/issue_unit_test/tag3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tag3[4:0]</obj_property>
+      <obj_property name="ObjectShortName">tag3[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#008080</obj_property>
+   </wvobject>
+   <wvobject fp_name="/issue_unit_test/tagrf" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tagrf[4:0]</obj_property>
+      <obj_property name="ObjectShortName">tagrf[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#008080</obj_property>
+   </wvobject>
+   <wvobject fp_name="/issue_unit_test/if_fop" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">if_fop[1:0]</obj_property>
+      <obj_property name="ObjectShortName">if_fop[1:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/issue_unit_test/if_ri" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">if_ri[4:0]</obj_property>
+      <obj_property name="ObjectShortName">if_ri[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/issue_unit_test/if_rj" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">if_rj[4:0]</obj_property>
+      <obj_property name="ObjectShortName">if_rj[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/issue_unit_test/if_rk" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">if_rk[4:0]</obj_property>
+      <obj_property name="ObjectShortName">if_rk[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/issue_unit_test/fop" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">fop[1:0]</obj_property>
+      <obj_property name="ObjectShortName">fop[1:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#800000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/issue_unit_test/ri" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ri[4:0]</obj_property>
+      <obj_property name="ObjectShortName">ri[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#800000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/issue_unit_test/rj" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rj[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rj[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#800000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/issue_unit_test/rk" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rk[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rk[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#800000</obj_property>
+   </wvobject>
+</wave_config>

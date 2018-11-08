@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/arxitektonikh1/test_CDBunit_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="std_logic_1164" />
+            <top_module name="test_cdbunit" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="13" />
+   <wave_markers>
+      <marker time="25000000" label="" />
+      <marker time="75000000" label="" />
+      <marker time="175000000" label="" />
+      <marker time="225000000" label="" />
+      <marker time="375000000" label="" />
+   </wave_markers>
+   <wvobject fp_name="/test_cdbunit/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_cdbunit/request" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">request[2:0]</obj_property>
+      <obj_property name="ObjectShortName">request[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_cdbunit/grant" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">grant[2:0]</obj_property>
+      <obj_property name="ObjectShortName">grant[2:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffff00</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_cdbunit/value1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">value1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">value1[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_cdbunit/value2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">value2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">value2[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_cdbunit/value3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">value3[31:0]</obj_property>
+      <obj_property name="ObjectShortName">value3[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_cdbunit/q1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">q1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">q1[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_cdbunit/q2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">q2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">q2[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_cdbunit/q3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">q3[4:0]</obj_property>
+      <obj_property name="ObjectShortName">q3[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_cdbunit/uut/value_mux/output" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">output[31:0]</obj_property>
+      <obj_property name="ObjectShortName">output[31:0]</obj_property>
+      <obj_property name="label">Value_out[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_cdbunit/uut/Q_mux/output" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">output[4:0]</obj_property>
+      <obj_property name="ObjectShortName">output[4:0]</obj_property>
+      <obj_property name="label">Qout[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_cdbunit/uut/valid_reg/dout" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">dout</obj_property>
+      <obj_property name="ObjectShortName">dout</obj_property>
+      <obj_property name="label">Valid_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_cdbunit/cdbout" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cdbout[37:0]</obj_property>
+      <obj_property name="ObjectShortName">cdbout[37:0]</obj_property>
+   </wvobject>
+</wave_config>
