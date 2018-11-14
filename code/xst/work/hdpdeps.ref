@@ -1,4 +1,101 @@
-V3 159
+V3 173
+FL C:/arxitektonikh1/HRY415-project-2/code/flipflop.vhd 2018/10/23.16:08:47 O.87xd
+EN work/flipflop 1542207932 \
+      FL C:/arxitektonikh1/HRY415-project-2/code/flipflop.vhd \
+      PB ieee/std_logic_1164 1325952872
+AR work/flipflop/Behavioral 1542207933 \
+      FL C:/arxitektonikh1/HRY415-project-2/code/flipflop.vhd EN work/flipflop 1542207932
+FL C:/arxitektonikh1/HRY415-project-2/code/mux.vhd 2018/10/23.16:08:48 O.87xd
+EN work/mux 1542207930 FL C:/arxitektonikh1/HRY415-project-2/code/mux.vhd \
+      PB ieee/std_logic_1164 1325952872
+AR work/mux/Behavioral 1542207931 \
+      FL C:/arxitektonikh1/HRY415-project-2/code/mux.vhd EN work/mux 1542207930
+FL C:/arxitektonikh1/HRY415-project-2/code/mux32Bit.vhd 2018/10/23.16:08:48 O.87xd
+EN work/mux32Bit 1542207938 \
+      FL C:/arxitektonikh1/HRY415-project-2/code/mux32Bit.vhd \
+      PB ieee/std_logic_1164 1325952872
+AR work/mux32Bit/Behavioral 1542207939 \
+      FL C:/arxitektonikh1/HRY415-project-2/code/mux32Bit.vhd EN work/mux32Bit 1542207938 \
+      CP mux
+FL C:/arxitektonikh1/HRY415-project-2/code/mux4to1_32Bit.vhd 2018/10/23.16:08:48 O.87xd
+EN work/mux4to1_32Bit 1542207948 \
+      FL C:/arxitektonikh1/HRY415-project-2/code/mux4to1_32Bit.vhd \
+      PB ieee/std_logic_1164 1325952872
+AR work/mux4to1_32Bit/Behavioral 1542207949 \
+      FL C:/arxitektonikh1/HRY415-project-2/code/mux4to1_32Bit.vhd \
+      EN work/mux4to1_32Bit 1542207948 CP mux32Bit
+FL C:/arxitektonikh1/HRY415-project-2/code/mux5Bit.vhd 2018/10/23.16:08:48 O.87xd
+EN work/mux5Bit 1542207942 FL C:/arxitektonikh1/HRY415-project-2/code/mux5Bit.vhd \
+      PB ieee/std_logic_1164 1325952872
+AR work/mux5Bit/Behavioral 1542207943 \
+      FL C:/arxitektonikh1/HRY415-project-2/code/mux5Bit.vhd EN work/mux5Bit 1542207942 \
+      CP mux
+FL C:/arxitektonikh1/HRY415-project-2/code/Reg1BitR.vhd 2018/10/27.14:34:21 O.87xd
+EN work/Reg1BitR 1542207934 \
+      FL C:/arxitektonikh1/HRY415-project-2/code/Reg1BitR.vhd \
+      PB ieee/std_logic_1164 1325952872
+AR work/Reg1BitR/Behavioral 1542207935 \
+      FL C:/arxitektonikh1/HRY415-project-2/code/Reg1BitR.vhd EN work/Reg1BitR 1542207934 \
+      CP mux CP flipflop
+FL C:/arxitektonikh1/HRY415-project-2/code/Reg32BitR.vhd 2018/10/23.17:37:28 O.87xd
+EN work/Reg32BitR 1542207940 \
+      FL C:/arxitektonikh1/HRY415-project-2/code/Reg32BitR.vhd \
+      PB ieee/std_logic_1164 1325952872
+AR work/Reg32BitR/Structural 1542207941 \
+      FL C:/arxitektonikh1/HRY415-project-2/code/Reg32BitR.vhd EN work/Reg32BitR 1542207940 \
+      CP Reg4BitR
+FL C:/arxitektonikh1/HRY415-project-2/code/Reg4BitR.vhd 2018/10/23.17:37:40 O.87xd
+EN work/Reg4BitR 1542207936 \
+      FL C:/arxitektonikh1/HRY415-project-2/code/Reg4BitR.vhd \
+      PB ieee/std_logic_1164 1325952872
+AR work/Reg4BitR/Behavioral 1542207937 \
+      FL C:/arxitektonikh1/HRY415-project-2/code/Reg4BitR.vhd EN work/Reg4BitR 1542207936 \
+      CP Reg1BitR
+FL C:/arxitektonikh1/HRY415-project-2/code/Reg5BitR.vhd 2018/10/27.14:26:01 O.87xd
+EN work/Reg5BitR 1542207944 \
+      FL C:/arxitektonikh1/HRY415-project-2/code/Reg5BitR.vhd \
+      PB ieee/std_logic_1164 1325952872
+AR work/Reg5BitR/Behavioral 1542207945 \
+      FL C:/arxitektonikh1/HRY415-project-2/code/Reg5BitR.vhd EN work/Reg5BitR 1542207944 \
+      CP Reg1BitR
+FL C:/arxitektonikh1/HRY415-project-2/code/RSUnitAr.vhd 2018/11/14.16:50:20 O.87xd
+EN work/RS_unit_arithemtic 1542207405 \
+      FL C:/arxitektonikh1/HRY415-project-2/code/RSUnitAr.vhd \
+      PB ieee/std_logic_1164 1325952872
+AR work/RS_unit_arithemtic/Behavioral 1542207406 \
+      FL C:/arxitektonikh1/HRY415-project-2/code/RSUnitAr.vhd \
+      EN work/RS_unit_arithemtic 1542207405 CP RS_reg_line CP mux4to1_32Bit \
+      CP RS_arithmetic_control
+FL C:/arxitektonikh1/HRY415-project-2/code/RS_ar_control.vhd 2018/11/14.16:56:17 O.87xd
+EN work/RS_arithmetic_control 1542207403 \
+      FL C:/arxitektonikh1/HRY415-project-2/code/RS_ar_control.vhd \
+      PB ieee/std_logic_1164 1325952872
+AR work/RS_arithmetic_control/Behavioral 1542207404 \
+      FL C:/arxitektonikh1/HRY415-project-2/code/RS_ar_control.vhd \
+      EN work/RS_arithmetic_control 1542207403
+FL C:/arxitektonikh1/HRY415-project-2/code/RS_logica_control.vhd 2018/11/14.17:05:15 O.87xd
+EN work/RS_logical_control 1542207950 \
+      FL C:/arxitektonikh1/HRY415-project-2/code/RS_logica_control.vhd \
+      PB ieee/std_logic_1164 1325952872
+AR work/RS_logical_control/Behavioral 1542207951 \
+      FL C:/arxitektonikh1/HRY415-project-2/code/RS_logica_control.vhd \
+      EN work/RS_logical_control 1542207950
+FL C:/arxitektonikh1/HRY415-project-2/code/RS_reg_line.vhd 2018/11/14.16:47:47 O.87xd
+EN work/RS_reg_line 1542207946 \
+      FL C:/arxitektonikh1/HRY415-project-2/code/RS_reg_line.vhd \
+      PB ieee/std_logic_1164 1325952872
+AR work/RS_reg_line/Behavioral 1542207947 \
+      FL C:/arxitektonikh1/HRY415-project-2/code/RS_reg_line.vhd \
+      EN work/RS_reg_line 1542207946 CP mux CP Reg1BitR CP mux32Bit CP Reg32BitR \
+      CP mux5Bit CP Reg5BitR
+FL C:/arxitektonikh1/HRY415-project-2/code/RS_unit_logical.vhd 2018/11/14.17:00:46 O.87xd
+EN work/RS_unit_logical 1542207952 \
+      FL C:/arxitektonikh1/HRY415-project-2/code/RS_unit_logical.vhd \
+      PB ieee/std_logic_1164 1325952872
+AR work/RS_unit_logical/Behavioral 1542207953 \
+      FL C:/arxitektonikh1/HRY415-project-2/code/RS_unit_logical.vhd \
+      EN work/RS_unit_logical 1542207952 CP RS_reg_line CP mux4to1_32Bit \
+      CP RS_logical_control
 FL C:/HRY415-project-2/code/arithmetic_unit.vhd 2018/10/24.16:57:26 O.87xd
 EN work/arithmetic_unit 1541693656 \
       FL C:/HRY415-project-2/code/arithmetic_unit.vhd PB ieee/std_logic_1164 1325952872 \
@@ -53,10 +150,6 @@ AR work/demux5to32/Structural 1541693641 \
       FL C:/HRY415-project-2/code/demux5to32.vhd EN work/demux5to32 1541693640 \
       CP demux CP demux4to16
 FL C:/HRY415-project-2/code/flipflop.vhd 2018/10/23.16:08:47 O.87xd
-EN work/flipflop 1541693610 FL C:/HRY415-project-2/code/flipflop.vhd \
-      PB ieee/std_logic_1164 1325952872
-AR work/flipflop/Behavioral 1541693611 \
-      FL C:/HRY415-project-2/code/flipflop.vhd EN work/flipflop 1541693610
 FL C:/HRY415-project-2/code/FU_arithmetic.vhd 2018/10/24.16:58:05 O.87xd
 EN work/FU_arithmetic 1541693672 FL C:/HRY415-project-2/code/FU_arithmetic.vhd \
       PB ieee/std_logic_1164 1325952872
@@ -94,9 +187,6 @@ EN work/logical_unit 1541693648 FL C:/HRY415-project-2/code/logical_unit.vhd \
 AR work/logical_unit/Behavioral 1541693649 \
       FL C:/HRY415-project-2/code/logical_unit.vhd EN work/logical_unit 1541693648
 FL C:/HRY415-project-2/code/mux.vhd 2018/10/23.16:08:48 O.87xd
-EN work/mux 1541693602 FL C:/HRY415-project-2/code/mux.vhd PB ieee/std_logic_1164 1325952872
-AR work/mux/Behavioral 1541693603 \
-      FL C:/HRY415-project-2/code/mux.vhd EN work/mux 1541693602
 FL C:/HRY415-project-2/code/mux16to1_32Bit.vhd 2018/10/26.17:01:37 O.87xd
 EN work/mux16to1_32Bit 1541693628 FL C:/HRY415-project-2/code/mux16to1_32Bit.vhd \
       PB ieee/std_logic_1164 1325952872
@@ -110,10 +200,6 @@ AR work/mux16to1_5bit/Behavioral 1541693631 \
       FL C:/HRY415-project-2/code/mux16to1_5bit.vhd EN work/mux16to1_5bit 1541693630 \
       CP mux8to1_5Bit CP mux5Bit
 FL C:/HRY415-project-2/code/mux32Bit.vhd 2018/10/23.16:08:48 O.87xd
-EN work/mux32Bit 1541693604 FL C:/HRY415-project-2/code/mux32Bit.vhd \
-      PB ieee/std_logic_1164 1325952872
-AR work/mux32Bit/Behavioral 1541693605 \
-      FL C:/HRY415-project-2/code/mux32Bit.vhd EN work/mux32Bit 1541693604 CP mux
 FL C:/HRY415-project-2/code/mux32to1_32Bit.vhd 2018/10/26.17:07:22 O.87xd
 EN work/mux32to1_32Bit 1541693638 FL C:/HRY415-project-2/code/mux32to1_32Bit.vhd \
       PB ieee/std_logic_1164 1325952872
@@ -127,11 +213,6 @@ AR work/mux32to1_5Bit/Structural 1541693643 \
       FL C:/HRY415-project-2/code/mux32to1_5Bit.vhd EN work/mux32to1_5Bit 1541693642 \
       CP mux16to1_5Bit CP mux5Bit
 FL C:/HRY415-project-2/code/mux4to1_32Bit.vhd 2018/10/23.16:08:48 O.87xd
-EN work/mux4to1_32Bit 1541693612 FL C:/HRY415-project-2/code/mux4to1_32Bit.vhd \
-      PB ieee/std_logic_1164 1325952872
-AR work/mux4to1_32Bit/Behavioral 1541693613 \
-      FL C:/HRY415-project-2/code/mux4to1_32Bit.vhd EN work/mux4to1_32Bit 1541693612 \
-      CP mux32Bit
 FL C:/HRY415-project-2/code/mux4to1_5bit.vhd 2018/10/23.16:49:31 O.87xd
 EN work/mux4to1_5bit 1541693614 FL C:/HRY415-project-2/code/mux4to1_5bit.vhd \
       PB ieee/std_logic_1164 1325952872
@@ -139,10 +220,6 @@ AR work/mux4to1_5bit/Behavioral 1541693615 \
       FL C:/HRY415-project-2/code/mux4to1_5bit.vhd EN work/mux4to1_5bit 1541693614 \
       CP mux5Bit
 FL C:/HRY415-project-2/code/mux5Bit.vhd 2018/10/23.16:08:48 O.87xd
-EN work/mux5Bit 1541693606 FL C:/HRY415-project-2/code/mux5Bit.vhd \
-      PB ieee/std_logic_1164 1325952872
-AR work/mux5Bit/Behavioral 1541693607 \
-      FL C:/HRY415-project-2/code/mux5Bit.vhd EN work/mux5Bit 1541693606 CP mux
 FL C:/HRY415-project-2/code/mux8to1_32Bit.vhd 2018/10/26.16:58:53 O.87xd
 EN work/mux8to1_32Bit 1541693620 FL C:/HRY415-project-2/code/mux8to1_32Bit.vhd \
       PB ieee/std_logic_1164 1325952872
@@ -162,11 +239,6 @@ AR work/Q_block/Behavioral 1541693663 \
       FL C:/HRY415-project-2/code/Q_block.vhd EN work/Q_block 1541693662 \
       CP mux5Bit CP Reg5BitR CP demux5to32 CP mux32to1_5Bit
 FL C:/HRY415-project-2/code/Reg1BitR.vhd 2018/10/27.14:34:21 O.87xd
-EN work/Reg1BitR 1541693618 FL C:/HRY415-project-2/code/Reg1BitR.vhd \
-      PB ieee/std_logic_1164 1325952872
-AR work/Reg1BitR/Behavioral 1541693619 \
-      FL C:/HRY415-project-2/code/Reg1BitR.vhd EN work/Reg1BitR 1541693618 CP mux \
-      CP flipflop
 FL C:/HRY415-project-2/code/Reg2BitR.vhd 2018/10/24.13:10:30 O.87xd
 EN work/Reg2BitR 1541693646 FL C:/HRY415-project-2/code/Reg2BitR.vhd \
       PB ieee/std_logic_1164 1325952872
@@ -174,23 +246,8 @@ AR work/Reg2BitR/Behavioral 1541693647 \
       FL C:/HRY415-project-2/code/Reg2BitR.vhd EN work/Reg2BitR 1541693646 \
       CP Reg1BitR
 FL C:/HRY415-project-2/code/Reg32BitR.vhd 2018/10/23.17:37:28 O.87xd
-EN work/Reg32BitR 1541693634 FL C:/HRY415-project-2/code/Reg32BitR.vhd \
-      PB ieee/std_logic_1164 1325952872
-AR work/Reg32BitR/Structural 1541693635 \
-      FL C:/HRY415-project-2/code/Reg32BitR.vhd EN work/Reg32BitR 1541693634 \
-      CP Reg4BitR
 FL C:/HRY415-project-2/code/Reg4BitR.vhd 2018/10/23.17:37:40 O.87xd
-EN work/Reg4BitR 1541693626 FL C:/HRY415-project-2/code/Reg4BitR.vhd \
-      PB ieee/std_logic_1164 1325952872
-AR work/Reg4BitR/Behavioral 1541693627 \
-      FL C:/HRY415-project-2/code/Reg4BitR.vhd EN work/Reg4BitR 1541693626 \
-      CP Reg1BitR
 FL C:/HRY415-project-2/code/Reg5BitR.vhd 2018/10/27.14:26:01 O.87xd
-EN work/Reg5BitR 1541693636 FL C:/HRY415-project-2/code/Reg5BitR.vhd \
-      PB ieee/std_logic_1164 1325952872
-AR work/Reg5BitR/Behavioral 1541693637 \
-      FL C:/HRY415-project-2/code/Reg5BitR.vhd EN work/Reg5BitR 1541693636 \
-      CP Reg1BitR
 FL C:/HRY415-project-2/code/Register_File.vhd 2018/10/27.15:42:49 O.87xd
 EN work/Register_File 1541693668 FL C:/HRY415-project-2/code/Register_File.vhd \
       PB ieee/std_logic_1164 1325952872
@@ -198,34 +255,10 @@ AR work/Register_File/Behavioral 1541693669 \
       FL C:/HRY415-project-2/code/Register_File.vhd EN work/Register_File 1541693668 \
       CP Q_block CP V_block
 FL C:/HRY415-project-2/code/RSUnitAr.vhd 2018/10/28.20:50:30 O.87xd
-EN work/RS_unit_arithemtic 1541693670 FL C:/HRY415-project-2/code/RSUnitAr.vhd \
-      PB ieee/std_logic_1164 1325952872
-AR work/RS_unit_arithemtic/Behavioral 1541693671 \
-      FL C:/HRY415-project-2/code/RSUnitAr.vhd EN work/RS_unit_arithemtic 1541693670 \
-      CP RS_reg_line CP mux4to1_32Bit CP RS_arithmetic_control
 FL C:/HRY415-project-2/code/RS_ar_control.vhd 2018/10/28.22:04:33 O.87xd
-EN work/RS_arithmetic_control 1541693660 \
-      FL C:/HRY415-project-2/code/RS_ar_control.vhd PB ieee/std_logic_1164 1325952872
-AR work/RS_arithmetic_control/Behavioral 1541693661 \
-      FL C:/HRY415-project-2/code/RS_ar_control.vhd EN work/RS_arithmetic_control 1541693660
 FL C:/HRY415-project-2/code/RS_logica_control.vhd 2018/10/28.21:55:54 O.87xd
-EN work/RS_logical_control 1541693654 \
-      FL C:/HRY415-project-2/code/RS_logica_control.vhd PB ieee/std_logic_1164 1325952872
-AR work/RS_logical_control/Behavioral 1541693655 \
-      FL C:/HRY415-project-2/code/RS_logica_control.vhd \
-      EN work/RS_logical_control 1541693654
 FL C:/HRY415-project-2/code/RS_reg_line.vhd 2018/11/03.12:50:26 O.87xd
-EN work/RS_reg_line 1541693652 FL C:/HRY415-project-2/code/RS_reg_line.vhd \
-      PB ieee/std_logic_1164 1325952872
-AR work/RS_reg_line/Behavioral 1541693653 \
-      FL C:/HRY415-project-2/code/RS_reg_line.vhd EN work/RS_reg_line 1541693652 \
-      CP mux CP Reg1BitR CP mux32Bit CP Reg32BitR CP mux5Bit CP Reg5BitR
 FL C:/HRY415-project-2/code/RS_unit_logical.vhd 2018/10/28.21:36:52 O.87xd
-EN work/RS_unit_logical 1541693674 \
-      FL C:/HRY415-project-2/code/RS_unit_logical.vhd PB ieee/std_logic_1164 1325952872
-AR work/RS_unit_logical/Behavioral 1541693675 \
-      FL C:/HRY415-project-2/code/RS_unit_logical.vhd EN work/RS_unit_logical 1541693674 \
-      CP RS_reg_line CP mux4to1_32Bit CP RS_logical_control
 FL C:/HRY415-project-2/code/V_block.vhd 2018/10/27.14:01:31 O.87xd
 EN work/V_block 1541693664 FL C:/HRY415-project-2/code/V_block.vhd \
       PB ieee/std_logic_1164 1325952872

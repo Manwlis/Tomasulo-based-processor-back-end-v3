@@ -15,6 +15,7 @@ entity RS_reg_line is
            busy_out : out  STD_LOGIC;
            ready_for_exec : out  STD_LOGIC;
            busy_enable : in  STD_LOGIC;
+           efuge_enable : in  STD_LOGIC;
            Clk : in  STD_LOGIC;
            Fop_in : in  STD_LOGIC_VECTOR (1 downto 0);
            Fop_out : out  STD_LOGIC_VECTOR (1 downto 0));
@@ -75,7 +76,7 @@ port
  output : out std_logic);
 END COMPONENT;
 
-signal busy_in, busy_reg_out, comparator_j, comparator_k : std_logic;
+signal busy_in, busy_reg_out, comparator_j, comparator_k, efuge_in, efuge_reg_out : std_logic;
 signal Vj_WrEn, Vk_WrEn : std_logic;
 signal Vj_in, Vk_in, Vj_reg_out, Vk_reg_out : std_logic_vector(31 downto 0);
 signal Qj_in, Qk_in, Qj, Qk : std_logic_vector(4 downto 0);
@@ -100,6 +101,23 @@ port map(
 	Dout => busy_reg_out);
 	
 busy_out <= busy_reg_out;
+
+-- efuge
+efuge_mux : mux
+port map(
+   in0 => '1',
+	in1 => '0',
+	-- otan mpainei kainourgia entolh pernaei to 0
+	sel => control_enable,
+	output => efuge_in);
+	
+efuge_reg : Reg1BitR
+port map(
+	Clk => Clk,
+	WrEn => efuge_enable,
+	Din => efuge_in,
+	Reset => '0',
+	Dout => efuge_reg_out);
 
 -- value j
 Vj_mux : mux32Bit
@@ -203,7 +221,9 @@ comparator_k <= '1' when CDB_valid = '1' and busy_reg_out = '1' and Qk = CDB_Q
 Fop_out <= Fop_out_reg;
 	
 ready_for_exec <= '1' 
-	when busy_reg_out = '1' and (
+-- an einai busy kai h entolh den exei fugei
+	when busy_reg_out = '1' and efuge_reg_out = '0' and (
+		-- na exei ta swsta dedwmena
 		(Qj = "00000" and Qk = "00000") or 
 		(Qj = "00000" and comparator_k = '1') or 
 		(comparator_j = '1' and Qk = "00000") or 

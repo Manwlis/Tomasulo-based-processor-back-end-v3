@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/HRY415-project-2/code/RSUnitAr.vhd";
+static const char *ng0 = "C:/arxitektonikh1/HRY415-project-2/code/RSUnitAr.vhd";
 
 
 
@@ -86,10 +86,10 @@ static void work_a_2917806682_3212880686_p_0(char *t0)
     char *t61;
     char *t62;
 
-LAB0:    xsi_set_current_line(129, ng0);
-    t1 = (t0 + 5344U);
+LAB0:    xsi_set_current_line(134, ng0);
+    t1 = (t0 + 5504U);
     t2 = *((char **)t1);
-    t1 = (t0 + 12988);
+    t1 = (t0 + 13880);
     t4 = 1;
     if (2U == 2U)
         goto LAB5;
@@ -99,9 +99,9 @@ LAB6:    t4 = 0;
 LAB7:    if (t4 != 0)
         goto LAB3;
 
-LAB4:    t19 = (t0 + 5344U);
+LAB4:    t19 = (t0 + 5504U);
     t20 = *((char **)t19);
-    t19 = (t0 + 12990);
+    t19 = (t0 + 13882);
     t22 = 1;
     if (2U == 2U)
         goto LAB13;
@@ -111,9 +111,9 @@ LAB14:    t22 = 0;
 LAB15:    if (t22 != 0)
         goto LAB11;
 
-LAB12:    t37 = (t0 + 5344U);
+LAB12:    t37 = (t0 + 5504U);
     t38 = *((char **)t37);
-    t37 = (t0 + 12992);
+    t37 = (t0 + 13884);
     t40 = 1;
     if (2U == 2U)
         goto LAB21;
@@ -124,8 +124,8 @@ LAB23:    if (t40 != 0)
         goto LAB19;
 
 LAB20:
-LAB27:    t55 = (t0 + 12994);
-    t57 = (t0 + 7584);
+LAB27:    t55 = (t0 + 13886);
+    t57 = (t0 + 7744);
     t58 = (t57 + 56U);
     t59 = *((char **)t58);
     t60 = (t59 + 56U);
@@ -133,7 +133,7 @@ LAB27:    t55 = (t0 + 12994);
     memcpy(t61, t55, 2U);
     xsi_driver_first_trans_fast_port(t57);
 
-LAB2:    t62 = (t0 + 7504);
+LAB2:    t62 = (t0 + 7664);
     *((int *)t62) = 1;
 
 LAB1:    return;
@@ -144,7 +144,7 @@ LAB3:    t8 = (t0 + 4544U);
     t12 = (2U * t11);
     t13 = (0 + t12);
     t8 = (t9 + t13);
-    t14 = (t0 + 7584);
+    t14 = (t0 + 7744);
     t15 = (t14 + 56U);
     t16 = *((char **)t15);
     t17 = (t16 + 56U);
@@ -175,7 +175,7 @@ LAB11:    t26 = (t0 + 4544U);
     t30 = (2U * t29);
     t31 = (0 + t30);
     t26 = (t27 + t31);
-    t32 = (t0 + 7584);
+    t32 = (t0 + 7744);
     t33 = (t32 + 56U);
     t34 = *((char **)t33);
     t35 = (t34 + 56U);
@@ -206,7 +206,7 @@ LAB19:    t44 = (t0 + 4544U);
     t48 = (2U * t47);
     t49 = (0 + t48);
     t44 = (t45 + t49);
-    t50 = (t0 + 7584);
+    t50 = (t0 + 7744);
     t51 = (t50 + 56U);
     t52 = *((char **)t51);
     t53 = (t52 + 56U);

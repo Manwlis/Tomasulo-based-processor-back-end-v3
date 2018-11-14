@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/HRY415-project-2/code/RS_unit_logical.vhd";
+static const char *ng0 = "C:/arxitektonikh1/HRY415-project-2/code/RS_unit_logical.vhd";
 
 
 
@@ -69,10 +69,10 @@ static void work_a_1287243584_3212880686_p_0(char *t0)
     char *t43;
     char *t44;
 
-LAB0:    xsi_set_current_line(129, ng0);
-    t1 = (t0 + 5080U);
+LAB0:    xsi_set_current_line(134, ng0);
+    t1 = (t0 + 5240U);
     t2 = *((char **)t1);
-    t1 = (t0 + 13048);
+    t1 = (t0 + 13924);
     t4 = 1;
     if (2U == 2U)
         goto LAB5;
@@ -82,9 +82,9 @@ LAB6:    t4 = 0;
 LAB7:    if (t4 != 0)
         goto LAB3;
 
-LAB4:    t19 = (t0 + 5080U);
+LAB4:    t19 = (t0 + 5240U);
     t20 = *((char **)t19);
-    t19 = (t0 + 13050);
+    t19 = (t0 + 13926);
     t22 = 1;
     if (2U == 2U)
         goto LAB13;
@@ -95,8 +95,8 @@ LAB15:    if (t22 != 0)
         goto LAB11;
 
 LAB12:
-LAB19:    t37 = (t0 + 13052);
-    t39 = (t0 + 7520);
+LAB19:    t37 = (t0 + 13928);
+    t39 = (t0 + 7680);
     t40 = (t39 + 56U);
     t41 = *((char **)t40);
     t42 = (t41 + 56U);
@@ -104,7 +104,7 @@ LAB19:    t37 = (t0 + 13052);
     memcpy(t43, t37, 2U);
     xsi_driver_first_trans_fast_port(t39);
 
-LAB2:    t44 = (t0 + 7440);
+LAB2:    t44 = (t0 + 7600);
     *((int *)t44) = 1;
 
 LAB1:    return;
@@ -115,7 +115,7 @@ LAB3:    t8 = (t0 + 4280U);
     t12 = (2U * t11);
     t13 = (0 + t12);
     t8 = (t9 + t13);
-    t14 = (t0 + 7520);
+    t14 = (t0 + 7680);
     t15 = (t14 + 56U);
     t16 = *((char **)t15);
     t17 = (t16 + 56U);
@@ -146,7 +146,7 @@ LAB11:    t26 = (t0 + 4280U);
     t30 = (2U * t29);
     t31 = (0 + t30);
     t26 = (t27 + t31);
-    t32 = (t0 + 7520);
+    t32 = (t0 + 7680);
     t33 = (t32 + 56U);
     t34 = *((char **)t33);
     t35 = (t34 + 56U);

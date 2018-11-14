@@ -38,6 +38,7 @@ component RS_reg_line
 		busy_out : out  STD_LOGIC;
 		ready_for_exec : out  STD_LOGIC;
 		busy_enable : in  STD_LOGIC;
+      efuge_enable : in  STD_LOGIC;
 		Clk : in  STD_LOGIC;
 		Fop_in : in  STD_LOGIC_VECTOR (1 downto 0);
 		Fop_out : out  STD_LOGIC_VECTOR (1 downto 0)); 
@@ -65,6 +66,8 @@ component RS_arithmetic_control
 port(
 		Clk : in  STD_LOGIC;
 		IssueRs : in  STD_LOGIC;
+		CDB_valid : in  STD_LOGIC;
+		CDB_Q : in  STD_LOGIC_VECTOR (4 downto 0);
 		available : out  STD_LOGIC;
 		tagRF : out  STD_LOGIC_VECTOR (4 downto 0);
 		tagFU : out  STD_LOGIC_VECTOR (4 downto 0);
@@ -72,6 +75,7 @@ port(
 		readyFU : in  STD_LOGIC;
 		control_enable : out  STD_LOGIC_VECTOR (2 downto 0);
 		busy_enable : out  STD_LOGIC_VECTOR (2 downto 0);
+		efuge_enable : out  STD_LOGIC_VECTOR (2 downto 0);
 		ready_for_exec : in  STD_LOGIC_VECTOR (2 downto 0);
 		busy_line : in  STD_LOGIC_VECTOR (2 downto 0));
 end component;
@@ -82,7 +86,7 @@ signal Vk_out_line, Vj_out_line : array3_32;
 type array3_2 is array (0 to 2) of std_logic_vector(1 downto 0);
 signal Fop_out_line : array3_2;
 
-signal control_enable, ready_for_exec, busy_enable, busy_out : std_logic_vector(2 downto 0);
+signal control_enable, efuge_enable, ready_for_exec, busy_enable, busy_out : std_logic_vector(2 downto 0);
 signal line_select : std_logic_vector(1 downto 0);
 begin
 
@@ -99,6 +103,7 @@ GEN : for i in 0 to 2 generate
 			Vj_out => Vj_out_line(i),
 			Vk_out => Vk_out_line(i),
 			control_enable => control_enable(i),
+			efuge_enable => efuge_enable(i),
 			busy_out => busy_out(i),
 			ready_for_exec => ready_for_exec(i),
 			busy_enable => busy_enable(i),
@@ -137,12 +142,15 @@ control : RS_arithmetic_control
 port map(
 	Clk => Clk,
 	IssueRs => issue_ready,
+	CDB_Q => CDB(36 downto 32),
+	CDB_valid => CDB(37),
 	available => available,
 	tagRF => tagRF,
 	tagFU => tagFU,
 	RS_line_select => line_select,
 	readyFU => ready_FU,
 	control_enable => control_enable,
+	efuge_enable => efuge_enable,
 	busy_enable => busy_enable,
 	ready_for_exec => ready_for_exec,
 	busy_line => busy_out);

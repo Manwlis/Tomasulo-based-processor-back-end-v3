@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/HRY415-project-2/code/FU_arithmetic_control.vhd";
+static const char *ng0 = "C:/arxitektonikh1/HRY415-project-2/code/FU_arithmetic_control.vhd";
 
 
 
@@ -52,7 +52,7 @@ static void work_a_0749168933_3212880686_p_0(char *t0)
 LAB0:    xsi_set_current_line(21, ng0);
     t1 = (t0 + 1832U);
     t2 = *((char **)t1);
-    t1 = (t0 + 5735);
+    t1 = (t0 + 5887);
     t4 = 1;
     if (5U == 5U)
         goto LAB5;
@@ -66,7 +66,7 @@ LAB7:    t8 = (!(t4));
 LAB4:    xsi_set_current_line(44, ng0);
     t1 = (t0 + 1992U);
     t2 = *((char **)t1);
-    t1 = (t0 + 5745);
+    t1 = (t0 + 5897);
     t4 = 1;
     if (5U == 5U)
         goto LAB26;
@@ -118,7 +118,7 @@ LAB1:    return;
 LAB2:    xsi_set_current_line(23, ng0);
     t9 = (t0 + 1992U);
     t10 = *((char **)t9);
-    t9 = (t0 + 5740);
+    t9 = (t0 + 5892);
     t12 = 1;
     if (5U == 5U)
         goto LAB14;

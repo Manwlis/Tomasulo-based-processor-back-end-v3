@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/HRY415-project-2/code/arithmetic_unit.vhd";
+static const char *ng0 = "C:/arxitektonikh1/HRY415-project-2/code/arithmetic_unit.vhd";
 extern char *IEEE_P_3620187407;
 extern char *IEEE_P_2592010699;
 
@@ -111,8 +111,8 @@ static void work_a_2857801645_3212880686_p_0(char *t0)
 LAB0:    xsi_set_current_line(19, ng0);
     t1 = (t0 + 1352U);
     t2 = *((char **)t1);
-    t1 = (t0 + 4736U);
-    t3 = (t0 + 4842);
+    t1 = (t0 + 4840U);
+    t3 = (t0 + 4946);
     t6 = (t5 + 0U);
     t7 = (t6 + 0U);
     *((int *)t7) = 0;
@@ -131,8 +131,8 @@ LAB0:    xsi_set_current_line(19, ng0);
 
 LAB4:    t24 = (t0 + 1352U);
     t25 = *((char **)t24);
-    t24 = (t0 + 4736U);
-    t26 = (t0 + 4844);
+    t24 = (t0 + 4840U);
+    t26 = (t0 + 4948);
     t29 = (t28 + 0U);
     t30 = (t29 + 0U);
     *((int *)t30) = 0;
@@ -151,8 +151,8 @@ LAB4:    t24 = (t0 + 1352U);
 
 LAB8:    t47 = (t0 + 1352U);
     t48 = *((char **)t47);
-    t47 = (t0 + 4736U);
-    t49 = (t0 + 4846);
+    t47 = (t0 + 4840U);
+    t49 = (t0 + 4950);
     t52 = (t51 + 0U);
     t53 = (t52 + 0U);
     *((int *)t53) = 0;
@@ -170,7 +170,7 @@ LAB8:    t47 = (t0 + 1352U);
         goto LAB11;
 
 LAB12:
-LAB15:    t73 = (t0 + 4848);
+LAB15:    t73 = (t0 + 4952);
     t75 = (t0 + 3072);
     t76 = (t75 + 56U);
     t77 = *((char **)t76);
@@ -185,10 +185,10 @@ LAB2:    t80 = (t0 + 2992);
 LAB1:    return;
 LAB3:    t7 = (t0 + 1032U);
     t12 = *((char **)t7);
-    t7 = (t0 + 4704U);
+    t7 = (t0 + 4808U);
     t13 = (t0 + 1192U);
     t14 = *((char **)t13);
-    t13 = (t0 + 4720U);
+    t13 = (t0 + 4824U);
     t15 = ieee_p_3620187407_sub_767668596_3965413181(IEEE_P_3620187407, t11, t12, t7, t14, t13);
     t16 = (t11 + 12U);
     t9 = *((unsigned int *)t16);
@@ -211,10 +211,10 @@ LAB5:    xsi_size_not_matching(32U, t17, 0);
 
 LAB7:    t30 = (t0 + 1032U);
     t35 = *((char **)t30);
-    t30 = (t0 + 4704U);
+    t30 = (t0 + 4808U);
     t36 = (t0 + 1192U);
     t37 = *((char **)t36);
-    t36 = (t0 + 4720U);
+    t36 = (t0 + 4824U);
     t38 = ieee_p_3620187407_sub_767740470_3965413181(IEEE_P_3620187407, t34, t35, t30, t37, t36);
     t39 = (t34 + 12U);
     t32 = *((unsigned int *)t39);

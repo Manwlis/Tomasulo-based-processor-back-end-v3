@@ -65,56 +65,107 @@ BEGIN
    stim_proc: process
    begin		
 	
-		-- not 
-		wait for Clk_period/2;
-          issue <= '1';
-          FU_type <= "00";
-          IF_Fop <= "10";
-          IF_Ri <= "00000";
-          IF_Rj <= "00010";
-          IF_Rk <= "11010";
-
-		-- shift sto apotelesma ths proigoumenhs
+	-- Mia entolh ana kuklo xwris eksartiseis ------------
+			-- shift sto apotelesma ths prwths
       wait for Clk_period;
           issue <= '1';
-          FU_type <= "01";
+          FU_type <= "00";
           IF_Fop <= "10";
           IF_Ri <= "00001";
           IF_Rj <= "00000";
           IF_Rk <= "00000";
-
-		-- shift sto apotelesma ths proigoumenhs ston idio kataxvrhth. Ara den apo8ikeuei to prwto
-      wait for Clk_period;
-          issue <= '1';
-          FU_type <= "01";
-          IF_Fop <= "10";
-          IF_Ri <= "00001";
-          IF_Rj <= "00001";
-          IF_Rk <= "00000";
-			 
-      wait for Clk_period;
-          issue <= '0';			 
-			 
-      wait for Clk_period *30;
-		
-		-- test oti den perimenoume ton deutero telestaio sth not kai shift
-          issue <= '1';
-          FU_type <= "00";
-          IF_Fop <= "10";
-          IF_Ri <= "11111";
-          IF_Rj <= "00000";
-          IF_Rk <= "00000";		
-		wait for Clk_period;
-          issue <= '1';
-          FU_type <= "00";
-          IF_Fop <= "10";
-          IF_Ri <= "00000";
-          IF_Rj <= "00000";
-          IF_Rk <= "11111";	
-		
-		wait for Clk_period;
-          issue <= '0';
-			 
+	
+--	
+--		-- not 
+--		wait for Clk_period/2;
+--          issue <= '1';
+--          FU_type <= "00";
+--          IF_Fop <= "10";
+--          IF_Ri <= "00000";
+--          IF_Rj <= "00010";
+--          IF_Rk <= "11010";
+--	
+--		-- shift sto apotelesma ths prwths
+--      wait for Clk_period;
+--          issue <= '1';
+--          FU_type <= "01";
+--          IF_Fop <= "10";
+--          IF_Ri <= "00001";
+--          IF_Rj <= "00000";
+--          IF_Rk <= "00000";
+--	
+--		-- shift sto apotelesma ths prwths
+--      wait for Clk_period;
+--          issue <= '1';
+--          FU_type <= "01";
+--          IF_Fop <= "10";
+--          IF_Ri <= "00010";
+--          IF_Rj <= "00000";
+--          IF_Rk <= "00000";
+--	
+--		-- shift sto apotelesma ths prwths
+--      wait for Clk_period;
+--          issue <= '1';
+--          FU_type <= "01";
+--          IF_Fop <= "10";
+--          IF_Ri <= "00011";
+--          IF_Rj <= "00000";
+--          IF_Rk <= "00000";
+--	
+--		-- shift sto apotelesma ths prwths
+--      wait for Clk_period;
+--          issue <= '1';
+--          FU_type <= "01";
+--          IF_Fop <= "10";
+--          IF_Ri <= "00100";
+--          IF_Rj <= "00000";
+--          IF_Rk <= "00000";
+--	
+--		wait for Clk_period*10;
+--	
+--	
+--
+--		-- shift sto apotelesma ths proigoumenhs
+--      wait for Clk_period;
+--          issue <= '1';
+--          FU_type <= "01";
+--          IF_Fop <= "10";
+--          IF_Ri <= "00001";
+--          IF_Rj <= "00000";
+--          IF_Rk <= "00000";
+--
+--		-- shift sto apotelesma ths proigoumenhs ston idio kataxvrhth. Ara den apo8ikeuei to prwto
+--      wait for Clk_period;
+--          issue <= '1';
+--          FU_type <= "01";
+--          IF_Fop <= "10";
+--          IF_Ri <= "00001";
+--          IF_Rj <= "00001";
+--          IF_Rk <= "00000";
+--			 
+--      wait for Clk_period;
+--          issue <= '0';			 
+--			 
+--      wait for Clk_period *30;
+--		
+--		-- test oti den perimenoume ton deutero telestaio sth not kai shift
+--          issue <= '1';
+--          FU_type <= "00";
+--          IF_Fop <= "10";
+--          IF_Ri <= "11111";
+--          IF_Rj <= "00000";
+--          IF_Rk <= "00000";		
+--		wait for Clk_period;
+--          issue <= '1';
+--          FU_type <= "00";
+--          IF_Fop <= "10";
+--          IF_Ri <= "00000";
+--          IF_Rj <= "00000";
+--          IF_Rk <= "11111";	
+--		
+--		wait for Clk_period;
+--          issue <= '0';
+--			 
 			wait;
 			
    end process;

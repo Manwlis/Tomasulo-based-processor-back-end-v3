@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/arxitektonikh1/HRY415-project-2/code/RS_unit_logical.xst" -ofn "C:/arxitektonikh1/HRY415-project-2/code/RS_unit_logical.syr" 

@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/HRY415-project-2/code/logical_unit.vhd";
+static const char *ng0 = "C:/arxitektonikh1/HRY415-project-2/code/logical_unit.vhd";
 extern char *IEEE_P_2592010699;
 
 char *ieee_p_2592010699_sub_1735675855_503743352(char *, char *, char *, char *, char *, char *);
@@ -103,7 +103,7 @@ static void work_a_3252683731_3212880686_p_0(char *t0)
 LAB0:    xsi_set_current_line(15, ng0);
     t1 = (t0 + 1352U);
     t2 = *((char **)t1);
-    t1 = (t0 + 4782);
+    t1 = (t0 + 4886);
     t4 = 1;
     if (2U == 2U)
         goto LAB5;
@@ -115,7 +115,7 @@ LAB7:    if (t4 != 0)
 
 LAB4:    t23 = (t0 + 1352U);
     t24 = *((char **)t23);
-    t23 = (t0 + 4784);
+    t23 = (t0 + 4888);
     t26 = 1;
     if (2U == 2U)
         goto LAB15;
@@ -127,7 +127,7 @@ LAB17:    if (t26 != 0)
 
 LAB14:    t45 = (t0 + 1352U);
     t46 = *((char **)t45);
-    t45 = (t0 + 4786);
+    t45 = (t0 + 4890);
     t48 = 1;
     if (2U == 2U)
         goto LAB25;
@@ -138,7 +138,7 @@ LAB27:    if (t48 != 0)
         goto LAB23;
 
 LAB24:
-LAB33:    t65 = (t0 + 4788);
+LAB33:    t65 = (t0 + 4892);
     t67 = (t0 + 3072);
     t68 = (t67 + 56U);
     t69 = *((char **)t68);
@@ -153,10 +153,10 @@ LAB2:    t72 = (t0 + 2992);
 LAB1:    return;
 LAB3:    t9 = (t0 + 1032U);
     t10 = *((char **)t9);
-    t9 = (t0 + 4644U);
+    t9 = (t0 + 4748U);
     t11 = (t0 + 1192U);
     t12 = *((char **)t11);
-    t11 = (t0 + 4660U);
+    t11 = (t0 + 4764U);
     t13 = ieee_p_2592010699_sub_795620321_503743352(IEEE_P_2592010699, t8, t10, t9, t12, t11);
     t14 = (t8 + 12U);
     t15 = *((unsigned int *)t14);
@@ -194,10 +194,10 @@ LAB11:    xsi_size_not_matching(32U, t16, 0);
 
 LAB13:    t31 = (t0 + 1032U);
     t32 = *((char **)t31);
-    t31 = (t0 + 4644U);
+    t31 = (t0 + 4748U);
     t33 = (t0 + 1192U);
     t34 = *((char **)t33);
-    t33 = (t0 + 4660U);
+    t33 = (t0 + 4764U);
     t35 = ieee_p_2592010699_sub_1735675855_503743352(IEEE_P_2592010699, t30, t32, t31, t34, t33);
     t36 = (t30 + 12U);
     t37 = *((unsigned int *)t36);
@@ -235,7 +235,7 @@ LAB21:    xsi_size_not_matching(32U, t38, 0);
 
 LAB23:    t53 = (t0 + 1032U);
     t54 = *((char **)t53);
-    t53 = (t0 + 4644U);
+    t53 = (t0 + 4748U);
     t55 = ieee_p_2592010699_sub_1837678034_503743352(IEEE_P_2592010699, t52, t54, t53);
     t56 = (t52 + 12U);
     t57 = *((unsigned int *)t56);
