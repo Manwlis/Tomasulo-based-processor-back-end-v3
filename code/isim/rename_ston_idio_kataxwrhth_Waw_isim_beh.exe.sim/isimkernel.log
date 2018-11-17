@@ -1,0 +1,29 @@
+Command line:
+   rename_ston_idio_kataxwrhth_Waw_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50028
+
+Sat Nov 17 17:13:01 2018
+
+
+ Elaboration Time: 0.686404 sec
+
+ Current Memory Usage: 622.764 Meg
+
+ Total Signals          : 50626
+ Total Nets             : 11353
+ Total Signal Drivers   : 10266
+ Total Blocks           : 10959
+ Total Primitive Blocks : 8215
+ Total Processes        : 10243
+ Total Traceable Variables  : 80
+ Total Scalar Nets and Variables : 11801
+Total Line Count : 12332
+
+ Total Simulation Time: 1.10761 sec
+
+ Current Memory Usage: 622.764 Meg
+
+Sat Nov 17 17:18:28 2018
+

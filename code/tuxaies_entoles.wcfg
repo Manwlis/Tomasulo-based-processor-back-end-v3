@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/arxitektonikh1/HRY415-project-2/code/tuxaies_entoles_xwris_eksarthseis_isim_beh1.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="tuxaies_entoles_xwris_eksarthseis" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="29" />
+   <wave_markers>
+      <marker time="5000000" label="" />
+      <marker time="105000000" label="" />
+      <marker time="145000000" label="" />
+      <marker time="45000000" label="" />
+   </wave_markers>
+   <wvobject fp_name="/tuxaies_entoles_xwris_eksarthseis/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tuxaies_entoles_xwris_eksarthseis/issue" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">issue</obj_property>
+      <obj_property name="ObjectShortName">issue</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tuxaies_entoles_xwris_eksarthseis/if_ri" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">if_ri[4:0]</obj_property>
+      <obj_property name="ObjectShortName">if_ri[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#0000ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tuxaies_entoles_xwris_eksarthseis/if_rj" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">if_rj[4:0]</obj_property>
+      <obj_property name="ObjectShortName">if_rj[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#0000ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tuxaies_entoles_xwris_eksarthseis/if_rk" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">if_rk[4:0]</obj_property>
+      <obj_property name="ObjectShortName">if_rk[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#0000ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tuxaies_entoles_xwris_eksarthseis/fu_type" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">fu_type[1:0]</obj_property>
+      <obj_property name="ObjectShortName">fu_type[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tuxaies_entoles_xwris_eksarthseis/if_fop" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">if_fop[1:0]</obj_property>
+      <obj_property name="ObjectShortName">if_fop[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tuxaies_entoles_xwris_eksarthseis/accepted" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">accepted</obj_property>
+      <obj_property name="ObjectShortName">accepted</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider17" type="divider">
+      <obj_property name="label">Register File</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tuxaies_entoles_xwris_eksarthseis/uut/Register_File_module/V_unit/vreg_no_fw[0]" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[0]</obj_property>
+      <obj_property name="ObjectShortName">vreg_no_fw[0]</obj_property>
+      <obj_property name="label">Vreg[0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tuxaies_entoles_xwris_eksarthseis/uut/Register_File_module/Q_unit/qreg_no_fw[0]" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[0]</obj_property>
+      <obj_property name="ObjectShortName">qreg_no_fw[0]</obj_property>
+      <obj_property name="label">Qreg[0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tuxaies_entoles_xwris_eksarthseis/uut/Register_File_module/V_unit/vreg_no_fw[1]" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[1]</obj_property>
+      <obj_property name="ObjectShortName">vreg_no_fw[1]</obj_property>
+      <obj_property name="label">Vreg[1]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tuxaies_entoles_xwris_eksarthseis/uut/Register_File_module/Q_unit/qreg_no_fw[1]" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[1]</obj_property>
+      <obj_property name="ObjectShortName">qreg_no_fw[1]</obj_property>
+      <obj_property name="label">Qreg[1]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tuxaies_entoles_xwris_eksarthseis/uut/Register_File_module/V_unit/vreg_no_fw[2]" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[2]</obj_property>
+      <obj_property name="ObjectShortName">vreg_no_fw[2]</obj_property>
+      <obj_property name="label">Vreg[2]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tuxaies_entoles_xwris_eksarthseis/uut/Register_File_module/Q_unit/qreg_no_fw[2]" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[2]</obj_property>
+      <obj_property name="ObjectShortName">qreg_no_fw[2]</obj_property>
+      <obj_property name="label">Qreg[2]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tuxaies_entoles_xwris_eksarthseis/uut/Register_File_module/V_unit/vreg_no_fw[3]" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[3]</obj_property>
+      <obj_property name="ObjectShortName">vreg_no_fw[3]</obj_property>
+      <obj_property name="label">Vreg[3]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tuxaies_entoles_xwris_eksarthseis/uut/Register_File_module/Q_unit/qreg_no_fw[3]" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[3]</obj_property>
+      <obj_property name="ObjectShortName">qreg_no_fw[3]</obj_property>
+      <obj_property name="label">Qreg[3]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tuxaies_entoles_xwris_eksarthseis/uut/Register_File_module/V_unit/vreg_no_fw[4]" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[4]</obj_property>
+      <obj_property name="ObjectShortName">vreg_no_fw[4]</obj_property>
+      <obj_property name="label">Vreg[4]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tuxaies_entoles_xwris_eksarthseis/uut/Register_File_module/Q_unit/qreg_no_fw[4]" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[4]</obj_property>
+      <obj_property name="ObjectShortName">qreg_no_fw[4]</obj_property>
+      <obj_property name="label">Qreg[4]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tuxaies_entoles_xwris_eksarthseis/uut/Register_File_module/V_unit/vreg_no_fw[5]" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[5]</obj_property>
+      <obj_property name="ObjectShortName">vreg_no_fw[5]</obj_property>
+      <obj_property name="label">Vreg[5]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tuxaies_entoles_xwris_eksarthseis/uut/Register_File_module/Q_unit/qreg_no_fw[5]" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[5]</obj_property>
+      <obj_property name="ObjectShortName">qreg_no_fw[5]</obj_property>
+      <obj_property name="label">Qreg[5]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tuxaies_entoles_xwris_eksarthseis/uut/Register_File_module/V_unit/vreg_no_fw[6]" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[6]</obj_property>
+      <obj_property name="ObjectShortName">vreg_no_fw[6]</obj_property>
+      <obj_property name="label">Vreg[6]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tuxaies_entoles_xwris_eksarthseis/uut/Register_File_module/Q_unit/qreg_no_fw[6]" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[6]</obj_property>
+      <obj_property name="ObjectShortName">qreg_no_fw[6]</obj_property>
+      <obj_property name="label">Qreg[6]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider27" type="divider">
+      <obj_property name="label">CDB</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tuxaies_entoles_xwris_eksarthseis/uut/Register_File_module/Q_unit/cdb_valid" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cdb_valid</obj_property>
+      <obj_property name="ObjectShortName">cdb_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tuxaies_entoles_xwris_eksarthseis/uut/Register_File_module/Q_unit/cdb_q" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cdb_q[4:0]</obj_property>
+      <obj_property name="ObjectShortName">cdb_q[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tuxaies_entoles_xwris_eksarthseis/uut/Register_File_module/V_unit/cdb_value" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cdb_value[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cdb_value[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tuxaies_entoles_xwris_eksarthseis/uut/CDBunit_module/request" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">request[2:0]</obj_property>
+      <obj_property name="ObjectShortName">request[2:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#808000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tuxaies_entoles_xwris_eksarthseis/uut/CDBunit_module/grant" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">grant[2:0]</obj_property>
+      <obj_property name="ObjectShortName">grant[2:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#808000</obj_property>
+   </wvobject>
+</wave_config>

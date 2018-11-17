@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-11-08T16:49:51</DateModified>
+  <DateModified>2018-11-17T14:41:02</DateModified>
   <ModuleName>RS_unit_logical</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/HRY415-project-2/code/iseconfig/RS_unit_logical.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/HRY415-project-2/code\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/arxitektonikh1/HRY415-project-2/code/iseconfig/RS_unit_logical.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/arxitektonikh1/HRY415-project-2/code\</ImplementationReportsDirectory>
   <DateInitialized>2018-10-29T15:33:49</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

@@ -8,7 +8,7 @@
 <!-- Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/arxitektonikh1/HRY415-project-2/code/Back_end_test.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/arxitektonikh1/HRY415-project-2/code/rename_ston_idio_kataxwrhth_Waw.vhd&quot; into library work</arg>
 </msg>
 
 </messages>
