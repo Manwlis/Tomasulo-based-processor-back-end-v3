@@ -119,6 +119,8 @@ begin
 		end if;
 	end process;
 	
+-- epeidh to grant prepei na bgenei eksw ws alla 8eloume kai na to xrhsimpoihsoume sthn mnhmh san eisodo
+-- exoume to eswteriko shma sig_grant
 grant <= sig_grant;
 
 end Behavioral;

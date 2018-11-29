@@ -1,33 +1,5 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date:    17:39:41 10/23/2018 
--- Design Name: 
--- Module Name:    CDBunit - Behavioral 
--- Project Name: 
--- Target Devices: 
--- Tool versions: 
--- Description: 
---
--- Dependencies: 
---
--- Revision: 
--- Revision 0.01 - File Created
--- Additional Comments: 
---
-----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx primitives in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
 
 entity CDBunit is
     Port ( 
@@ -106,6 +78,7 @@ port map(
  sel => sel,
  output => CDBout(31 downto 0));
 
+-- an den zhthsei kanenas request 8a perasei to D wste na kseroun oi liptes oti ta dedomena tou CDB einai skoupidia.
 Q_mux : mux4to1_5bit
 port map(
  A => Q1,
@@ -123,6 +96,7 @@ port map(
  sel => sel_before_reg,
  Clk => Clk);
 
+-- autoi oi registers xrhsimopoiountai gia na kathisterhsoume shmata pou 8eloume ston epomeno kuklo opou 8a perasoun ta dedomena.
 valid_reg : Reg1BitR
 port map(
  Clk => Clk,

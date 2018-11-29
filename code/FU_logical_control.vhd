@@ -20,11 +20,13 @@ begin
 			if grant = '1' then
 				stage1_enable <= '1';
 				ready <= '1';
+			-- an exei gemisei to pipeline tou kai den parei grant, blockarei.
 			elsif grant = '0' then
 				stage1_enable <= '0';
 				ready <= '0';
 			end if;
 		else
+			-- an den exei egkurh entolh na steilei ston epomeno kuklo den zhtaei request.
 			stage1_enable <= '1';
 			ready <= '1';
 			request <= '0';

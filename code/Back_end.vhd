@@ -1,7 +1,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-
+-- top module. Sundeei tis ipomerou monades. Den exei idiaiterh logikh.
 
 entity Back_end is
 	port(

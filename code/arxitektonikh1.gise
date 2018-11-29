@@ -22,6 +22,9 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="arxitektonikh1.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Back_end_test_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Back_end_test_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="Back_end_test_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="CDBunit_guide.ncd" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="FU_arithmetic_guide.ncd" xil_pn:origination="imported"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="entoles_se_mia_monada_isim_beh.exe"/>
@@ -38,7 +41,11 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1542467325" xil_pn:in_ck="-8171508336365017638" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1542467325">
+    <transform xil_pn:end_ts="1543511310" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1543511310">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1543513387" xil_pn:in_ck="-6898154656544413142" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1543513387">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
@@ -85,7 +92,6 @@
       <outfile xil_pn:name="flipflop.vhd"/>
       <outfile xil_pn:name="logical_unit.vhd"/>
       <outfile xil_pn:name="mux.vhd"/>
-      <outfile xil_pn:name="mux16bit.vhd"/>
       <outfile xil_pn:name="mux16to1_32Bit.vhd"/>
       <outfile xil_pn:name="mux16to1_5bit.vhd"/>
       <outfile xil_pn:name="mux32Bit.vhd"/>
@@ -103,19 +109,19 @@
       <outfile xil_pn:name="tuxaies_entoles_me_eksartiseis.vhd"/>
       <outfile xil_pn:name="tuxaies_entoles_xwris_eksarthseis.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1542467325" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-2287529374397299448" xil_pn:start_ts="1542467325">
+    <transform xil_pn:end_ts="1543511310" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-6911583614827295076" xil_pn:start_ts="1543511310">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1542467325" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-5031563422087207670" xil_pn:start_ts="1542467325">
+    <transform xil_pn:end_ts="1543511310" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-4651543632216061026" xil_pn:start_ts="1543511310">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1542463382" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-7713188352356947300" xil_pn:start_ts="1542463382">
+    <transform xil_pn:end_ts="1543511310" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-5077458075847668155" xil_pn:start_ts="1543511310">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1542467325" xil_pn:in_ck="-8171508336365017638" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1542467325">
+    <transform xil_pn:end_ts="1543513387" xil_pn:in_ck="-6898154656544413142" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1543513387">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
@@ -163,7 +169,6 @@
       <outfile xil_pn:name="flipflop.vhd"/>
       <outfile xil_pn:name="logical_unit.vhd"/>
       <outfile xil_pn:name="mux.vhd"/>
-      <outfile xil_pn:name="mux16bit.vhd"/>
       <outfile xil_pn:name="mux16to1_32Bit.vhd"/>
       <outfile xil_pn:name="mux16to1_5bit.vhd"/>
       <outfile xil_pn:name="mux32Bit.vhd"/>
@@ -181,7 +186,7 @@
       <outfile xil_pn:name="tuxaies_entoles_me_eksartiseis.vhd"/>
       <outfile xil_pn:name="tuxaies_entoles_xwris_eksarthseis.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1542467339" xil_pn:in_ck="-8171508336365017638" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-2672376164991164942" xil_pn:start_ts="1542467325">
+    <transform xil_pn:end_ts="1543513393" xil_pn:in_ck="-6898154656544413142" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-3959046898664664038" xil_pn:start_ts="1543513387">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
@@ -189,22 +194,22 @@
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Back_end_test_beh.prj"/>
+      <outfile xil_pn:name="Back_end_test_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="rename_ston_idio_kataxwrhth_Waw_beh.prj"/>
-      <outfile xil_pn:name="rename_ston_idio_kataxwrhth_Waw_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1542467340" xil_pn:in_ck="6538706252317807572" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="1185651786992236575" xil_pn:start_ts="1542467339">
+    <transform xil_pn:end_ts="1543513393" xil_pn:in_ck="2075886310095356648" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-2198649126157546489" xil_pn:start_ts="1543513393">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Back_end_test_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="rename_ston_idio_kataxwrhth_Waw_isim_beh.wdb"/>
     </transform>
   </transforms>
 

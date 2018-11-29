@@ -80,8 +80,10 @@ GEN : for i in 0 to 31 generate
 		Reset => '0',
 		Din => CDB_value,
 		Dout => Vreg_no_fw(i));
-		
-mux_forward :mux32Bit
+	
+	-- kanei forward to V gia otan xreiazetai mia kainourgia entolh
+	-- ta dedomena apo to cdb kai den exoun prolabei na graftoun.
+	mux_forward :mux32Bit
 	port map(
 		A => Vreg_no_fw(i),
 		B => CDB_value,
@@ -90,6 +92,7 @@ mux_forward :mux32Bit
 
 end generate GEN;
 
+-- read port 1
 muxj : mux32to1_32Bit
 port map( 
 	in0 => Vreg_out(0),
@@ -127,6 +130,7 @@ port map(
 	sel => Rj,
 	output => Vj);
 	
+-- read port 2
 muxk : mux32to1_32Bit
 port map( 
 	in0 => Vreg_out(0),

@@ -28,10 +28,20 @@ signal busy_enable_in, busy_enable_out, efuge_enable_out, control_enable_out : S
 signal line_select : STD_LOGIC_VECTOR (1 downto 0);
 
 begin
+	
+	-- pia entolh 8a stal8ei gia ektelesh
 	RS_line_select <= line_select;
+	
+	-- mhdenizetai otan den iparxou eleu8eres grammes kai den eleu8erwnetai kapia twra.
 	available <= '0' when busy_line = "111" and busy_enable_out = "000" else '1';
+	
+	-- enable tou busy reg. Energopoieitai otan erxetai kainourgia entolh 'h diagrafetai.
 	busy_enable <= busy_enable_in or busy_enable_out;
+	
+	-- enable tou efuge reg. Energopoieitai otan stelnetai h entolh gia ektelesh 'h diagrafetai.
 	efuge_enable <= efuge_enable_out or control_enable_out;
+	
+	-- enable twn ipoloipwn kataxwrhtwn. Energopoieitai otan diagrafetai h entolh.
 	control_enable <= control_enable_out;
 
 	-- eisodos entolwn

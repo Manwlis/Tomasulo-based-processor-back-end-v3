@@ -79,6 +79,7 @@ port(
 		busy_line : in  STD_LOGIC_VECTOR (1 downto 0));
 end component;
 
+-- arrays gia to generate
 type array3_32 is array (0 to 1) of std_logic_vector(31 downto 0);
 signal Vk_out_line, Vj_out_line : array3_32;
 
@@ -90,6 +91,7 @@ signal line_select : std_logic_vector(1 downto 0);
 
 begin
 
+-- 2 8eseis gia to logical
 GEN : for i in 0 to 1 generate
 		RS_reg_lines : RS_reg_line
 		port map (
@@ -112,6 +114,7 @@ GEN : for i in 0 to 1 generate
 			Fop_out => Fop_out_line(i));
 end generate GEN;
 
+-- autoi oi 3 poliplektes dialegoun pia entolh 8a paei sto fu
 Vj_mux : mux4to1_32Bit
 port map(
 	A => Vj_out_line(0),
@@ -153,6 +156,7 @@ port map(
 	busy_enable => busy_enable,
 	ready_for_exec => ready_for_exec,
 	busy_line => busy_out);
-	
+-- ta  shmata elenxou gia tis grammes kataxwrhtwn einai 2bita kai h ka8e grammh pernei 1 bit.
+
 end Behavioral;
 

@@ -1,6 +1,9 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
+-- to rf apoteleite apo duo modules.
+-- Ena gia tous V regs kai thn logikh tous kai ena gia tous Q blocks kai thn logikh tous.
+
 entity Register_File is
 	Port(
 		Instr_valid : in  STD_LOGIC;

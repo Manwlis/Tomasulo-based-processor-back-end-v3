@@ -19,19 +19,20 @@ begin
 	begin
 	
 		if not(tag_start = "00000") then
-			-- exoun kai oi duo entolh
+			-- exoun kai ta duo epipeda kataxwrhtwn egkurh entolh
 			if not(tag_mid = "00000") then
 				request <= '1';
 				if grant = '1' then
 					ready <= '1';
 					stage1_enable <= '1';
 					stage2_enable <= '1';
+				-- den pernei grant kai blockarei olo to pipeline tou
 				else
 					ready <= '0';
 					stage1_enable <= '0';
 					stage2_enable <= '0';
 				end if;
-			-- exei mono o prwtos entolh
+			-- exei mono to prwto epipedo kataxwrhtwn egkurh entolh
 			else
 				request <= '0';
 				stage1_enable <= '1';
@@ -40,18 +41,19 @@ begin
 			end if;
 		
 		else
-			-- exei mono o deuteros entolh
+			-- exei mono to deutero epipedo entolh, ara to prwto einai panta dia8esimo
 			if not(tag_mid = "00000") then
 				request <= '1';
 				ready <= '1';
 				stage1_enable <= '1';
 				if grant = '1' then
 					stage2_enable <= '1';
+				-- den pernei grant kai blockarei mono to deutero epipedo kataxwrhtwn.
 				else 
 					stage2_enable <= '0';
 				end if;
 				
-			-- den exei kanenas entolh
+			-- den exei kanena epipedo entolh
 			else
 				request <= '0';
 				ready <= '1';

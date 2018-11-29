@@ -103,6 +103,7 @@ GEN : for i in 0 to 31 generate
 		Din => Qreq_in(i),
 		Dout => Qreg_no_fw(i));
 		
+	-- comparator qreg me CDB_Q
 	comp_out(i) <= 
 		(Qreg_no_fw(i)(0) xnor CDB_Q(0)) and
 		(Qreg_no_fw(i)(1) xnor CDB_Q(1)) and
@@ -111,9 +112,14 @@ GEN : for i in 0 to 31 generate
 		(Qreg_no_fw(i)(4) xnor CDB_Q(4))
 		when CDB_valid = '1' else '0';
 		
+	-- allazei times o q reg otan er8ei katallhlo apotelesma 'h kainourgia entolh.
 	reg_enable(i) <= comp_out(i) or demuxOut(i);
+	
+	-- anoigei to enable tou antistoixou V reg otan erxetai katallhlo apotelesma.
 	Value_WrEn(i) <= comp_out(i);
 	
+	-- kanei forward to Q gia otan xreiazetai mia kainourgia entolh
+	-- ta dedomena apo to cdb kai den exoun prolabei na graftoun.
 	mux_forward : mux5Bit
 	port map (
 		A => Qreg_no_fw(i),
@@ -122,12 +128,14 @@ GEN : for i in 0 to 31 generate
 		Outt => Qreg_out(i));
 end generate GEN;
 
+-- write port
 demuxQ : demux5to32
 port map (
 	sel => Ri,
 	input => Instr_valid,
 	output => demuxOut);
 	
+-- read port 1
 muxj : mux32to1_5Bit
 port map( 
 	in0 => Qreg_out(0),
@@ -165,6 +173,7 @@ port map(
 	sel => Rj,
 	output => Qj);
 
+-- read port 2
 muxk : mux32to1_5Bit
 port map( 
 	in0 => Qreg_out(0),

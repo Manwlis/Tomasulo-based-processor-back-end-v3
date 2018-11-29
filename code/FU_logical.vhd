@@ -62,6 +62,8 @@ signal stage1_enable : STD_LOGIC;
 
 begin
 
+-- 2 epipeda kataxwrhtwn gia na exei 2 ka8isterhseis.
+
 -- kataxwrhtes eisodou
 Value_in1_reg : Reg32BitR
 port map(
