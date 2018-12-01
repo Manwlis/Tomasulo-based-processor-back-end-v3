@@ -2,8 +2,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 entity V_block is
-    Port ( CDB_value : in  STD_LOGIC_VECTOR (31 downto 0);
-           Rj : in  STD_LOGIC_VECTOR (4 downto 0);
+    Port ( Rj : in  STD_LOGIC_VECTOR (4 downto 0);
            Rk : in  STD_LOGIC_VECTOR (4 downto 0);
            Vj : out  STD_LOGIC_VECTOR (31 downto 0);
            Vk : out  STD_LOGIC_VECTOR (31 downto 0);
@@ -80,15 +79,6 @@ GEN : for i in 0 to 31 generate
 		Reset => '0',
 		Din => CDB_value,
 		Dout => Vreg_no_fw(i));
-	
-	-- kanei forward to V gia otan xreiazetai mia kainourgia entolh
-	-- ta dedomena apo to cdb kai den exoun prolabei na graftoun.
-	mux_forward :mux32Bit
-	port map(
-		A => Vreg_no_fw(i),
-		B => CDB_value,
-		sel => V_WrEn(i),
-		Outt => Vreg_out(i));
 
 end generate GEN;
 
@@ -168,5 +158,6 @@ port map(
 	sel => Rk,
 	output => Vk);
 
+-- forward apo buffers ---------------------------------------------
 end Behavioral;
 

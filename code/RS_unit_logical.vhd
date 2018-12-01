@@ -16,7 +16,8 @@ entity RS_unit_logical is
 		Vj_out:out std_logic_vector(31 downto 0);
 		Vk_out:out std_logic_vector(31 downto 0);
 		Fop_out:out std_logic_vector(1 downto 0);
-		tagRF: out  STD_LOGIC_VECTOR (4 downto 0);
+		
+		tag_ROB: in  STD_LOGIC_VECTOR (4 downto 0);
 		tagFU:out std_logic_vector(4 downto 0));
 end RS_unit_logical;
 
@@ -37,10 +38,12 @@ component RS_reg_line
 		busy_out : out  STD_LOGIC;
 		ready_for_exec : out  STD_LOGIC;
 		busy_enable : in  STD_LOGIC;
-      efuge_enable : in  STD_LOGIC;
 		Clk : in  STD_LOGIC;
 		Fop_in : in  STD_LOGIC_VECTOR (1 downto 0);
-		Fop_out : out  STD_LOGIC_VECTOR (1 downto 0)); 
+		Fop_out : out  STD_LOGIC_VECTOR (1 downto 0);
+			  
+      tag_in : in  STD_LOGIC_VECTOR (4 downto 0);		  
+      tag_out : out  STD_LOGIC_VECTOR (4 downto 0)); 
 END COMPONENT;
 
 -- gia ta value
@@ -68,13 +71,10 @@ port(
 		CDB_valid : in  STD_LOGIC;
 		CDB_Q : in  STD_LOGIC_VECTOR (4 downto 0);
 		available : out  STD_LOGIC;
-		tagRF : out  STD_LOGIC_VECTOR (4 downto 0);
-		tagFU : out  STD_LOGIC_VECTOR (4 downto 0);
 		RS_line_select : out  STD_LOGIC_VECTOR (1 downto 0);
 		readyFU : in  STD_LOGIC;
 		control_enable : out  STD_LOGIC_VECTOR (1 downto 0);
 		busy_enable : out  STD_LOGIC_VECTOR (1 downto 0);
-		efuge_enable : out  STD_LOGIC_VECTOR (1 downto 0);
 		ready_for_exec : in  STD_LOGIC_VECTOR (1 downto 0);
 		busy_line : in  STD_LOGIC_VECTOR (1 downto 0));
 end component;
@@ -82,6 +82,9 @@ end component;
 -- arrays gia to generate
 type array3_32 is array (0 to 1) of std_logic_vector(31 downto 0);
 signal Vk_out_line, Vj_out_line : array3_32;
+
+type array3_5 is array (0 to 1) of std_logic_vector(4 downto 0);
+signal tag_out : array3_5;
 
 type array3_2 is array (0 to 1) of std_logic_vector(1 downto 0);
 signal Fop_out_line : array3_2;
@@ -99,22 +102,23 @@ GEN : for i in 0 to 1 generate
 			RF_Vk => RF_Vk,
 			RF_Qj => RF_Qj,
 			RF_Qk => RF_Qk,
+			tag_in => tag_ROB,
 			CDB_V => CDB(31 downto 0),
 			CDB_Q => CDB(36 downto 32),
 			CDB_valid => CDB(37),
 			Vj_out => Vj_out_line(i),
 			Vk_out => Vk_out_line(i),
 			control_enable => control_enable(i),
-			efuge_enable => efuge_enable(i),
 			busy_out => busy_out(i),
 			ready_for_exec => ready_for_exec(i),
 			busy_enable => busy_enable(i),
 			Clk => Clk,
 			Fop_in => Fop,
-			Fop_out => Fop_out_line(i));
+			Fop_out => Fop_out_line(i),
+			tag_out => tag_out(i));
 end generate GEN;
 
--- autoi oi 3 poliplektes dialegoun pia entolh 8a paei sto fu
+-- autoi oi 4 poliplektes dialegoun pia entolh 8a paei sto fu
 Vj_mux : mux4to1_32Bit
 port map(
 	A => Vj_out_line(0),
@@ -139,6 +143,12 @@ Fop_out <=
 	Fop_out_line(1) when line_select = "01" else
 	"00";
 	
+-- tag mux
+tagFU <= 
+	tag_out(0) when line_select = "00" else 
+	tag_out(1) when line_select = "01" else 
+	"00000";
+	
 -- control
 control : RS_logical_control
 port map(
@@ -147,12 +157,9 @@ port map(
 	CDB_Q => CDB(36 downto 32),
 	CDB_valid => CDB(37),
 	available => available,
-	tagRF => tagRF,
-	tagFU => tagFU,
 	RS_line_select => line_select,
 	readyFU => ready_FU,
 	control_enable => control_enable,
-	efuge_enable => efuge_enable,
 	busy_enable => busy_enable,
 	ready_for_exec => ready_for_exec,
 	busy_line => busy_out);

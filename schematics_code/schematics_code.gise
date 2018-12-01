@@ -19,12 +19,9 @@
 
   <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
 
-  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="arxitektonikh1.xise"/>
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="schematics_code.xise"/>
 
-  <files xmlns="http://www.xilinx.com/XMLSchema">
-    <file xil_pn:fileType="FILE_NCD" xil_pn:name="CDBunit_guide.ncd" xil_pn:origination="imported"/>
-    <file xil_pn:fileType="FILE_NCD" xil_pn:name="FU_arithmetic_guide.ncd" xil_pn:origination="imported"/>
-  </files>
+  <files xmlns="http://www.xilinx.com/XMLSchema"/>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema"/>
 

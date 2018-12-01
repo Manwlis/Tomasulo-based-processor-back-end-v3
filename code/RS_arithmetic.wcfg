@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/arxitektonikh1/HRY415-project-3/code/RS_arithmetic_test_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="rs_arithmetic_test" />
+            <top_module name="std_logic_1164" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="21" />
+   <wvobject fp_name="/rs_arithmetic_test/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider34" type="divider">
+      <obj_property name="label">issue</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rs_arithmetic_test/available" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">available</obj_property>
+      <obj_property name="ObjectShortName">available</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rs_arithmetic_test/issue_ready" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">issue_ready</obj_property>
+      <obj_property name="ObjectShortName">issue_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider33" type="divider">
+      <obj_property name="label">eisodoi</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rs_arithmetic_test/tag_rob" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tag_rob[4:0]</obj_property>
+      <obj_property name="ObjectShortName">tag_rob[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rs_arithmetic_test/rf_vj" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rf_vj[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rf_vj[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rs_arithmetic_test/rf_vk" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rf_vk[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rf_vk[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rs_arithmetic_test/rf_qj" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rf_qj[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rf_qj[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rs_arithmetic_test/rf_qk" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rf_qk[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rf_qk[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rs_arithmetic_test/fop" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">fop[1:0]</obj_property>
+      <obj_property name="ObjectShortName">fop[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider35" type="divider">
+      <obj_property name="label">cdb</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rs_arithmetic_test/cdb[37]" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[37]</obj_property>
+      <obj_property name="ObjectShortName">cdb[37]</obj_property>
+      <obj_property name="label">valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="vbus75" type="vbus" db_ref_id="1">
+      <obj_property name="label">Q</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/rs_arithmetic_test/cdb[36]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[36]</obj_property>
+         <obj_property name="ObjectShortName">cdb[36]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/rs_arithmetic_test/cdb[35]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[35]</obj_property>
+         <obj_property name="ObjectShortName">cdb[35]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/rs_arithmetic_test/cdb[34]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[34]</obj_property>
+         <obj_property name="ObjectShortName">cdb[34]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/rs_arithmetic_test/cdb[33]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[33]</obj_property>
+         <obj_property name="ObjectShortName">cdb[33]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/rs_arithmetic_test/cdb[32]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[32]</obj_property>
+         <obj_property name="ObjectShortName">cdb[32]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="vbus82" type="vbus" db_ref_id="1">
+      <obj_property name="label">V</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <wvobject fp_name="/rs_arithmetic_test/cdb[31]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[31]</obj_property>
+         <obj_property name="ObjectShortName">cdb[31]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/rs_arithmetic_test/cdb[30]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[30]</obj_property>
+         <obj_property name="ObjectShortName">cdb[30]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/rs_arithmetic_test/cdb[29]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[29]</obj_property>
+         <obj_property name="ObjectShortName">cdb[29]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/rs_arithmetic_test/cdb[28]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[28]</obj_property>
+         <obj_property name="ObjectShortName">cdb[28]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/rs_arithmetic_test/cdb[27]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[27]</obj_property>
+         <obj_property name="ObjectShortName">cdb[27]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/rs_arithmetic_test/cdb[26]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[26]</obj_property>
+         <obj_property name="ObjectShortName">cdb[26]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/rs_arithmetic_test/cdb[25]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[25]</obj_property>
+         <obj_property name="ObjectShortName">cdb[25]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/rs_arithmetic_test/cdb[24]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[24]</obj_property>
+         <obj_property name="ObjectShortName">cdb[24]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/rs_arithmetic_test/cdb[23]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[23]</obj_property>
+         <obj_property name="ObjectShortName">cdb[23]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/rs_arithmetic_test/cdb[22]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[22]</obj_property>
+         <obj_property name="ObjectShortName">cdb[22]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/rs_arithmetic_test/cdb[21]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[21]</obj_property>
+         <obj_property name="ObjectShortName">cdb[21]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/rs_arithmetic_test/cdb[20]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[20]</obj_property>
+         <obj_property name="ObjectShortName">cdb[20]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/rs_arithmetic_test/cdb[19]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[19]</obj_property>
+         <obj_property name="ObjectShortName">cdb[19]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/rs_arithmetic_test/cdb[18]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[18]</obj_property>
+         <obj_property name="ObjectShortName">cdb[18]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/rs_arithmetic_test/cdb[17]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[17]</obj_property>
+         <obj_property name="ObjectShortName">cdb[17]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/rs_arithmetic_test/cdb[16]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[16]</obj_property>
+         <obj_property name="ObjectShortName">cdb[16]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/rs_arithmetic_test/cdb[15]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[15]</obj_property>
+         <obj_property name="ObjectShortName">cdb[15]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/rs_arithmetic_test/cdb[14]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[14]</obj_property>
+         <obj_property name="ObjectShortName">cdb[14]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/rs_arithmetic_test/cdb[13]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[13]</obj_property>
+         <obj_property name="ObjectShortName">cdb[13]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/rs_arithmetic_test/cdb[12]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[12]</obj_property>
+         <obj_property name="ObjectShortName">cdb[12]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/rs_arithmetic_test/cdb[11]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[11]</obj_property>
+         <obj_property name="ObjectShortName">cdb[11]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/rs_arithmetic_test/cdb[10]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[10]</obj_property>
+         <obj_property name="ObjectShortName">cdb[10]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/rs_arithmetic_test/cdb[9]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[9]</obj_property>
+         <obj_property name="ObjectShortName">cdb[9]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/rs_arithmetic_test/cdb[8]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[8]</obj_property>
+         <obj_property name="ObjectShortName">cdb[8]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/rs_arithmetic_test/cdb[7]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[7]</obj_property>
+         <obj_property name="ObjectShortName">cdb[7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/rs_arithmetic_test/cdb[6]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[6]</obj_property>
+         <obj_property name="ObjectShortName">cdb[6]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/rs_arithmetic_test/cdb[5]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[5]</obj_property>
+         <obj_property name="ObjectShortName">cdb[5]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/rs_arithmetic_test/cdb[4]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[4]</obj_property>
+         <obj_property name="ObjectShortName">cdb[4]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/rs_arithmetic_test/cdb[3]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[3]</obj_property>
+         <obj_property name="ObjectShortName">cdb[3]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/rs_arithmetic_test/cdb[2]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">cdb[2]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/rs_arithmetic_test/cdb[1]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">cdb[1]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/rs_arithmetic_test/cdb[0]" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">cdb[0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="divider32" type="divider">
+      <obj_property name="label">FU</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rs_arithmetic_test/ready_fu" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ready_fu</obj_property>
+      <obj_property name="ObjectShortName">ready_fu</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rs_arithmetic_test/vj_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">vj_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">vj_out[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rs_arithmetic_test/vk_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">vk_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">vk_out[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rs_arithmetic_test/fop_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">fop_out[1:0]</obj_property>
+      <obj_property name="ObjectShortName">fop_out[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rs_arithmetic_test/tagfu" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tagfu[4:0]</obj_property>
+      <obj_property name="ObjectShortName">tagfu[4:0]</obj_property>
+   </wvobject>
+</wave_config>

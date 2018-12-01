@@ -1,7 +1,5 @@
-
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
- 
  
 ENTITY RS_logical_test IS
 END RS_logical_test;
@@ -25,7 +23,7 @@ ARCHITECTURE behavior OF RS_logical_test IS
          Vj_out : OUT  std_logic_vector(31 downto 0);
          Vk_out : OUT  std_logic_vector(31 downto 0);
          Fop_out : OUT  std_logic_vector(1 downto 0);
-         tagRF : OUT  std_logic_vector(4 downto 0);
+         tag_ROB : IN  std_logic_vector(4 downto 0);
          tagFU : OUT  std_logic_vector(4 downto 0)
         );
     END COMPONENT;
@@ -41,13 +39,13 @@ ARCHITECTURE behavior OF RS_logical_test IS
    signal Fop : std_logic_vector(1 downto 0) := (others => '0');
    signal issue_ready : std_logic := '0';
    signal ready_FU : std_logic := '0';
+   signal tag_ROB : std_logic_vector(4 downto 0) := (others => '0');
 
  	--Outputs
    signal available : std_logic;
    signal Vj_out : std_logic_vector(31 downto 0);
    signal Vk_out : std_logic_vector(31 downto 0);
    signal Fop_out : std_logic_vector(1 downto 0);
-   signal tagRF : std_logic_vector(4 downto 0);
    signal tagFU : std_logic_vector(4 downto 0);
 
    -- Clock period definitions
@@ -70,7 +68,7 @@ BEGIN
           Vj_out => Vj_out,
           Vk_out => Vk_out,
           Fop_out => Fop_out,
-          tagRF => tagRF,
+          tag_ROB => tag_ROB,
           tagFU => tagFU
         );
 
@@ -97,6 +95,7 @@ BEGIN
          Fop<="00";
          issue_ready <='0';
          ready_FU<='1';
+			tag_ROB <="00000";
 		--me issue ginete save
       wait for Clk_period;
 			RF_Vj <="00000000000000000000000000000001";
@@ -106,6 +105,7 @@ BEGIN
          CDB <="00000000000000000000000000000000000000";
          Fop<="00";
          issue_ready <='1';
+			tag_ROB <="11111";
       -- fernoume times apo cdb
 		wait for Clk_period*3;
 			issue_ready <='0';
@@ -122,6 +122,7 @@ BEGIN
 			
 		wait for Clk_period*5;
 			ready_FU<='0';
+
       wait;
    end process;
 

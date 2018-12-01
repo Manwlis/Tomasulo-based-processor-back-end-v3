@@ -1,0 +1,22 @@
+rs line 
+	datapath
+		efuge to efuge
+		krataei tags tou rob
+
+rs kai ta duo
+	control 
+		efuge to process gia thn diagrafh kai pire thn doulia tou afto gia thn apostolh
+	datapath
+		mux gia ta tags
+		tags eisodos anti eksodos
+
+issue 
+	ta tags den pernane apo ekei pia
+
+top 
+	tag pane kateu8eian sta rs apo rf
+
+RF
+	V block 
+		efuge to forward apo ton CDB
+		/* TO-DO */ na mpei forward apo buffers

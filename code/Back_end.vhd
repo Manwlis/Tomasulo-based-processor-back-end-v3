@@ -34,18 +34,13 @@ component Issue_unit
 		Fop : out  STD_LOGIC_VECTOR (1 downto 0);
 		Ri : out  STD_LOGIC_VECTOR (4 downto 0);
 		Rj : out  STD_LOGIC_VECTOR (4 downto 0);
-		Rk : out  STD_LOGIC_VECTOR (4 downto 0);
-		tag1 : in  STD_LOGIC_VECTOR (4 downto 0);
-		tag2 : in  STD_LOGIC_VECTOR (4 downto 0);
-		tag3 : in  STD_LOGIC_VECTOR (4 downto 0);
-		tagRF : out STD_LOGIC_VECTOR (4 downto 0));
+		Rk : out  STD_LOGIC_VECTOR (4 downto 0));
 end component;
 	
 signal available, issueRS : STD_LOGIC_VECTOR (2 downto 0) := "000";
 signal Instr_valid :STD_LOGIC;
 signal Fop : STD_LOGIC_VECTOR (1 downto 0);
-signal Ri, Rj, Rk, tag_logical, tag_arithmetic, tagRF : STD_LOGIC_VECTOR (4 downto 0);
-signal tag0 : STD_LOGIC_VECTOR (4 downto 0) := "00000";
+signal Ri, Rj, Rk: STD_LOGIC_VECTOR (4 downto 0);
 
 -- RS_unit_arithemtic -----------------------------------------------------------------------------
 component RS_unit_arithemtic
@@ -63,7 +58,7 @@ component RS_unit_arithemtic
 		Vj_out:out std_logic_vector(31 downto 0);
 		Vk_out:out std_logic_vector(31 downto 0);
 		Fop_out:out std_logic_vector(1 downto 0);
-		tagRF: out  STD_LOGIC_VECTOR (4 downto 0);
+		tag_ROB: in  STD_LOGIC_VECTOR (4 downto 0);
 		tagFU:out std_logic_vector(4 downto 0));
 end component;
 
@@ -88,7 +83,7 @@ component RS_unit_logical
 		Vj_out:out std_logic_vector(31 downto 0);
 		Vk_out:out std_logic_vector(31 downto 0);
 		Fop_out:out std_logic_vector(1 downto 0);
-		tagRF: out  STD_LOGIC_VECTOR (4 downto 0);
+		tag_ROB: in  STD_LOGIC_VECTOR (4 downto 0);
 		tagFU:out std_logic_vector(4 downto 0));
 end component;
 
@@ -109,11 +104,12 @@ component Register_File
 		Vk : out  STD_LOGIC_VECTOR (31 downto 0);
 		Qj : out  STD_LOGIC_VECTOR (4 downto 0);
 		Qk : out  STD_LOGIC_VECTOR (4 downto 0);
+		tag_ROB: out  STD_LOGIC_VECTOR (4 downto 0);
 		Clk : in  STD_LOGIC);
 end component;
 
 signal Vj, Vk : STD_LOGIC_VECTOR (31 downto 0);
-signal Qj, Qk : STD_LOGIC_VECTOR (4 downto 0);
+signal Qj, Qk, tag_ROB : STD_LOGIC_VECTOR (4 downto 0);
 
 
 -- CDBunit -----------------------------------------------------------------------------
@@ -184,16 +180,12 @@ Issue_unit_module : Issue_unit
 		Fop => Fop,
 		Ri => Ri,
 		Rj => Rj, 
-		Rk => Rk,
-		tag1 => tag_logical,
-		tag2 => tag_arithmetic,
-		tag3 => tag0,
-		tagRF => tagRF);
+		Rk => Rk);
 
  Register_File_module : Register_File
 	Port map(
 		Instr_valid => Instr_valid,
-		tag => tagRF,
+		tag => tag_ROB,
 		Ri => Ri,
 		Rj => Rj,
 		Rk => Rk,
@@ -220,7 +212,7 @@ RS_unit_arithemtic_module : RS_unit_arithemtic
 		Vj_out => Vj_out_arithmetic,
 		Vk_out => Vk_out_arithmetic,
 		Fop_out => Fop_out_arithmetic,
-		tagRF => tag_arithmetic,
+		tag_ROB => tag_ROB,
 		tagFU => tagFU_arithmetic);
 		
 FU_arithmetic_module : FU_arithmetic
@@ -252,7 +244,7 @@ RS_unit_logical_module : RS_unit_logical
 		Vj_out => Vj_out_logical,
 		Vk_out => Vk_out_logical,
 		Fop_out => Fop_out_logical,
-		tagRF => tag_logical,
+		tag_ROB => tag_ROB,
 		tagFU => tagFU_logical);
 		
 FU_logical_module : FU_logical
