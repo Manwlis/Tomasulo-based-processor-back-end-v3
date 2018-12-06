@@ -1,0 +1,47 @@
+V3 27
+FL C:/arxitektonikh1/HRY415-project-3/code/buffer_line.vhd 2018/12/06.20:20:51 O.87xd
+EN work/buffer_line 1544120468 \
+      FL C:/arxitektonikh1/HRY415-project-3/code/buffer_line.vhd \
+      PB ieee/std_logic_1164 1325952872
+AR work/buffer_line/Behavioral 1544120469 \
+      FL C:/arxitektonikh1/HRY415-project-3/code/buffer_line.vhd \
+      EN work/buffer_line 1544120468 CP Reg1BitR CP Reg5BitR CP Reg32BitR
+FL C:/arxitektonikh1/HRY415-project-3/code/flipflop.vhd 2018/11/29.23:38:29 O.87xd
+EN work/flipflop 1544120458 \
+      FL C:/arxitektonikh1/HRY415-project-3/code/flipflop.vhd \
+      PB ieee/std_logic_1164 1325952872
+AR work/flipflop/Behavioral 1544120459 \
+      FL C:/arxitektonikh1/HRY415-project-3/code/flipflop.vhd EN work/flipflop 1544120458
+FL C:/arxitektonikh1/HRY415-project-3/code/mux.vhd 2018/11/29.23:38:30 O.87xd
+EN work/mux 1544120456 FL C:/arxitektonikh1/HRY415-project-3/code/mux.vhd \
+      PB ieee/std_logic_1164 1325952872
+AR work/mux/Behavioral 1544120457 \
+      FL C:/arxitektonikh1/HRY415-project-3/code/mux.vhd EN work/mux 1544120456
+FL C:/arxitektonikh1/HRY415-project-3/code/Reg1BitR.vhd 2018/11/29.23:38:29 O.87xd
+EN work/Reg1BitR 1544120460 \
+      FL C:/arxitektonikh1/HRY415-project-3/code/Reg1BitR.vhd \
+      PB ieee/std_logic_1164 1325952872
+AR work/Reg1BitR/Behavioral 1544120461 \
+      FL C:/arxitektonikh1/HRY415-project-3/code/Reg1BitR.vhd EN work/Reg1BitR 1544120460 \
+      CP mux CP flipflop
+FL C:/arxitektonikh1/HRY415-project-3/code/Reg32BitR.vhd 2018/11/29.23:38:29 O.87xd
+EN work/Reg32BitR 1544120466 \
+      FL C:/arxitektonikh1/HRY415-project-3/code/Reg32BitR.vhd \
+      PB ieee/std_logic_1164 1325952872
+AR work/Reg32BitR/Structural 1544120467 \
+      FL C:/arxitektonikh1/HRY415-project-3/code/Reg32BitR.vhd EN work/Reg32BitR 1544120466 \
+      CP Reg4BitR
+FL C:/arxitektonikh1/HRY415-project-3/code/Reg4BitR.vhd 2018/11/29.23:38:29 O.87xd
+EN work/Reg4BitR 1544120462 \
+      FL C:/arxitektonikh1/HRY415-project-3/code/Reg4BitR.vhd \
+      PB ieee/std_logic_1164 1325952872
+AR work/Reg4BitR/Behavioral 1544120463 \
+      FL C:/arxitektonikh1/HRY415-project-3/code/Reg4BitR.vhd EN work/Reg4BitR 1544120462 \
+      CP Reg1BitR
+FL C:/arxitektonikh1/HRY415-project-3/code/Reg5BitR.vhd 2018/11/29.23:38:29 O.87xd
+EN work/Reg5BitR 1544120464 \
+      FL C:/arxitektonikh1/HRY415-project-3/code/Reg5BitR.vhd \
+      PB ieee/std_logic_1164 1325952872
+AR work/Reg5BitR/Behavioral 1544120465 \
+      FL C:/arxitektonikh1/HRY415-project-3/code/Reg5BitR.vhd EN work/Reg5BitR 1544120464 \
+      CP Reg1BitR

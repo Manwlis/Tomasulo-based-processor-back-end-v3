@@ -1,0 +1,31 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -o "C:/arxitektonikh1/HRY415-project-3/code/buffer_line_test_isim_beh.exe" -prj "C:/arxitektonikh1/HRY415-project-3/code/buffer_line_test_beh.prj" "work.buffer_line_test" 
+ISim O.87xd (signature 0xc3576ebc)
+Number of CPUs detected in this system: 16
+Turning on mult-threading, number of parallel sub-compilation jobs: 32 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/mux.vhd" into library work
+Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/flipflop.vhd" into library work
+Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/Reg1BitR.vhd" into library work
+Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/Reg4BitR.vhd" into library work
+Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/Reg5BitR.vhd" into library work
+Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/Reg32BitR.vhd" into library work
+Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/buffer_line.vhd" into library work
+Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/buffer_line_test.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture behavioral of entity mux [mux_default]
+Compiling architecture behavioral of entity flipflop [flipflop_default]
+Compiling architecture behavioral of entity Reg1BitR [reg1bitr_default]
+Compiling architecture behavioral of entity Reg5BitR [reg5bitr_default]
+Compiling architecture behavioral of entity Reg4BitR [reg4bitr_default]
+Compiling architecture structural of entity Reg32BitR [reg32bitr_default]
+Compiling architecture behavioral of entity buffer_line [buffer_line_default]
+Compiling architecture behavior of entity buffer_line_test
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 17 VHDL Units
+Built simulation executable C:/arxitektonikh1/HRY415-project-3/code/buffer_line_test_isim_beh.exe
+Fuse Memory Usage: 32100 KB
+Fuse CPU Usage: 592 ms

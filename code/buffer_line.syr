@@ -1,0 +1,503 @@
+Release 13.4 - xst O.87xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: buffer_line.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "buffer_line.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "buffer_line"
+Output Format                      : NGC
+Target Device                      : xc3s1600e-5-fg320
+
+---- Source Options
+Top Module Name                    : buffer_line
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/arxitektonikh1/HRY415-project-3/code/mux.vhd" in Library work.
+Architecture behavioral of Entity mux is up to date.
+Compiling vhdl file "C:/arxitektonikh1/HRY415-project-3/code/flipflop.vhd" in Library work.
+Architecture behavioral of Entity flipflop is up to date.
+Compiling vhdl file "C:/arxitektonikh1/HRY415-project-3/code/Reg1BitR.vhd" in Library work.
+Architecture behavioral of Entity reg1bitr is up to date.
+Compiling vhdl file "C:/arxitektonikh1/HRY415-project-3/code/Reg4BitR.vhd" in Library work.
+Architecture behavioral of Entity reg4bitr is up to date.
+Compiling vhdl file "C:/arxitektonikh1/HRY415-project-3/code/Reg5BitR.vhd" in Library work.
+Architecture behavioral of Entity reg5bitr is up to date.
+Compiling vhdl file "C:/arxitektonikh1/HRY415-project-3/code/Reg32BitR.vhd" in Library work.
+Architecture structural of Entity reg32bitr is up to date.
+Compiling vhdl file "C:/arxitektonikh1/HRY415-project-3/code/buffer_line.vhd" in Library work.
+Entity <buffer_line> compiled.
+Entity <buffer_line> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <buffer_line> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Reg1BitR> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Reg5BitR> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Reg32BitR> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <flipflop> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Reg1BitR> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Reg1BitR> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Reg1BitR> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Reg1BitR> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Reg1BitR> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Reg4BitR> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <flipflop> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <flipflop> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Reg1BitR> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Reg1BitR> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Reg1BitR> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Reg1BitR> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <flipflop> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <buffer_line> in library <work> (Architecture <behavioral>).
+Entity <buffer_line> analyzed. Unit <buffer_line> generated.
+
+Analyzing Entity <Reg1BitR> in library <work> (Architecture <behavioral>).
+Entity <Reg1BitR> analyzed. Unit <Reg1BitR> generated.
+
+Analyzing Entity <mux> in library <work> (Architecture <behavioral>).
+Entity <mux> analyzed. Unit <mux> generated.
+
+Analyzing Entity <flipflop> in library <work> (Architecture <behavioral>).
+Entity <flipflop> analyzed. Unit <flipflop> generated.
+
+Analyzing Entity <Reg5BitR> in library <work> (Architecture <behavioral>).
+Entity <Reg5BitR> analyzed. Unit <Reg5BitR> generated.
+
+Analyzing Entity <Reg32BitR> in library <work> (Architecture <structural>).
+Entity <Reg32BitR> analyzed. Unit <Reg32BitR> generated.
+
+Analyzing Entity <Reg4BitR> in library <work> (Architecture <behavioral>).
+Entity <Reg4BitR> analyzed. Unit <Reg4BitR> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <mux>.
+    Related source file is "C:/arxitektonikh1/HRY415-project-3/code/mux.vhd".
+Unit <mux> synthesized.
+
+
+Synthesizing Unit <flipflop>.
+    Related source file is "C:/arxitektonikh1/HRY415-project-3/code/flipflop.vhd".
+    Found 1-bit register for signal <q>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <flipflop> synthesized.
+
+
+Synthesizing Unit <Reg1BitR>.
+    Related source file is "C:/arxitektonikh1/HRY415-project-3/code/Reg1BitR.vhd".
+Unit <Reg1BitR> synthesized.
+
+
+Synthesizing Unit <Reg5BitR>.
+    Related source file is "C:/arxitektonikh1/HRY415-project-3/code/Reg5BitR.vhd".
+Unit <Reg5BitR> synthesized.
+
+
+Synthesizing Unit <Reg4BitR>.
+    Related source file is "C:/arxitektonikh1/HRY415-project-3/code/Reg4BitR.vhd".
+Unit <Reg4BitR> synthesized.
+
+
+Synthesizing Unit <Reg32BitR>.
+    Related source file is "C:/arxitektonikh1/HRY415-project-3/code/Reg32BitR.vhd".
+Unit <Reg32BitR> synthesized.
+
+
+Synthesizing Unit <buffer_line>.
+    Related source file is "C:/arxitektonikh1/HRY415-project-3/code/buffer_line.vhd".
+    Found 1-bit xor2 for signal <j_equal$xor0000>.
+    Found 1-bit xor2 for signal <j_equal$xor0001>.
+    Found 1-bit xor2 for signal <j_equal$xor0002>.
+    Found 1-bit xor2 for signal <j_equal$xor0003>.
+    Found 1-bit xor2 for signal <j_equal$xor0004>.
+    Found 1-bit xor2 for signal <k_equal$xor0000>.
+    Found 1-bit xor2 for signal <k_equal$xor0001>.
+    Found 1-bit xor2 for signal <k_equal$xor0002>.
+    Found 1-bit xor2 for signal <k_equal$xor0003>.
+    Found 1-bit xor2 for signal <k_equal$xor0004>.
+    Found 1-bit xor2 for signal <tag_match_Q$xor0000>.
+    Found 1-bit xor2 for signal <tag_match_Q$xor0001>.
+    Found 1-bit xor2 for signal <tag_match_Q$xor0002>.
+    Found 1-bit xor2 for signal <tag_match_Q$xor0003>.
+    Found 1-bit xor2 for signal <tag_match_Q$xor0004>.
+Unit <buffer_line> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 42
+ 1-bit register                                        : 42
+# Xors                                                 : 15
+ 1-bit xor2                                            : 15
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 42
+ Flip-Flops                                            : 42
+# Xors                                                 : 15
+ 1-bit xor2                                            : 15
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <buffer_line> ...
+
+Optimizing unit <Reg32BitR> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block buffer_line, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 42
+ Flip-Flops                                            : 42
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : buffer_line.ngr
+Top Level Output File Name         : buffer_line
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 108
+
+Cell Usage :
+# BELS                             : 48
+#      GND                         : 1
+#      LUT2                        : 1
+#      LUT3                        : 34
+#      LUT4                        : 12
+# FlipFlops/Latches                : 42
+#      FDC                         : 3
+#      FDCE                        : 39
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 107
+#      IBUF                        : 63
+#      OBUF                        : 44
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1600efg320-5 
+
+ Number of Slices:                       27  out of  14752     0%  
+ Number of Slice Flip Flops:             35  out of  29504     0%  
+ Number of 4 input LUTs:                 47  out of  29504     0%  
+ Number of IOs:                         108
+ Number of bonded IOBs:                 108  out of    250    43%  
+    IOB Flip Flops:                       7
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Clk                                | BUFGP                  | 42    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+---------------------------+-------+
+Control Signal                     | Buffer(FF name)           | Load  |
+-----------------------------------+---------------------------+-------+
+N0(XST_GND:G)                      | NONE(Fu_type0/flipflop0/q)| 42    |
+-----------------------------------+---------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 3.223ns (Maximum Frequency: 310.277MHz)
+   Minimum input arrival time before clock: 5.965ns
+   Maximum output required time after clock: 7.030ns
+   Maximum combinational path delay: 9.772ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clk'
+  Clock period: 3.223ns (frequency: 310.277MHz)
+  Total number of paths / destination ports: 68 / 35
+-------------------------------------------------------------------------
+Delay:               3.223ns (Levels of Logic = 1)
+  Source:            valid_reg/flipflop0/q (FF)
+  Destination:       Value_reg/Reg4BitR7/Reg1BitR0/flipflop0/q (FF)
+  Source Clock:      Clk rising
+  Destination Clock: Clk rising
+
+  Data Path: valid_reg/flipflop0/q to Value_reg/Reg4BitR7/Reg1BitR0/flipflop0/q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              5   0.514   0.541  valid_reg/flipflop0/q (valid_reg/flipflop0/q)
+     LUT4:I3->O           32   0.612   1.073  comparator_and000094_1 (comparator_and000094)
+     FDCE:CE                   0.483          Value_reg/Reg4BitR0/Reg1BitR3/flipflop0/q
+    ----------------------------------------
+    Total                      3.223ns (1.609ns logic, 1.614ns route)
+                                       (49.9% logic, 50.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk'
+  Total number of paths / destination ports: 414 / 81
+-------------------------------------------------------------------------
+Offset:              5.965ns (Levels of Logic = 4)
+  Source:            tag<0> (PAD)
+  Destination:       Value_reg/Reg4BitR7/Reg1BitR0/flipflop0/q (FF)
+  Destination Clock: Clk rising
+
+  Data Path: tag<0> to Value_reg/Reg4BitR7/Reg1BitR0/flipflop0/q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.106   0.520  tag_0_IBUF (tag_0_IBUF)
+     LUT4:I1->O            1   0.612   0.426  comparator_and000051 (comparator_and000051)
+     LUT4:I1->O            3   0.612   0.520  comparator_and000094_SW0 (N21)
+     LUT4:I1->O           32   0.612   1.073  comparator_and000094_1 (comparator_and000094)
+     FDCE:CE                   0.483          Value_reg/Reg4BitR0/Reg1BitR3/flipflop0/q
+    ----------------------------------------
+    Total                      5.965ns (3.425ns logic, 2.540ns route)
+                                       (57.4% logic, 42.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk'
+  Total number of paths / destination ports: 106 / 42
+-------------------------------------------------------------------------
+Offset:              7.030ns (Levels of Logic = 3)
+  Source:            valid_reg/flipflop0/q (FF)
+  Destination:       V_out<31> (PAD)
+  Source Clock:      Clk rising
+
+  Data Path: valid_reg/flipflop0/q to V_out<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              5   0.514   0.541  valid_reg/flipflop0/q (valid_reg/flipflop0/q)
+     LUT4:I3->O           32   0.612   1.225  comparator_and000094 (comparator)
+     LUT3:I0->O            1   0.612   0.357  V_out<9>1 (V_out_9_OBUF)
+     OBUF:I->O                 3.169          V_out_9_OBUF (V_out<9>)
+    ----------------------------------------
+    Total                      7.030ns (4.907ns logic, 2.123ns route)
+                                       (69.8% logic, 30.2% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 404 / 34
+-------------------------------------------------------------------------
+Delay:               9.772ns (Levels of Logic = 6)
+  Source:            tag<0> (PAD)
+  Destination:       V_out<31> (PAD)
+
+  Data Path: tag<0> to V_out<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.106   0.520  tag_0_IBUF (tag_0_IBUF)
+     LUT4:I1->O            1   0.612   0.426  comparator_and000051 (comparator_and000051)
+     LUT4:I1->O            3   0.612   0.520  comparator_and000094_SW0 (N21)
+     LUT4:I1->O           32   0.612   1.225  comparator_and000094 (comparator)
+     LUT3:I0->O            1   0.612   0.357  V_out<9>1 (V_out_9_OBUF)
+     OBUF:I->O                 3.169          V_out_9_OBUF (V_out<9>)
+    ----------------------------------------
+    Total                      9.772ns (6.723ns logic, 3.049ns route)
+                                       (68.8% logic, 31.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.06 secs
+ 
+--> 
+
+Total memory usage is 256556 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

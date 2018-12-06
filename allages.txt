@@ -15,8 +15,29 @@ issue
 
 top 
 	tag pane kateu8eian sta rs apo rf
+	/* TO-DO */ allagh diepafwn
 
 RF
 	V block 
 		efuge to forward apo ton CDB
-		/* TO-DO */ na mpei forward apo buffers
+		forward apo buffers
+
+	/* TO-DO */ allagh diepafhs, sundesh rob
+
+rob lines
+	diepafh
+	datapath
+	comparator gia done
+	logikh enables
+	flags gia forward
+	/* TO-DO */ testarisma twn flags
+
+rob control
+	diepafh
+	/* TO-DO */ ola
+
+rob 
+	diepafh
+	/* TO-DO */ ola
+
+

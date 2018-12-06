@@ -2,11 +2,19 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 entity V_block is
-    Port ( Rj : in  STD_LOGIC_VECTOR (4 downto 0);
+    Port ( -- commit
+           commit : in  STD_LOGIC;
+           commit_reg : in  STD_LOGIC_VECTOR (4 downto 0);
+           commit_data : in  STD_LOGIC_VECTOR (31 downto 0);
+			  -- diavasma kataxwrhtwn
+			  Rj : in  STD_LOGIC_VECTOR (4 downto 0);
            Rk : in  STD_LOGIC_VECTOR (4 downto 0);
+           forward_data_j : in  STD_LOGIC_VECTOR (31 downto 0);
+           forward_data_k : in  STD_LOGIC_VECTOR (31 downto 0);
+			  forward_control_j : in  STD_LOGIC;
+			  forward_control_k : in  STD_LOGIC;
            Vj : out  STD_LOGIC_VECTOR (31 downto 0);
            Vk : out  STD_LOGIC_VECTOR (31 downto 0);
-           V_WrEn : in  STD_LOGIC_VECTOR (31 downto 0);
 			  Clk : in  STD_LOGIC);
 end V_block;
 
@@ -65,20 +73,34 @@ COMPONENT mux32to1_32Bit is
 		output : out  STD_LOGIC_VECTOR (31 downto 0));
 end COMPONENT;
 
-type array32_32 is array (0 to 31) of std_logic_vector(31 downto 0);
-signal Vreg_out,Vreg_no_fw : array32_32;
+COMPONENT demux5to32 is
+	Port ( 
+		sel : in  STD_LOGIC_VECTOR (4 downto 0);
+		input : in  STD_LOGIC;
+		output : out  STD_LOGIC_VECTOR (31 downto 0));
+end COMPONENT;
 
+type array32_32 is array (0 to 31) of std_logic_vector(31 downto 0);
+signal Vreg_out : array32_32;
+
+signal reg_enable, Vk_no_fw, Vj_no_fw : std_logic_vector(31 downto 0);
 begin
+
+demux_commit : demux5to32
+	port map(
+		sel => commit_reg,
+		input => commit,
+		output => reg_enable);
 
 GEN : for i in 0 to 31 generate
 	 
 	Vreg : Reg32BitR
 	port map (
 		Clk => Clk,
-		WrEn => V_WrEn(i),
+		WrEn => reg_enable(i),
 		Reset => '0',
-		Din => CDB_value,
-		Dout => Vreg_no_fw(i));
+		Din => commit_data,
+		Dout => Vreg_out(i));
 
 end generate GEN;
 
@@ -118,7 +140,7 @@ port map(
 	in30 => Vreg_out(30),
 	in31 => Vreg_out(31),
 	sel => Rj,
-	output => Vj);
+	output => Vj_no_fw);
 	
 -- read port 2
 muxk : mux32to1_32Bit
@@ -156,8 +178,22 @@ port map(
 	in30 => Vreg_out(30),
 	in31 => Vreg_out(31),
 	sel => Rk,
-	output => Vk);
+	output => Vk_no_fw);
 
 -- forward apo buffers ---------------------------------------------
-end Behavioral;
 
+forward_mux_j : mux32Bit
+	port map(
+		sel => forward_control_j,
+		A => Vj_no_fw,
+		B => forward_data_j,
+		Outt => Vj);
+
+forward_mux_k : mux32Bit
+	port map(
+		sel => forward_control_k,
+		A => Vk_no_fw,
+		B => forward_data_k,
+		Outt => Vk);
+
+end Behavioral;

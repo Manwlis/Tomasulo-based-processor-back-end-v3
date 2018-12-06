@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/arxitektonikh1/HRY415-project-3/code/V_block_test_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="std_logic_1164" />
+            <top_module name="v_block_test" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="15" />
+   <wvobject fp_name="/v_block_test/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider14" type="divider">
+      <obj_property name="label">Commit</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/v_block_test/commit" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">commit</obj_property>
+      <obj_property name="ObjectShortName">commit</obj_property>
+   </wvobject>
+   <wvobject fp_name="/v_block_test/commit_reg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">commit_reg[4:0]</obj_property>
+      <obj_property name="ObjectShortName">commit_reg[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/v_block_test/commit_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">commit_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">commit_data[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider15" type="divider">
+      <obj_property name="label">Port j</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/v_block_test/rj" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rj[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rj[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/v_block_test/forward_data_j" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">forward_data_j[31:0]</obj_property>
+      <obj_property name="ObjectShortName">forward_data_j[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#008080</obj_property>
+   </wvobject>
+   <wvobject fp_name="/v_block_test/forward_control_j" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">forward_control_j</obj_property>
+      <obj_property name="ObjectShortName">forward_control_j</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#008080</obj_property>
+   </wvobject>
+   <wvobject fp_name="/v_block_test/vj" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">vj[31:0]</obj_property>
+      <obj_property name="ObjectShortName">vj[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#800000</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider16" type="divider">
+      <obj_property name="label">Port k</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/v_block_test/rk" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rk[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rk[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/v_block_test/forward_data_k" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">forward_data_k[31:0]</obj_property>
+      <obj_property name="ObjectShortName">forward_data_k[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#008080</obj_property>
+   </wvobject>
+   <wvobject fp_name="/v_block_test/forward_control_k" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">forward_control_k</obj_property>
+      <obj_property name="ObjectShortName">forward_control_k</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#008080</obj_property>
+   </wvobject>
+   <wvobject fp_name="/v_block_test/vk" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">vk[31:0]</obj_property>
+      <obj_property name="ObjectShortName">vk[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#800000</obj_property>
+   </wvobject>
+</wave_config>

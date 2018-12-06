@@ -1,0 +1,14 @@
+AR buffer_line behavioral C:/arxitektonikh1/HRY415-project-3/code/buffer_line.vhd sub00/vhpl13 1544120469
+EN reg32bitr NULL C:/arxitektonikh1/HRY415-project-3/code/Reg32BitR.vhd sub00/vhpl10 1544120466
+AR mux behavioral C:/arxitektonikh1/HRY415-project-3/code/mux.vhd sub00/vhpl01 1544120457
+AR reg4bitr behavioral C:/arxitektonikh1/HRY415-project-3/code/Reg4BitR.vhd sub00/vhpl07 1544120463
+EN reg5bitr NULL C:/arxitektonikh1/HRY415-project-3/code/Reg5BitR.vhd sub00/vhpl08 1544120464
+AR reg32bitr structural C:/arxitektonikh1/HRY415-project-3/code/Reg32BitR.vhd sub00/vhpl11 1544120467
+EN reg1bitr NULL C:/arxitektonikh1/HRY415-project-3/code/Reg1BitR.vhd sub00/vhpl04 1544120460
+EN buffer_line NULL C:/arxitektonikh1/HRY415-project-3/code/buffer_line.vhd sub00/vhpl12 1544120468
+AR reg5bitr behavioral C:/arxitektonikh1/HRY415-project-3/code/Reg5BitR.vhd sub00/vhpl09 1544120465
+EN flipflop NULL C:/arxitektonikh1/HRY415-project-3/code/flipflop.vhd sub00/vhpl02 1544120458
+AR reg1bitr behavioral C:/arxitektonikh1/HRY415-project-3/code/Reg1BitR.vhd sub00/vhpl05 1544120461
+EN mux NULL C:/arxitektonikh1/HRY415-project-3/code/mux.vhd sub00/vhpl00 1544120456
+AR flipflop behavioral C:/arxitektonikh1/HRY415-project-3/code/flipflop.vhd sub00/vhpl03 1544120459
+EN reg4bitr NULL C:/arxitektonikh1/HRY415-project-3/code/Reg4BitR.vhd sub00/vhpl06 1544120462

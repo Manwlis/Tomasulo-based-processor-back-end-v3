@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "C:/arxitektonikh1/HRY415-project-3/code/RS_arithmetic_test_isim_beh.exe" -prj "C:/arxitektonikh1/HRY415-project-3/code/RS_arithmetic_test_beh.prj" "work.RS_arithmetic_test" 
+-intstyle "ise" -incremental -o "C:/arxitektonikh1/HRY415-project-3/code/buffer_line_test_isim_beh.exe" -prj "C:/arxitektonikh1/HRY415-project-3/code/buffer_line_test_beh.prj" "work.buffer_line_test" 
