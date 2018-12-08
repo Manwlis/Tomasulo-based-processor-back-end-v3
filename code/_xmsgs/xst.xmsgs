@@ -5,5 +5,827 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">issue</arg>&gt; in unit &lt;<arg fmt="%s" index="2">rob_control</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="warning" file="Xst" num="1305" delta="new" >Output &lt;<arg fmt="%s" index="1">V_commit</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1305" delta="new" >Output &lt;<arg fmt="%s" index="1">exception_control</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">00000000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1305" delta="new" >Output &lt;<arg fmt="%s" index="1">exception_valid</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1305" delta="new" >Output &lt;<arg fmt="%s" index="1">commit_sel</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1305" delta="new" >Output &lt;<arg fmt="%s" index="1">forward_sel_j</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1305" delta="new" >Output &lt;<arg fmt="%s" index="1">forward_sel_k</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1305" delta="new" >Output &lt;<arg fmt="%s" index="1">forward_control_j</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1305" delta="new" >Output &lt;<arg fmt="%s" index="1">forward_control_k</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">Rj</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">exception_status</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">Rk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">fop</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">done</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">k_flags</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="1305" delta="new" >Output &lt;<arg fmt="%s" index="1">exception_sel</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">instr_valid</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">j_flags</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">heada&lt;7&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">head_rotate_control</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">delete_exception</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">00000000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">delete_commit</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">00000000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">Fu_type0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">gen[0].buffer_line</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">Fu_type1</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">gen[0].buffer_line</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">exception_reg</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">gen[0].buffer_line</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">Fu_type0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">gen[1].buffer_line</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">Fu_type1</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">gen[1].buffer_line</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">exception_reg</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">gen[1].buffer_line</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">Fu_type0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">gen[2].buffer_line</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">Fu_type1</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">gen[2].buffer_line</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">exception_reg</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">gen[2].buffer_line</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">Fu_type0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">gen[3].buffer_line</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">Fu_type1</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">gen[3].buffer_line</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">exception_reg</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">gen[3].buffer_line</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">Fu_type0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">gen[4].buffer_line</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">Fu_type1</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">gen[4].buffer_line</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">exception_reg</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">gen[4].buffer_line</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">Fu_type0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">gen[5].buffer_line</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">Fu_type1</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">gen[5].buffer_line</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">exception_reg</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">gen[5].buffer_line</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">Fu_type0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">gen[6].buffer_line</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">Fu_type1</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">gen[6].buffer_line</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">exception_reg</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">gen[6].buffer_line</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">Fu_type0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">gen[7].buffer_line</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">Fu_type1</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">gen[7].buffer_line</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">exception_reg</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">gen[7].buffer_line</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/Fu_type0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/Fu_type1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/exception_reg/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[6].buffer_line/Fu_type0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[6].buffer_line/Fu_type1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[6].buffer_line/exception_reg/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[5].buffer_line/Fu_type0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[5].buffer_line/Fu_type1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[5].buffer_line/exception_reg/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[4].buffer_line/Fu_type0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[4].buffer_line/Fu_type1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[4].buffer_line/exception_reg/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[3].buffer_line/Fu_type0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[3].buffer_line/Fu_type1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[3].buffer_line/exception_reg/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[2].buffer_line/Fu_type0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[2].buffer_line/Fu_type1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[2].buffer_line/exception_reg/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[1].buffer_line/Fu_type0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[1].buffer_line/Fu_type1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[1].buffer_line/exception_reg/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[0].buffer_line/Fu_type0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[0].buffer_line/Fu_type1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[0].buffer_line/exception_reg/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gen[3].buffer_line/Ri_reg/Reg1BitR0/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[3].buffer_line/Ri_reg/Reg1BitR1/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[3].buffer_line/Ri_reg/Reg1BitR2/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[3].buffer_line/Ri_reg/Reg1BitR3/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[3].buffer_line/Ri_reg/Reg1BitR4/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[3].buffer_line/valid_reg/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[2].buffer_line/Ri_reg/Reg1BitR0/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[2].buffer_line/Ri_reg/Reg1BitR1/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[2].buffer_line/Ri_reg/Reg1BitR2/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[2].buffer_line/Ri_reg/Reg1BitR3/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[2].buffer_line/Ri_reg/Reg1BitR4/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[2].buffer_line/valid_reg/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[1].buffer_line/Ri_reg/Reg1BitR0/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[1].buffer_line/Ri_reg/Reg1BitR1/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[1].buffer_line/Ri_reg/Reg1BitR2/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[1].buffer_line/Ri_reg/Reg1BitR3/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[1].buffer_line/Ri_reg/Reg1BitR4/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[1].buffer_line/valid_reg/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/Ri_reg/Reg1BitR0/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/Ri_reg/Reg1BitR1/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/Ri_reg/Reg1BitR2/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/Ri_reg/Reg1BitR3/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/Ri_reg/Reg1BitR4/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/valid_reg/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[7].buffer_line/Ri_reg/Reg1BitR0/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[7].buffer_line/Ri_reg/Reg1BitR1/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[7].buffer_line/Ri_reg/Reg1BitR2/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[7].buffer_line/Ri_reg/Reg1BitR3/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[7].buffer_line/Ri_reg/Reg1BitR4/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[7].buffer_line/valid_reg/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[6].buffer_line/Ri_reg/Reg1BitR0/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[6].buffer_line/Ri_reg/Reg1BitR1/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[6].buffer_line/Ri_reg/Reg1BitR2/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[6].buffer_line/Ri_reg/Reg1BitR3/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[6].buffer_line/Ri_reg/Reg1BitR4/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[6].buffer_line/valid_reg/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[5].buffer_line/Ri_reg/Reg1BitR0/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[5].buffer_line/Ri_reg/Reg1BitR1/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[5].buffer_line/Ri_reg/Reg1BitR2/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[5].buffer_line/Ri_reg/Reg1BitR3/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[5].buffer_line/Ri_reg/Reg1BitR4/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[5].buffer_line/valid_reg/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[4].buffer_line/Ri_reg/Reg1BitR0/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[4].buffer_line/Ri_reg/Reg1BitR1/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[4].buffer_line/Ri_reg/Reg1BitR2/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[4].buffer_line/Ri_reg/Reg1BitR3/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[4].buffer_line/Ri_reg/Reg1BitR4/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[4].buffer_line/valid_reg/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">gen[7].buffer_line/done_reg/flipflop0/q</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">gen[6].buffer_line/done_reg/flipflop0/q</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">gen[5].buffer_line/done_reg/flipflop0/q</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">gen[4].buffer_line/done_reg/flipflop0/q</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">gen[3].buffer_line/done_reg/flipflop0/q</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">gen[2].buffer_line/done_reg/flipflop0/q</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">gen[1].buffer_line/done_reg/flipflop0/q</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/done_reg/flipflop0/q</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1989" delta="new" >Unit &lt;<arg fmt="%s" index="1">reorder_buffer</arg>&gt;: instances &lt;<arg fmt="%s" index="2">gen[7].buffer_line/PC_reg</arg>&gt;, &lt;<arg fmt="%s" index="3">gen[6].buffer_line/PC_reg</arg>&gt; of unit &lt;<arg fmt="%s" index="4">Reg32BitR</arg>&gt; are equivalent, second instance is removed
+</msg>
+
+<msg type="warning" file="Xst" num="1989" delta="new" >Unit &lt;<arg fmt="%s" index="1">reorder_buffer</arg>&gt;: instances &lt;<arg fmt="%s" index="2">gen[7].buffer_line/PC_reg</arg>&gt;, &lt;<arg fmt="%s" index="3">gen[5].buffer_line/PC_reg</arg>&gt; of unit &lt;<arg fmt="%s" index="4">Reg32BitR</arg>&gt; are equivalent, second instance is removed
+</msg>
+
+<msg type="warning" file="Xst" num="1989" delta="new" >Unit &lt;<arg fmt="%s" index="1">reorder_buffer</arg>&gt;: instances &lt;<arg fmt="%s" index="2">gen[7].buffer_line/PC_reg</arg>&gt;, &lt;<arg fmt="%s" index="3">gen[4].buffer_line/PC_reg</arg>&gt; of unit &lt;<arg fmt="%s" index="4">Reg32BitR</arg>&gt; are equivalent, second instance is removed
+</msg>
+
+<msg type="warning" file="Xst" num="1989" delta="new" >Unit &lt;<arg fmt="%s" index="1">reorder_buffer</arg>&gt;: instances &lt;<arg fmt="%s" index="2">gen[7].buffer_line/PC_reg</arg>&gt;, &lt;<arg fmt="%s" index="3">gen[3].buffer_line/PC_reg</arg>&gt; of unit &lt;<arg fmt="%s" index="4">Reg32BitR</arg>&gt; are equivalent, second instance is removed
+</msg>
+
+<msg type="warning" file="Xst" num="1989" delta="new" >Unit &lt;<arg fmt="%s" index="1">reorder_buffer</arg>&gt;: instances &lt;<arg fmt="%s" index="2">gen[7].buffer_line/PC_reg</arg>&gt;, &lt;<arg fmt="%s" index="3">gen[2].buffer_line/PC_reg</arg>&gt; of unit &lt;<arg fmt="%s" index="4">Reg32BitR</arg>&gt; are equivalent, second instance is removed
+</msg>
+
+<msg type="warning" file="Xst" num="1989" delta="new" >Unit &lt;<arg fmt="%s" index="1">reorder_buffer</arg>&gt;: instances &lt;<arg fmt="%s" index="2">gen[7].buffer_line/PC_reg</arg>&gt;, &lt;<arg fmt="%s" index="3">gen[1].buffer_line/PC_reg</arg>&gt; of unit &lt;<arg fmt="%s" index="4">Reg32BitR</arg>&gt; are equivalent, second instance is removed
+</msg>
+
+<msg type="warning" file="Xst" num="1989" delta="new" >Unit &lt;<arg fmt="%s" index="1">reorder_buffer</arg>&gt;: instances &lt;<arg fmt="%s" index="2">gen[7].buffer_line/Value_reg</arg>&gt;, &lt;<arg fmt="%s" index="3">gen[6].buffer_line/Value_reg</arg>&gt; of unit &lt;<arg fmt="%s" index="4">Reg32BitR</arg>&gt; are equivalent, second instance is removed
+</msg>
+
+<msg type="warning" file="Xst" num="1989" delta="new" >Unit &lt;<arg fmt="%s" index="1">reorder_buffer</arg>&gt;: instances &lt;<arg fmt="%s" index="2">gen[7].buffer_line/Value_reg</arg>&gt;, &lt;<arg fmt="%s" index="3">gen[5].buffer_line/Value_reg</arg>&gt; of unit &lt;<arg fmt="%s" index="4">Reg32BitR</arg>&gt; are equivalent, second instance is removed
+</msg>
+
+<msg type="warning" file="Xst" num="1989" delta="new" >Unit &lt;<arg fmt="%s" index="1">reorder_buffer</arg>&gt;: instances &lt;<arg fmt="%s" index="2">gen[7].buffer_line/Value_reg</arg>&gt;, &lt;<arg fmt="%s" index="3">gen[4].buffer_line/Value_reg</arg>&gt; of unit &lt;<arg fmt="%s" index="4">Reg32BitR</arg>&gt; are equivalent, second instance is removed
+</msg>
+
+<msg type="warning" file="Xst" num="1989" delta="new" >Unit &lt;<arg fmt="%s" index="1">reorder_buffer</arg>&gt;: instances &lt;<arg fmt="%s" index="2">gen[7].buffer_line/Value_reg</arg>&gt;, &lt;<arg fmt="%s" index="3">gen[3].buffer_line/Value_reg</arg>&gt; of unit &lt;<arg fmt="%s" index="4">Reg32BitR</arg>&gt; are equivalent, second instance is removed
+</msg>
+
+<msg type="warning" file="Xst" num="1989" delta="new" >Unit &lt;<arg fmt="%s" index="1">reorder_buffer</arg>&gt;: instances &lt;<arg fmt="%s" index="2">gen[7].buffer_line/Value_reg</arg>&gt;, &lt;<arg fmt="%s" index="3">gen[2].buffer_line/Value_reg</arg>&gt; of unit &lt;<arg fmt="%s" index="4">Reg32BitR</arg>&gt; are equivalent, second instance is removed
+</msg>
+
+<msg type="warning" file="Xst" num="1989" delta="new" >Unit &lt;<arg fmt="%s" index="1">reorder_buffer</arg>&gt;: instances &lt;<arg fmt="%s" index="2">gen[7].buffer_line/Value_reg</arg>&gt;, &lt;<arg fmt="%s" index="3">gen[1].buffer_line/Value_reg</arg>&gt; of unit &lt;<arg fmt="%s" index="4">Reg32BitR</arg>&gt; are equivalent, second instance is removed
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/Value_reg/Reg4BitR7/Reg1BitR0/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/Value_reg/Reg4BitR7/Reg1BitR1/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/Value_reg/Reg4BitR7/Reg1BitR2/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/Value_reg/Reg4BitR7/Reg1BitR3/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/Value_reg/Reg4BitR6/Reg1BitR0/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/Value_reg/Reg4BitR6/Reg1BitR1/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/Value_reg/Reg4BitR6/Reg1BitR2/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/Value_reg/Reg4BitR6/Reg1BitR3/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/Value_reg/Reg4BitR5/Reg1BitR0/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/Value_reg/Reg4BitR5/Reg1BitR1/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/Value_reg/Reg4BitR5/Reg1BitR2/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/Value_reg/Reg4BitR5/Reg1BitR3/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/Value_reg/Reg4BitR4/Reg1BitR0/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/Value_reg/Reg4BitR4/Reg1BitR1/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/Value_reg/Reg4BitR4/Reg1BitR2/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/Value_reg/Reg4BitR4/Reg1BitR3/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/Value_reg/Reg4BitR3/Reg1BitR0/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/Value_reg/Reg4BitR3/Reg1BitR1/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/Value_reg/Reg4BitR3/Reg1BitR2/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/Value_reg/Reg4BitR3/Reg1BitR3/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/Value_reg/Reg4BitR2/Reg1BitR0/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/Value_reg/Reg4BitR2/Reg1BitR1/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/Value_reg/Reg4BitR2/Reg1BitR2/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/Value_reg/Reg4BitR2/Reg1BitR3/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/Value_reg/Reg4BitR1/Reg1BitR0/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/Value_reg/Reg4BitR1/Reg1BitR1/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/Value_reg/Reg4BitR1/Reg1BitR2/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/Value_reg/Reg4BitR1/Reg1BitR3/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/Value_reg/Reg4BitR0/Reg1BitR0/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/Value_reg/Reg4BitR0/Reg1BitR1/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/Value_reg/Reg4BitR0/Reg1BitR2/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/Value_reg/Reg4BitR0/Reg1BitR3/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/PC_reg/Reg4BitR7/Reg1BitR0/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/PC_reg/Reg4BitR7/Reg1BitR1/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/PC_reg/Reg4BitR7/Reg1BitR2/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/PC_reg/Reg4BitR7/Reg1BitR3/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/PC_reg/Reg4BitR6/Reg1BitR0/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/PC_reg/Reg4BitR6/Reg1BitR1/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/PC_reg/Reg4BitR6/Reg1BitR2/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/PC_reg/Reg4BitR6/Reg1BitR3/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/PC_reg/Reg4BitR5/Reg1BitR0/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/PC_reg/Reg4BitR5/Reg1BitR1/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/PC_reg/Reg4BitR5/Reg1BitR2/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/PC_reg/Reg4BitR5/Reg1BitR3/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/PC_reg/Reg4BitR4/Reg1BitR0/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/PC_reg/Reg4BitR4/Reg1BitR1/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/PC_reg/Reg4BitR4/Reg1BitR2/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/PC_reg/Reg4BitR4/Reg1BitR3/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/PC_reg/Reg4BitR3/Reg1BitR0/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/PC_reg/Reg4BitR3/Reg1BitR1/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/PC_reg/Reg4BitR3/Reg1BitR2/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/PC_reg/Reg4BitR3/Reg1BitR3/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/PC_reg/Reg4BitR2/Reg1BitR0/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/PC_reg/Reg4BitR2/Reg1BitR1/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/PC_reg/Reg4BitR2/Reg1BitR2/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/PC_reg/Reg4BitR2/Reg1BitR3/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/PC_reg/Reg4BitR1/Reg1BitR0/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/PC_reg/Reg4BitR1/Reg1BitR1/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/PC_reg/Reg4BitR1/Reg1BitR2/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/PC_reg/Reg4BitR1/Reg1BitR3/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/PC_reg/Reg4BitR0/Reg1BitR0/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/PC_reg/Reg4BitR0/Reg1BitR1/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/PC_reg/Reg4BitR0/Reg1BitR2/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">gen[0].buffer_line/PC_reg/Reg4BitR0/Reg1BitR3/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reorder_buffer</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/PC_reg/Reg4BitR7/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/PC_reg/Reg4BitR7/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/PC_reg/Reg4BitR7/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/PC_reg/Reg4BitR7/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/PC_reg/Reg4BitR6/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/PC_reg/Reg4BitR6/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/PC_reg/Reg4BitR6/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/PC_reg/Reg4BitR6/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/PC_reg/Reg4BitR5/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/PC_reg/Reg4BitR5/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/PC_reg/Reg4BitR5/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/PC_reg/Reg4BitR5/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/PC_reg/Reg4BitR4/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/PC_reg/Reg4BitR4/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/PC_reg/Reg4BitR4/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/PC_reg/Reg4BitR4/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/PC_reg/Reg4BitR3/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/PC_reg/Reg4BitR3/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/PC_reg/Reg4BitR3/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/PC_reg/Reg4BitR3/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/PC_reg/Reg4BitR2/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/PC_reg/Reg4BitR2/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/PC_reg/Reg4BitR2/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/PC_reg/Reg4BitR2/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/PC_reg/Reg4BitR1/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/PC_reg/Reg4BitR1/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/PC_reg/Reg4BitR1/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/PC_reg/Reg4BitR1/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/PC_reg/Reg4BitR0/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/PC_reg/Reg4BitR0/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/PC_reg/Reg4BitR0/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/PC_reg/Reg4BitR0/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/Value_reg/Reg4BitR7/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/Value_reg/Reg4BitR7/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/Value_reg/Reg4BitR7/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/Value_reg/Reg4BitR7/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/Value_reg/Reg4BitR6/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/Value_reg/Reg4BitR6/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/Value_reg/Reg4BitR6/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/Value_reg/Reg4BitR6/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/Value_reg/Reg4BitR5/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/Value_reg/Reg4BitR5/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/Value_reg/Reg4BitR5/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/Value_reg/Reg4BitR5/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/Value_reg/Reg4BitR4/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/Value_reg/Reg4BitR4/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/Value_reg/Reg4BitR4/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/Value_reg/Reg4BitR4/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/Value_reg/Reg4BitR3/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/Value_reg/Reg4BitR3/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/Value_reg/Reg4BitR3/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/Value_reg/Reg4BitR3/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/Value_reg/Reg4BitR2/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/Value_reg/Reg4BitR2/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/Value_reg/Reg4BitR2/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/Value_reg/Reg4BitR2/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/Value_reg/Reg4BitR1/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/Value_reg/Reg4BitR1/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/Value_reg/Reg4BitR1/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/Value_reg/Reg4BitR1/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/Value_reg/Reg4BitR0/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/Value_reg/Reg4BitR0/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/Value_reg/Reg4BitR0/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">gen[7].buffer_line/Value_reg/Reg4BitR0/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">reorder_buffer</arg>&gt;.
+</msg>
+
 </messages>
 

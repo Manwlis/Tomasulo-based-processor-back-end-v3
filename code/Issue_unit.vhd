@@ -15,7 +15,10 @@ entity Issue_unit is
            Fop : out  STD_LOGIC_VECTOR (1 downto 0);
            Ri : out  STD_LOGIC_VECTOR (4 downto 0);
            Rj : out  STD_LOGIC_VECTOR (4 downto 0);
-           Rk : out  STD_LOGIC_VECTOR (4 downto 0));
+           Rk : out  STD_LOGIC_VECTOR (4 downto 0);
+				PC_in : in  STD_LOGIC_VECTOR (31 downto 0);
+				PC_entolhs : out  STD_LOGIC_VECTOR (31 downto 0);
+				available_rob : in  STD_LOGIC);
 end Issue_unit;
 
 architecture Behavioral of Issue_unit is
@@ -27,13 +30,19 @@ begin
 	Ri <= IF_Ri;
 	Rj <= IF_Rj;
 	Rk <= IF_Rk;
+	PC_entolhs <= PC_in;
 	
 	process(issue, available, FU_type, tag1, tag2, tag3)
 	begin
 		-- epilogh katallhlou RS kai elenxos domikwn kindinwn
 		if issue = '1' then
+			-- den exei xwro o rob
+			if available_rob = '0' then
+				accepted <= '0';
+				Instr_valid <= '0';
+				issueRS <= "000";
 			-- logikh entolh
-			if available(2) = '1' and FU_type = "00" then
+			elsif available(2) = '1' and FU_type = "00" then
 				accepted <= '1';
 				Instr_valid <= '1';
 				issueRS <= "100";

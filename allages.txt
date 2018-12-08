@@ -12,6 +12,7 @@ rs kai ta duo
 
 issue 
 	ta tags den pernane apo ekei pia
+	rob available elenxos /* TO-DO */ na testaristei
 
 top 
 	tag pane kateu8eian sta rs apo rf
@@ -31,13 +32,18 @@ rob lines
 	logikh enables
 	flags gia forward
 	/* TO-DO */ testarisma twn flags
+	isws na alaksei h or tou done kai na bgainei allo shma gia to forward
 
 rob control
 	diepafh
-	/* TO-DO */ ola
+	pointers
+	issue
+	/* TO-DO */ commit, forwards, exceptions
+	/* TO-DO */ elenxos
 
 rob 
 	diepafh
-	/* TO-DO */ ola
+	datapath /* TO-DO */ logika 8elei allages
+	/* TO-DO */ elenxos
 
 

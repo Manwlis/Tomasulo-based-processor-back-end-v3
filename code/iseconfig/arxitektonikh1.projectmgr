@@ -219,15 +219,16 @@
          <ClosedNode>/mux8to1_5Bit - Behavioral C:|arxitektonikh1|mux8to1_5Bit.vhd/mux4to1_5Bit0 - mux4to1_5bit - Behavioral</ClosedNode>
          <ClosedNode>/mux8to1_5Bit - Behavioral C:|arxitektonikh1|mux8to1_5Bit.vhd/mux4to1_5Bit1 - mux4to1_5bit - Behavioral</ClosedNode>
          <ClosedNode>/mux8to1_5Bit - Behavioral C:|arxitektonikh1|mux8to1_5Bit.vhd/mux5Bit0 - mux5Bit - Behavioral</ClosedNode>
+         <ClosedNode>/reorder_buffer - Behavioral C:|arxitektonikh1|HRY415-project-3|code|reorder_buffer.vhd/buffer_line - buffer_line - Behavioral</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>buffer_line - Behavioral (C:/arxitektonikh1/HRY415-project-3/code/buffer_line.vhd)</SelectedItem>
+         <SelectedItem>V_unit - V_block - Behavioral (C:/arxitektonikh1/HRY415-project-3/code/V_block.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001e7000000020000000000000000000000000200000064ffffffff000000810000000300000002000001e70000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>buffer_line - Behavioral (C:/arxitektonikh1/HRY415-project-3/code/buffer_line.vhd)</CurrentItem>
+      <CurrentItem>V_unit - V_block - Behavioral (C:/arxitektonikh1/HRY415-project-3/code/V_block.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -236,13 +237,13 @@
          <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000001f80000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000159000000010000000100000000000000000000000064ffffffff000000810000000000000001000001590000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -382,6 +383,7 @@
          <ClosedNode>/mux32to1_5Bit - Structural C:|arxitektonikh1|HRY415-project-3|code|mux32to1_5Bit.vhd</ClosedNode>
          <ClosedNode>/rename_ston_idio_kataxwrhth_Waw - behavior C:|arxitektonikh1|HRY415-project-2|code|rename_ston_idio_kataxwrhth_Waw.vhd</ClosedNode>
          <ClosedNode>/rename_ston_idio_kataxwrhth_Waw - behavior C:|arxitektonikh1|HRY415-project-3|code|rename_ston_idio_kataxwrhth_Waw.vhd</ClosedNode>
+         <ClosedNode>/reorder_buffer - Behavioral C:|arxitektonikh1|HRY415-project-3|code|reorder_buffer.vhd</ClosedNode>
          <ClosedNode>/rs_line_test - behavior C:|arxitektonikh1|HRY415-project-2|code|rs_line_test.vhd</ClosedNode>
          <ClosedNode>/rs_line_test - behavior C:|arxitektonikh1|HRY415-project-3|code|rs_line_test.vhd</ClosedNode>
          <ClosedNode>/rs_line_test - behavior C:|arxitektonikh1|rs_line_test.vhd</ClosedNode>
@@ -436,26 +438,26 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Synthesize - XST</SelectedItem>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000148000000010000000100000000000000000000000064ffffffff000000810000000000000001000001480000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000159000000010000000100000000000000000000000064ffffffff000000810000000000000001000001590000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Synthesize - XST</CurrentItem>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000159000000010000000100000000000000000000000064ffffffff000000810000000000000001000001590000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff0000000000000002000001f7000000e201000000050100000002</SourceProcessView>
    <CurrentView>Implementation</CurrentView>

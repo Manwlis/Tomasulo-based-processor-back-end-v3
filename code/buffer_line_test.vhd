@@ -2,7 +2,7 @@
 -- Company: 
 -- Engineer:
 --
--- Create Date:   17:38:02 12/06/2018
+-- Create Date:   17:01:43 12/08/2018
 -- Design Name:   
 -- Module Name:   C:/arxitektonikh1/HRY415-project-3/code/buffer_line_test.vhd
 -- Project Name:  arxitektonikh1
@@ -41,7 +41,7 @@ ARCHITECTURE behavior OF buffer_line_test IS
  
     COMPONENT buffer_line
     PORT(
-			Clk : IN  std_logic;
+         Clk : IN  std_logic;
          cdb_valid : IN  std_logic;
          cdb_Q : IN  std_logic_vector(4 downto 0);
          cdb_V : IN  std_logic_vector(31 downto 0);
@@ -49,20 +49,26 @@ ARCHITECTURE behavior OF buffer_line_test IS
          Fu_type_in : IN  std_logic_vector(1 downto 0);
          Exception_in : IN  std_logic;
          Exception_out : OUT  std_logic;
-         Ri_out : OUT  std_logic_vector(4 downto 0);
          Fu_type_out : OUT  std_logic_vector(1 downto 0);
          valid_out : OUT  std_logic;
          done_out : OUT  std_logic;
          commit : IN  std_logic;
          issue : IN  std_logic;
          tag : IN  std_logic_vector(4 downto 0);
-         V_out : OUT  std_logic_vector(31 downto 0)
+         Rj : IN  std_logic_vector(4 downto 0);
+         Rk : IN  std_logic_vector(4 downto 0);
+         j_equal : OUT  std_logic;
+         k_equal : OUT  std_logic;
+         Ri_out : OUT  std_logic_vector(4 downto 0);
+         V_out : OUT  std_logic_vector(31 downto 0);
+         PC_entolhs : IN  std_logic_vector(31 downto 0);
+         PC_out : OUT  std_logic_vector(31 downto 0)
         );
     END COMPONENT;
     
 
    --Inputs
-	signal Clk : std_logic;
+   signal Clk : std_logic := '0';
    signal cdb_valid : std_logic := '0';
    signal cdb_Q : std_logic_vector(4 downto 0) := (others => '0');
    signal cdb_V : std_logic_vector(31 downto 0) := (others => '0');
@@ -72,24 +78,29 @@ ARCHITECTURE behavior OF buffer_line_test IS
    signal commit : std_logic := '0';
    signal issue : std_logic := '0';
    signal tag : std_logic_vector(4 downto 0) := (others => '0');
+   signal Rj : std_logic_vector(4 downto 0) := (others => '0');
+   signal Rk : std_logic_vector(4 downto 0) := (others => '0');
+   signal PC_entolhs : std_logic_vector(31 downto 0) := (others => '0');
 
  	--Outputs
    signal Exception_out : std_logic;
-   signal Ri_out : std_logic_vector(4 downto 0);
    signal Fu_type_out : std_logic_vector(1 downto 0);
    signal valid_out : std_logic;
    signal done_out : std_logic;
+   signal j_equal : std_logic;
+   signal k_equal : std_logic;
+   signal Ri_out : std_logic_vector(4 downto 0);
    signal V_out : std_logic_vector(31 downto 0);
-   -- No clocks detected in port list. Replace <clock> below with 
-   -- appropriate port name 
- 
+   signal PC_out : std_logic_vector(31 downto 0);
+
+   -- Clock period definitions
    constant Clk_period : time := 10 ns;
  
 BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
    uut: buffer_line PORT MAP (
-				Clk => Clk,
+          Clk => Clk,
           cdb_valid => cdb_valid,
           cdb_Q => cdb_Q,
           cdb_V => cdb_V,
@@ -97,14 +108,20 @@ BEGIN
           Fu_type_in => Fu_type_in,
           Exception_in => Exception_in,
           Exception_out => Exception_out,
-          Ri_out => Ri_out,
           Fu_type_out => Fu_type_out,
           valid_out => valid_out,
           done_out => done_out,
           commit => commit,
           issue => issue,
           tag => tag,
-          V_out => V_out
+          Rj => Rj,
+          Rk => Rk,
+          j_equal => j_equal,
+          k_equal => k_equal,
+          Ri_out => Ri_out,
+          V_out => V_out,
+          PC_entolhs => PC_entolhs,
+          PC_out => PC_out
         );
 
    -- Clock process definitions
@@ -121,7 +138,7 @@ BEGIN
    stim_proc: process
    begin		
 	
-      wait for Clk_period/2;	
+   wait for Clk_period/2;	
 		
 		-- issue entolhs
 		
@@ -134,6 +151,7 @@ BEGIN
 		Fu_type_in <= "00";
 		-- exception
 		Exception_in <= '0';
+		PC_entolhs <= "00000000000000000000000000000001";
 		-- apo control
 		commit <= '0';
 		issue <= '1';
@@ -163,8 +181,8 @@ BEGIN
       wait for Clk_period;
 		commit <= '0';
 		issue <= '1';
-		
-		
+		PC_entolhs <= "00000000000000000000000000000101";
+
       wait;
    end process;
 

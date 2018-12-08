@@ -16,7 +16,9 @@ entity Register_File is
 		Vk : out  STD_LOGIC_VECTOR (31 downto 0);
 		Qj : out  STD_LOGIC_VECTOR (4 downto 0);
 		Qk : out  STD_LOGIC_VECTOR (4 downto 0);
-		Clk : in  STD_LOGIC);
+		Clk : in  STD_LOGIC;
+		PC_entolhs : in  STD_LOGIC_VECTOR (31 downto 0)
+	);
 end Register_File;
 
 architecture Behavioral of Register_File is

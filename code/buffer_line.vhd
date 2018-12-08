@@ -14,12 +14,14 @@ entity buffer_line is
 		-- exception
 		Exception_in : in  STD_LOGIC;
 		Exception_out : out  STD_LOGIC;
+		PC_entolhs : in  STD_LOGIC_VECTOR (31 downto 0);
+		PC_out : out  STD_LOGIC_VECTOR (31 downto 0);
 		-- pros control
 		Fu_type_out : out  STD_LOGIC_VECTOR (1 downto 0);
 		valid_out : out  STD_LOGIC;
 		done_out : out  STD_LOGIC;
 		-- apo control
-		commit : in  STD_LOGIC;
+		delete : in  STD_LOGIC;
 		issue : in  STD_LOGIC;
 		tag : in  STD_LOGIC_VECTOR (4 downto 0);
 		-- flags gia forward. pros control
@@ -78,8 +80,8 @@ signal value_reg_out : STD_LOGIC_VECTOR (31 downto 0);
 signal tag_match_Q,exception_reg_WrEn, exception_reg_Din : STD_LOGIC;
 begin
 
--- valid
-valid_reg_WrEn <= commit or issue;
+-- valid. allazei otan mpainei kainourgia entolh h diagrafetai
+valid_reg_WrEn <= delete or issue;
 
 valid_reg : Reg1BitR
 port map(
@@ -156,12 +158,21 @@ port map(
 	Reset => '0',
 	Dout => Exception_out);
 	
+PC_reg : Reg32BitR
+port map(
+	Clk => Clk,
+	WrEn => issue,
+	Din => PC_entolhs,
+	Reset => '0',
+	Dout => PC_out);
+	
 -- ginetai 1 otan iparxei simfwnia metaksu tag kai q
 tag_match_Q <= (cdb_Q(0) XNOR tag(0)) AND 
 					(cdb_Q(1) XNOR tag(1)) AND 
 					(cdb_Q(2) XNOR tag(2)) AND 
 					(cdb_Q(3) XNOR tag(3)) AND 
 					(cdb_Q(4) XNOR tag(4));
+					
 -- comparator
 -- deixnei otan hr8e to apotelesma pou perimene o buffer
 comparator <= '1' 
