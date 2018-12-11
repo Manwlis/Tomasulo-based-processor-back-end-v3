@@ -44,7 +44,11 @@ signal head_rotate_control : STD_LOGIC;
 signal free : STD_LOGIC_VECTOR (7 downto 0) := "00000001";
 signal free_rotate_control : STD_LOGIC;
 
-signal ready_for_commit, delete_commit, delete_exception : STD_LOGIC_VECTOR (7 downto 0);
+signal delete_commit, delete_exception : STD_LOGIC_VECTOR (7 downto 0);
+
+-- shmata commit
+signal ready_for_commit : STD_LOGIC;
+signal head_encoded : STD_LOGIC_VECTOR(2 downto 0);
 
 begin
 
@@ -60,7 +64,7 @@ delete <= delete_commit OR delete_exception;
 issue_process : process(instr_valid)
 begin
 		
-	-- hr8e entolh. An einai gematos o buffer den 8a mpei sto if giati to instr_valid ftiaxnetai apo to available sto issue
+	-- hr8e entolh. An einai gematos o buffer den 8a mpei sto if giati to instr_valid ftiaxnetai apo to available sto issue.
 	if instr_valid = '1' then
 		-- grapsimo grammhs anebazontas to issue tou prwtou eleu8erou
 		issue <= free;
@@ -85,30 +89,92 @@ ready_for_commit <=
 	(head(5) and done(5) and valid(5)) or
 	(head(6) and done(6) and valid(6)) or
 	(head(7) and done(7) and valid(7));
+	
+-- dialegei to Ri kai to Value tou head gia na paei sto commit
+head_encoded <= 
+	"000" when head(0) = '1' else
+	"001" when head(1) = '1' else
+	"010" when head(2) = '1' else
+	"011" when head(3) = '1' else
+	"100" when head(4) = '1' else
+	"101" when head(5) = '1' else
+	"110" when head(6) = '1' else
+	"111" when head(7) = '1' else
+	"000";
+
+commit_sel <= head_encoded;
 
 -- commit process
 commit_process : process(ready_for_commit)
 begin
 	
 	-- an einai etoimos kai egkuros o head
-	if ready_for_commit = '1' ----------------------
+	if ready_for_commit = '1' then
 		delete_commit <= head;
 		V_commit <= '1';
-		commit_sel <= "head";
 		
 	-- o head den einai etoimos h egkuros
 	else
 		delete_commit <= "00000000";
 		V_commit <= '0';
-		commit_sel <= "000";	
 	end if;
 end process;
 
 -- process forward j
-
+forward_j_process : process(j_flags, head_encoded)
+variable pointer : integer;
+begin
+	
+	-- an den iparxei ston reorder buffer
+	forward_sel_j <= "000"; 
+	forward_control_j <= '0';
+	
+	pointer := to_integer(unsigned(head_encoded));
+	
+	for I in 0 to 7 loop
+		
+		-- Na paei sthn epomenh 8esh. An bghke ektos wriwn na paei sthn allh meria tou vector
+		pointer := pointer + 1;
+		if pointer = 8 then
+			pointer := 0;
+		end if;
+		
+		if j_flags(pointer) = '1' then
+			forward_sel_j <= std_logic_vector(to_unsigned(pointer,3));
+			forward_control_j <= '1';
+			exit;
+		end if;
+		
+	end loop;
+end process;
 
 -- process forward k
-
+forward_k_process : process(k_flags, head_encoded)
+variable pointer : integer;
+begin
+	
+	-- an den iparxei ston reorder buffer
+	forward_sel_k <= "000"; 
+	forward_control_k <= '0';
+	
+	pointer := to_integer(unsigned(head_encoded));
+	
+	for I in 0 to 7 loop
+		
+		-- Na paei sthn epomenh 8esh. An bghke ektos wriwn na paei sthn allh meria tou vector
+		pointer := pointer + 1;
+		if pointer = 8 then
+			pointer := 0;
+		end if;
+		
+		if k_flags(pointer) = '1' then
+			forward_sel_k <= std_logic_vector(to_unsigned(pointer,3));
+			forward_control_k <= '1';
+			exit;
+		end if;
+		
+	end loop;
+end process;
 
 -- process exception
 

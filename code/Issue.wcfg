@@ -3,23 +3,14 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="C:/arxitektonikh1/Issue_unit_test_isim_beh.wdb" id="1" type="auto">
+      <db_ref path="C:/arxitektonikh1/HRY415-project-3/code/Issue_unit_test_isim_beh.wdb" id="1" type="auto">
          <top_modules>
             <top_module name="issue_unit_test" />
             <top_module name="std_logic_1164" />
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="19" />
-   <wave_markers>
-      <marker time="25000000" label="" />
-      <marker time="75000000" label="" />
-      <marker time="225000000" label="" />
-   </wave_markers>
-   <wvobject fp_name="/issue_unit_test/clock" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">clock</obj_property>
-      <obj_property name="ObjectShortName">clock</obj_property>
-   </wvobject>
+   <WVObjectSize size="15" />
    <wvobject fp_name="/issue_unit_test/issue" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">issue</obj_property>
       <obj_property name="ObjectShortName">issue</obj_property>
@@ -32,6 +23,10 @@
       <obj_property name="ElementShortName">available[2:0]</obj_property>
       <obj_property name="ObjectShortName">available[2:0]</obj_property>
    </wvobject>
+   <wvobject fp_name="/issue_unit_test/available_rob" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">available_rob</obj_property>
+      <obj_property name="ObjectShortName">available_rob</obj_property>
+   </wvobject>
    <wvobject fp_name="/issue_unit_test/accepted" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">accepted</obj_property>
       <obj_property name="ObjectShortName">accepted</obj_property>
@@ -43,34 +38,6 @@
    <wvobject fp_name="/issue_unit_test/issuers" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">issuers[2:0]</obj_property>
       <obj_property name="ObjectShortName">issuers[2:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/issue_unit_test/tag1" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">tag1[4:0]</obj_property>
-      <obj_property name="ObjectShortName">tag1[4:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-      <obj_property name="UseCustomSignalColor">true</obj_property>
-      <obj_property name="CustomSignalColor">#008080</obj_property>
-   </wvobject>
-   <wvobject fp_name="/issue_unit_test/tag2" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">tag2[4:0]</obj_property>
-      <obj_property name="ObjectShortName">tag2[4:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-      <obj_property name="UseCustomSignalColor">true</obj_property>
-      <obj_property name="CustomSignalColor">#008080</obj_property>
-   </wvobject>
-   <wvobject fp_name="/issue_unit_test/tag3" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">tag3[4:0]</obj_property>
-      <obj_property name="ObjectShortName">tag3[4:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-      <obj_property name="UseCustomSignalColor">true</obj_property>
-      <obj_property name="CustomSignalColor">#008080</obj_property>
-   </wvobject>
-   <wvobject fp_name="/issue_unit_test/tagrf" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">tagrf[4:0]</obj_property>
-      <obj_property name="ObjectShortName">tagrf[4:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-      <obj_property name="UseCustomSignalColor">true</obj_property>
-      <obj_property name="CustomSignalColor">#008080</obj_property>
    </wvobject>
    <wvobject fp_name="/issue_unit_test/if_fop" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">if_fop[1:0]</obj_property>

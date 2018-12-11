@@ -1,7 +1,1 @@
-work	"Reg1BitR.vhd"
-work	"Reg32BitR.vhd"
-work	"Reg4BitR.vhd"
-work	"Reg5BitR.vhd"
-work	"buffer_line.vhd"
-work	"flipflop.vhd"
-work	"mux.vhd"
+work	"Issue_unit.vhd"

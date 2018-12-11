@@ -12,7 +12,6 @@ entity buffer_line is
 		Ri_in : in  STD_LOGIC_VECTOR (4 downto 0);
 		Fu_type_in : in  STD_LOGIC_VECTOR (1 downto 0);
 		-- exception
-		Exception_in : in  STD_LOGIC;
 		Exception_out : out  STD_LOGIC;
 		PC_entolhs : in  STD_LOGIC_VECTOR (31 downto 0);
 		PC_out : out  STD_LOGIC_VECTOR (31 downto 0);
@@ -23,10 +22,13 @@ entity buffer_line is
 		-- apo control
 		delete : in  STD_LOGIC;
 		issue : in  STD_LOGIC;
-		tag : in  STD_LOGIC_VECTOR (4 downto 0);
-		-- flags gia forward. pros control
+		-- kataxwrhtes anagnwshs. Gia forward
 		Rj : in  STD_LOGIC_VECTOR (4 downto 0);
 		Rk : in  STD_LOGIC_VECTOR (4 downto 0);
+		-- tag gia forward
+		tag : in  STD_LOGIC_VECTOR (4 downto 0);
+		tag_out : out  STD_LOGIC_VECTOR (4 downto 0);
+		-- flags gia forward. pros control
 		j_equal : out  STD_LOGIC;
 		k_equal : out  STD_LOGIC;
 		-- eksodos gia commit
@@ -77,7 +79,8 @@ END COMPONENT;
 
 signal valid, done, comparator, valid_reg_WrEn, done_reg_WrEn : std_logic;
 signal value_reg_out : STD_LOGIC_VECTOR (31 downto 0);
-signal tag_match_Q,exception_reg_WrEn, exception_reg_Din : STD_LOGIC;
+signal tag_match_Q, exception_reg_Din : STD_LOGIC;
+signal Ri : STD_LOGIC_VECTOR (4 downto 0);
 begin
 
 -- valid. allazei otan mpainei kainourgia entolh h diagrafetai
@@ -94,7 +97,7 @@ port map(
 valid_out <= valid;
 
 -- done
-done_reg_WrEn <= comparator or (not issue);
+done_reg_WrEn <= comparator or issue;
 
 done_reg : Reg1BitR
 port map(
@@ -113,8 +116,10 @@ port map(
 	WrEn => issue,
 	Din => Ri_in,
 	Reset => '0',
-	Dout => Ri_out);
+	Dout => Ri);
 	
+Ri_out <= Ri;
+
 -- value	
 Value_reg : Reg32BitR
 port map(
@@ -147,13 +152,13 @@ port map(
 	Dout => Fu_type_out(1));
 	
 -- exception
-exception_reg_WrEn <= issue or Exception_in;
-exception_reg_Din <= not issue;
+-- apagoreuoume na grapsei ston kataxwrhth 31. An kata to issue, Ri_in = 31 tote 8a xei exception
+exception_reg_Din <= '1' when Ri_in = "11111" else '0';
 
 exception_reg : Reg1BitR
 port map(
 	Clk => Clk,
-	WrEn => exception_reg_WrEn,
+	WrEn => issue,
 	Din => exception_reg_Din,
 	Reset => '0',
 	Dout => Exception_out);
@@ -166,7 +171,7 @@ port map(
 	Reset => '0',
 	Dout => PC_out);
 	
--- ginetai 1 otan iparxei simfwnia metaksu tag kai q
+-- ginetai 1 otan iparxei simfwnia metaksu tag kai Q apo to cdb
 tag_match_Q <= (cdb_Q(0) XNOR tag(0)) AND 
 					(cdb_Q(1) XNOR tag(1)) AND 
 					(cdb_Q(2) XNOR tag(2)) AND 
@@ -179,20 +184,28 @@ comparator <= '1'
 	when cdb_valid = '1' and tag_match_Q = '1' and valid = '1' and done = '0'
 	else '0';
 	
--- flags gia forward
-j_equal <= '1'
-	when ((Rj(0) XNOR tag(0)) AND 
-			(Rj(1) XNOR tag(1)) AND 
-			(Rj(2) XNOR tag(2)) AND 
-			(Rj(3) XNOR tag(3)) AND 
-			(Rj(4) XNOR tag(4))) = '1'
-	else '0';
+-- flags gia forward. Deixnei an to Ri tou einai kataxwrhths phghs ths entolhs pou diavazei Rj h Rk
+j_equal <= ((Rj(0) XNOR Ri(0)) AND 
+				(Rj(1) XNOR Ri(1)) AND 
+				(Rj(2) XNOR Ri(2)) AND 
+				(Rj(3) XNOR Ri(3)) AND 
+				(Rj(4) XNOR Ri(4)))AND
+				valid;
 	
-k_equal <= '1'
-	when ((Rk(0) XNOR tag(0)) AND 
-			(Rk(1) XNOR tag(1)) AND 
-			(Rk(2) XNOR tag(2)) AND 
-			(Rk(3) XNOR tag(3)) AND 
-			(Rk(4) XNOR tag(4))) = '1'
-	else '0';
+k_equal <= ((Rk(0) XNOR Ri(0)) AND 
+				(Rk(1) XNOR Ri(1)) AND 
+				(Rk(2) XNOR Ri(2)) AND 
+				(Rk(3) XNOR Ri(3)) AND 
+				(Rk(4) XNOR Ri(4)))AND
+				valid;
+	
+-- midenizetai otan exei swsta apotelesmata h grammh.
+-- to (NOT (done OR comparator)) ginetai 0 otan exei ta swsta apotelesmata h erxontai se auton ton kuklo
+-- etsi an diavastoun kai ta dedomena einai egkura tha bgei tag 0
+tag_out <= (tag(0) AND (NOT (done OR comparator))) &
+			  (tag(1) AND (NOT (done OR comparator))) &
+			  (tag(2) AND (NOT (done OR comparator))) &
+			  (tag(3) AND (NOT (done OR comparator))) &
+			  (tag(4) AND (NOT (done OR comparator)));
+
 end Behavioral;

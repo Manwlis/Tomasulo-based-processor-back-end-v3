@@ -1,0 +1,550 @@
+Release 13.4 - xst O.87xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: pointer.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "pointer.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "pointer"
+Output Format                      : NGC
+Target Device                      : xc3s1600e-5-fg320
+
+---- Source Options
+Top Module Name                    : pointer
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/arxitektonikh1/HRY415-project-3/code/pointer.vhd" in Library work.
+Entity <pointer> compiled.
+Entity <pointer> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <pointer> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <pointer> in library <work> (Architecture <behavioral>).
+WARNING:Xst:790 - "C:/arxitektonikh1/HRY415-project-3/code/pointer.vhd" line 30: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "C:/arxitektonikh1/HRY415-project-3/code/pointer.vhd" line 30: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "C:/arxitektonikh1/HRY415-project-3/code/pointer.vhd" line 30: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "C:/arxitektonikh1/HRY415-project-3/code/pointer.vhd" line 30: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "C:/arxitektonikh1/HRY415-project-3/code/pointer.vhd" line 30: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "C:/arxitektonikh1/HRY415-project-3/code/pointer.vhd" line 30: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "C:/arxitektonikh1/HRY415-project-3/code/pointer.vhd" line 30: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "C:/arxitektonikh1/HRY415-project-3/code/pointer.vhd" line 30: Index value(s) does not match array range, simulation mismatch.
+Entity <pointer> analyzed. Unit <pointer> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <pointer>.
+    Related source file is "C:/arxitektonikh1/HRY415-project-3/code/pointer.vhd".
+    Found 1-bit 8-to-1 multiplexer for signal <j_flags$mux0000> created at line 30.
+    Found 1-bit 8-to-1 multiplexer for signal <j_flags$mux0001> created at line 30.
+    Found 1-bit 8-to-1 multiplexer for signal <j_flags$mux0002> created at line 30.
+    Found 1-bit 8-to-1 multiplexer for signal <j_flags$mux0003> created at line 30.
+    Found 1-bit 8-to-1 multiplexer for signal <j_flags$mux0004> created at line 30.
+    Found 1-bit 8-to-1 multiplexer for signal <j_flags$mux0005> created at line 30.
+    Found 1-bit 8-to-1 multiplexer for signal <j_flags$mux0006> created at line 30.
+    Found 1-bit 8-to-1 multiplexer for signal <j_flags$mux0007> created at line 30.
+    Found 32-bit subtractor for signal <pointer$addsub0000> created at line 26.
+    Found 32-bit subtractor for signal <pointer$addsub0001> created at line 26.
+    Found 32-bit subtractor for signal <pointer$addsub0002> created at line 26.
+    Found 32-bit subtractor for signal <pointer$addsub0003> created at line 26.
+    Found 32-bit subtractor for signal <pointer$addsub0004> created at line 26.
+    Found 32-bit subtractor for signal <pointer$addsub0005> created at line 26.
+    Found 32-bit subtractor for signal <pointer$addsub0006> created at line 26.
+    Found 4-bit comparator less for signal <pointer$cmp_lt0000> created at line 27.
+    Found 32-bit comparator less for signal <pointer$cmp_lt0001> created at line 27.
+    Found 32-bit comparator less for signal <pointer$cmp_lt0002> created at line 27.
+    Found 32-bit comparator less for signal <pointer$cmp_lt0003> created at line 27.
+    Found 32-bit comparator less for signal <pointer$cmp_lt0004> created at line 27.
+    Found 32-bit comparator less for signal <pointer$cmp_lt0005> created at line 27.
+    Found 32-bit comparator less for signal <pointer$cmp_lt0006> created at line 27.
+    Found 32-bit comparator less for signal <pointer$cmp_lt0007> created at line 27.
+    Found 4-bit subtractor for signal <pointer$sub0000> created at line 26.
+    Summary:
+	inferred   8 Adder/Subtractor(s).
+	inferred   8 Comparator(s).
+	inferred   8 Multiplexer(s).
+Unit <pointer> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 8
+ 32-bit subtractor                                     : 7
+ 4-bit subtractor                                      : 1
+# Comparators                                          : 8
+ 32-bit comparator less                                : 7
+ 4-bit comparator less                                 : 1
+# Multiplexers                                         : 8
+ 1-bit 8-to-1 multiplexer                              : 8
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 8
+ 32-bit subtractor                                     : 7
+ 4-bit subtractor                                      : 1
+# Comparators                                          : 8
+ 32-bit comparator less                                : 7
+ 4-bit comparator less                                 : 1
+# Multiplexers                                         : 8
+ 1-bit 8-to-1 multiplexer                              : 8
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <pointer> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block pointer, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : pointer.ngr
+Top Level Output File Name         : pointer
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 15
+
+Cell Usage :
+# BELS                             : 614
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 2
+#      LUT2                        : 175
+#      LUT3                        : 15
+#      LUT4                        : 40
+#      MUXCY                       : 186
+#      MUXF5                       : 21
+#      MUXF6                       : 8
+#      VCC                         : 1
+#      XORCY                       : 164
+# IO Buffers                       : 15
+#      IBUF                        : 11
+#      OBUF                        : 4
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1600efg320-5 
+
+ Number of Slices:                      136  out of  14752     0%  
+ Number of 4 input LUTs:                233  out of  29504     0%  
+ Number of IOs:                          15
+ Number of bonded IOBs:                  15  out of    250     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 38.542ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 35032066998 / 4
+-------------------------------------------------------------------------
+Delay:               38.542ns (Levels of Logic = 208)
+  Source:            commit_sel_sig<0> (PAD)
+  Destination:       forward_sel_j<0> (PAD)
+
+  Data Path: commit_sel_sig<0> to forward_sel_j<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            12   1.106   0.969  commit_sel_sig_0_IBUF (Msub_pointer_sub0000_cy<0>)
+     LUT1:I0->O            1   0.612   0.000  Msub_pointer_addsub0001_cy<0>_rt (Msub_pointer_addsub0001_cy<0>_rt)
+     MUXCY:S->O            1   0.404   0.000  Msub_pointer_addsub0001_cy<0> (Msub_pointer_addsub0001_cy<0>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_pointer_addsub0001_cy<1> (Msub_pointer_addsub0001_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_pointer_addsub0001_cy<2> (Msub_pointer_addsub0001_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_pointer_addsub0001_cy<3> (Msub_pointer_addsub0001_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_pointer_addsub0001_cy<4> (Msub_pointer_addsub0001_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_pointer_addsub0001_cy<5> (Msub_pointer_addsub0001_cy<5>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_pointer_addsub0001_cy<6> (Msub_pointer_addsub0001_cy<6>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_pointer_addsub0001_cy<7> (Msub_pointer_addsub0001_cy<7>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_pointer_addsub0001_cy<8> (Msub_pointer_addsub0001_cy<8>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_pointer_addsub0001_cy<9> (Msub_pointer_addsub0001_cy<9>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_pointer_addsub0001_cy<10> (Msub_pointer_addsub0001_cy<10>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_pointer_addsub0001_cy<11> (Msub_pointer_addsub0001_cy<11>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_pointer_addsub0001_cy<12> (Msub_pointer_addsub0001_cy<12>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_pointer_addsub0001_cy<13> (Msub_pointer_addsub0001_cy<13>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_pointer_addsub0001_cy<14> (Msub_pointer_addsub0001_cy<14>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_pointer_addsub0001_cy<15> (Msub_pointer_addsub0001_cy<15>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_pointer_addsub0001_cy<16> (Msub_pointer_addsub0001_cy<16>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_pointer_addsub0001_cy<17> (Msub_pointer_addsub0001_cy<17>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_pointer_addsub0001_cy<18> (Msub_pointer_addsub0001_cy<18>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_pointer_addsub0001_cy<19> (Msub_pointer_addsub0001_cy<19>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_pointer_addsub0001_cy<20> (Msub_pointer_addsub0001_cy<20>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_pointer_addsub0001_cy<21> (Msub_pointer_addsub0001_cy<21>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_pointer_addsub0001_cy<22> (Msub_pointer_addsub0001_cy<22>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_pointer_addsub0001_cy<23> (Msub_pointer_addsub0001_cy<23>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_pointer_addsub0001_cy<24> (Msub_pointer_addsub0001_cy<24>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_pointer_addsub0001_cy<25> (Msub_pointer_addsub0001_cy<25>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_pointer_addsub0001_cy<26> (Msub_pointer_addsub0001_cy<26>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_pointer_addsub0001_cy<27> (Msub_pointer_addsub0001_cy<27>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_pointer_addsub0001_cy<28> (Msub_pointer_addsub0001_cy<28>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_pointer_addsub0001_cy<29> (Msub_pointer_addsub0001_cy<29>)
+     MUXCY:CI->O           0   0.051   0.000  Msub_pointer_addsub0001_cy<30> (Msub_pointer_addsub0001_cy<30>)
+     XORCY:CI->O          38   0.699   1.226  Msub_pointer_addsub0001_xor<31> (pointer_addsub0001<31>)
+     LUT2:I0->O            1   0.612   0.000  pointer_mux0002<0>11 (pointer_mux0002<0>1)
+     MUXCY:S->O            1   0.404   0.000  Msub_pointer_addsub0002_cy<0> (Msub_pointer_addsub0002_cy<0>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0002_cy<1> (Msub_pointer_addsub0002_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0002_cy<2> (Msub_pointer_addsub0002_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0002_cy<3> (Msub_pointer_addsub0002_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0002_cy<4> (Msub_pointer_addsub0002_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0002_cy<5> (Msub_pointer_addsub0002_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0002_cy<6> (Msub_pointer_addsub0002_cy<6>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0002_cy<7> (Msub_pointer_addsub0002_cy<7>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0002_cy<8> (Msub_pointer_addsub0002_cy<8>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0002_cy<9> (Msub_pointer_addsub0002_cy<9>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0002_cy<10> (Msub_pointer_addsub0002_cy<10>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0002_cy<11> (Msub_pointer_addsub0002_cy<11>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0002_cy<12> (Msub_pointer_addsub0002_cy<12>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0002_cy<13> (Msub_pointer_addsub0002_cy<13>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0002_cy<14> (Msub_pointer_addsub0002_cy<14>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0002_cy<15> (Msub_pointer_addsub0002_cy<15>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0002_cy<16> (Msub_pointer_addsub0002_cy<16>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0002_cy<17> (Msub_pointer_addsub0002_cy<17>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0002_cy<18> (Msub_pointer_addsub0002_cy<18>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0002_cy<19> (Msub_pointer_addsub0002_cy<19>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0002_cy<20> (Msub_pointer_addsub0002_cy<20>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0002_cy<21> (Msub_pointer_addsub0002_cy<21>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0002_cy<22> (Msub_pointer_addsub0002_cy<22>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0002_cy<23> (Msub_pointer_addsub0002_cy<23>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0002_cy<24> (Msub_pointer_addsub0002_cy<24>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0002_cy<25> (Msub_pointer_addsub0002_cy<25>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0002_cy<26> (Msub_pointer_addsub0002_cy<26>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0002_cy<27> (Msub_pointer_addsub0002_cy<27>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0002_cy<28> (Msub_pointer_addsub0002_cy<28>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0002_cy<29> (Msub_pointer_addsub0002_cy<29>)
+     MUXCY:CI->O           0   0.052   0.000  Msub_pointer_addsub0002_cy<30> (Msub_pointer_addsub0002_cy<30>)
+     XORCY:CI->O          40   0.699   1.227  Msub_pointer_addsub0002_xor<31> (pointer_addsub0002<31>)
+     LUT2:I0->O            1   0.612   0.000  pointer_mux0003<0>11 (pointer_mux0003<0>1)
+     MUXCY:S->O            1   0.404   0.000  Msub_pointer_addsub0003_cy<0> (Msub_pointer_addsub0003_cy<0>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0003_cy<1> (Msub_pointer_addsub0003_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0003_cy<2> (Msub_pointer_addsub0003_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0003_cy<3> (Msub_pointer_addsub0003_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0003_cy<4> (Msub_pointer_addsub0003_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0003_cy<5> (Msub_pointer_addsub0003_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0003_cy<6> (Msub_pointer_addsub0003_cy<6>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0003_cy<7> (Msub_pointer_addsub0003_cy<7>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0003_cy<8> (Msub_pointer_addsub0003_cy<8>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0003_cy<9> (Msub_pointer_addsub0003_cy<9>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0003_cy<10> (Msub_pointer_addsub0003_cy<10>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0003_cy<11> (Msub_pointer_addsub0003_cy<11>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0003_cy<12> (Msub_pointer_addsub0003_cy<12>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0003_cy<13> (Msub_pointer_addsub0003_cy<13>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0003_cy<14> (Msub_pointer_addsub0003_cy<14>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0003_cy<15> (Msub_pointer_addsub0003_cy<15>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0003_cy<16> (Msub_pointer_addsub0003_cy<16>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0003_cy<17> (Msub_pointer_addsub0003_cy<17>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0003_cy<18> (Msub_pointer_addsub0003_cy<18>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0003_cy<19> (Msub_pointer_addsub0003_cy<19>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0003_cy<20> (Msub_pointer_addsub0003_cy<20>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0003_cy<21> (Msub_pointer_addsub0003_cy<21>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0003_cy<22> (Msub_pointer_addsub0003_cy<22>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0003_cy<23> (Msub_pointer_addsub0003_cy<23>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0003_cy<24> (Msub_pointer_addsub0003_cy<24>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0003_cy<25> (Msub_pointer_addsub0003_cy<25>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0003_cy<26> (Msub_pointer_addsub0003_cy<26>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0003_cy<27> (Msub_pointer_addsub0003_cy<27>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0003_cy<28> (Msub_pointer_addsub0003_cy<28>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0003_cy<29> (Msub_pointer_addsub0003_cy<29>)
+     MUXCY:CI->O           0   0.052   0.000  Msub_pointer_addsub0003_cy<30> (Msub_pointer_addsub0003_cy<30>)
+     XORCY:CI->O          40   0.699   1.227  Msub_pointer_addsub0003_xor<31> (pointer_addsub0003<31>)
+     LUT2:I0->O            1   0.612   0.000  pointer_mux0004<0>11 (pointer_mux0004<0>1)
+     MUXCY:S->O            1   0.404   0.000  Msub_pointer_addsub0004_cy<0> (Msub_pointer_addsub0004_cy<0>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0004_cy<1> (Msub_pointer_addsub0004_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0004_cy<2> (Msub_pointer_addsub0004_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0004_cy<3> (Msub_pointer_addsub0004_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0004_cy<4> (Msub_pointer_addsub0004_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0004_cy<5> (Msub_pointer_addsub0004_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0004_cy<6> (Msub_pointer_addsub0004_cy<6>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0004_cy<7> (Msub_pointer_addsub0004_cy<7>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0004_cy<8> (Msub_pointer_addsub0004_cy<8>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0004_cy<9> (Msub_pointer_addsub0004_cy<9>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0004_cy<10> (Msub_pointer_addsub0004_cy<10>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0004_cy<11> (Msub_pointer_addsub0004_cy<11>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0004_cy<12> (Msub_pointer_addsub0004_cy<12>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0004_cy<13> (Msub_pointer_addsub0004_cy<13>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0004_cy<14> (Msub_pointer_addsub0004_cy<14>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0004_cy<15> (Msub_pointer_addsub0004_cy<15>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0004_cy<16> (Msub_pointer_addsub0004_cy<16>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0004_cy<17> (Msub_pointer_addsub0004_cy<17>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0004_cy<18> (Msub_pointer_addsub0004_cy<18>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0004_cy<19> (Msub_pointer_addsub0004_cy<19>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0004_cy<20> (Msub_pointer_addsub0004_cy<20>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0004_cy<21> (Msub_pointer_addsub0004_cy<21>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0004_cy<22> (Msub_pointer_addsub0004_cy<22>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0004_cy<23> (Msub_pointer_addsub0004_cy<23>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0004_cy<24> (Msub_pointer_addsub0004_cy<24>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0004_cy<25> (Msub_pointer_addsub0004_cy<25>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0004_cy<26> (Msub_pointer_addsub0004_cy<26>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0004_cy<27> (Msub_pointer_addsub0004_cy<27>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0004_cy<28> (Msub_pointer_addsub0004_cy<28>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0004_cy<29> (Msub_pointer_addsub0004_cy<29>)
+     MUXCY:CI->O           0   0.052   0.000  Msub_pointer_addsub0004_cy<30> (Msub_pointer_addsub0004_cy<30>)
+     XORCY:CI->O          40   0.699   1.227  Msub_pointer_addsub0004_xor<31> (pointer_addsub0004<31>)
+     LUT2:I0->O            1   0.612   0.000  pointer_mux0005<0>11 (pointer_mux0005<0>1)
+     MUXCY:S->O            1   0.404   0.000  Msub_pointer_addsub0005_cy<0> (Msub_pointer_addsub0005_cy<0>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0005_cy<1> (Msub_pointer_addsub0005_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0005_cy<2> (Msub_pointer_addsub0005_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0005_cy<3> (Msub_pointer_addsub0005_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0005_cy<4> (Msub_pointer_addsub0005_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0005_cy<5> (Msub_pointer_addsub0005_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0005_cy<6> (Msub_pointer_addsub0005_cy<6>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0005_cy<7> (Msub_pointer_addsub0005_cy<7>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0005_cy<8> (Msub_pointer_addsub0005_cy<8>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0005_cy<9> (Msub_pointer_addsub0005_cy<9>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0005_cy<10> (Msub_pointer_addsub0005_cy<10>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0005_cy<11> (Msub_pointer_addsub0005_cy<11>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0005_cy<12> (Msub_pointer_addsub0005_cy<12>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0005_cy<13> (Msub_pointer_addsub0005_cy<13>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0005_cy<14> (Msub_pointer_addsub0005_cy<14>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0005_cy<15> (Msub_pointer_addsub0005_cy<15>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0005_cy<16> (Msub_pointer_addsub0005_cy<16>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0005_cy<17> (Msub_pointer_addsub0005_cy<17>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0005_cy<18> (Msub_pointer_addsub0005_cy<18>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0005_cy<19> (Msub_pointer_addsub0005_cy<19>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0005_cy<20> (Msub_pointer_addsub0005_cy<20>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0005_cy<21> (Msub_pointer_addsub0005_cy<21>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0005_cy<22> (Msub_pointer_addsub0005_cy<22>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0005_cy<23> (Msub_pointer_addsub0005_cy<23>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0005_cy<24> (Msub_pointer_addsub0005_cy<24>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0005_cy<25> (Msub_pointer_addsub0005_cy<25>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0005_cy<26> (Msub_pointer_addsub0005_cy<26>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0005_cy<27> (Msub_pointer_addsub0005_cy<27>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0005_cy<28> (Msub_pointer_addsub0005_cy<28>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0005_cy<29> (Msub_pointer_addsub0005_cy<29>)
+     MUXCY:CI->O           0   0.051   0.000  Msub_pointer_addsub0005_cy<30> (Msub_pointer_addsub0005_cy<30>)
+     XORCY:CI->O          40   0.699   1.227  Msub_pointer_addsub0005_xor<31> (pointer_addsub0005<31>)
+     LUT2:I0->O            1   0.612   0.000  pointer_mux0006<0>11 (pointer_mux0006<0>1)
+     MUXCY:S->O            1   0.404   0.000  Msub_pointer_addsub0006_cy<0> (Msub_pointer_addsub0006_cy<0>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0006_cy<1> (Msub_pointer_addsub0006_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0006_cy<2> (Msub_pointer_addsub0006_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0006_cy<3> (Msub_pointer_addsub0006_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0006_cy<4> (Msub_pointer_addsub0006_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0006_cy<5> (Msub_pointer_addsub0006_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0006_cy<6> (Msub_pointer_addsub0006_cy<6>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0006_cy<7> (Msub_pointer_addsub0006_cy<7>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0006_cy<8> (Msub_pointer_addsub0006_cy<8>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0006_cy<9> (Msub_pointer_addsub0006_cy<9>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0006_cy<10> (Msub_pointer_addsub0006_cy<10>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0006_cy<11> (Msub_pointer_addsub0006_cy<11>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0006_cy<12> (Msub_pointer_addsub0006_cy<12>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0006_cy<13> (Msub_pointer_addsub0006_cy<13>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0006_cy<14> (Msub_pointer_addsub0006_cy<14>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0006_cy<15> (Msub_pointer_addsub0006_cy<15>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0006_cy<16> (Msub_pointer_addsub0006_cy<16>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0006_cy<17> (Msub_pointer_addsub0006_cy<17>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0006_cy<18> (Msub_pointer_addsub0006_cy<18>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0006_cy<19> (Msub_pointer_addsub0006_cy<19>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0006_cy<20> (Msub_pointer_addsub0006_cy<20>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0006_cy<21> (Msub_pointer_addsub0006_cy<21>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0006_cy<22> (Msub_pointer_addsub0006_cy<22>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0006_cy<23> (Msub_pointer_addsub0006_cy<23>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0006_cy<24> (Msub_pointer_addsub0006_cy<24>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0006_cy<25> (Msub_pointer_addsub0006_cy<25>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0006_cy<26> (Msub_pointer_addsub0006_cy<26>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0006_cy<27> (Msub_pointer_addsub0006_cy<27>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0006_cy<28> (Msub_pointer_addsub0006_cy<28>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_pointer_addsub0006_cy<29> (Msub_pointer_addsub0006_cy<29>)
+     MUXCY:CI->O           0   0.052   0.000  Msub_pointer_addsub0006_cy<30> (Msub_pointer_addsub0006_cy<30>)
+     XORCY:CI->O           7   0.699   0.754  Msub_pointer_addsub0006_xor<31> (pointer_addsub0006<31>)
+     LUT2:I0->O            3   0.612   0.451  pointer_mux0007<1>1 (pointer_mux0007<1>)
+     MUXF5:S->O            1   0.641   0.000  Mmux_j_flags_mux0007_3_f5 (Mmux_j_flags_mux0007_3_f5)
+     MUXF6:I1->O           2   0.451   0.383  Mmux_j_flags_mux0007_2_f6 (j_flags_mux0007)
+     LUT4:I3->O            3   0.612   0.481  forward_sel_j<0>111 (N4)
+     LUT3:I2->O            1   0.612   0.000  forward_sel_j<0>120_SW0_SW02 (forward_sel_j<0>120_SW0_SW01)
+     MUXF5:I0->O           1   0.278   0.387  forward_sel_j<0>120_SW0_SW0_f5 (N39)
+     LUT4:I2->O            1   0.612   0.360  forward_sel_j<0>120_SW0 (N29)
+     LUT4:I3->O            1   0.612   0.357  forward_sel_j<0>120 (forward_sel_j_0_OBUF)
+     OBUF:I->O                 3.169          forward_sel_j_0_OBUF (forward_sel_j<0>)
+    ----------------------------------------
+    Total                     38.542ns (28.265ns logic, 10.277ns route)
+                                       (73.3% logic, 26.7% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.90 secs
+ 
+--> 
+
+Total memory usage is 260012 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    8 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

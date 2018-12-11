@@ -45,7 +45,6 @@ component buffer_line
 		cdb_V : in  STD_LOGIC_VECTOR (31 downto 0);
 		Ri_in : in  STD_LOGIC_VECTOR (4 downto 0);
 		Fu_type_in : in  STD_LOGIC_VECTOR (1 downto 0);
-		Exception_in : in  STD_LOGIC;
 		Exception_out : out  STD_LOGIC;
 		Fu_type_out : out  STD_LOGIC_VECTOR (1 downto 0);
 		valid_out : out  STD_LOGIC;
@@ -53,6 +52,7 @@ component buffer_line
 		delete : in  STD_LOGIC;
 		issue : in  STD_LOGIC;
 		tag : in  STD_LOGIC_VECTOR (4 downto 0);
+		tag_out : out  STD_LOGIC_VECTOR (4 downto 0);
 		Rj : in  STD_LOGIC_VECTOR (4 downto 0);
 		Rk : in  STD_LOGIC_VECTOR (4 downto 0);
 		j_equal : out  STD_LOGIC;
@@ -84,7 +84,6 @@ component rob_control
 		V_commit : out  STD_LOGIC;
 		commit_sel : out  STD_LOGIC_VECTOR (2 downto 0);
 		exception_status : in  STD_LOGIC_VECTOR (7 downto 0);
-		exception_control : out  STD_LOGIC_VECTOR (7 downto 0);
 		exception_sel : out  STD_LOGIC_VECTOR (2 downto 0);
 		exception_valid : out  STD_LOGIC
 	);
@@ -94,11 +93,11 @@ end component;
 signal valid, done, j_flags, k_flags , exception_status : STD_LOGIC_VECTOR (7 downto 0);
 signal Fu_type_out : STD_LOGIC_VECTOR (15 downto 0);
 -- shmata apo control se lines
-signal delete, issue, exception_control : STD_LOGIC_VECTOR (7 downto 0);
+signal delete, issue : STD_LOGIC_VECTOR (7 downto 0);
 
 
 type array8_5 is array (0 to 7) of std_logic_vector(4 downto 0);
-signal Ri_out, tag : array8_5;
+signal Ri_out, tag, tag_out : array8_5;
 
 type array8_32 is array (0 to 7) of std_logic_vector(31 downto 0);
 signal V_out, PC_out : array8_32;
@@ -108,8 +107,9 @@ signal commit_sel, forward_sel_j, forward_sel_k, exception_sel : std_logic_vecto
 begin
 
 gen : for i in 0 to 7 generate
-
-	tag(i) <= std_logic_vector(to_unsigned(i, 5));
+	
+	-- la8e line exei ksexwristo kai hardcoded tag. Ksekinane apo to 00001 giati to "00000" einai to akuro tag
+	tag(i) <= std_logic_vector(to_unsigned(i + 1, 5));
 	
 	buffer_line : buffer_line
 	port map(
@@ -119,7 +119,6 @@ gen : for i in 0 to 7 generate
 		cdb_V => cdb_value,
 		Ri_in => Ri,
 		Fu_type_in => Fu_type,
-		Exception_in => exception_control(i),
 		Exception_out => exception_status(i),
 		Fu_type_out => Fu_type_out((2*i+1) downto (2*i)),
 		valid_out => valid(i),
@@ -127,6 +126,7 @@ gen : for i in 0 to 7 generate
 		delete => delete(i),
 		issue => issue(i),
 		tag => tag(i),
+		tag_out => tag_out(i),
 		Rj => Rj,
 		Rk => Rk,
 		j_equal => j_flags(i),
@@ -160,7 +160,6 @@ port map(
 	V_commit => V_commit,
 	commit_sel => commit_sel,
 	exception_status => exception_status,
-	exception_control => exception_control,
 	exception_sel => exception_sel,
 	exception_valid => exception_valid
 );
@@ -198,15 +197,14 @@ forward_data_j <=
 	V_out(7) when forward_sel_j = "111";
 
 Qj <=
-	tag(0) when forward_sel_j = "000" and done(0) = '0' else
-	tag(1) when forward_sel_j = "001" and done(1) = '0' else
-	tag(2) when forward_sel_j = "010" and done(2) = '0' else
-	tag(3) when forward_sel_j = "011" and done(3) = '0' else
-	tag(4) when forward_sel_j = "100" and done(4) = '0' else
-	tag(5) when forward_sel_j = "101" and done(5) = '0' else
-	tag(6) when forward_sel_j = "110" and done(6) = '0' else
-	tag(7) when forward_sel_j = "111" and done(7) = '0' else
-	"00000";
+	tag_out(0) when forward_sel_j = "000" else
+	tag_out(1) when forward_sel_j = "001" else
+	tag_out(2) when forward_sel_j = "010" else
+	tag_out(3) when forward_sel_j = "011" else
+	tag_out(4) when forward_sel_j = "100" else
+	tag_out(5) when forward_sel_j = "101" else
+	tag_out(6) when forward_sel_j = "110" else
+	tag_out(7) when forward_sel_j = "111";
 
 -- k forward muxes
 forward_data_k <=
@@ -220,15 +218,14 @@ forward_data_k <=
 	V_out(7) when forward_sel_k = "111";
 
 Qk <=
-	tag(0) when forward_sel_k = "000" and done(0) = '0' else
-	tag(1) when forward_sel_k = "001" and done(1) = '0' else
-	tag(2) when forward_sel_k = "010" and done(2) = '0' else
-	tag(3) when forward_sel_k = "011" and done(3) = '0' else
-	tag(4) when forward_sel_k = "100" and done(4) = '0' else
-	tag(5) when forward_sel_k = "101" and done(5) = '0' else
-	tag(6) when forward_sel_k = "110" and done(6) = '0' else
-	tag(7) when forward_sel_k = "111" and done(7) = '0' else
-	"00000";
+	tag_out(0) when forward_sel_k = "000" else
+	tag_out(1) when forward_sel_k = "001" else
+	tag_out(2) when forward_sel_k = "010" else
+	tag_out(3) when forward_sel_k = "011" else
+	tag_out(4) when forward_sel_k = "100" else
+	tag_out(5) when forward_sel_k = "101" else
+	tag_out(6) when forward_sel_k = "110" else
+	tag_out(7) when forward_sel_k = "111";
 
 -- pc exception mux
 PC_exception <=

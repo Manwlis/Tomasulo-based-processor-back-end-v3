@@ -1,5 +1,5 @@
 ISim log file
-Running: C:\arxitektonikh1\HRY415-project-3\code\buffer_line_test_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/arxitektonikh1/HRY415-project-3/code/buffer_line_test_isim_beh.wdb 
+Running: C:\arxitektonikh1\HRY415-project-3\code\Issue_unit_test_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/arxitektonikh1/HRY415-project-3/code/Issue_unit_test_isim_beh.wdb 
 ISim O.87xd (signature 0xc3576ebc)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.

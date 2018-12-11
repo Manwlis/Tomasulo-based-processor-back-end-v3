@@ -12,11 +12,12 @@ rs kai ta duo
 
 issue 
 	ta tags den pernane apo ekei pia
-	rob available elenxos /* TO-DO */ na testaristei
+	rob available elenxos
+	test
 
 top 
 	tag pane kateu8eian sta rs apo rf
-	/* TO-DO */ allagh diepafwn
+	/* TO-DO */ allagh diepafwn kai sundesewn
 
 RF
 	V block 
@@ -31,19 +32,20 @@ rob lines
 	comparator gia done
 	logikh enables
 	flags gia forward
-	/* TO-DO */ testarisma twn flags
-	isws na alaksei h or tou done kai na bgainei allo shma gia to forward
+	exception
+	/* TO-DO */ testarisma exception
 
 rob control
 	diepafh
 	pointers
 	issue
-	/* TO-DO */ commit, forwards, exceptions
+	/* TO-DO */ exceptions
 	/* TO-DO */ elenxos
 
 rob 
 	diepafh
-	datapath /* TO-DO */ logika 8elei allages
+	datapath 
+	/* TO-DO */ allages sto datapath ?
 	/* TO-DO */ elenxos
 
 
