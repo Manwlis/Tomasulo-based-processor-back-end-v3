@@ -11,27 +11,28 @@ entity reorder_buffer is
 		cdb_Q : in  STD_LOGIC_VECTOR (4 downto 0);
 		cdb_valid : in  STD_LOGIC;
 		-- issue
-		instr_valid : in  STD_LOGIC; -- hr8e entolh
-		available : out  STD_LOGIC; -- iparxei 8esh gia entolh
-		Fu_type : in  STD_LOGIC_VECTOR (1 downto 0);
-		Ri : in  STD_LOGIC_VECTOR (4 downto 0);
-		Rj : in  STD_LOGIC_VECTOR (4 downto 0);
-		Rk : in  STD_LOGIC_VECTOR (4 downto 0);
+		available : out  STD_LOGIC; -- Flag gia dia8esimo xwro.
+		instr_valid : in  STD_LOGIC; -- Hr8e entolh.
+		Fu_type : in  STD_LOGIC_VECTOR (1 downto 0); -- Tupos entolhs.
+		Ri : in  STD_LOGIC_VECTOR (4 downto 0); -- Kataxwrhths proorismou.
+		tag_issue : out STD_LOGIC_VECTOR (4 downto 0); -- pou apo8ikeuthke h entolh.
 		-- diavasma kataxoritwn kai forward (kata to issue)
-		Qj : out  STD_LOGIC_VECTOR (4 downto 0); -- apo pio line na perimenei ta dedomena an xreiazetai
-		Qk : out  STD_LOGIC_VECTOR (4 downto 0); -- apo pio line na perimenei ta dedomena an xreiazetai
-		forward_data_j : out  STD_LOGIC_VECTOR (31 downto 0); -- pros V unit
-		forward_data_k : out  STD_LOGIC_VECTOR (31 downto 0); -- pros V unit
-		forward_control_j : out STD_LOGIC; -- pros V unit
-		forward_control_k : out STD_LOGIC; -- pros V unit
+		Rj : in  STD_LOGIC_VECTOR (4 downto 0); -- Kataxwrhths phghs 1.
+		Rk : in  STD_LOGIC_VECTOR (4 downto 0); -- Kataxwrhths phghs 1.
+		Qj : out  STD_LOGIC_VECTOR (4 downto 0); -- Pio line na perimenei ta dedomena j.
+		Qk : out  STD_LOGIC_VECTOR (4 downto 0); -- Pio line na perimenei ta dedomena k.
+		forward_data_j : out  STD_LOGIC_VECTOR (31 downto 0); -- Dedomena gia Rj.
+		forward_data_k : out  STD_LOGIC_VECTOR (31 downto 0); -- Dedomena gia Rk.
+		forward_control_j : out STD_LOGIC; -- Pros V unit. Idopoiei oti stelnontai swsta dedomena gia to diavasma tou Rj.
+		forward_control_k : out STD_LOGIC; -- Pros V unit. Idopoiei oti stelnontai swsta dedomena gia to diavasma tou Rk.
 		-- commit (pros V unit)
-		commit_reg : out  STD_LOGIC_VECTOR (4 downto 0); -- kataxwrhths gia commit
-		commit_data : out  STD_LOGIC_VECTOR (31 downto 0); -- dedomena gia commit
-		V_commit : out  STD_LOGIC; -- commit flag
+		commit_reg : out  STD_LOGIC_VECTOR (4 downto 0); -- Kataxwrhths gia commit.
+		commit_data : out  STD_LOGIC_VECTOR (31 downto 0); -- Dedomena gia commit.
+		V_commit : out  STD_LOGIC; -- Pros V unit. Elenxei to enable tou kataxwrhth proorismou.
 		-- exception
-		PC_entolhs : in  STD_LOGIC_VECTOR (31 downto 0);
-		PC_exception : out STD_LOGIC_VECTOR (31 downto 0);
-		exception_valid : out STD_LOGIC
+		PC_entolhs : in  STD_LOGIC_VECTOR (31 downto 0); -- Program counter ths entolhs pou ginetai issue.
+		PC_exception : out STD_LOGIC_VECTOR (31 downto 0); -- Program counter ths entolhs pou kanei exception.
+		exception_valid : out STD_LOGIC -- Eidopiei oti egine exception.
 	);
 end reorder_buffer;
 
@@ -72,8 +73,6 @@ component rob_control
 		available : out  STD_LOGIC;
 		instr_valid : in  STD_LOGIC;
 		issue : out  STD_LOGIC_VECTOR (7 downto 0);
-		Rj : in  STD_LOGIC_VECTOR (4 downto 0);
-		Rk : in  STD_LOGIC_VECTOR (4 downto 0);
 		j_flags : in  STD_LOGIC_VECTOR (7 downto 0);
 		k_flags : in  STD_LOGIC_VECTOR (7 downto 0);
 		forward_control_j : out  STD_LOGIC;
@@ -111,7 +110,7 @@ gen : for i in 0 to 7 generate
 	-- la8e line exei ksexwristo kai hardcoded tag. Ksekinane apo to 00001 giati to "00000" einai to akuro tag
 	tag(i) <= std_logic_vector(to_unsigned(i + 1, 5));
 	
-	buffer_line : buffer_line
+	buffer_lines : buffer_line
 	port map(
 		Clk => Clk,
 		cdb_valid => cdb_valid,
@@ -148,8 +147,6 @@ port map(
 	available => available,
 	instr_valid => instr_valid,
 	issue => issue,
-	Rj => Rj,
-	Rk => Rk,
 	j_flags => j_flags,
 	k_flags => k_flags,
 	forward_control_j => forward_control_j,
@@ -163,6 +160,19 @@ port map(
 	exception_sel => exception_sel,
 	exception_valid => exception_valid
 );
+
+-- tag mux. Gia na kserei to oipolipo susthma se pia grammh apo8ikeythke h entolh.
+tag_issue <=
+	tag(0) when issue(0) = '1' else
+	tag(1) when issue(1) = '1' else
+	tag(2) when issue(2) = '1' else
+	tag(3) when issue(3) = '1' else
+	tag(4) when issue(4) = '1' else
+	tag(5) when issue(5) = '1' else
+	tag(6) when issue(6) = '1' else
+	tag(7) when issue(7) = '1';
+
+
 
 -- commit muxes
 commit_reg <= 

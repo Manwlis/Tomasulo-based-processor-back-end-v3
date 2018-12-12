@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "C:/arxitektonikh1/HRY415-project-3/code/Issue_unit_test_isim_beh.exe" -prj "C:/arxitektonikh1/HRY415-project-3/code/Issue_unit_test_beh.prj" "work.Issue_unit_test" 
+-intstyle "ise" -incremental -o "C:/arxitektonikh1/HRY415-project-3/code/reorder_buffer_test_isim_beh.exe" -prj "C:/arxitektonikh1/HRY415-project-3/code/reorder_buffer_test_beh.prj" "work.reorder_buffer_test" 

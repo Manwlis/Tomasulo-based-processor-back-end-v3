@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-12-11T18:07:26</DateModified>
+  <DateModified>2018-12-12T16:04:05</DateModified>
   <ModuleName>reorder_buffer</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/arxitektonikh1/HRY415-project-3/code/iseconfig/reorder_buffer.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/arxitektonikh1/HRY415-project-3/code</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/arxitektonikh1/HRY415-project-3/code\</ImplementationReportsDirectory>
   <DateInitialized>2018-12-11T18:07:25</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

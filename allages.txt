@@ -24,7 +24,7 @@ RF
 		efuge to forward apo ton CDB
 		forward apo buffers
 
-	/* TO-DO */ allagh diepafhs, sundesh rob
+	/* TO-DO */ allagh diepafhs, sundesh rob kai neou V block
 
 rob lines
 	diepafh
@@ -33,19 +33,19 @@ rob lines
 	logikh enables
 	flags gia forward
 	exception
-	/* TO-DO */ testarisma exception
+	/* TO-DO */ kalitero test
 
 rob control
 	diepafh
 	pointers
 	issue
-	/* TO-DO */ exceptions
-	/* TO-DO */ elenxos
+	commit
+	forward
+	exceptions
 
 rob 
 	diepafh
 	datapath 
-	/* TO-DO */ allages sto datapath ?
-	/* TO-DO */ elenxos
+	/* TO-DO */ kalitero test
 
 

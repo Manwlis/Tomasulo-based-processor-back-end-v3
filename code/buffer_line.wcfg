@@ -3,21 +3,20 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="C:/arxitektonikh1/HRY415-project-3/code/buffer_line_test_isim_beh.wdb" id="1" type="auto">
+      <db_ref path="C:/arxitektonikh1/HRY415-project-3/code/reorder_buffer_test_isim_beh.wdb" id="1" type="auto">
          <top_modules>
-            <top_module name="buffer_line_test" />
+            <top_module name="numeric_std" />
+            <top_module name="reorder_buffer_test" />
             <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="29" />
-   <wvobject fp_name="/buffer_line_test/clk" type="logic" db_ref_id="1">
+   <WVObjectSize size="36" />
+   <wvobject fp_name="/reorder_buffer_test/clk" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
-   </wvobject>
-   <wvobject fp_name="/buffer_line_test/tag" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">tag[4:0]</obj_property>
-      <obj_property name="ObjectShortName">tag[4:0]</obj_property>
    </wvobject>
    <wvobject fp_name="divider19" type="divider">
       <obj_property name="label">Issue</obj_property>
@@ -25,57 +24,69 @@
       <obj_property name="BkColor">128 128 255</obj_property>
       <obj_property name="TextColor">230 230 230</obj_property>
    </wvobject>
-   <wvobject fp_name="/buffer_line_test/issue" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">issue</obj_property>
-      <obj_property name="ObjectShortName">issue</obj_property>
+   <wvobject fp_name="/reorder_buffer_test/instr_valid" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">instr_valid</obj_property>
+      <obj_property name="ObjectShortName">instr_valid</obj_property>
    </wvobject>
-   <wvobject fp_name="/buffer_line_test/ri_in" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">ri_in[4:0]</obj_property>
-      <obj_property name="ObjectShortName">ri_in[4:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   <wvobject fp_name="/reorder_buffer_test/available" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">available</obj_property>
+      <obj_property name="ObjectShortName">available</obj_property>
    </wvobject>
-   <wvobject fp_name="/buffer_line_test/fu_type_in" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">fu_type_in[1:0]</obj_property>
-      <obj_property name="ObjectShortName">fu_type_in[1:0]</obj_property>
+   <wvobject fp_name="/reorder_buffer_test/ri" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ri[4:0]</obj_property>
+      <obj_property name="ObjectShortName">ri[4:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="divider22" type="divider">
-      <obj_property name="label">epikoinwnia me control</obj_property>
+   <wvobject fp_name="/reorder_buffer_test/fu_type" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">fu_type[1:0]</obj_property>
+      <obj_property name="ObjectShortName">fu_type[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/reorder_buffer_test/pc_entolhs" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pc_entolhs[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_entolhs[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider48" type="divider">
+      <obj_property name="label">Forward</obj_property>
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="BkColor">128 128 255</obj_property>
       <obj_property name="TextColor">230 230 230</obj_property>
    </wvobject>
-   <wvobject fp_name="/buffer_line_test/valid_out" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">valid_out</obj_property>
-      <obj_property name="ObjectShortName">valid_out</obj_property>
-   </wvobject>
-   <wvobject fp_name="/buffer_line_test/done_out" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">done_out</obj_property>
-      <obj_property name="ObjectShortName">done_out</obj_property>
-   </wvobject>
-   <wvobject fp_name="/buffer_line_test/fu_type_out" type="array" db_ref_id="1">
-      <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="ElementShortName">fu_type_out[1:0]</obj_property>
-      <obj_property name="ObjectShortName">fu_type_out[1:0]</obj_property>
-      <obj_property name="label">fu_type_out[1:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="divider18" type="divider">
-      <obj_property name="label">CDB</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="BkColor">128 128 255</obj_property>
-      <obj_property name="TextColor">230 230 230</obj_property>
-   </wvobject>
-   <wvobject fp_name="/buffer_line_test/cdb_valid" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">cdb_valid</obj_property>
-      <obj_property name="ObjectShortName">cdb_valid</obj_property>
-   </wvobject>
-   <wvobject fp_name="/buffer_line_test/cdb_q" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">cdb_q[4:0]</obj_property>
-      <obj_property name="ObjectShortName">cdb_q[4:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/buffer_line_test/cdb_v" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">cdb_v[31:0]</obj_property>
-      <obj_property name="ObjectShortName">cdb_v[31:0]</obj_property>
+   <wvobject fp_name="/reorder_buffer_test/rj" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rj[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rj[4:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/reorder_buffer_test/rk" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rk[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rk[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/reorder_buffer_test/qj" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">qj[4:0]</obj_property>
+      <obj_property name="ObjectShortName">qj[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/reorder_buffer_test/qk" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">qk[4:0]</obj_property>
+      <obj_property name="ObjectShortName">qk[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/reorder_buffer_test/forward_data_j" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">forward_data_j[31:0]</obj_property>
+      <obj_property name="ObjectShortName">forward_data_j[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/reorder_buffer_test/forward_data_k" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">forward_data_k[31:0]</obj_property>
+      <obj_property name="ObjectShortName">forward_data_k[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/reorder_buffer_test/forward_control_j" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">forward_control_j</obj_property>
+      <obj_property name="ObjectShortName">forward_control_j</obj_property>
+   </wvobject>
+   <wvobject fp_name="/reorder_buffer_test/forward_control_k" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">forward_control_k</obj_property>
+      <obj_property name="ObjectShortName">forward_control_k</obj_property>
    </wvobject>
    <wvobject fp_name="divider21" type="divider">
       <obj_property name="label">commit</obj_property>
@@ -83,18 +94,20 @@
       <obj_property name="BkColor">128 128 255</obj_property>
       <obj_property name="TextColor">230 230 230</obj_property>
    </wvobject>
-   <wvobject fp_name="/buffer_line_test/delete" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">delete</obj_property>
-      <obj_property name="ObjectShortName">delete</obj_property>
+   <wvobject fp_name="/reorder_buffer_test/v_commit" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">v_commit</obj_property>
+      <obj_property name="ObjectShortName">v_commit</obj_property>
+      <obj_property name="label">v_commit</obj_property>
    </wvobject>
-   <wvobject fp_name="/buffer_line_test/v_out" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">v_out[31:0]</obj_property>
-      <obj_property name="ObjectShortName">v_out[31:0]</obj_property>
+   <wvobject fp_name="/reorder_buffer_test/commit_reg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">commit_reg[4:0]</obj_property>
+      <obj_property name="ObjectShortName">commit_reg[4:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/buffer_line_test/ri_out" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">ri_out[4:0]</obj_property>
-      <obj_property name="ObjectShortName">ri_out[4:0]</obj_property>
+   <wvobject fp_name="/reorder_buffer_test/commit_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">commit_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">commit_data[31:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="divider20" type="divider">
@@ -103,48 +116,74 @@
       <obj_property name="BkColor">128 128 255</obj_property>
       <obj_property name="TextColor">230 230 230</obj_property>
    </wvobject>
-   <wvobject fp_name="/buffer_line_test/exception_in" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">exception_in</obj_property>
-      <obj_property name="ObjectShortName">exception_in</obj_property>
+   <wvobject fp_name="/reorder_buffer_test/pc_exception" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pc_exception[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_exception[31:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/buffer_line_test/pc_entolhs" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">pc_entolhs[31:0]</obj_property>
-      <obj_property name="ObjectShortName">pc_entolhs[31:0]</obj_property>
+   <wvobject fp_name="/reorder_buffer_test/exception_valid" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">exception_valid</obj_property>
+      <obj_property name="ObjectShortName">exception_valid</obj_property>
    </wvobject>
-   <wvobject fp_name="/buffer_line_test/exception_out" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">exception_out</obj_property>
-      <obj_property name="ObjectShortName">exception_out</obj_property>
-   </wvobject>
-   <wvobject fp_name="/buffer_line_test/pc_out" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">pc_out[31:0]</obj_property>
-      <obj_property name="ObjectShortName">pc_out[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="divider48" type="divider">
-      <obj_property name="label">Forward</obj_property>
+   <wvobject fp_name="divider18" type="divider">
+      <obj_property name="label">CDB</obj_property>
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="BkColor">128 128 255</obj_property>
       <obj_property name="TextColor">230 230 230</obj_property>
    </wvobject>
-   <wvobject fp_name="/buffer_line_test/tag_out" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">tag_out[4:0]</obj_property>
-      <obj_property name="ObjectShortName">tag_out[4:0]</obj_property>
+   <wvobject fp_name="/reorder_buffer_test/cdb_valid" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cdb_valid</obj_property>
+      <obj_property name="ObjectShortName">cdb_valid</obj_property>
    </wvobject>
-   <wvobject fp_name="/buffer_line_test/rk" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">rk[4:0]</obj_property>
-      <obj_property name="ObjectShortName">rk[4:0]</obj_property>
+   <wvobject fp_name="/reorder_buffer_test/cdb_q" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cdb_q[4:0]</obj_property>
+      <obj_property name="ObjectShortName">cdb_q[4:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/buffer_line_test/rj" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">rj[4:0]</obj_property>
-      <obj_property name="ObjectShortName">rj[4:0]</obj_property>
+   <wvobject fp_name="/reorder_buffer_test/cdb_value" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cdb_value[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cdb_value[31:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/buffer_line_test/j_equal" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">j_equal</obj_property>
-      <obj_property name="ObjectShortName">j_equal</obj_property>
+   <wvobject fp_name="divider22" type="divider">
+      <obj_property name="label">Status</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
    </wvobject>
-   <wvobject fp_name="/buffer_line_test/k_equal" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">k_equal</obj_property>
-      <obj_property name="ObjectShortName">k_equal</obj_property>
+   <wvobject fp_name="/reorder_buffer_test/uut/rob_control0/valid" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">valid[7:0]</obj_property>
+      <obj_property name="ObjectShortName">valid[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/reorder_buffer_test/uut/rob_control0/done" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">done[7:0]</obj_property>
+      <obj_property name="ObjectShortName">done[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider65" type="divider">
+      <obj_property name="label">Pointers</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/reorder_buffer_test/uut/rob_control0/head" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">head[7:0]</obj_property>
+      <obj_property name="ObjectShortName">head[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/reorder_buffer_test/uut/rob_control0/free" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">free[7:0]</obj_property>
+      <obj_property name="ObjectShortName">free[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider66" type="divider">
+      <obj_property name="label">Controls</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/reorder_buffer_test/uut/rob_control0/delete" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">delete[7:0]</obj_property>
+      <obj_property name="ObjectShortName">delete[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/reorder_buffer_test/uut/rob_control0/issue" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">issue[7:0]</obj_property>
+      <obj_property name="ObjectShortName">issue[7:0]</obj_property>
    </wvobject>
 </wave_config>

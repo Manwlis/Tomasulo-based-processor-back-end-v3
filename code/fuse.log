@@ -1,18 +1,38 @@
-Running: E:\Xilinx\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/arxitektonikh1/HRY415-project-3/code/Issue_unit_test_isim_beh.exe -prj C:/arxitektonikh1/HRY415-project-3/code/Issue_unit_test_beh.prj work.Issue_unit_test 
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -o "C:/arxitektonikh1/HRY415-project-3/code/reorder_buffer_test_isim_beh.exe" -prj "C:/arxitektonikh1/HRY415-project-3/code/reorder_buffer_test_beh.prj" "work.reorder_buffer_test" 
 ISim O.87xd (signature 0xc3576ebc)
 Number of CPUs detected in this system: 16
 Turning on mult-threading, number of parallel sub-compilation jobs: 32 
 Determining compilation order of HDL files
-Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/Issue_unit.vhd" into library work
-Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/Issue_unit_test.vhd" into library work
+Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/mux.vhd" into library work
+Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/flipflop.vhd" into library work
+Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/Reg1BitR.vhd" into library work
+Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/Reg4BitR.vhd" into library work
+Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/Reg5BitR.vhd" into library work
+Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/Reg32BitR.vhd" into library work
+Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/rob_control.vhd" into library work
+Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/buffer_line.vhd" into library work
+Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/reorder_buffer.vhd" into library work
+Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/reorder_buffer_test.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling package standard
 Compiling package std_logic_1164
-Compiling architecture behavioral of entity Issue_unit [issue_unit_default]
-Compiling architecture behavior of entity issue_unit_test
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package numeric_std
+Compiling architecture behavioral of entity mux [mux_default]
+Compiling architecture behavioral of entity flipflop [flipflop_default]
+Compiling architecture behavioral of entity Reg1BitR [reg1bitr_default]
+Compiling architecture behavioral of entity Reg5BitR [reg5bitr_default]
+Compiling architecture behavioral of entity Reg4BitR [reg4bitr_default]
+Compiling architecture structural of entity Reg32BitR [reg32bitr_default]
+Compiling architecture behavioral of entity buffer_line [buffer_line_default]
+Compiling architecture behavioral of entity rob_control [rob_control_default]
+Compiling architecture behavioral of entity reorder_buffer [reorder_buffer_default]
+Compiling architecture behavior of entity reorder_buffer_test
 Time Resolution for simulation is 1ps.
-Compiled 5 VHDL Units
-Built simulation executable C:/arxitektonikh1/HRY415-project-3/code/Issue_unit_test_isim_beh.exe
-Fuse Memory Usage: 31720 KB
-Fuse CPU Usage: 561 ms
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 24 VHDL Units
+Built simulation executable C:/arxitektonikh1/HRY415-project-3/code/reorder_buffer_test_isim_beh.exe
+Fuse Memory Usage: 39832 KB
+Fuse CPU Usage: 826 ms

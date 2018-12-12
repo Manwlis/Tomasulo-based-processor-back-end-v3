@@ -42,7 +42,7 @@ ARCHITECTURE behavior OF pointer_test IS
     COMPONENT pointer
     PORT(
          j_flags : IN  std_logic_vector(7 downto 0);
-         commit_sel_sig : IN  std_logic_vector(2 downto 0);
+         head_encoded : IN  std_logic_vector(2 downto 0);
          forward_sel_j : OUT  std_logic_vector(2 downto 0);
          forward_control_j : OUT  std_logic
         );
@@ -51,7 +51,7 @@ ARCHITECTURE behavior OF pointer_test IS
 
    --Inputs
    signal j_flags : std_logic_vector(7 downto 0) := (others => '0');
-   signal commit_sel_sig : std_logic_vector(2 downto 0) := (others => '0');
+   signal head_encoded : std_logic_vector(2 downto 0) := (others => '0');
 
  	--Outputs
    signal forward_sel_j : std_logic_vector(2 downto 0);
@@ -64,7 +64,7 @@ BEGIN
 	-- Instantiate the Unit Under Test (UUT)
    uut: pointer PORT MAP (
           j_flags => j_flags,
-          commit_sel_sig => commit_sel_sig,
+          head_encoded => head_encoded,
           forward_sel_j => forward_sel_j,
           forward_control_j => forward_control_j
         );
@@ -76,39 +76,39 @@ BEGIN
    begin		
 	
 		j_flags <= "11111111";
-		commit_sel_sig <= "010";
+		head_encoded <= "010";
 		wait for 100 ns;	
 
 		j_flags <= "11110111";
-		commit_sel_sig <= "010";
+		head_encoded <= "010";
 		wait for 100 ns;	
 
 		j_flags <= "11100111";
-		commit_sel_sig <= "010";
+		head_encoded <= "010";
 		wait for 100 ns;	
 
 		j_flags <= "11000111";
-		commit_sel_sig <= "010";
+		head_encoded <= "010";
 		wait for 100 ns;	
 
 		j_flags <= "10000111";
-		commit_sel_sig <= "010";
+		head_encoded <= "010";
 		wait for 100 ns;	
 
 		j_flags <= "00000111";
-		commit_sel_sig <= "010";
+		head_encoded <= "010";
 		wait for 100 ns;	
 		
 		j_flags <= "00000110";
-		commit_sel_sig <= "010";
+		head_encoded <= "010";
 		wait for 100 ns;	
 		
 		j_flags <= "00000100";
-		commit_sel_sig <= "010";
+		head_encoded <= "010";
 		wait for 100 ns;	
 		
 		j_flags <= "00000000";
-		commit_sel_sig <= "010";
+		head_encoded <= "010";
 		wait for 100 ns;	
       -- insert stimulus here 
 

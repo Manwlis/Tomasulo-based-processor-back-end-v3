@@ -1,0 +1,10 @@
+Command line:
+   reorder_buffer_test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50001
+
+Wed Dec 12 19:35:16 2018
+
+
+ Elaboration Time: 0.124801 sec

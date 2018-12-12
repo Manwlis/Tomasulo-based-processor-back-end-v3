@@ -202,10 +202,10 @@ k_equal <= ((Rk(0) XNOR Ri(0)) AND
 -- midenizetai otan exei swsta apotelesmata h grammh.
 -- to (NOT (done OR comparator)) ginetai 0 otan exei ta swsta apotelesmata h erxontai se auton ton kuklo
 -- etsi an diavastoun kai ta dedomena einai egkura tha bgei tag 0
-tag_out <= (tag(0) AND (NOT (done OR comparator))) &
-			  (tag(1) AND (NOT (done OR comparator))) &
-			  (tag(2) AND (NOT (done OR comparator))) &
+tag_out <= (tag(4) AND (NOT (done OR comparator))) &
 			  (tag(3) AND (NOT (done OR comparator))) &
-			  (tag(4) AND (NOT (done OR comparator)));
+			  (tag(2) AND (NOT (done OR comparator))) &
+			  (tag(1) AND (NOT (done OR comparator))) &
+			  (tag(0) AND (NOT (done OR comparator)));
 
 end Behavioral;
