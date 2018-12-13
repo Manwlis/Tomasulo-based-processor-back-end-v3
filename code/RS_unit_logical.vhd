@@ -68,8 +68,6 @@ component RS_logical_control
 port(
 		Clk : in  STD_LOGIC;
 		IssueRs : in  STD_LOGIC;
-		CDB_valid : in  STD_LOGIC;
-		CDB_Q : in  STD_LOGIC_VECTOR (4 downto 0);
 		available : out  STD_LOGIC;
 		RS_line_select : out  STD_LOGIC_VECTOR (1 downto 0);
 		readyFU : in  STD_LOGIC;
@@ -89,7 +87,7 @@ signal tag_out : array3_5;
 type array3_2 is array (0 to 1) of std_logic_vector(1 downto 0);
 signal Fop_out_line : array3_2;
 
-signal control_enable, efuge_enable, ready_for_exec, busy_enable, busy_out : std_logic_vector(1 downto 0);
+signal control_enable, ready_for_exec, busy_enable, busy_out : std_logic_vector(1 downto 0);
 signal line_select : std_logic_vector(1 downto 0);
 
 begin
@@ -154,8 +152,6 @@ control : RS_logical_control
 port map(
 	Clk => Clk,
 	IssueRs => issue_ready,
-	CDB_Q => CDB(36 downto 32),
-	CDB_valid => CDB(37),
 	available => available,
 	RS_line_select => line_select,
 	readyFU => ready_FU,

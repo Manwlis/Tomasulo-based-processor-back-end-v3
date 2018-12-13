@@ -31,8 +31,7 @@ entity reorder_buffer is
 		V_commit : out  STD_LOGIC; -- Pros V unit. Elenxei to enable tou kataxwrhth proorismou.
 		-- exception
 		PC_entolhs : in  STD_LOGIC_VECTOR (31 downto 0); -- Program counter ths entolhs pou ginetai issue.
-		PC_exception : out STD_LOGIC_VECTOR (31 downto 0); -- Program counter ths entolhs pou kanei exception.
-		exception_valid : out STD_LOGIC -- Eidopiei oti egine exception.
+		PC_exception : out STD_LOGIC_VECTOR (31 downto 0) -- Program counter ths entolhs pou kanei exception.
 	);
 end reorder_buffer;
 
@@ -102,6 +101,7 @@ type array8_32 is array (0 to 7) of std_logic_vector(31 downto 0);
 signal V_out, PC_out : array8_32;
 
 signal commit_sel, forward_sel_j, forward_sel_k, exception_sel : std_logic_vector(2 downto 0);
+signal exception_valid : std_logic;
 
 begin
 
@@ -170,7 +170,8 @@ tag_issue <=
 	tag(4) when issue(4) = '1' else
 	tag(5) when issue(5) = '1' else
 	tag(6) when issue(6) = '1' else
-	tag(7) when issue(7) = '1';
+	tag(7) when issue(7) = '1' else
+	"00000";
 
 
 
@@ -239,13 +240,14 @@ Qk <=
 
 -- pc exception mux
 PC_exception <=
-	PC_out(0) when exception_sel = "000" else
-	PC_out(1) when exception_sel = "001" else
-	PC_out(2) when exception_sel = "010" else
-	PC_out(3) when exception_sel = "011" else
-	PC_out(4) when exception_sel = "100" else
-	PC_out(5) when exception_sel = "101" else
-	PC_out(6) when exception_sel = "110" else
-	PC_out(7) when exception_sel = "111";
+	PC_out(0) when exception_sel = "000" AND exception_valid = '1' else
+	PC_out(1) when exception_sel = "001" AND exception_valid = '1' else
+	PC_out(2) when exception_sel = "010" AND exception_valid = '1' else
+	PC_out(3) when exception_sel = "011" AND exception_valid = '1' else
+	PC_out(4) when exception_sel = "100" AND exception_valid = '1' else
+	PC_out(5) when exception_sel = "101" AND exception_valid = '1' else
+	PC_out(6) when exception_sel = "110" AND exception_valid = '1' else
+	PC_out(7) when exception_sel = "111" AND exception_valid = '1' else
+	"00000000000000000000000000000000";
 	
 end Behavioral;

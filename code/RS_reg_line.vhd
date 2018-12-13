@@ -79,7 +79,7 @@ port
  output : out std_logic);
 END COMPONENT;
 
-signal busy_in, busy_reg_out, comparator_j, comparator_k: std_logic;
+signal busy_reg_out, comparator_j, comparator_k: std_logic;
 signal Vj_WrEn, Vk_WrEn : std_logic;
 signal Vj_in, Vk_in, Vj_reg_out, Vk_reg_out : std_logic_vector(31 downto 0);
 signal Qj_in, Qk_in, Qj, Qk : std_logic_vector(4 downto 0);

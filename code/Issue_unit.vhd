@@ -32,7 +32,7 @@ begin
 	Rk <= IF_Rk;
 	PC_entolhs <= PC_in;
 	
-	process(issue, available, FU_type)
+	process(issue, available, FU_type, available_rob)
 	begin
 		-- epilogh katallhlou RS kai elenxos domikwn kindinwn
 		if issue = '1' then

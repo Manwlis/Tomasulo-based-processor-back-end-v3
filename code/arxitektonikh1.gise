@@ -22,6 +22,16 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="arxitektonikh1.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Back_end.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Back_end.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Back_end.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Back_end.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Back_end.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Back_end.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Back_end.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Back_end.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Back_end_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Back_end_xst.xrpt"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="CDBunit_guide.ncd" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="FU_arithmetic_guide.ncd" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
@@ -29,30 +39,20 @@
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
-    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="reorder_buffer.cmd_log"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="reorder_buffer.lso"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="reorder_buffer.ngc"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="reorder_buffer.ngr"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="reorder_buffer.prj"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="reorder_buffer.stx"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="reorder_buffer.syr"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="reorder_buffer.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="reorder_buffer_test_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="reorder_buffer_test_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="reorder_buffer_test_isim_beh.wdb"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="reorder_buffer_vhdl.prj"/>
-    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="reorder_buffer_xst.xrpt"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1544633381" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1544633381">
+    <transform xil_pn:end_ts="1544718215" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1544718215">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1544634465" xil_pn:in_ck="-7718114899088475925" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1544634465">
+    <transform xil_pn:end_ts="1544718215" xil_pn:in_ck="-8585186543045753632" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1544718215">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
@@ -90,6 +90,7 @@
       <outfile xil_pn:name="arithmetic_unit.vhd"/>
       <outfile xil_pn:name="buffer_line.vhd"/>
       <outfile xil_pn:name="buffer_line_test.vhd"/>
+      <outfile xil_pn:name="cyclical_shift_register.vhd"/>
       <outfile xil_pn:name="demux1bit.vhd"/>
       <outfile xil_pn:name="demux2to4.vhd"/>
       <outfile xil_pn:name="demux3to8.vhd"/>
@@ -122,19 +123,19 @@
       <outfile xil_pn:name="tuxaies_entoles_me_eksartiseis.vhd"/>
       <outfile xil_pn:name="tuxaies_entoles_xwris_eksarthseis.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1544633381" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="8680266539710048513" xil_pn:start_ts="1544633381">
+    <transform xil_pn:end_ts="1544718215" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="8680266539710048513" xil_pn:start_ts="1544718215">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1544633381" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-2969737985853604541" xil_pn:start_ts="1544633381">
+    <transform xil_pn:end_ts="1544718215" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-2969737985853604541" xil_pn:start_ts="1544718215">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1544633381" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="183687259602402218" xil_pn:start_ts="1544633381">
+    <transform xil_pn:end_ts="1544718215" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-5077458075847668155" xil_pn:start_ts="1544718215">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1544634465" xil_pn:in_ck="-7718114899088475925" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1544634465">
+    <transform xil_pn:end_ts="1544718215" xil_pn:in_ck="-8585186543045753632" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1544718215">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
@@ -173,6 +174,7 @@
       <outfile xil_pn:name="arithmetic_unit.vhd"/>
       <outfile xil_pn:name="buffer_line.vhd"/>
       <outfile xil_pn:name="buffer_line_test.vhd"/>
+      <outfile xil_pn:name="cyclical_shift_register.vhd"/>
       <outfile xil_pn:name="demux1bit.vhd"/>
       <outfile xil_pn:name="demux2to4.vhd"/>
       <outfile xil_pn:name="demux3to8.vhd"/>
@@ -205,7 +207,7 @@
       <outfile xil_pn:name="tuxaies_entoles_me_eksartiseis.vhd"/>
       <outfile xil_pn:name="tuxaies_entoles_xwris_eksarthseis.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1544634481" xil_pn:in_ck="-7718114899088475925" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-162393412341307804" xil_pn:start_ts="1544634465">
+    <transform xil_pn:end_ts="1544718231" xil_pn:in_ck="-8585186543045753632" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-162393412341307804" xil_pn:start_ts="1544718215">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
@@ -220,7 +222,7 @@
       <outfile xil_pn:name="reorder_buffer_test_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1544634482" xil_pn:in_ck="-7925107661630075782" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="8326463307728033905" xil_pn:start_ts="1544634481">
+    <transform xil_pn:end_ts="1544718232" xil_pn:in_ck="-7925107661630075782" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="8326463307728033905" xil_pn:start_ts="1544718231">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
@@ -230,46 +232,46 @@
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="reorder_buffer_test_isim_beh.wdb"/>
     </transform>
-    <transform xil_pn:end_ts="1544631947" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-6504078008702559983" xil_pn:start_ts="1544631947">
+    <transform xil_pn:end_ts="1544718357" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="5424660838146843404" xil_pn:start_ts="1544718357">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1544631947" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="183687259602402218" xil_pn:start_ts="1544631947">
+    <transform xil_pn:end_ts="1544718357" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-5077458075847668155" xil_pn:start_ts="1544718357">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1544631947" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1544631947">
+    <transform xil_pn:end_ts="1544718357" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1544718357">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1544631947" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="8724358494721387727" xil_pn:start_ts="1544631947">
+    <transform xil_pn:end_ts="1544718357" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-1677745569607991222" xil_pn:start_ts="1544718357">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1544631947" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="6080340526466663008" xil_pn:start_ts="1544631947">
+    <transform xil_pn:end_ts="1544718357" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="6080340526466663008" xil_pn:start_ts="1544718357">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1544631947" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-3427772032546315532" xil_pn:start_ts="1544631947">
+    <transform xil_pn:end_ts="1544718357" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-1389720759440947697" xil_pn:start_ts="1544718357">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1544631969" xil_pn:in_ck="-1760476012356050510" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-2048163794044983769" xil_pn:start_ts="1544631947">
+    <transform xil_pn:end_ts="1544718890" xil_pn:in_ck="8376117053569016256" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="7063664862482843490" xil_pn:start_ts="1544718837">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="Back_end.lso"/>
+      <outfile xil_pn:name="Back_end.ngc"/>
+      <outfile xil_pn:name="Back_end.ngr"/>
+      <outfile xil_pn:name="Back_end.prj"/>
+      <outfile xil_pn:name="Back_end.stx"/>
+      <outfile xil_pn:name="Back_end.syr"/>
+      <outfile xil_pn:name="Back_end.xst"/>
+      <outfile xil_pn:name="Back_end_vhdl.prj"/>
+      <outfile xil_pn:name="Back_end_xst.xrpt"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
-      <outfile xil_pn:name="reorder_buffer.lso"/>
-      <outfile xil_pn:name="reorder_buffer.ngc"/>
-      <outfile xil_pn:name="reorder_buffer.ngr"/>
-      <outfile xil_pn:name="reorder_buffer.prj"/>
-      <outfile xil_pn:name="reorder_buffer.stx"/>
-      <outfile xil_pn:name="reorder_buffer.syr"/>
-      <outfile xil_pn:name="reorder_buffer.xst"/>
-      <outfile xil_pn:name="reorder_buffer_vhdl.prj"/>
-      <outfile xil_pn:name="reorder_buffer_xst.xrpt"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>

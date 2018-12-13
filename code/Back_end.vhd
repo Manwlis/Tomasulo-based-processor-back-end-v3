@@ -13,11 +13,14 @@ entity Back_end is
 		IF_Rj : in  STD_LOGIC_VECTOR (4 downto 0);
 		IF_Rk : in  STD_LOGIC_VECTOR (4 downto 0);
 		accepted : out  STD_LOGIC;
-		PC_in : in  STD_LOGIC_VECTOR (31 downto 0)
+		PC_in : in  STD_LOGIC_VECTOR (31 downto 0);
+		PC_exception : out STD_LOGIC_VECTOR (31 downto 0)
 		);
 end Back_end;
 
+
 architecture Behavioral of Back_end is
+
 
 -- Issue_unit -----------------------------------------------------------------------------
 component Issue_unit
@@ -37,7 +40,9 @@ component Issue_unit
 		Rj : out  STD_LOGIC_VECTOR (4 downto 0);
 		Rk : out  STD_LOGIC_VECTOR (4 downto 0);
 		PC_in : in  STD_LOGIC_VECTOR (31 downto 0);
-		PC_entolhs : out  STD_LOGIC_VECTOR (31 downto 0));
+		PC_entolhs : out  STD_LOGIC_VECTOR (31 downto 0);
+		available_rob : in  STD_LOGIC
+	);
 end component;
 	
 signal available, issueRS : STD_LOGIC_VECTOR (2 downto 0) := "000";
@@ -45,6 +50,7 @@ signal Instr_valid :STD_LOGIC;
 signal Fop : STD_LOGIC_VECTOR (1 downto 0);
 signal Ri, Rj, Rk: STD_LOGIC_VECTOR (4 downto 0);
 signal PC_entolhs: STD_LOGIC_VECTOR (31 downto 0);
+
 
 -- RS_unit_arithemtic -----------------------------------------------------------------------------
 component RS_unit_arithemtic
@@ -71,6 +77,7 @@ signal Vj_out_arithmetic, Vk_out_arithmetic : std_logic_vector(31 downto 0);
 signal Fop_out_arithmetic : std_logic_vector(1 downto 0);
 signal tagFU_arithmetic : std_logic_vector(4 downto 0);
 
+
 -- RS_unit_logical -----------------------------------------------------------------------------
 component RS_unit_logical
 	Port ( 
@@ -95,11 +102,16 @@ signal ready_FU_logical : STD_LOGIC;
 signal Vj_out_logical, Vk_out_logical : std_logic_vector(31 downto 0);
 signal Fop_out_logical : std_logic_vector(1 downto 0);
 signal tagFU_logical : std_logic_vector(4 downto 0);
+
+
 -- Register_File -----------------------------------------------------------------------------
 component Register_File
 	Port(
+		Clk : in  STD_LOGIC;
 		Instr_valid : in  STD_LOGIC;
-		tag : in  STD_LOGIC_VECTOR (4 downto 0);
+		available : out  STD_LOGIC;
+		Fu_type : in  STD_LOGIC_VECTOR (1 downto 0);
+		PC_entolhs : in  STD_LOGIC_VECTOR (31 downto 0);
 		Ri : in  STD_LOGIC_VECTOR (4 downto 0);
 		Rj : in  STD_LOGIC_VECTOR (4 downto 0);
 		Rk : in  STD_LOGIC_VECTOR (4 downto 0);
@@ -108,13 +120,14 @@ component Register_File
 		Vk : out  STD_LOGIC_VECTOR (31 downto 0);
 		Qj : out  STD_LOGIC_VECTOR (4 downto 0);
 		Qk : out  STD_LOGIC_VECTOR (4 downto 0);
-		tag_ROB: out  STD_LOGIC_VECTOR (4 downto 0);
-		Clk : in  STD_LOGIC;
-		PC_entolhs : in  STD_LOGIC_VECTOR (31 downto 0));
+		tag : out  STD_LOGIC_VECTOR (4 downto 0);
+		PC_exception : out  STD_LOGIC_VECTOR (31 downto 0)
+	);
 end component;
 
 signal Vj, Vk : STD_LOGIC_VECTOR (31 downto 0);
 signal Qj, Qk, tag_ROB : STD_LOGIC_VECTOR (4 downto 0);
+signal available_rob : STD_LOGIC;
 
 
 -- CDBunit -----------------------------------------------------------------------------
@@ -180,6 +193,7 @@ Issue_unit_module : Issue_unit
 		IF_Rk => IF_Rk,
 		accepted => accepted,
 		available => available,
+		available_rob => available_rob,
 		issueRS => issueRS,
 		Instr_valid => Instr_valid,
 		Fop => Fop,
@@ -189,20 +203,25 @@ Issue_unit_module : Issue_unit
 		PC_in => PC_in,
 		PC_entolhs => PC_entolhs);
 
+-- RF kai Rob-------------------------------------------
  Register_File_module : Register_File
-	Port map(
-		Instr_valid => Instr_valid,
-		tag => tag_ROB,
-		Ri => Ri,
-		Rj => Rj,
-		Rk => Rk,
-		CDB => CDB,
-		Vj => Vj,
-		Vk => Vk,
-		Qj => Qj,
-		Qk => Qk,
-		Clk => Clk,
-		PC_entolhs => PC_entolhs);
+Port map(
+	Clk => Clk,
+	Instr_valid => Instr_valid,
+	available => available_rob,
+	Fu_type => Fop,
+	PC_entolhs => PC_entolhs,
+	Ri => Ri,
+	Rj => Rj,
+	Rk => Rk,
+	CDB => CDB,
+	Vj => Vj,
+	Vk => Vk,
+	Qj => Qj,
+	Qk => Qk,
+	tag => tag_ROB,
+	PC_exception => PC_exception
+);
 		
 -- arithemtic---------------------------------------------
 RS_unit_arithemtic_module : RS_unit_arithemtic

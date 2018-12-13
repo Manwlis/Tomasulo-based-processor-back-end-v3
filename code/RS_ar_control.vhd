@@ -5,8 +5,6 @@ entity RS_arithmetic_control is
    Port ( 
 		Clk : in  STD_LOGIC;
 		IssueRs : in  STD_LOGIC;
-		CDB_valid : in  STD_LOGIC;
-		CDB_Q : in  STD_LOGIC_VECTOR (4 downto 0);
 		available : out  STD_LOGIC;
 		RS_line_select : out  STD_LOGIC_VECTOR (1 downto 0);
 		readyFU : in  STD_LOGIC;

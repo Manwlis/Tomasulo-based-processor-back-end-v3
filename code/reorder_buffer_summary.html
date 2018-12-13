@@ -2,7 +2,7 @@
 <BODY TEXT='#000000' BGCOLOR='#FFFFFF' LINK='#0000EE' VLINK='#551A8B' ALINK='#FF0000'>
 <TABLE BORDER CELLSPACING=0 CELLPADDING=3 WIDTH='100%'>
 <TR ALIGN=CENTER BGCOLOR='#99CCFF'>
-<TD ALIGN=CENTER COLSPAN='4'><B>Register_File Project Status</B></TD></TR>
+<TD ALIGN=CENTER COLSPAN='4'><B>reorder_buffer Project Status</B></TD></TR>
 <TR ALIGN=LEFT>
 <TD BGCOLOR='#FFFF99'><B>Project File:</B></TD>
 <TD>arxitektonikh1.xise</TD>
@@ -11,7 +11,7 @@
 </TR>
 <TR ALIGN=LEFT>
 <TD BGCOLOR='#FFFF99'><B>Module Name:</B></TD>
-<TD>Register_File</TD>
+<TD>reorder_buffer</TD>
 <TD BGCOLOR='#FFFF99'><B>Implementation State:</B></TD>
 <TD>Synthesized</TD>
 </TR>
@@ -25,7 +25,7 @@ No Errors</TD>
 <TR ALIGN=LEFT>
 <TD BGCOLOR='#FFFF99'><B>Product Version:</B></TD><TD>ISE 13.4</TD>
 <TD BGCOLOR='#FFFF99'><UL><LI><B>Warnings:</B></LI></UL></TD>
-<TD ALIGN=LEFT>No Warnings</TD>
+<TD ALIGN=LEFT><A HREF_DISABLED='C:/arxitektonikh1/HRY415-project-3/code\_xmsgs/*.xmsgs?&DataKey=Warning'>3 Warnings (3 new)</A></TD>
 </TR>
 <TR ALIGN=LEFT>
 <TD BGCOLOR='#FFFF99'><B>Design Goal:</B></dif></TD>
@@ -43,7 +43,7 @@ No Errors</TD>
 <TR ALIGN=LEFT>
 <TD BGCOLOR='#FFFF99'><B>Environment:</B></dif></TD>
 <TD>
-<A HREF_DISABLED='C:/arxitektonikh1\Register_File_envsettings.html'>
+<A HREF_DISABLED='C:/arxitektonikh1/HRY415-project-3/code\reorder_buffer_envsettings.html'>
 System Settings</A>
 </TD>
 <TD BGCOLOR='#FFFF99'><UL><LI><B>Final Timing Score:</B></LI></UL></TD>
@@ -58,24 +58,24 @@ System Settings</A>
 <TR ALIGN=CENTER BGCOLOR='#FFFF99'>
 <TD ALIGN=LEFT><B>Logic Utilization</B></TD><TD><B>Used</B></TD><TD><B>Available</B></TD><TD COLSPAN='2'><B>Utilization</B></TD></TR>
 <TR ALIGN=RIGHT><TD ALIGN=LEFT>Number of Slices</TD>
-<TD ALIGN=RIGHT>1732</TD>
+<TD ALIGN=RIGHT>677</TD>
 <TD ALIGN=RIGHT>14752</TD>
-<TD ALIGN=RIGHT COLSPAN='2'>11%</TD>
-</TR>
-<TR ALIGN=RIGHT><TD ALIGN=LEFT>Number of Slice Flip Flops</TD>
-<TD ALIGN=RIGHT>1184</TD>
-<TD ALIGN=RIGHT>29504</TD>
 <TD ALIGN=RIGHT COLSPAN='2'>4%</TD>
 </TR>
-<TR ALIGN=RIGHT><TD ALIGN=LEFT>Number of 4 input LUTs</TD>
-<TD ALIGN=RIGHT>3180</TD>
+<TR ALIGN=RIGHT><TD ALIGN=LEFT>Number of Slice Flip Flops</TD>
+<TD ALIGN=RIGHT>609</TD>
 <TD ALIGN=RIGHT>29504</TD>
-<TD ALIGN=RIGHT COLSPAN='2'>10%</TD>
+<TD ALIGN=RIGHT COLSPAN='2'>2%</TD>
+</TR>
+<TR ALIGN=RIGHT><TD ALIGN=LEFT>Number of 4 input LUTs</TD>
+<TD ALIGN=RIGHT>1094</TD>
+<TD ALIGN=RIGHT>29504</TD>
+<TD ALIGN=RIGHT COLSPAN='2'>3%</TD>
 </TR>
 <TR ALIGN=RIGHT><TD ALIGN=LEFT>Number of bonded IOBs</TD>
-<TD ALIGN=RIGHT>134</TD>
+<TD ALIGN=RIGHT>237</TD>
 <TD ALIGN=RIGHT>250</TD>
-<TD ALIGN=RIGHT COLSPAN='2'>53%</TD>
+<TD ALIGN=RIGHT COLSPAN='2'>94%</TD>
 </TR>
 <TR ALIGN=RIGHT><TD ALIGN=LEFT>Number of GCLKs</TD>
 <TD ALIGN=RIGHT>1</TD>
@@ -94,7 +94,7 @@ System Settings</A>
 <TR ALIGN=CENTER BGCOLOR='#99CCFF'><TD ALIGN=CENTER COLSPAN='6'><B>Detailed Reports</B></TD><TD ALIGN=RIGHT WIDTH='10%'COLSPAN=1> <A HREF_DISABLED="?&ExpandedTable=DetailedReports"><B>[-]</B></a></TD></TR>
 <TR BGCOLOR='#FFFF99'><TD><B>Report Name</B></TD><TD><B>Status</B></TD><TD><B>Generated</B></TD>
 <TD ALIGN=LEFT><B>Errors</B></TD><TD ALIGN=LEFT><B>Warnings</B></TD><TD ALIGN=LEFT COLSPAN='2'><B>Infos</B></TD></TR>
-<TR ALIGN=LEFT><TD><A HREF_DISABLED='C:/arxitektonikh1\Register_File.syr'>Synthesis Report</A></TD><TD>Current</TD><TD>Sat 27. Oct 16:43:56 2018</TD><TD ALIGN=LEFT>0</TD><TD ALIGN=LEFT>0</TD><TD ALIGN=LEFT COLSPAN='2'>0</TD></TR>
+<TR ALIGN=LEFT><TD><A HREF_DISABLED='C:/arxitektonikh1/HRY415-project-3/code\reorder_buffer.syr'>Synthesis Report</A></TD><TD>Current</TD><TD>Wed 12. Dec 18:26:07 2018</TD><TD ALIGN=LEFT>0</TD><TD ALIGN=LEFT><A HREF_DISABLED='C:/arxitektonikh1/HRY415-project-3/code\_xmsgs/xst.xmsgs?&DataKey=Warning'>3 Warnings (3 new)</A></TD><TD ALIGN=LEFT COLSPAN='2'>0</TD></TR>
 <TR ALIGN=LEFT><TD>Translation Report</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD COLSPAN='2'>&nbsp;</TD></TR>
 <TR ALIGN=LEFT><TD>Map Report</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD COLSPAN='2'>&nbsp;</TD></TR>
 <TR ALIGN=LEFT><TD>Place and Route Report</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD COLSPAN='2'>&nbsp;</TD></TR>
@@ -105,9 +105,9 @@ System Settings</A>
 &nbsp;<BR><TABLE BORDER CELLSPACING=0 CELLPADDING=3 WIDTH='100%'>
 <TR ALIGN=CENTER BGCOLOR='#99CCFF'><TD ALIGN=CENTER COLSPAN='3'><B>Secondary Reports</B></TD><TD ALIGN=RIGHT WIDTH='10%'COLSPAN=1> <A HREF_DISABLED="?&ExpandedTable=SecondaryReports"><B>[-]</B></a></TD></TR>
 <TR BGCOLOR='#FFFF99'><TD><B>Report Name</B></TD><TD><B>Status</B></TD><TD COLSPAN='2'><B>Generated</B></TD></TR>
-<TR ALIGN=LEFT><TD><A HREF_DISABLED='C:/arxitektonikh1\isim.log'>ISIM Simulator Log</A></TD><TD>Current</TD><TD COLSPAN='2'>Sat 27. Oct 17:02:53 2018</TD></TR>
+<TR ALIGN=LEFT><TD><A HREF_DISABLED='C:/arxitektonikh1/HRY415-project-3/code\isim.log'>ISIM Simulator Log</A></TD><TD>Current</TD><TD COLSPAN='2'>Wed 12. Dec 19:59:24 2018</TD></TR>
 </TABLE>
 
 
-<br><center><b>Date Generated:</b> 10/28/2018 - 17:30:04</center>
+<br><center><b>Date Generated:</b> 12/13/2018 - 17:05:51</center>
 </BODY></HTML>

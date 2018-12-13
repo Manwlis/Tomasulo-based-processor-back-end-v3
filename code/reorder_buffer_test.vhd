@@ -35,8 +35,7 @@ ARCHITECTURE behavior OF reorder_buffer_test IS
          commit_data : OUT  std_logic_vector(31 downto 0);
          V_commit : OUT  std_logic;
          PC_entolhs : IN  std_logic_vector(31 downto 0);
-         PC_exception : OUT  std_logic_vector(31 downto 0);
-         exception_valid : OUT  std_logic
+         PC_exception : OUT  std_logic_vector(31 downto 0)
         );
     END COMPONENT;
     
@@ -66,7 +65,6 @@ ARCHITECTURE behavior OF reorder_buffer_test IS
    signal commit_data : std_logic_vector(31 downto 0);
    signal V_commit : std_logic;
    signal PC_exception : std_logic_vector(31 downto 0);
-   signal exception_valid : std_logic;
 
    -- Clock period definitions
    constant Clk_period : time := 10 ns;
@@ -96,8 +94,7 @@ BEGIN
           commit_data => commit_data,
           V_commit => V_commit,
           PC_entolhs => PC_entolhs,
-          PC_exception => PC_exception,
-          exception_valid => exception_valid
+          PC_exception => PC_exception
         );
 
    -- Clock process definitions

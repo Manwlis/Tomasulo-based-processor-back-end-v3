@@ -1,4 +1,4 @@
-Running: fuse.exe -relaunch -intstyle "ise" -incremental -o "C:/arxitektonikh1/HRY415-project-3/code/reorder_buffer_test_isim_beh.exe" -prj "C:/arxitektonikh1/HRY415-project-3/code/reorder_buffer_test_beh.prj" "work.reorder_buffer_test" 
+Running: E:\Xilinx\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/arxitektonikh1/HRY415-project-3/code/reorder_buffer_test_isim_beh.exe -prj C:/arxitektonikh1/HRY415-project-3/code/reorder_buffer_test_beh.prj work.reorder_buffer_test 
 ISim O.87xd (signature 0xc3576ebc)
 Number of CPUs detected in this system: 16
 Turning on mult-threading, number of parallel sub-compilation jobs: 32 
@@ -9,6 +9,7 @@ Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/Reg1BitR.vhd" into li
 Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/Reg4BitR.vhd" into library work
 Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/Reg5BitR.vhd" into library work
 Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/Reg32BitR.vhd" into library work
+Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/cyclical_shift_register.vhd" into library work
 Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/rob_control.vhd" into library work
 Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/buffer_line.vhd" into library work
 Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/reorder_buffer.vhd" into library work
@@ -27,12 +28,13 @@ Compiling architecture behavioral of entity Reg5BitR [reg5bitr_default]
 Compiling architecture behavioral of entity Reg4BitR [reg4bitr_default]
 Compiling architecture structural of entity Reg32BitR [reg32bitr_default]
 Compiling architecture behavioral of entity buffer_line [buffer_line_default]
+Compiling architecture behavioral of entity cyclical_shift_register [cyclical_shift_register_default]
 Compiling architecture behavioral of entity rob_control [rob_control_default]
 Compiling architecture behavioral of entity reorder_buffer [reorder_buffer_default]
 Compiling architecture behavior of entity reorder_buffer_test
 Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
-Compiled 24 VHDL Units
+Compiled 26 VHDL Units
 Built simulation executable C:/arxitektonikh1/HRY415-project-3/code/reorder_buffer_test_isim_beh.exe
-Fuse Memory Usage: 39832 KB
-Fuse CPU Usage: 826 ms
+Fuse Memory Usage: 40012 KB
+Fuse CPU Usage: 858 ms

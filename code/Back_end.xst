@@ -1,12 +1,12 @@
 set -tmpdir "xst/projnav.tmp"
 set -xsthdpdir "xst"
 run
--ifn reorder_buffer.prj
+-ifn Back_end.prj
 -ifmt mixed
--ofn reorder_buffer
+-ofn Back_end
 -ofmt NGC
 -p xc3s1600e-5-fg320
--top reorder_buffer
+-top Back_end
 -opt_mode Speed
 -opt_level 1
 -iuc NO

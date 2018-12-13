@@ -33,6 +33,15 @@ end rob_control;
 
 architecture Behavioral of rob_control is
 
+component cyclical_shift_register
+	Port ( 
+		Clk : in  STD_LOGIC;
+		reset : in  STD_LOGIC;
+		enable : in  STD_LOGIC;
+		output : out  STD_LOGIC_VECTOR (7 downto 0)
+	);
+end component;
+
 -- shmata gia thn xronika pio palia 8esh
 signal head : STD_LOGIC_VECTOR (7 downto 0) := "00000001";
 signal head_rotate_control : STD_LOGIC;
@@ -251,40 +260,20 @@ end process;
 -- mnhmh gia tous pointers --
 -----------------------------
 
--- Leitourgoun san kuklikoi left shift registors.
+head_pointer : cyclical_shift_register
+port map( 
+	Clk => Clk,
+	reset => head_reset,
+	enable => head_rotate_control,
+	output => head
+);
 
--- Head pointer. 
-head_pointer : process(Clk)
-begin
-	if rising_edge(Clk) then
-		-- exception
-		if head_reset = '1' then
-			head <= "00000001";
-		-- den proxwraei
-		elsif head_rotate_control = '0' then
-			head <= head;
-		-- epwmenh 8esh
-		else
-			head <= head(6 downto 0) & head(7);
-		end if;
-	end if;
-end process;
-
--- Prwth eleu8erh 8esh.
-free_pointer : process(Clk)
-begin
-	if rising_edge(Clk) then
-		-- exception
-		if free_reset = '1' then
-			free <= "00000001";
-		-- den proxwraei
-		elsif free_rotate_control = '0' then
-			free <= free;
-		-- epwmenh 8esh
-		else
-			 free<= free(6 downto 0) & free(7);
-		end if;
-	end if;
-end process;
+free_pointer : cyclical_shift_register
+port map( 
+	Clk => Clk,
+	reset => free_reset,
+	enable => free_rotate_control,
+	output => free
+);
 
 end Behavioral;
