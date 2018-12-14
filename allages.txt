@@ -9,6 +9,7 @@ rs kai ta duo
 	datapath
 		mux gia ta tags
 		tags eisodos anti eksodos
+	test
 
 issue 
 	ta tags den pernane apo ekei pia
@@ -17,14 +18,17 @@ issue
 
 top 
 	tag pane kateu8eian sta rs apo rf
-	/* TO-DO */ allagh diepafwn kai sundesewn
+	allagh diepafwn kai sundesewn
+	test
 
 RF
 	V block 
 		efuge to forward apo ton CDB
 		forward apo buffers
+		test
 
-	/* TO-DO */ allagh diepafhs, sundesh rob kai neou V block
+	allagh diepafhs
+	sundesh rob kai neou V block
 
 rob lines
 	diepafh
@@ -33,7 +37,7 @@ rob lines
 	logikh enables
 	flags gia forward
 	exception
-	/* TO-DO */ kalitero test
+	test
 
 rob control
 	diepafh
@@ -46,6 +50,4 @@ rob control
 rob 
 	diepafh
 	datapath 
-	/* TO-DO */ kalitero test
-
-
+	test

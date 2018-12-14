@@ -121,10 +121,10 @@ BEGIN
 		Fu_type <= "00";
 		Ri <= "00000";
 		Rj <= "00001";
-		Rk <= "00010";
 		wait for Clk_period;
 		Ri <= "10000";
       wait for Clk_period *2;
+		-- apagoreuemenos kataxwrhths, anebazei exception
 		PC_entolhs <= "11111111111111111111111111111111";
 		Ri <= "11111";
 		wait for Clk_period ;
@@ -134,15 +134,13 @@ BEGIN
 		Ri <= "10011";
 		-- arxizoun ta wb
       wait for Clk_period;
+		-- erxontai ta apotelesmata anapoda.
 		instr_valid <= '0';
 		cdb_valid <= '1';
-		cdb_value <= "00000000000000000000000000000001";
 		cdb_Q <= "01000";	
 		-- forwards. Rj den einai etoimo, Rk einai.
 		Rj <= "00000";
-		Rk <= "10011";
 		wait for Clk_period;
-		cdb_value <= "00000000000000000000000000000000";
 		cdb_Q <= "00111";	
 		wait for Clk_period;
 		cdb_Q <= "00110";	
@@ -156,6 +154,15 @@ BEGIN
 		cdb_Q <= "00010";
 		wait for Clk_period;
 		cdb_Q <= "00001";
+		
+		-- issue otan ginetai to prwto commit
+		wait for Clk_period;
+		instr_valid <= '1';
+		cdb_valid <= '0';
+		cdb_Q <= "00000";
+		wait for Clk_period;
+		instr_valid <= '0';
+		
 		
       wait;
    end process;

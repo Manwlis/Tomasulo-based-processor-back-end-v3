@@ -16,7 +16,6 @@ ARCHITECTURE behavior OF buffer_line_test IS
          cdb_V : IN  std_logic_vector(31 downto 0);
          Ri_in : IN  std_logic_vector(4 downto 0);
          Fu_type_in : IN  std_logic_vector(1 downto 0);
-         Exception_in : IN  std_logic;
          Exception_out : OUT  std_logic;
          PC_entolhs : IN  std_logic_vector(31 downto 0);
          PC_out : OUT  std_logic_vector(31 downto 0);
@@ -44,7 +43,6 @@ ARCHITECTURE behavior OF buffer_line_test IS
    signal cdb_V : std_logic_vector(31 downto 0) := (others => '0');
    signal Ri_in : std_logic_vector(4 downto 0) := (others => '0');
    signal Fu_type_in : std_logic_vector(1 downto 0) := (others => '0');
-   signal Exception_in : std_logic := '0';
    signal PC_entolhs : std_logic_vector(31 downto 0) := (others => '0');
    signal delete : std_logic := '0';
    signal issue : std_logic := '0';
@@ -77,7 +75,6 @@ BEGIN
           cdb_V => cdb_V,
           Ri_in => Ri_in,
           Fu_type_in => Fu_type_in,
-          Exception_in => Exception_in,
           Exception_out => Exception_out,
           PC_entolhs => PC_entolhs,
           PC_out => PC_out,
@@ -109,6 +106,8 @@ BEGIN
    -- Stimulus process
    stim_proc: process
    begin		
+	
+		tag <= "00100";
      
    wait for Clk_period/2;	
 		
@@ -122,17 +121,16 @@ BEGIN
 		Ri_in <= "00001";
 		Fu_type_in <= "00";
 		-- exception
-		Exception_in <= '0';
 		PC_entolhs <= "00000000000000000000000000000001";
 		-- apo control
 		delete <= '0';
 		issue <= '1';
 		
-		tag <= "00100";
 		
       wait for Clk_period;
 		
 		issue <= '0';
+      wait for Clk_period;
 		
 		-- erxontai ta apotelesmata apo cdb
 		cdb_valid <= '1';

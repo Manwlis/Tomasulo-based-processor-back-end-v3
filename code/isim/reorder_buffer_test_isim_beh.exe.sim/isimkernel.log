@@ -2,29 +2,28 @@ Command line:
    reorder_buffer_test_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  50934
+     -socket  50975
 
-Thu Dec 13 18:23:53 2018
+Fri Dec 14 19:14:47 2018
 
 
- Elaboration Time: 0.140401 sec
+ Elaboration Time: 0.1248 sec
 
  Current Memory Usage: 534.684 Meg
 
- Total Signals          : 10053
- Total Nets             : 2607
- Total Signal Drivers   : 1921
+ Total Signals          : 10055
+ Total Nets             : 2609
+ Total Signal Drivers   : 1922
  Total Blocks           : 1953
  Total Primitive Blocks : 1190
- Total Processes        : 1905
+ Total Processes        : 1907
  Total Traceable Variables  : 24
- Total Scalar Nets and Variables : 3117
-Total Line Count : 2586
-Total Line Count : 2586
+ Total Scalar Nets and Variables : 3119
+Total Line Count : 2588
 
- Total Simulation Time: 0.249601 sec
+ Total Simulation Time: 0.171601 sec
 
  Current Memory Usage: 534.684 Meg
 
-Thu Dec 13 18:24:40 2018
+Fri Dec 14 19:17:04 2018
 

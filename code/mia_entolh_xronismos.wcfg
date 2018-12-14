@@ -3,36 +3,34 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="C:/arxitektonikh1/HRY415-project-2/code/Back_end_test_isim_beh.wdb" id="1" type="auto">
+      <db_ref path="C:/arxitektonikh1/HRY415-project-3/code/Back_end_test_isim_beh.wdb" id="1" type="auto">
          <top_modules>
             <top_module name="back_end_test" />
+            <top_module name="numeric_std" />
             <top_module name="std_logic_1164" />
             <top_module name="std_logic_arith" />
             <top_module name="std_logic_unsigned" />
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="32" />
-   <wave_markers>
-      <marker time="45000000" label="" />
-      <marker time="55000000" label="" />
-      <marker time="65000000" label="" />
-      <marker time="75000000" label="" />
-      <marker time="85000000" label="" />
-   </wave_markers>
+   <WVObjectSize size="34" />
+   <wvobject fp_name="/back_end_test/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
    <wvobject fp_name="/back_end_test/if_ri" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">if_ri[4:0]</obj_property>
       <obj_property name="ObjectShortName">if_ri[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/back_end_test/fu_type" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">fu_type[1:0]</obj_property>
+      <obj_property name="ObjectShortName">fu_type[1:0]</obj_property>
    </wvobject>
    <wvobject fp_name="divider10" type="divider">
       <obj_property name="label">Issue</obj_property>
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="BkColor">128 128 255</obj_property>
       <obj_property name="TextColor">230 230 230</obj_property>
-   </wvobject>
-   <wvobject fp_name="/back_end_test/clk" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">clk</obj_property>
-      <obj_property name="ObjectShortName">clk</obj_property>
    </wvobject>
    <wvobject fp_name="/back_end_test/issue" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">issue</obj_property>
@@ -46,23 +44,13 @@
       <obj_property name="UseCustomSignalColor">true</obj_property>
       <obj_property name="CustomSignalColor">#ff00ff</obj_property>
    </wvobject>
-   <wvobject fp_name="/back_end_test/uut/Register_File_module/Q_unit/instr_valid" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">instr_valid</obj_property>
-      <obj_property name="ObjectShortName">instr_valid</obj_property>
-   </wvobject>
-   <wvobject fp_name="/back_end_test/fu_type" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">fu_type[1:0]</obj_property>
-      <obj_property name="ObjectShortName">fu_type[1:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/back_end_test/uut/Issue_unit_module/issuers" type="array" db_ref_id="1">
-      <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="ElementShortName">issuers[2:0]</obj_property>
-      <obj_property name="ObjectShortName">issuers[2:0]</obj_property>
-      <obj_property name="label">issue RS[2:0]</obj_property>
-   </wvobject>
    <wvobject fp_name="/back_end_test/uut/Issue_unit_module/available" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">available[2:0]</obj_property>
       <obj_property name="ObjectShortName">available[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/back_end_test/uut/Issue_unit_module/available_rob" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">available_rob</obj_property>
+      <obj_property name="ObjectShortName">available_rob</obj_property>
    </wvobject>
    <wvobject fp_name="divider15" type="divider">
       <obj_property name="label">Logical Reservation Station</obj_property>
@@ -70,11 +58,12 @@
       <obj_property name="BkColor">128 128 255</obj_property>
       <obj_property name="TextColor">230 230 230</obj_property>
    </wvobject>
-   <wvobject fp_name="/back_end_test/uut/RS_unit_logical_module/tagrf" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">tagrf[4:0]</obj_property>
-      <obj_property name="ObjectShortName">tagrf[4:0]</obj_property>
+   <wvobject fp_name="/back_end_test/uut/RS_unit_arithemtic_module/tag_rob" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tag_rob[4:0]</obj_property>
+      <obj_property name="ObjectShortName">tag_rob[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
-      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
    </wvobject>
    <wvobject fp_name="/back_end_test/uut/RS_unit_logical_module/busy_out" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">busy_out[1:0]</obj_property>
@@ -84,29 +73,12 @@
       <obj_property name="ElementShortName">ready_for_exec[1:0]</obj_property>
       <obj_property name="ObjectShortName">ready_for_exec[1:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="vbus125" type="vbus" db_ref_id="1">
-      <obj_property name="label">Efuge_out[1:0]</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
-      <wvobject fp_name="/back_end_test/uut/RS_unit_logical_module/\gen(1)\/RS_reg_lines/efuge_reg_out" type="logic" db_ref_id="1">
-         <obj_property name="DisplayName">label</obj_property>
-         <obj_property name="ElementShortName">efuge_reg_out</obj_property>
-         <obj_property name="ObjectShortName">efuge_reg_out</obj_property>
-         <obj_property name="label">efuge_reg_out[1]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/back_end_test/uut/RS_unit_logical_module/\gen(0)\/RS_reg_lines/efuge_reg_out" type="logic" db_ref_id="1">
-         <obj_property name="DisplayName">label</obj_property>
-         <obj_property name="ElementShortName">efuge_reg_out</obj_property>
-         <obj_property name="ObjectShortName">efuge_reg_out</obj_property>
-         <obj_property name="label">efuge_reg_out[0]</obj_property>
-      </wvobject>
-   </wvobject>
-   <wvobject fp_name="/back_end_test/uut/RS_unit_logical_module/line_select" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">line_select[1:0]</obj_property>
-      <obj_property name="ObjectShortName">line_select[1:0]</obj_property>
-   </wvobject>
    <wvobject fp_name="/back_end_test/uut/RS_unit_logical_module/tagfu" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">tagfu[4:0]</obj_property>
       <obj_property name="ObjectShortName">tagfu[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
    </wvobject>
    <wvobject fp_name="divider22" type="divider">
       <obj_property name="label">Logical Function Unit</obj_property>
@@ -124,7 +96,8 @@
       <obj_property name="ElementShortName">tag[4:0]</obj_property>
       <obj_property name="ObjectShortName">tag[4:0]</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
-      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/back_end_test/uut/FU_logical_module/execution_module/vout" type="array" db_ref_id="1">
       <obj_property name="DisplayName">label</obj_property>
@@ -136,6 +109,9 @@
    <wvobject fp_name="/back_end_test/uut/FU_logical_module/tag_to_q" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">tag_to_q[4:0]</obj_property>
       <obj_property name="ObjectShortName">tag_to_q[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
    </wvobject>
    <wvobject fp_name="divider34" type="divider">
       <obj_property name="label">CDB</obj_property>
@@ -155,18 +131,54 @@
       <obj_property name="UseCustomSignalColor">true</obj_property>
       <obj_property name="CustomSignalColor">#ff00ff</obj_property>
    </wvobject>
-   <wvobject fp_name="/back_end_test/uut/Register_File_module/Q_unit/cdb_valid" type="logic" db_ref_id="1">
+   <wvobject fp_name="/back_end_test/uut/Register_File_module/Rob/cdb_valid" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">cdb_valid</obj_property>
       <obj_property name="ObjectShortName">cdb_valid</obj_property>
    </wvobject>
-   <wvobject fp_name="/back_end_test/uut/Register_File_module/Q_unit/cdb_q" type="array" db_ref_id="1">
+   <wvobject fp_name="/back_end_test/uut/Register_File_module/Rob/cdb_q" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">cdb_q[4:0]</obj_property>
       <obj_property name="ObjectShortName">cdb_q[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
    </wvobject>
-   <wvobject fp_name="/back_end_test/uut/Register_File_module/V_unit/cdb_value" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">cdb_value[31:0]</obj_property>
-      <obj_property name="ObjectShortName">cdb_value[31:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
+   <wvobject fp_name="divider60" type="divider">
+      <obj_property name="label">Reorder Buffer</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/back_end_test/uut/Register_File_module/Rob/valid" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">valid[7:0]</obj_property>
+      <obj_property name="ObjectShortName">valid[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/back_end_test/uut/Register_File_module/Rob/done" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">done[7:0]</obj_property>
+      <obj_property name="ObjectShortName">done[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/back_end_test/uut/Register_File_module/Rob/rob_control0/head" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">head[7:0]</obj_property>
+      <obj_property name="ObjectShortName">head[7:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#0000ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/back_end_test/uut/Register_File_module/Rob/rob_control0/free" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">free[7:0]</obj_property>
+      <obj_property name="ObjectShortName">free[7:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#0000ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/back_end_test/uut/Register_File_module/Rob/issue" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">issue[7:0]</obj_property>
+      <obj_property name="ObjectShortName">issue[7:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/back_end_test/uut/Register_File_module/Rob/delete" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">delete[7:0]</obj_property>
+      <obj_property name="ObjectShortName">delete[7:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
    </wvobject>
    <wvobject fp_name="divider11" type="divider">
       <obj_property name="label">Register File</obj_property>
@@ -174,33 +186,21 @@
       <obj_property name="BkColor">128 128 255</obj_property>
       <obj_property name="TextColor">230 230 230</obj_property>
    </wvobject>
-   <wvobject fp_name="/back_end_test/uut/Register_File_module/Q_unit/reg_enable" type="array" db_ref_id="1">
-      <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="ElementShortName">reg_enable[31:0]</obj_property>
-      <obj_property name="ObjectShortName">reg_enable[31:0]</obj_property>
-      <obj_property name="label">Q reg enable[31:0]</obj_property>
-      <obj_property name="UseCustomSignalColor">true</obj_property>
-      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
-   </wvobject>
-   <wvobject fp_name="/back_end_test/uut/Register_File_module/Q_unit/qreg_no_fw[1]" type="array" db_ref_id="1">
-      <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="ElementShortName">[1]</obj_property>
-      <obj_property name="ObjectShortName">qreg_no_fw[1]</obj_property>
-      <obj_property name="label">Q reg[1]</obj_property>
-      <obj_property name="UseCustomSignalColor">true</obj_property>
-      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
-   </wvobject>
-   <wvobject fp_name="/back_end_test/uut/Register_File_module/V_unit/v_wren" type="array" db_ref_id="1">
-      <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="ElementShortName">v_wren[31:0]</obj_property>
-      <obj_property name="ObjectShortName">v_wren[31:0]</obj_property>
-      <obj_property name="label">V reg enable[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/back_end_test/uut/Register_File_module/V_unit/vreg_no_fw[1]" type="array" db_ref_id="1">
-      <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="ElementShortName">[1]</obj_property>
-      <obj_property name="ObjectShortName">vreg_no_fw[1]</obj_property>
+   <wvobject fp_name="/back_end_test/uut/Register_File_module/V_unit/vreg_out[0]" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">[0]</obj_property>
+      <obj_property name="ObjectShortName">vreg_out[0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
-      <obj_property name="label">V reg[1]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/back_end_test/uut/Register_File_module/V_unit/vreg_out[1]" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">[1]</obj_property>
+      <obj_property name="ObjectShortName">vreg_out[1]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/back_end_test/uut/Register_File_module/Rob/tag_issue" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tag_issue[4:0]</obj_property>
+      <obj_property name="ObjectShortName">tag_issue[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
    </wvobject>
 </wave_config>

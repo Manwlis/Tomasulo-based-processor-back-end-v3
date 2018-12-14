@@ -58,7 +58,6 @@
          <ClosedNode>/Back_end - Behavioral C:|arxitektonikh1|HRY415-project-3|code|Back_end.vhd/RS_unit_arithemtic_module - RS_unit_arithemtic - Behavioral/RS_reg_lines - RS_reg_line - Behavioral</ClosedNode>
          <ClosedNode>/Back_end - Behavioral C:|arxitektonikh1|HRY415-project-3|code|Back_end.vhd/RS_unit_arithemtic_module - RS_unit_arithemtic - Behavioral/Vj_mux - mux4to1_32Bit - Behavioral</ClosedNode>
          <ClosedNode>/Back_end - Behavioral C:|arxitektonikh1|HRY415-project-3|code|Back_end.vhd/RS_unit_arithemtic_module - RS_unit_arithemtic - Behavioral/Vk_mux - mux4to1_32Bit - Behavioral</ClosedNode>
-         <ClosedNode>/Back_end - Behavioral C:|arxitektonikh1|HRY415-project-3|code|Back_end.vhd/RS_unit_logical_module - RS_unit_logical - Behavioral</ClosedNode>
          <ClosedNode>/Back_end - Behavioral C:|arxitektonikh1|HRY415-project-3|code|Back_end.vhd/RS_unit_logical_module - RS_unit_logical - Behavioral/RS_reg_lines - RS_reg_line - Behavioral</ClosedNode>
          <ClosedNode>/Back_end - Behavioral C:|arxitektonikh1|HRY415-project-3|code|Back_end.vhd/RS_unit_logical_module - RS_unit_logical - Behavioral/Vj_mux - mux4to1_32Bit - Behavioral</ClosedNode>
          <ClosedNode>/Back_end - Behavioral C:|arxitektonikh1|HRY415-project-3|code|Back_end.vhd/RS_unit_logical_module - RS_unit_logical - Behavioral/Vk_mux - mux4to1_32Bit - Behavioral</ClosedNode>
@@ -71,7 +70,6 @@
          <ClosedNode>/Back_end - Behavioral C:|arxitektonikh1|HRY415-project-3|code|Back_end.vhd/Register_File_module - Register_File - Behavioral/Rob - reorder_buffer - Behavioral/buffer_lines - buffer_line - Behavioral/Value_reg - Reg32BitR - Structural</ClosedNode>
          <ClosedNode>/Back_end - Behavioral C:|arxitektonikh1|HRY415-project-3|code|Back_end.vhd/Register_File_module - Register_File - Behavioral/Rob - reorder_buffer - Behavioral/buffer_lines - buffer_line - Behavioral/done_reg - Reg1BitR - Behavioral</ClosedNode>
          <ClosedNode>/Back_end - Behavioral C:|arxitektonikh1|HRY415-project-3|code|Back_end.vhd/Register_File_module - Register_File - Behavioral/Rob - reorder_buffer - Behavioral/buffer_lines - buffer_line - Behavioral/exception_reg - Reg1BitR - Behavioral</ClosedNode>
-         <ClosedNode>/Back_end - Behavioral C:|arxitektonikh1|HRY415-project-3|code|Back_end.vhd/Register_File_module - Register_File - Behavioral/Rob - reorder_buffer - Behavioral/rob_control0 - rob_control - Behavioral</ClosedNode>
          <ClosedNode>/Back_end - Behavioral C:|arxitektonikh1|HRY415-project-3|code|Back_end.vhd/Register_File_module - Register_File - Behavioral/V_unit - V_block - Behavioral</ClosedNode>
          <ClosedNode>/Back_end - Behavioral C:|arxitektonikh1|HRY415-project-3|code|Back_end.vhd/Register_File_module - Register_File - Behavioral/V_unit - V_block - Behavioral/Vreg - Reg32BitR - Structural/Reg4BitR0 - Reg4BitR - Behavioral</ClosedNode>
          <ClosedNode>/Back_end - Behavioral C:|arxitektonikh1|HRY415-project-3|code|Back_end.vhd/Register_File_module - Register_File - Behavioral/V_unit - V_block - Behavioral/Vreg - Reg32BitR - Structural/Reg4BitR1 - Reg4BitR - Behavioral</ClosedNode>
@@ -259,13 +257,13 @@
          <ClosedNode>/reorder_buffer - Behavioral C:|arxitektonikh1|HRY415-project-3|code|reorder_buffer.vhd/buffer_line - buffer_line - Behavioral/exception_reg - Reg1BitR - Behavioral</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>V_unit - V_block - Behavioral (C:/arxitektonikh1/HRY415-project-3/code/V_block.vhd)</SelectedItem>
+         <SelectedItem>Rob - reorder_buffer - Behavioral (C:/arxitektonikh1/HRY415-project-3/code/reorder_buffer.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001e7000000020000000000000000000000000200000064ffffffff000000810000000300000002000001e70000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000225000000020000000000000000000000000200000064ffffffff000000810000000300000002000002250000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>V_unit - V_block - Behavioral (C:/arxitektonikh1/HRY415-project-3/code/V_block.vhd)</CurrentItem>
+      <CurrentItem>Rob - reorder_buffer - Behavioral (C:/arxitektonikh1/HRY415-project-3/code/reorder_buffer.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -278,7 +276,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000016e000000010000000100000000000000000000000064ffffffff0000008100000000000000010000016e0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000202000000010000000100000000000000000000000064ffffffff000000810000000000000001000002020000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
@@ -321,7 +319,14 @@
          <ClosedNode>/Back_end_test - behavior C:|arxitektonikh1|HRY415-project-2|code|Back_end_test.vhd/uut - Back_end - Behavioral/Register_File_module - Register_File - Behavioral/Q_unit - Q_block - Behavioral/muxk - mux32to1_5Bit - Structural</ClosedNode>
          <ClosedNode>/Back_end_test - behavior C:|arxitektonikh1|HRY415-project-2|code|Back_end_test.vhd/uut - Back_end - Behavioral/Register_File_module - Register_File - Behavioral/V_unit - V_block - Behavioral</ClosedNode>
          <ClosedNode>/Back_end_test - behavior C:|arxitektonikh1|HRY415-project-3|code|Back_end_test.vhd</ClosedNode>
-         <ClosedNode>/Back_end_test - behavior C:|arxitektonikh1|HRY415-project-3|code|Back_end_test.vhd/uut - Back_end - Behavioral</ClosedNode>
+         <ClosedNode>/Back_end_test - behavior C:|arxitektonikh1|HRY415-project-3|code|Back_end_test.vhd/uut - Back_end - Behavioral/CDBunit_module - CDBunit - Behavioral</ClosedNode>
+         <ClosedNode>/Back_end_test - behavior C:|arxitektonikh1|HRY415-project-3|code|Back_end_test.vhd/uut - Back_end - Behavioral/FU_arithmetic_module - FU_arithmetic - Behavioral</ClosedNode>
+         <ClosedNode>/Back_end_test - behavior C:|arxitektonikh1|HRY415-project-3|code|Back_end_test.vhd/uut - Back_end - Behavioral/FU_logical_module - FU_logical - Behavioral</ClosedNode>
+         <ClosedNode>/Back_end_test - behavior C:|arxitektonikh1|HRY415-project-3|code|Back_end_test.vhd/uut - Back_end - Behavioral/RS_unit_arithemtic_module - RS_unit_arithemtic - Behavioral</ClosedNode>
+         <ClosedNode>/Back_end_test - behavior C:|arxitektonikh1|HRY415-project-3|code|Back_end_test.vhd/uut - Back_end - Behavioral/RS_unit_logical_module - RS_unit_logical - Behavioral</ClosedNode>
+         <ClosedNode>/Back_end_test - behavior C:|arxitektonikh1|HRY415-project-3|code|Back_end_test.vhd/uut - Back_end - Behavioral/Register_File_module - Register_File - Behavioral/Rob - reorder_buffer - Behavioral/buffer_lines - buffer_line - Behavioral</ClosedNode>
+         <ClosedNode>/Back_end_test - behavior C:|arxitektonikh1|HRY415-project-3|code|Back_end_test.vhd/uut - Back_end - Behavioral/Register_File_module - Register_File - Behavioral/Rob - reorder_buffer - Behavioral/rob_control0 - rob_control - Behavioral</ClosedNode>
+         <ClosedNode>/Back_end_test - behavior C:|arxitektonikh1|HRY415-project-3|code|Back_end_test.vhd/uut - Back_end - Behavioral/Register_File_module - Register_File - Behavioral/V_unit - V_block - Behavioral</ClosedNode>
          <ClosedNode>/CDBunit - Behavioral C:|arxitektonikh1|CDBunit.vhd</ClosedNode>
          <ClosedNode>/FU_aritmetic_test - behavior C:|HRY415-project-2|code|FU_aritmetic_test.vhd</ClosedNode>
          <ClosedNode>/FU_aritmetic_test - behavior C:|arxitektonikh1|FU_aritmetic_test.vhd</ClosedNode>
@@ -405,6 +410,7 @@
          <ClosedNode>/V_block_test - behavior C:|arxitektonikh1|V_block_test.vhd/uut - V_block - Behavioral/muxk - mux32to1_32Bit - Behavioral</ClosedNode>
          <ClosedNode>/buffer_line - Behavioral C:|arxitektonikh1|HRY415-project-3|code|buffer_line.vhd</ClosedNode>
          <ClosedNode>/buffer_line_test - behavior C:|arxitektonikh1|HRY415-project-3|code|buffer_line_test.vhd</ClosedNode>
+         <ClosedNode>/buffer_line_test - behavior C:|arxitektonikh1|HRY415-project-3|code|buffer_line_test.vhd/uut - buffer_line - Behavioral</ClosedNode>
          <ClosedNode>/demux_test - behavior C:|HRY415-project-2|code|demux_test.vhd</ClosedNode>
          <ClosedNode>/demux_test - behavior C:|arxitektonikh1|HRY415-project-2|code|demux_test.vhd</ClosedNode>
          <ClosedNode>/demux_test - behavior C:|arxitektonikh1|HRY415-project-3|code|demux_test.vhd</ClosedNode>
@@ -423,6 +429,8 @@
          <ClosedNode>/rename_ston_idio_kataxwrhth_Waw - behavior C:|arxitektonikh1|HRY415-project-3|code|rename_ston_idio_kataxwrhth_Waw.vhd</ClosedNode>
          <ClosedNode>/reorder_buffer - Behavioral C:|arxitektonikh1|HRY415-project-3|code|reorder_buffer.vhd</ClosedNode>
          <ClosedNode>/reorder_buffer_test - behavior C:|arxitektonikh1|HRY415-project-3|code|reorder_buffer_test.vhd</ClosedNode>
+         <ClosedNode>/reorder_buffer_test - behavior C:|arxitektonikh1|HRY415-project-3|code|reorder_buffer_test.vhd/uut - reorder_buffer - Behavioral/buffer_lines - buffer_line - Behavioral</ClosedNode>
+         <ClosedNode>/reorder_buffer_test - behavior C:|arxitektonikh1|HRY415-project-3|code|reorder_buffer_test.vhd/uut - reorder_buffer - Behavioral/rob_control0 - rob_control - Behavioral</ClosedNode>
          <ClosedNode>/rs_line_test - behavior C:|arxitektonikh1|HRY415-project-2|code|rs_line_test.vhd</ClosedNode>
          <ClosedNode>/rs_line_test - behavior C:|arxitektonikh1|HRY415-project-3|code|rs_line_test.vhd</ClosedNode>
          <ClosedNode>/rs_line_test - behavior C:|arxitektonikh1|rs_line_test.vhd</ClosedNode>
@@ -456,13 +464,13 @@
          <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000159000000010000000100000000000000000000000064ffffffff000000810000000000000001000001590000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001f1000000010000000100000000000000000000000064ffffffff000000810000000000000001000001f10000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
@@ -481,7 +489,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000011d000000010000000100000000000000000000000064ffffffff0000008100000000000000010000011d0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000202000000010000000100000000000000000000000064ffffffff000000810000000000000001000002020000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
@@ -490,16 +498,16 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000016e000000010000000100000000000000000000000064ffffffff0000008100000000000000010000016e0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000202000000010000000100000000000000000000000064ffffffff000000810000000000000001000002020000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
    </ItemView>
-   <SourceProcessView>000000ff0000000000000002000001b5000000a801000000050100000002</SourceProcessView>
-   <CurrentView>Implementation</CurrentView>
+   <SourceProcessView>000000ff0000000000000002000001e50000007801000000050100000002</SourceProcessView>
+   <CurrentView>Behavioral Simulation</CurrentView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_PACKAGE_DECL" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>

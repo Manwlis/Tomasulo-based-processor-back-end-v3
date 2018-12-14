@@ -53,7 +53,7 @@ static void work_a_3626147423_3212880686_p_0(char *t0)
     unsigned int t21;
     char *t22;
     char *t23;
-    unsigned char t24;
+    char *t24;
     char *t25;
     char *t26;
     char *t27;
@@ -64,7 +64,6 @@ static void work_a_3626147423_3212880686_p_0(char *t0)
     char *t32;
     char *t33;
     char *t34;
-    char *t35;
 
 LAB0:    xsi_set_current_line(65, ng0);
     t3 = (t0 + 1192U);
@@ -84,34 +83,7 @@ LAB9:    t2 = (unsigned char)0;
 LAB10:    if (t2 == 1)
         goto LAB5;
 
-LAB6:    t1 = (unsigned char)0;
-
-LAB7:    if (t1 != 0)
-        goto LAB3;
-
-LAB4:
-LAB29:    t30 = (t0 + 9952);
-    t31 = (t30 + 56U);
-    t32 = *((char **)t31);
-    t33 = (t32 + 56U);
-    t34 = *((char **)t33);
-    *((unsigned char *)t34) = (unsigned char)3;
-    xsi_driver_first_trans_fast_port(t30);
-
-LAB2:    t35 = (t0 + 9712);
-    *((int *)t35) = 1;
-
-LAB1:    return;
-LAB3:    t25 = (t0 + 9952);
-    t26 = (t25 + 56U);
-    t27 = *((char **)t26);
-    t28 = (t27 + 56U);
-    t29 = *((char **)t28);
-    *((unsigned char *)t29) = (unsigned char)2;
-    xsi_driver_first_trans_fast_port(t25);
-    goto LAB2;
-
-LAB5:    t17 = (t0 + 5032U);
+LAB6:    t17 = (t0 + 5032U);
     t18 = *((char **)t17);
     t17 = (t0 + 16380);
     t20 = 1;
@@ -120,8 +92,34 @@ LAB5:    t17 = (t0 + 5032U);
 
 LAB24:    t20 = 0;
 
-LAB25:    t24 = (!(t20));
-    t1 = t24;
+LAB25:    t1 = t20;
+
+LAB7:    if (t1 != 0)
+        goto LAB3;
+
+LAB4:
+LAB29:    t29 = (t0 + 9952);
+    t30 = (t29 + 56U);
+    t31 = *((char **)t30);
+    t32 = (t31 + 56U);
+    t33 = *((char **)t32);
+    *((unsigned char *)t33) = (unsigned char)3;
+    xsi_driver_first_trans_fast_port(t29);
+
+LAB2:    t34 = (t0 + 9712);
+    *((int *)t34) = 1;
+
+LAB1:    return;
+LAB3:    t24 = (t0 + 9952);
+    t25 = (t24 + 56U);
+    t26 = *((char **)t25);
+    t27 = (t26 + 56U);
+    t28 = *((char **)t27);
+    *((unsigned char *)t28) = (unsigned char)2;
+    xsi_driver_first_trans_fast_port(t24);
+    goto LAB2;
+
+LAB5:    t1 = (unsigned char)1;
     goto LAB7;
 
 LAB8:    t10 = (t0 + 5032U);

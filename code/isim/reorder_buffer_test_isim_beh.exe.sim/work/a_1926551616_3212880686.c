@@ -114,21 +114,11 @@ LAB7:    t1 = (t0 + 1352U);
     if (t5 != 0)
         goto LAB8;
 
-LAB9:    xsi_set_current_line(33, ng0);
-    t1 = (t0 + 1672U);
-    t3 = *((char **)t1);
-    t1 = (t0 + 3560);
-    t4 = (t1 + 56U);
-    t7 = *((char **)t4);
-    t8 = (t7 + 56U);
-    t9 = *((char **)t8);
-    memcpy(t9, t3, 8U);
-    xsi_driver_first_trans_fast(t1);
-
+LAB9:
 LAB6:    goto LAB3;
 
 LAB5:    xsi_set_current_line(27, ng0);
-    t3 = (t0 + 5551);
+    t3 = (t0 + 5547);
     t8 = (t0 + 3560);
     t9 = (t8 + 56U);
     t10 = *((char **)t9);

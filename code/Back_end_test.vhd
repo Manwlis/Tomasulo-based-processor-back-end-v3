@@ -1,6 +1,6 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
-
+ 
 ENTITY Back_end_test IS
 END Back_end_test;
  
@@ -17,7 +17,9 @@ ARCHITECTURE behavior OF Back_end_test IS
          IF_Ri : IN  std_logic_vector(4 downto 0);
          IF_Rj : IN  std_logic_vector(4 downto 0);
          IF_Rk : IN  std_logic_vector(4 downto 0);
-         accepted : OUT  std_logic
+         accepted : OUT  std_logic;
+         PC_in : IN  std_logic_vector(31 downto 0);
+         PC_exception : OUT  std_logic_vector(31 downto 0)
         );
     END COMPONENT;
     
@@ -30,9 +32,11 @@ ARCHITECTURE behavior OF Back_end_test IS
    signal IF_Ri : std_logic_vector(4 downto 0) := (others => '0');
    signal IF_Rj : std_logic_vector(4 downto 0) := (others => '0');
    signal IF_Rk : std_logic_vector(4 downto 0) := (others => '0');
+   signal PC_in : std_logic_vector(31 downto 0) := (others => '0');
 
  	--Outputs
    signal accepted : std_logic;
+   signal PC_exception : std_logic_vector(31 downto 0);
 
    -- Clock period definitions
    constant Clk_period : time := 10 ns;
@@ -48,7 +52,9 @@ BEGIN
           IF_Ri => IF_Ri,
           IF_Rj => IF_Rj,
           IF_Rk => IF_Rk,
-          accepted => accepted
+          accepted => accepted,
+          PC_in => PC_in,
+          PC_exception => PC_exception
         );
 
    -- Clock process definitions
@@ -63,7 +69,7 @@ BEGIN
 
    -- Stimulus process
    stim_proc: process
-   begin
+   begin		
 	
 		-- not arxikopoihshs
 		wait for Clk_period/2;
@@ -77,21 +83,7 @@ BEGIN
       wait for Clk_period;
 			issue <= '0';
 	
-		wait for Clk_period*3;
-			issue <= '1';
-			FU_type <= "00";
-			IF_Fop <= "00";
-			IF_Ri <= "00001";
-			IF_Rj <= "00000";
-			IF_Rk <= "11111";
-
-      wait for Clk_period;
-			issue <= '0';
-			IF_Ri <= "00000";
-			IF_Rk <= "00000";
-
-		wait;
-			
+      wait;
    end process;
 
 END;

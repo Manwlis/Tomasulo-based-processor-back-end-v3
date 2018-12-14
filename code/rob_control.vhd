@@ -63,7 +63,7 @@ begin
 -- An oles oi 8eseis exoun egkures entoles kai den diagrafetai kapia twra, den iparxei dia8esimos xwros.
 -- An ginei exception skwtonetai kai thn entolh pou erxetai twra.
 available <= 
-	'0' when valid = "11111111" AND delete_commit = "00000000" AND (NOT(delete_commit = "11111111")) else
+	'0' when (valid = "11111111" AND delete_commit = "00000000") OR delete_commit = "11111111" else
 	'1';
 
 

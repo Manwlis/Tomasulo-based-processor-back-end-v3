@@ -13,7 +13,13 @@
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="37" />
+   <WVObjectSize size="30" />
+   <wave_markers>
+      <marker time="5000000" label="" />
+      <marker time="85000000" label="" />
+      <marker time="165000000" label="" />
+      <marker time="195000000" label="" />
+   </wave_markers>
    <wvobject fp_name="/reorder_buffer_test/clk" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -37,20 +43,18 @@
       <obj_property name="ObjectShortName">ri[4:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/reorder_buffer_test/fu_type" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">fu_type[1:0]</obj_property>
-      <obj_property name="ObjectShortName">fu_type[1:0]</obj_property>
-   </wvobject>
    <wvobject fp_name="/reorder_buffer_test/pc_entolhs" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">pc_entolhs[31:0]</obj_property>
       <obj_property name="ObjectShortName">pc_entolhs[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/reorder_buffer_test/tag_issue" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">tag_issue[4:0]</obj_property>
       <obj_property name="ObjectShortName">tag_issue[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="divider27" type="divider">
-      <obj_property name="label">Diavasma j kai k</obj_property>
+      <obj_property name="label">Diavasma j</obj_property>
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="BkColor">128 128 255</obj_property>
       <obj_property name="TextColor">230 230 230</obj_property>
@@ -60,38 +64,18 @@
       <obj_property name="ObjectShortName">rj[4:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/reorder_buffer_test/rk" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">rk[4:0]</obj_property>
-      <obj_property name="ObjectShortName">rk[4:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
    <wvobject fp_name="/reorder_buffer_test/qj" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">qj[4:0]</obj_property>
       <obj_property name="ObjectShortName">qj[4:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/reorder_buffer_test/qk" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">qk[4:0]</obj_property>
-      <obj_property name="ObjectShortName">qk[4:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/reorder_buffer_test/forward_data_j" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">forward_data_j[31:0]</obj_property>
-      <obj_property name="ObjectShortName">forward_data_j[31:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/reorder_buffer_test/forward_data_k" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">forward_data_k[31:0]</obj_property>
-      <obj_property name="ObjectShortName">forward_data_k[31:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/reorder_buffer_test/forward_control_j" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">forward_control_j</obj_property>
       <obj_property name="ObjectShortName">forward_control_j</obj_property>
    </wvobject>
-   <wvobject fp_name="/reorder_buffer_test/forward_control_k" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">forward_control_k</obj_property>
-      <obj_property name="ObjectShortName">forward_control_k</obj_property>
+   <wvobject fp_name="/reorder_buffer_test/uut/j_flags" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">j_flags[7:0]</obj_property>
+      <obj_property name="ObjectShortName">j_flags[7:0]</obj_property>
    </wvobject>
    <wvobject fp_name="divider28" type="divider">
       <obj_property name="label">Commit</obj_property>
@@ -102,10 +86,6 @@
    <wvobject fp_name="/reorder_buffer_test/commit_reg" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">commit_reg[4:0]</obj_property>
       <obj_property name="ObjectShortName">commit_reg[4:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/reorder_buffer_test/commit_data" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">commit_data[31:0]</obj_property>
-      <obj_property name="ObjectShortName">commit_data[31:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/reorder_buffer_test/v_commit" type="logic" db_ref_id="1">
@@ -127,11 +107,6 @@
       <obj_property name="ObjectShortName">cdb_q[4:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/reorder_buffer_test/cdb_value" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">cdb_value[31:0]</obj_property>
-      <obj_property name="ObjectShortName">cdb_value[31:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
    <wvobject fp_name="divider26" type="divider">
       <obj_property name="label">Exception</obj_property>
       <obj_property name="DisplayName">label</obj_property>
@@ -141,10 +116,7 @@
    <wvobject fp_name="/reorder_buffer_test/pc_exception" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">pc_exception[31:0]</obj_property>
       <obj_property name="ObjectShortName">pc_exception[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/reorder_buffer_test/exception_valid" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">exception_valid</obj_property>
-      <obj_property name="ObjectShortName">exception_valid</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="divider31" type="divider">
       <obj_property name="label">Lines flags</obj_property>
@@ -159,6 +131,10 @@
    <wvobject fp_name="/reorder_buffer_test/uut/done" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">done[7:0]</obj_property>
       <obj_property name="ObjectShortName">done[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/reorder_buffer_test/uut/exception_status" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">exception_status[7:0]</obj_property>
+      <obj_property name="ObjectShortName">exception_status[7:0]</obj_property>
    </wvobject>
    <wvobject fp_name="divider34" type="divider">
       <obj_property name="label">Pointers</obj_property>

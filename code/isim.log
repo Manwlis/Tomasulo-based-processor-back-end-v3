@@ -13,9 +13,3 @@ Simulator is doing circuit initialization process.
 at 0 ps, Instance /reorder_buffer_test/uut/rob_control0/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 at 0 ps, Instance /reorder_buffer_test/uut/rob_control0/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 Finished circuit initialization process.
-# restart
-# run 1.00us
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /reorder_buffer_test/uut/rob_control0/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /reorder_buffer_test/uut/rob_control0/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.

@@ -101,7 +101,7 @@ type array8_32 is array (0 to 7) of std_logic_vector(31 downto 0);
 signal V_out, PC_out : array8_32;
 
 signal commit_sel, forward_sel_j, forward_sel_k, exception_sel : std_logic_vector(2 downto 0);
-signal exception_valid : std_logic;
+signal exception_valid, forward_control_j_sig, forward_control_k_sig : std_logic;
 
 begin
 
@@ -149,8 +149,8 @@ port map(
 	issue => issue,
 	j_flags => j_flags,
 	k_flags => k_flags,
-	forward_control_j => forward_control_j,
-	forward_control_k => forward_control_k,
+	forward_control_j => forward_control_j_sig,
+	forward_control_k => forward_control_k_sig,
 	forward_sel_j => forward_sel_j,
 	forward_sel_k => forward_sel_k,
 	delete => delete,
@@ -161,6 +161,8 @@ port map(
 	exception_valid => exception_valid
 );
 
+forward_control_j <= forward_control_j_sig;
+forward_control_k <= forward_control_k_sig;
 -- tag mux. Gia na kserei to oipolipo susthma se pia grammh apo8ikeythke h entolh.
 tag_issue <=
 	tag(0) when issue(0) = '1' else
@@ -208,6 +210,7 @@ forward_data_j <=
 	V_out(7) when forward_sel_j = "111";
 
 Qj <=
+	"00000" when forward_control_j_sig = '0' else
 	tag_out(0) when forward_sel_j = "000" else
 	tag_out(1) when forward_sel_j = "001" else
 	tag_out(2) when forward_sel_j = "010" else
@@ -215,7 +218,8 @@ Qj <=
 	tag_out(4) when forward_sel_j = "100" else
 	tag_out(5) when forward_sel_j = "101" else
 	tag_out(6) when forward_sel_j = "110" else
-	tag_out(7) when forward_sel_j = "111";
+	tag_out(7) when forward_sel_j = "111" else
+	"00000";
 
 -- k forward muxes
 forward_data_k <=
@@ -229,6 +233,7 @@ forward_data_k <=
 	V_out(7) when forward_sel_k = "111";
 
 Qk <=
+	"00000" when forward_control_k_sig = '0' else
 	tag_out(0) when forward_sel_k = "000" else
 	tag_out(1) when forward_sel_k = "001" else
 	tag_out(2) when forward_sel_k = "010" else
@@ -236,7 +241,8 @@ Qk <=
 	tag_out(4) when forward_sel_k = "100" else
 	tag_out(5) when forward_sel_k = "101" else
 	tag_out(6) when forward_sel_k = "110" else
-	tag_out(7) when forward_sel_k = "111";
+	tag_out(7) when forward_sel_k = "111" else
+	"00000";
 
 -- pc exception mux
 PC_exception <=
