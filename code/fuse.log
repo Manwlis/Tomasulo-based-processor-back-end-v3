@@ -1,40 +1,100 @@
-Running: E:\Xilinx\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/arxitektonikh1/HRY415-project-3/code/reorder_buffer_test_isim_beh.exe -prj C:/arxitektonikh1/HRY415-project-3/code/reorder_buffer_test_beh.prj work.reorder_buffer_test 
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -o "C:/arxitektonikh1/HRY415-project-3/code/entoles_se_mia_monada_isim_beh.exe" -prj "C:/arxitektonikh1/HRY415-project-3/code/entoles_se_mia_monada_beh.prj" "work.entoles_se_mia_monada" 
 ISim O.87xd (signature 0xc3576ebc)
 Number of CPUs detected in this system: 16
 Turning on mult-threading, number of parallel sub-compilation jobs: 32 
 Determining compilation order of HDL files
 Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/mux.vhd" into library work
+Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/mux32Bit.vhd" into library work
 Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/flipflop.vhd" into library work
+Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/demux1bit.vhd" into library work
 Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/Reg1BitR.vhd" into library work
+Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/mux4to1_32Bit.vhd" into library work
+Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/demux2to4.vhd" into library work
 Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/Reg4BitR.vhd" into library work
+Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/mux8to1_32Bit.vhd" into library work
+Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/demux3to8.vhd" into library work
 Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/Reg5BitR.vhd" into library work
 Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/Reg32BitR.vhd" into library work
+Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/mux16to1_32Bit.vhd" into library work
+Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/demux4to16.vhd" into library work
 Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/cyclical_shift_register.vhd" into library work
 Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/rob_control.vhd" into library work
+Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/mux5Bit.vhd" into library work
+Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/mux32to1_32Bit.vhd" into library work
+Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/demux5to32.vhd" into library work
 Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/buffer_line.vhd" into library work
+Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/V_block.vhd" into library work
+Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/RS_reg_line.vhd" into library work
+Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/RS_logica_control.vhd" into library work
+Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/RS_ar_control.vhd" into library work
 Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/reorder_buffer.vhd" into library work
-Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/reorder_buffer_test.vhd" into library work
+Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/Reg2BitR.vhd" into library work
+Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/mux4to1_5bit.vhd" into library work
+Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/logical_unit.vhd" into library work
+Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/FU_logical_control.vhd" into library work
+Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/FU_arithmetic_control.vhd" into library work
+Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/CDB_control.vhd" into library work
+Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/arithmetic_unit.vhd" into library work
+Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/RS_unit_logical.vhd" into library work
+Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/RSUnitAr.vhd" into library work
+Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/Register_File.vhd" into library work
+Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/Issue_unit.vhd" into library work
+Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/FU_logical.vhd" into library work
+Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/FU_arithmetic.vhd" into library work
+Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/CDBunit.vhd" into library work
+Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/Back_end.vhd" into library work
+Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/entoles_se_mia_monada.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling package standard
 Compiling package std_logic_1164
+Compiling architecture behavioral of entity Issue_unit [issue_unit_default]
 Compiling package std_logic_arith
 Compiling package std_logic_unsigned
 Compiling package numeric_std
+Compiling architecture behavioral of entity demux [demux_default]
+Compiling architecture behavioral of entity demux2to4 [demux2to4_default]
+Compiling architecture behavioral of entity demux3to8 [demux3to8_default]
+Compiling architecture behavioral of entity demux4to16 [demux4to16_default]
+Compiling architecture structural of entity demux5to32 [demux5to32_default]
 Compiling architecture behavioral of entity mux [mux_default]
 Compiling architecture behavioral of entity flipflop [flipflop_default]
 Compiling architecture behavioral of entity Reg1BitR [reg1bitr_default]
-Compiling architecture behavioral of entity Reg5BitR [reg5bitr_default]
 Compiling architecture behavioral of entity Reg4BitR [reg4bitr_default]
 Compiling architecture structural of entity Reg32BitR [reg32bitr_default]
+Compiling architecture behavioral of entity mux32Bit [mux32bit_default]
+Compiling architecture behavioral of entity mux4to1_32Bit [mux4to1_32bit_default]
+Compiling architecture behavioral of entity mux8to1_32Bit [mux8to1_32bit_default]
+Compiling architecture behavioral of entity mux16to1_32Bit [mux16to1_32bit_default]
+Compiling architecture behavioral of entity mux32to1_32Bit [mux32to1_32bit_default]
+Compiling architecture behavioral of entity V_block [v_block_default]
+Compiling architecture behavioral of entity Reg5BitR [reg5bitr_default]
 Compiling architecture behavioral of entity buffer_line [buffer_line_default]
 Compiling architecture behavioral of entity cyclical_shift_register [cyclical_shift_register_default]
 Compiling architecture behavioral of entity rob_control [rob_control_default]
 Compiling architecture behavioral of entity reorder_buffer [reorder_buffer_default]
-Compiling architecture behavior of entity reorder_buffer_test
+Compiling architecture behavioral of entity Register_File [register_file_default]
+Compiling architecture behavioral of entity mux5Bit [mux5bit_default]
+Compiling architecture behavioral of entity RS_reg_line [rs_reg_line_default]
+Compiling architecture behavioral of entity RS_arithmetic_control [rs_arithmetic_control_default]
+Compiling architecture behavioral of entity RS_unit_arithemtic [rs_unit_arithemtic_default]
+Compiling architecture behavioral of entity Reg2BitR [reg2bitr_default]
+Compiling architecture behavioral of entity arithmetic_unit [arithmetic_unit_default]
+Compiling architecture behavioral of entity FU_arithmetic_control [fu_arithmetic_control_default]
+Compiling architecture behavioral of entity FU_arithmetic [fu_arithmetic_default]
+Compiling architecture behavioral of entity RS_logical_control [rs_logical_control_default]
+Compiling architecture behavioral of entity RS_unit_logical [rs_unit_logical_default]
+Compiling architecture behavioral of entity logical_unit [logical_unit_default]
+Compiling architecture behavioral of entity FU_logical_control [fu_logical_control_default]
+Compiling architecture behavioral of entity FU_logical [fu_logical_default]
+Compiling architecture behavioral of entity mux4to1_5bit [mux4to1_5bit_default]
+Compiling architecture behavioral of entity CDB_control [cdb_control_default]
+Compiling architecture behavioral of entity CDBunit [cdbunit_default]
+Compiling architecture behavioral of entity Back_end [back_end_default]
+Compiling architecture behavior of entity entoles_se_mia_monada
 Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
-Compiled 26 VHDL Units
-Built simulation executable C:/arxitektonikh1/HRY415-project-3/code/reorder_buffer_test_isim_beh.exe
-Fuse Memory Usage: 40108 KB
-Fuse CPU Usage: 889 ms
+Compiled 86 VHDL Units
+Built simulation executable C:/arxitektonikh1/HRY415-project-3/code/entoles_se_mia_monada_isim_beh.exe
+Fuse Memory Usage: 44756 KB
+Fuse CPU Usage: 1185 ms

@@ -1,4 +1,3 @@
-
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
  
@@ -18,7 +17,9 @@ ARCHITECTURE behavior OF tuxaies_entoles_xwris_eksarthseis IS
          IF_Ri : IN  std_logic_vector(4 downto 0);
          IF_Rj : IN  std_logic_vector(4 downto 0);
          IF_Rk : IN  std_logic_vector(4 downto 0);
-         accepted : OUT  std_logic
+         accepted : OUT  std_logic;
+         PC_in : IN  std_logic_vector(31 downto 0);
+         PC_exception : OUT  std_logic_vector(31 downto 0)
         );
     END COMPONENT;
     
@@ -31,9 +32,11 @@ ARCHITECTURE behavior OF tuxaies_entoles_xwris_eksarthseis IS
    signal IF_Ri : std_logic_vector(4 downto 0) := (others => '0');
    signal IF_Rj : std_logic_vector(4 downto 0) := (others => '0');
    signal IF_Rk : std_logic_vector(4 downto 0) := (others => '0');
+   signal PC_in : std_logic_vector(31 downto 0) := (others => '0');
 
  	--Outputs
    signal accepted : std_logic;
+   signal PC_exception : std_logic_vector(31 downto 0);
 
    -- Clock period definitions
    constant Clk_period : time := 10 ns;
@@ -49,7 +52,9 @@ BEGIN
           IF_Ri => IF_Ri,
           IF_Rj => IF_Rj,
           IF_Rk => IF_Rk,
-          accepted => accepted
+          accepted => accepted,
+          PC_in => PC_in,
+          PC_exception => PC_exception
         );
 
    -- Clock process definitions
@@ -65,9 +70,7 @@ BEGIN
    -- Stimulus process
    stim_proc: process
    begin		
-
-
-		-- not arxikopoihshs
+      		-- not arxikopoihshs
 		wait for Clk_period/2;
 			issue <= '1';
 			FU_type <= "00";

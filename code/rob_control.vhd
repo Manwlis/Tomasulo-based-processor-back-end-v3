@@ -199,10 +199,10 @@ begin
 	for I in 0 to 7 loop
 		
 		-- Na paei sthn epomenh 8esh. An bghke ektos wriwn na paei sthn allh meria tou vector.
-		if pointer = 7 then
-			pointer := 0;
+		if pointer = 0 then
+			pointer := 7;
 		else
-			pointer := pointer + 1;
+			pointer := pointer - 1;
 		end if;
 		
 		-- Brhke mia grammh pou exei katallhla dedomena.
@@ -234,10 +234,10 @@ begin
 	for I in 0 to 7 loop
 		
 		-- Na paei sthn epomenh 8esh. An bghke ektos wriwn na paei sthn allh meria tou vector.
-		if pointer = 7 then
-			pointer := 0;
+		if pointer = 0 then
+			pointer := 7;
 		else
-			pointer := pointer + 1;
+			pointer := pointer - 1;
 		end if;
 		
 		-- Brhke mia grammh pou exei katallhla dedomena.

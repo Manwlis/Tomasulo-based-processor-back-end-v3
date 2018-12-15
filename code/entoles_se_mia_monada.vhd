@@ -1,36 +1,5 @@
---------------------------------------------------------------------------------
--- Company: 
--- Engineer:
---
--- Create Date:   15:31:25 11/17/2018
--- Design Name:   
--- Module Name:   C:/arxitektonikh1/HRY415-project-2/code/entoles_se_mia_monada.vhd
--- Project Name:  arxitektonikh1
--- Target Device:  
--- Tool versions:  
--- Description:   
--- 
--- VHDL Test Bench Created by ISE for module: Back_end
--- 
--- Dependencies:
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
---
--- Notes: 
--- This testbench has been automatically generated using types std_logic and
--- std_logic_vector for the ports of the unit under test.  Xilinx recommends
--- that these types always be used for the top-level I/O of a design in order
--- to guarantee that the testbench will bind correctly to the post-implementation 
--- simulation model.
---------------------------------------------------------------------------------
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
- 
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---USE ieee.numeric_std.ALL;
  
 ENTITY entoles_se_mia_monada IS
 END entoles_se_mia_monada;
@@ -48,7 +17,9 @@ ARCHITECTURE behavior OF entoles_se_mia_monada IS
          IF_Ri : IN  std_logic_vector(4 downto 0);
          IF_Rj : IN  std_logic_vector(4 downto 0);
          IF_Rk : IN  std_logic_vector(4 downto 0);
-         accepted : OUT  std_logic
+         accepted : OUT  std_logic;
+         PC_in : IN  std_logic_vector(31 downto 0);
+         PC_exception : OUT  std_logic_vector(31 downto 0)
         );
     END COMPONENT;
     
@@ -61,9 +32,11 @@ ARCHITECTURE behavior OF entoles_se_mia_monada IS
    signal IF_Ri : std_logic_vector(4 downto 0) := (others => '0');
    signal IF_Rj : std_logic_vector(4 downto 0) := (others => '0');
    signal IF_Rk : std_logic_vector(4 downto 0) := (others => '0');
+   signal PC_in : std_logic_vector(31 downto 0) := (others => '0');
 
  	--Outputs
    signal accepted : std_logic;
+   signal PC_exception : std_logic_vector(31 downto 0);
 
    -- Clock period definitions
    constant Clk_period : time := 10 ns;
@@ -79,7 +52,9 @@ BEGIN
           IF_Ri => IF_Ri,
           IF_Rj => IF_Rj,
           IF_Rk => IF_Rk,
-          accepted => accepted
+          accepted => accepted,
+          PC_in => PC_in,
+          PC_exception => PC_exception
         );
 
    -- Clock process definitions
@@ -109,39 +84,27 @@ BEGIN
 			issue <= '0';
 	
       wait for Clk_period*3;
+				
+		for i in 0 to 12 loop
+			 issue <= '1';
+			 FU_type <= "01";
+			 IF_Fop <= "10";
+			 IF_Ri <= "00001";
+			 IF_Rj <= "00000";
+			 IF_Rk <= "00000";
 		
-for i in 0 to 2 loop
+			wait for Clk_period;
+		end loop;
 		
-          issue <= '1';
-          FU_type <= "01";
-          IF_Fop <= "10";
-          IF_Ri <= "00001";
-          IF_Rj <= "00000";
-          IF_Rk <= "00000";
-	
-		-- shift sto apotelesma ths prwths
-      wait for Clk_period;
-          issue <= '1';
-          FU_type <= "01";
-          IF_Fop <= "10";
-          IF_Ri <= "00010";
-          IF_Rj <= "00000";
-          IF_Rk <= "00000";
-	
-		-- shift sto apotelesma ths prwths
-      wait for Clk_period;
-          issue <= '1';
-          FU_type <= "01";
-          IF_Fop <= "10";
-          IF_Ri <= "00011";
-          IF_Rj <= "00000";
-          IF_Rk <= "00000";
-	
-      wait for Clk_period*2;
-
+		 FU_type <= "00";
+		 IF_Fop <= "00";
+		 IF_Ri <= "00111";
+		 IF_Rj <= "00001";
+		 IF_Rk <= "00000";
 		
-end loop;
-issue <= '0';
+		wait for Clk_period;
+		
+		issue <= '0';
 
       wait;
    end process;

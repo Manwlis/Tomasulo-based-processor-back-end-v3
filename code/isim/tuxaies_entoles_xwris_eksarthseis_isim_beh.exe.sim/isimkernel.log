@@ -1,0 +1,37 @@
+Command line:
+   tuxaies_entoles_xwris_eksarthseis_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49652
+
+Sat Dec 15 14:40:01 2018
+
+
+ Elaboration Time: 0.733204 sec
+
+ Current Memory Usage: 622.858 Meg
+
+ Total Signals          : 50920
+ Total Nets             : 11579
+ Total Signal Drivers   : 10057
+ Total Blocks           : 10642
+ Total Primitive Blocks : 7522
+ Total Processes        : 10031
+ Total Traceable Variables  : 61
+ Total Scalar Nets and Variables : 12126
+Total Line Count : 12574
+Total Line Count : 12574
+Total Line Count : 12574
+Total Line Count : 12574
+Total Line Count : 12574
+Total Line Count : 12574
+Total Line Count : 12574
+Total Line Count : 12574
+Total Line Count : 12574
+
+ Total Simulation Time: 2.77682 sec
+
+ Current Memory Usage: 622.858 Meg
+
+Sat Dec 15 15:30:38 2018
+
