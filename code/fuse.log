@@ -1,4 +1,4 @@
-Running: fuse.exe -relaunch -intstyle "ise" -incremental -o "C:/arxitektonikh1/HRY415-project-3/code/entoles_se_mia_monada_isim_beh.exe" -prj "C:/arxitektonikh1/HRY415-project-3/code/entoles_se_mia_monada_beh.prj" "work.entoles_se_mia_monada" 
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -o "C:/arxitektonikh1/HRY415-project-3/code/exception_back_end_test_isim_beh.exe" -prj "C:/arxitektonikh1/HRY415-project-3/code/exception_back_end_test_beh.prj" "work.exception_back_end_test" 
 ISim O.87xd (signature 0xc3576ebc)
 Number of CPUs detected in this system: 16
 Turning on mult-threading, number of parallel sub-compilation jobs: 32 
@@ -43,7 +43,7 @@ Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/FU_logical.vhd" into 
 Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/FU_arithmetic.vhd" into library work
 Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/CDBunit.vhd" into library work
 Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/Back_end.vhd" into library work
-Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/entoles_se_mia_monada.vhd" into library work
+Parsing VHDL file "C:/arxitektonikh1/HRY415-project-3/code/exception_back_end_test.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling package standard
@@ -91,10 +91,10 @@ Compiling architecture behavioral of entity mux4to1_5bit [mux4to1_5bit_default]
 Compiling architecture behavioral of entity CDB_control [cdb_control_default]
 Compiling architecture behavioral of entity CDBunit [cdbunit_default]
 Compiling architecture behavioral of entity Back_end [back_end_default]
-Compiling architecture behavior of entity entoles_se_mia_monada
+Compiling architecture behavior of entity exception_back_end_test
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
+Waiting for 2 sub-compilation(s) to finish...
 Compiled 86 VHDL Units
-Built simulation executable C:/arxitektonikh1/HRY415-project-3/code/entoles_se_mia_monada_isim_beh.exe
-Fuse Memory Usage: 44756 KB
-Fuse CPU Usage: 1185 ms
+Built simulation executable C:/arxitektonikh1/HRY415-project-3/code/exception_back_end_test_isim_beh.exe
+Fuse Memory Usage: 44620 KB
+Fuse CPU Usage: 1262 ms

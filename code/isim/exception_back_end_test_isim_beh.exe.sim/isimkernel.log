@@ -1,0 +1,33 @@
+Command line:
+   exception_back_end_test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51641
+
+Mon Dec 17 19:25:41 2018
+
+
+ Elaboration Time: 0.608404 sec
+
+ Current Memory Usage: 622.858 Meg
+
+ Total Signals          : 50920
+ Total Nets             : 11579
+ Total Signal Drivers   : 10058
+ Total Blocks           : 10642
+ Total Primitive Blocks : 7522
+ Total Processes        : 10031
+ Total Traceable Variables  : 61
+ Total Scalar Nets and Variables : 12126
+Total Line Count : 12580
+Total Line Count : 12580
+Total Line Count : 12580
+Total Line Count : 12580
+Total Line Count : 12580
+
+ Total Simulation Time: 1.84081 sec
+
+ Current Memory Usage: 622.858 Meg
+
+Mon Dec 17 19:48:24 2018
+

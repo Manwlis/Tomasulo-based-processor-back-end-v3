@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "C:/arxitektonikh1/HRY415-project-3/code/entoles_se_mia_monada_isim_beh.exe" -prj "C:/arxitektonikh1/HRY415-project-3/code/entoles_se_mia_monada_beh.prj" "work.entoles_se_mia_monada" 
+-intstyle "ise" -incremental -o "C:/arxitektonikh1/HRY415-project-3/code/exception_back_end_test_isim_beh.exe" -prj "C:/arxitektonikh1/HRY415-project-3/code/exception_back_end_test_beh.prj" "work.exception_back_end_test" 

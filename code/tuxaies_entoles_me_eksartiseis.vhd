@@ -1,7 +1,6 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
  
- 
 ENTITY tuxaies_entoles_me_eksartiseis IS
 END tuxaies_entoles_me_eksartiseis;
  
@@ -18,7 +17,9 @@ ARCHITECTURE behavior OF tuxaies_entoles_me_eksartiseis IS
          IF_Ri : IN  std_logic_vector(4 downto 0);
          IF_Rj : IN  std_logic_vector(4 downto 0);
          IF_Rk : IN  std_logic_vector(4 downto 0);
-         accepted : OUT  std_logic
+         accepted : OUT  std_logic;
+         PC_in : IN  std_logic_vector(31 downto 0);
+         PC_exception : OUT  std_logic_vector(31 downto 0)
         );
     END COMPONENT;
     
@@ -31,9 +32,11 @@ ARCHITECTURE behavior OF tuxaies_entoles_me_eksartiseis IS
    signal IF_Ri : std_logic_vector(4 downto 0) := (others => '0');
    signal IF_Rj : std_logic_vector(4 downto 0) := (others => '0');
    signal IF_Rk : std_logic_vector(4 downto 0) := (others => '0');
+   signal PC_in : std_logic_vector(31 downto 0) := (others => '0');
 
  	--Outputs
    signal accepted : std_logic;
+   signal PC_exception : std_logic_vector(31 downto 0);
 
    -- Clock period definitions
    constant Clk_period : time := 10 ns;
@@ -49,7 +52,9 @@ BEGIN
           IF_Ri => IF_Ri,
           IF_Rj => IF_Rj,
           IF_Rk => IF_Rk,
-          accepted => accepted
+          accepted => accepted,
+          PC_in => PC_in,
+          PC_exception => PC_exception
         );
 
    -- Clock process definitions
@@ -125,13 +130,55 @@ BEGIN
 			IF_Fop <= "10";
 			IF_Ri <= "00110";
 			IF_Rk <= "00101";
-		
+			
+		-- and
+		wait for Clk_period;	
+			FU_type <= "00";
+			IF_Fop <= "01";
+			IF_Ri <= "00111";
+			IF_Rk <= "00110";
+			
+		-- and
+		wait for Clk_period;	
+			FU_type <= "01";
+			IF_Fop <= "01";
+			IF_Ri <= "01000";
+			IF_Rk <= "00111";
+
+		-- and
+		wait for Clk_period;	
+			FU_type <= "01";
+			IF_Fop <= "01";
+			IF_Ri <= "01001";
+			IF_Rk <= "01000";
+						
+		-- and
+		wait for Clk_period;	
+			FU_type <= "00";
+			IF_Fop <= "01";
+			IF_Ri <= "01010";
+			IF_Rk <= "01001";
+
+		-- and
+		wait for Clk_period;	
+			FU_type <= "01";
+			IF_Fop <= "01";
+			IF_Ri <= "01011";
+			IF_Rk <= "01010";
+			
+		-- and
+		wait for Clk_period;	
+			FU_type <= "01";
+			IF_Fop <= "01";
+			IF_Ri <= "01100";
+			IF_Rk <= "01011";
+			
 		wait for Clk_period;	
 			issue <= '0';
 			IF_Ri <= "11110";
 			IF_Rk <= "11111";
-		
-      wait;
+			
+		wait;
    end process;
 
 END;
