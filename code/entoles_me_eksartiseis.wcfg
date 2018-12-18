@@ -13,10 +13,11 @@
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="27" />
+   <WVObjectSize size="28" />
    <wave_markers>
       <marker time="155000000" label="" />
       <marker time="45000000" label="" />
+      <marker time="105000000" label="" />
    </wave_markers>
    <wvobject fp_name="/tuxaies_entoles_me_eksartiseis/clk" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">clk</obj_property>
@@ -87,6 +88,12 @@
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
       <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tuxaies_entoles_me_eksartiseis/uut/RS_unit_logical_module/control/busy_line" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">busy_line[1:0]</obj_property>
+      <obj_property name="ObjectShortName">busy_line[1:0]</obj_property>
+      <obj_property name="label">busy_line_logical</obj_property>
    </wvobject>
    <wvobject fp_name="divider27" type="divider">
       <obj_property name="label">CDB</obj_property>
