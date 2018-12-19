@@ -321,7 +321,6 @@
          <ClosedNode>/Back_end_test - behavior C:|arxitektonikh1|HRY415-project-2|code|Back_end_test.vhd/uut - Back_end - Behavioral/Register_File_module - Register_File - Behavioral/Q_unit - Q_block - Behavioral/muxj - mux32to1_5Bit - Structural</ClosedNode>
          <ClosedNode>/Back_end_test - behavior C:|arxitektonikh1|HRY415-project-2|code|Back_end_test.vhd/uut - Back_end - Behavioral/Register_File_module - Register_File - Behavioral/Q_unit - Q_block - Behavioral/muxk - mux32to1_5Bit - Structural</ClosedNode>
          <ClosedNode>/Back_end_test - behavior C:|arxitektonikh1|HRY415-project-2|code|Back_end_test.vhd/uut - Back_end - Behavioral/Register_File_module - Register_File - Behavioral/V_unit - V_block - Behavioral</ClosedNode>
-         <ClosedNode>/Back_end_test - behavior C:|arxitektonikh1|HRY415-project-3|code|Back_end_test.vhd</ClosedNode>
          <ClosedNode>/Back_end_test - behavior C:|arxitektonikh1|HRY415-project-3|code|Back_end_test.vhd/uut - Back_end - Behavioral/CDBunit_module - CDBunit - Behavioral</ClosedNode>
          <ClosedNode>/Back_end_test - behavior C:|arxitektonikh1|HRY415-project-3|code|Back_end_test.vhd/uut - Back_end - Behavioral/FU_arithmetic_module - FU_arithmetic - Behavioral</ClosedNode>
          <ClosedNode>/Back_end_test - behavior C:|arxitektonikh1|HRY415-project-3|code|Back_end_test.vhd/uut - Back_end - Behavioral/FU_logical_module - FU_logical - Behavioral</ClosedNode>
@@ -454,13 +453,13 @@
          <ClosedNode>/tuxaies_entoles_xwris_eksarthseis - behavior C:|arxitektonikh1|HRY415-project-3|code|tuxaies_entoles_xwris_eksarthseis.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>tuxaies_entoles_me_eksartiseis - behavior (C:/arxitektonikh1/HRY415-project-3/code/tuxaies_entoles_me_eksartiseis.vhd)</SelectedItem>
+         <SelectedItem>buffer_lines - buffer_line - Behavioral (C:/arxitektonikh1/HRY415-project-3/code/buffer_line.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >4</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001f7000000020000000000000000000000000200000064ffffffff000000810000000300000002000001f70000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001fb000000020000000000000000000000000200000064ffffffff000000810000000300000002000001fb0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>tuxaies_entoles_me_eksartiseis - behavior (C:/arxitektonikh1/HRY415-project-3/code/tuxaies_entoles_me_eksartiseis.vhd)</CurrentItem>
+      <CurrentItem>buffer_lines - buffer_line - Behavioral (C:/arxitektonikh1/HRY415-project-3/code/buffer_line.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
