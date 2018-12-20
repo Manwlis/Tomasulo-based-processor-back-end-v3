@@ -2,12 +2,12 @@ Command line:
    tuxaies_entoles_me_eksartiseis_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  52297
+     -socket  49757
 
-Tue Dec 18 16:03:47 2018
+Thu Dec 20 20:33:20 2018
 
 
- Elaboration Time: 0.670804 sec
+ Elaboration Time: 0.639604 sec
 
  Current Memory Usage: 622.858 Meg
 
@@ -21,12 +21,10 @@ Tue Dec 18 16:03:47 2018
  Total Scalar Nets and Variables : 12126
 Total Line Count : 12610
 Total Line Count : 12610
-Total Line Count : 12610
-Total Line Count : 12610
 
- Total Simulation Time: 1.71601 sec
+ Total Simulation Time: 1.13881 sec
 
  Current Memory Usage: 622.858 Meg
 
-Tue Dec 18 16:23:55 2018
+Thu Dec 20 20:33:43 2018
 

@@ -19,15 +19,3 @@ Simulator is doing circuit initialization process.
 at 0 ps, Instance /tuxaies_entoles_me_eksartiseis/uut/Register_File_module/Rob/rob_control0/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 at 0 ps, Instance /tuxaies_entoles_me_eksartiseis/uut/Register_File_module/Rob/rob_control0/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 Finished circuit initialization process.
-# restart
-# run 1.00us
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /tuxaies_entoles_me_eksartiseis/uut/Register_File_module/Rob/rob_control0/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tuxaies_entoles_me_eksartiseis/uut/Register_File_module/Rob/rob_control0/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.
-# restart
-# run 1.00us
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /tuxaies_entoles_me_eksartiseis/uut/Register_File_module/Rob/rob_control0/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tuxaies_entoles_me_eksartiseis/uut/Register_File_module/Rob/rob_control0/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.

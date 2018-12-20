@@ -4,7 +4,7 @@ Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> Parameter xsthdpdir set to xst
 
@@ -121,7 +121,8 @@ Architecture behavioral of Entity demux2to4 is up to date.
 Compiling vhdl file "C:/arxitektonikh1/HRY415-project-3/code/Reg4BitR.vhd" in Library work.
 Architecture behavioral of Entity reg4bitr is up to date.
 Compiling vhdl file "C:/arxitektonikh1/HRY415-project-3/code/mux8to1_32Bit.vhd" in Library work.
-Architecture behavioral of Entity mux8to1_32bit is up to date.
+Entity <mux8to1_32Bit> compiled.
+Entity <mux8to1_32Bit> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "C:/arxitektonikh1/HRY415-project-3/code/demux3to8.vhd" in Library work.
 Architecture behavioral of Entity demux3to8 is up to date.
 Compiling vhdl file "C:/arxitektonikh1/HRY415-project-3/code/cyclical_shift_register.vhd" in Library work.
@@ -139,8 +140,7 @@ Architecture behavioral of Entity mux5bit is up to date.
 Compiling vhdl file "C:/arxitektonikh1/HRY415-project-3/code/buffer_line.vhd" in Library work.
 Architecture behavioral of Entity buffer_line is up to date.
 Compiling vhdl file "C:/arxitektonikh1/HRY415-project-3/code/rob_control.vhd" in Library work.
-Entity <rob_control> compiled.
-Entity <rob_control> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity rob_control is up to date.
 Compiling vhdl file "C:/arxitektonikh1/HRY415-project-3/code/demux5to32.vhd" in Library work.
 Architecture structural of Entity demux5to32 is up to date.
 Compiling vhdl file "C:/arxitektonikh1/HRY415-project-3/code/mux32to1_32Bit.vhd" in Library work.
@@ -273,7 +273,7 @@ Analyzing hierarchy for entity <demux> in library <work> (architecture <behavior
 
 Analyzing hierarchy for entity <demux3to8> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <mux8to1_32Bit> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <mux8to1_32Bit> in library <work> (architecture <Behavioral>).
 
 Analyzing hierarchy for entity <mux32Bit> in library <work> (architecture <behavioral>).
 
@@ -357,7 +357,7 @@ Entity <mux32to1_32Bit> analyzed. Unit <mux32to1_32Bit> generated.
 Analyzing Entity <mux16to1_32Bit> in library <work> (Architecture <behavioral>).
 Entity <mux16to1_32Bit> analyzed. Unit <mux16to1_32Bit> generated.
 
-Analyzing Entity <mux8to1_32Bit> in library <work> (Architecture <behavioral>).
+Analyzing Entity <mux8to1_32Bit> in library <work> (Architecture <Behavioral>).
 Entity <mux8to1_32Bit> analyzed. Unit <mux8to1_32Bit> generated.
 
 Analyzing Entity <mux4to1_32Bit> in library <work> (Architecture <behavioral>).
@@ -376,6 +376,8 @@ Analyzing Entity <Reg5BitR> in library <work> (Architecture <behavioral>).
 Entity <Reg5BitR> analyzed. Unit <Reg5BitR> generated.
 
 Analyzing Entity <rob_control> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "C:/arxitektonikh1/HRY415-project-3/code/rob_control.vhd" line 136: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <commit_sel>, <fop>
 WARNING:Xst:819 - "C:/arxitektonikh1/HRY415-project-3/code/rob_control.vhd" line 189: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <commit_sel>
 WARNING:Xst:819 - "C:/arxitektonikh1/HRY415-project-3/code/rob_control.vhd" line 224: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
@@ -550,15 +552,6 @@ Unit <Reg1BitR> synthesized.
 
 Synthesizing Unit <rob_control>.
     Related source file is "C:/arxitektonikh1/HRY415-project-3/code/rob_control.vhd".
-WARNING:Xst:1305 - Output <V_commit> is never assigned. Tied to value 0.
-WARNING:Xst:1305 - Output <exception_valid> is never assigned. Tied to value 0.
-WARNING:Xst:647 - Input <fop> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:646 - Signal <ready_for_commit> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:653 - Signal <head_rotate_control> is used but never assigned. This sourceless signal will be automatically connected to value 0.
-WARNING:Xst:653 - Signal <head_reset> is used but never assigned. This sourceless signal will be automatically connected to value 0.
-WARNING:Xst:646 - Signal <head_exception> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:653 - Signal <free_reset> is used but never assigned. This sourceless signal will be automatically connected to value 0.
-WARNING:Xst:653 - Signal <delete_commit> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
     Found 1-bit 8-to-1 multiplexer for signal <j_flags$mux0000> created at line 209.
     Found 1-bit 8-to-1 multiplexer for signal <j_flags$mux0001> created at line 209.
     Found 1-bit 8-to-1 multiplexer for signal <j_flags$mux0002> created at line 209.
@@ -575,17 +568,18 @@ WARNING:Xst:653 - Signal <delete_commit> is used but never assigned. This source
     Found 1-bit 8-to-1 multiplexer for signal <k_flags$mux0005> created at line 244.
     Found 1-bit 8-to-1 multiplexer for signal <k_flags$mux0006> created at line 244.
     Found 1-bit 8-to-1 multiplexer for signal <k_flags$mux0007> created at line 244.
-    Found 3-bit adder for signal <pointer$addsub0000> created at line 205.
-    Found 3-bit adder for signal <pointer$addsub0001> created at line 205.
-    Found 3-bit adder for signal <pointer$addsub0002> created at line 205.
-    Found 3-bit adder for signal <pointer$addsub0003> created at line 205.
-    Found 3-bit adder for signal <pointer$addsub0004> created at line 205.
-    Found 3-bit adder for signal <pointer$addsub0005> created at line 205.
-    Found 3-bit adder for signal <pointer$addsub0006> created at line 205.
-    Found 3-bit adder for signal <pointer$addsub0007> created at line 205.
+    Found 3-bit subtractor for signal <pointer$addsub0000> created at line 205.
+    Found 3-bit subtractor for signal <pointer$addsub0001> created at line 205.
+    Found 3-bit subtractor for signal <pointer$addsub0002> created at line 205.
+    Found 3-bit subtractor for signal <pointer$addsub0003> created at line 205.
+    Found 3-bit subtractor for signal <pointer$addsub0004> created at line 205.
+    Found 3-bit subtractor for signal <pointer$addsub0005> created at line 205.
+    Found 3-bit subtractor for signal <pointer$addsub0006> created at line 205.
+    Found 3-bit subtractor for signal <pointer$addsub0007> created at line 205.
+    Found 2-bit 8-to-1 multiplexer for signal <V_commit$mux0002> created at line 157.
     Summary:
 	inferred   8 Adder/Subtractor(s).
-	inferred  16 Multiplexer(s).
+	inferred  18 Multiplexer(s).
 Unit <rob_control> synthesized.
 
 
@@ -712,11 +706,9 @@ Synthesizing Unit <reorder_buffer>.
     Found 32-bit 8-to-1 multiplexer for signal <forward_data_j>.
     Found 32-bit 8-to-1 multiplexer for signal <forward_data_k>.
     Found 5-bit 8-to-1 multiplexer for signal <commit_reg>.
-    Found 5-bit 8-to-1 multiplexer for signal <Qj>.
-    Found 5-bit 8-to-1 multiplexer for signal <Qk>.
     Found 32-bit 8-to-1 multiplexer for signal <commit_data>.
     Summary:
-	inferred 111 Multiplexer(s).
+	inferred 101 Multiplexer(s).
 Unit <reorder_buffer> synthesized.
 
 
@@ -755,7 +747,7 @@ Macro Statistics
  4x4-bit ROM                                           : 1
  8x1-bit ROM                                           : 1
 # Adders/Subtractors                                   : 9
- 3-bit adder                                           : 8
+ 3-bit subtractor                                      : 8
  32-bit addsub                                         : 1
 # Registers                                            : 2287
  1-bit register                                        : 2282
@@ -764,15 +756,15 @@ Macro Statistics
  8-bit register                                        : 2
 # Comparators                                          : 10
  5-bit comparator equal                                : 10
-# Multiplexers                                         : 28
+# Multiplexers                                         : 27
  1-bit 8-to-1 multiplexer                              : 16
  2-bit 4-to-1 multiplexer                              : 1
- 2-bit 8-to-1 multiplexer                              : 1
+ 2-bit 8-to-1 multiplexer                              : 2
  3-bit 8-to-1 multiplexer                              : 1
  32-bit 4-to-1 multiplexer                             : 2
  32-bit 8-to-1 multiplexer                             : 3
  5-bit 4-to-1 multiplexer                              : 1
- 5-bit 8-to-1 multiplexer                              : 3
+ 5-bit 8-to-1 multiplexer                              : 1
 # Xors                                                 : 120
  1-bit xor2                                            : 120
 
@@ -790,15 +782,11 @@ WARNING:Xst:1290 - Hierarchical block <Fu_type0> is unconnected in block <gen[0]
    It will be removed from the design.
 WARNING:Xst:1290 - Hierarchical block <Fu_type1> is unconnected in block <gen[0].buffer_lines>.
    It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <exception_reg> is unconnected in block <gen[0].buffer_lines>.
-   It will be removed from the design.
 WARNING:Xst:1290 - Hierarchical block <Value_reg> is unconnected in block <gen[1].buffer_lines>.
    It will be removed from the design.
 WARNING:Xst:1290 - Hierarchical block <Fu_type0> is unconnected in block <gen[1].buffer_lines>.
    It will be removed from the design.
 WARNING:Xst:1290 - Hierarchical block <Fu_type1> is unconnected in block <gen[1].buffer_lines>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <exception_reg> is unconnected in block <gen[1].buffer_lines>.
    It will be removed from the design.
 WARNING:Xst:1290 - Hierarchical block <Value_reg> is unconnected in block <gen[2].buffer_lines>.
    It will be removed from the design.
@@ -806,15 +794,11 @@ WARNING:Xst:1290 - Hierarchical block <Fu_type0> is unconnected in block <gen[2]
    It will be removed from the design.
 WARNING:Xst:1290 - Hierarchical block <Fu_type1> is unconnected in block <gen[2].buffer_lines>.
    It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <exception_reg> is unconnected in block <gen[2].buffer_lines>.
-   It will be removed from the design.
 WARNING:Xst:1290 - Hierarchical block <Value_reg> is unconnected in block <gen[3].buffer_lines>.
    It will be removed from the design.
 WARNING:Xst:1290 - Hierarchical block <Fu_type0> is unconnected in block <gen[3].buffer_lines>.
    It will be removed from the design.
 WARNING:Xst:1290 - Hierarchical block <Fu_type1> is unconnected in block <gen[3].buffer_lines>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <exception_reg> is unconnected in block <gen[3].buffer_lines>.
    It will be removed from the design.
 WARNING:Xst:1290 - Hierarchical block <Value_reg> is unconnected in block <gen[4].buffer_lines>.
    It will be removed from the design.
@@ -822,15 +806,11 @@ WARNING:Xst:1290 - Hierarchical block <Fu_type0> is unconnected in block <gen[4]
    It will be removed from the design.
 WARNING:Xst:1290 - Hierarchical block <Fu_type1> is unconnected in block <gen[4].buffer_lines>.
    It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <exception_reg> is unconnected in block <gen[4].buffer_lines>.
-   It will be removed from the design.
 WARNING:Xst:1290 - Hierarchical block <Value_reg> is unconnected in block <gen[5].buffer_lines>.
    It will be removed from the design.
 WARNING:Xst:1290 - Hierarchical block <Fu_type0> is unconnected in block <gen[5].buffer_lines>.
    It will be removed from the design.
 WARNING:Xst:1290 - Hierarchical block <Fu_type1> is unconnected in block <gen[5].buffer_lines>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <exception_reg> is unconnected in block <gen[5].buffer_lines>.
    It will be removed from the design.
 WARNING:Xst:1290 - Hierarchical block <Value_reg> is unconnected in block <gen[6].buffer_lines>.
    It will be removed from the design.
@@ -838,15 +818,11 @@ WARNING:Xst:1290 - Hierarchical block <Fu_type0> is unconnected in block <gen[6]
    It will be removed from the design.
 WARNING:Xst:1290 - Hierarchical block <Fu_type1> is unconnected in block <gen[6].buffer_lines>.
    It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <exception_reg> is unconnected in block <gen[6].buffer_lines>.
-   It will be removed from the design.
 WARNING:Xst:1290 - Hierarchical block <Value_reg> is unconnected in block <gen[7].buffer_lines>.
    It will be removed from the design.
 WARNING:Xst:1290 - Hierarchical block <Fu_type0> is unconnected in block <gen[7].buffer_lines>.
    It will be removed from the design.
 WARNING:Xst:1290 - Hierarchical block <Fu_type1> is unconnected in block <gen[7].buffer_lines>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <exception_reg> is unconnected in block <gen[7].buffer_lines>.
    It will be removed from the design.
 WARNING:Xst:1290 - Hierarchical block <Vj_mux> is unconnected in block <GEN[0].RS_reg_lines>.
    It will be removed from the design.
@@ -920,42 +896,34 @@ WARNING:Xst:1290 - Hierarchical block <Result_reg> is unconnected in block <FU_l
    It will be removed from the design.
 WARNING:Xst:1290 - Hierarchical block <value_mux> is unconnected in block <CDBunit_module>.
    It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <PC_reg> is unconnected in block <gen[0].buffer_lines>.
+WARNING:Xst:1290 - Hierarchical block <mux4> is unconnected in block <Qj_mux>.
    It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <PC_reg> is unconnected in block <gen[1].buffer_lines>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <PC_reg> is unconnected in block <gen[2].buffer_lines>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <PC_reg> is unconnected in block <gen[3].buffer_lines>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <PC_reg> is unconnected in block <gen[4].buffer_lines>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <PC_reg> is unconnected in block <gen[5].buffer_lines>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <PC_reg> is unconnected in block <gen[6].buffer_lines>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <PC_reg> is unconnected in block <gen[7].buffer_lines>.
+WARNING:Xst:1290 - Hierarchical block <mux4> is unconnected in block <Qj_mux>.
    It will be removed from the design.
 WARNING:Xst:1290 - Hierarchical block <mux5Bit1> is unconnected in block <Q_mux>.
    It will be removed from the design.
-WARNING:Xst:1426 - The value init of the FF/Latch value_0 hinder the constant cleaning in the block head_pointer.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1293 - FF/Latch <value_1> has a constant value of 0 in block <head_pointer>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <value_2> has a constant value of 0 in block <head_pointer>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <value_3> has a constant value of 0 in block <head_pointer>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <value_4> has a constant value of 0 in block <head_pointer>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <value_5> has a constant value of 0 in block <head_pointer>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <value_6> has a constant value of 0 in block <head_pointer>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <value_7> has a constant value of 0 in block <head_pointer>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <value_0> has a constant value of 1 in block <head_pointer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1290 - Hierarchical block <mux4> is unconnected in block <Qj_mux>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux4> is unconnected in block <Qk_mux>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux4> is unconnected in block <Qj_mux>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux4> is unconnected in block <Qk_mux>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux4> is unconnected in block <Qj_mux>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux4> is unconnected in block <Qk_mux>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux4> is unconnected in block <Qk_mux>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux4> is unconnected in block <Qk_mux>.
+   It will be removed from the design.
 WARNING:Xst:2677 - Node <currentState_2> of sequential type is unconnected in block <control>.
 WARNING:Xst:2677 - Node <currentState_3> of sequential type is unconnected in block <control>.
 WARNING:Xst:2677 - Node <currentState_0> of sequential type is unconnected in block <control>.
 WARNING:Xst:2677 - Node <currentState_2> of sequential type is unconnected in block <control>.
 WARNING:Xst:2677 - Node <currentState_2> of sequential type is unconnected in block <CDB_control0>.
 WARNING:Xst:2677 - Node <currentState_3> of sequential type is unconnected in block <CDB_control0>.
-WARNING:Xst:1290 - Hierarchical block <head_pointer> is unconnected in block <rob_control0>.
-   It will be removed from the design.
 
 Synthesizing (advanced) Unit <RS_arithmetic_control>.
 INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_nextState> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
@@ -975,21 +943,21 @@ Macro Statistics
  4x4-bit ROM                                           : 1
  8x1-bit ROM                                           : 1
 # Adders/Subtractors                                   : 9
- 3-bit adder                                           : 8
+ 3-bit subtractor                                      : 8
  32-bit addsub                                         : 1
 # Registers                                            : 2303
  Flip-Flops                                            : 2303
 # Comparators                                          : 10
  5-bit comparator equal                                : 10
-# Multiplexers                                         : 28
+# Multiplexers                                         : 27
  1-bit 8-to-1 multiplexer                              : 16
  2-bit 4-to-1 multiplexer                              : 1
- 2-bit 8-to-1 multiplexer                              : 1
+ 2-bit 8-to-1 multiplexer                              : 2
  3-bit 8-to-1 multiplexer                              : 1
  32-bit 4-to-1 multiplexer                             : 2
  32-bit 8-to-1 multiplexer                             : 3
  5-bit 4-to-1 multiplexer                              : 1
- 5-bit 8-to-1 multiplexer                              : 3
+ 5-bit 8-to-1 multiplexer                              : 1
 # Xors                                                 : 120
  1-bit xor2                                            : 120
 
@@ -1025,10 +993,7 @@ Optimizing unit <RS_unit_logical> ...
 Optimizing unit <reorder_buffer> ...
 
 Optimizing unit <V_block> ...
-WARNING:Xst:1426 - The value init of the FF/Latch Register_File_module/Rob/rob_control0/head_pointer/value_0 hinder the constant cleaning in the block Back_end.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1293 - FF/Latch <Register_File_module/Rob/rob_control0/head_pointer/value_1> has a constant value of 0 in block <Back_end>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RS_unit_logical_module/GEN[1].RS_reg_lines/tag_reg/Reg1BitR4/flipflop0/q> has a constant value of 0 in block <Back_end>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <RS_unit_logical_module/GEN[1].RS_reg_lines/tag_reg/Reg1BitR4/flipflop0/q> has a constant value of 0 in block <Back_end>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RS_unit_logical_module/GEN[1].RS_reg_lines/Qj_reg/Reg1BitR4/flipflop0/q> has a constant value of 0 in block <Back_end>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RS_unit_logical_module/GEN[1].RS_reg_lines/Qk_reg/Reg1BitR4/flipflop0/q> has a constant value of 0 in block <Back_end>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RS_unit_logical_module/GEN[0].RS_reg_lines/tag_reg/Reg1BitR4/flipflop0/q> has a constant value of 0 in block <Back_end>. This FF/Latch will be trimmed during the optimization process.
@@ -1037,24 +1002,17 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RS_unit_logical_mod
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RS_unit_arithemtic_module/GEN[2].RS_reg_lines/tag_reg/Reg1BitR4/flipflop0/q> has a constant value of 0 in block <Back_end>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RS_unit_arithemtic_module/GEN[2].RS_reg_lines/Qj_reg/Reg1BitR4/flipflop0/q> has a constant value of 0 in block <Back_end>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RS_unit_arithemtic_module/GEN[2].RS_reg_lines/Qk_reg/Reg1BitR4/flipflop0/q> has a constant value of 0 in block <Back_end>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <FU_arithmetic_module/tag_reg/Reg1BitR4/flipflop0/q> has a constant value of 0 in block <Back_end>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <FU_arithmetic_module/q_mid_reg/Reg1BitR4/flipflop0/q> has a constant value of 0 in block <Back_end>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <FU_logical_module/tag_reg/Reg1BitR4/flipflop0/q> has a constant value of 0 in block <Back_end>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RS_unit_arithemtic_module/GEN[0].RS_reg_lines/Qk_reg/Reg1BitR4/flipflop0/q> has a constant value of 0 in block <Back_end>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RS_unit_arithemtic_module/GEN[0].RS_reg_lines/Qj_reg/Reg1BitR4/flipflop0/q> has a constant value of 0 in block <Back_end>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RS_unit_arithemtic_module/GEN[0].RS_reg_lines/tag_reg/Reg1BitR4/flipflop0/q> has a constant value of 0 in block <Back_end>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RS_unit_arithemtic_module/GEN[1].RS_reg_lines/Qk_reg/Reg1BitR4/flipflop0/q> has a constant value of 0 in block <Back_end>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RS_unit_arithemtic_module/GEN[1].RS_reg_lines/Qj_reg/Reg1BitR4/flipflop0/q> has a constant value of 0 in block <Back_end>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RS_unit_arithemtic_module/GEN[1].RS_reg_lines/tag_reg/Reg1BitR4/flipflop0/q> has a constant value of 0 in block <Back_end>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RS_unit_arithemtic_module/GEN[1].RS_reg_lines/Qj_reg/Reg1BitR4/flipflop0/q> has a constant value of 0 in block <Back_end>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RS_unit_arithemtic_module/GEN[1].RS_reg_lines/Qk_reg/Reg1BitR4/flipflop0/q> has a constant value of 0 in block <Back_end>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RS_unit_arithemtic_module/GEN[0].RS_reg_lines/tag_reg/Reg1BitR4/flipflop0/q> has a constant value of 0 in block <Back_end>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RS_unit_arithemtic_module/GEN[0].RS_reg_lines/Qj_reg/Reg1BitR4/flipflop0/q> has a constant value of 0 in block <Back_end>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RS_unit_arithemtic_module/GEN[0].RS_reg_lines/Qk_reg/Reg1BitR4/flipflop0/q> has a constant value of 0 in block <Back_end>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <FU_logical_module/tag_reg/Reg1BitR4/flipflop0/q> has a constant value of 0 in block <Back_end>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <FU_arithmetic_module/q_mid_reg/Reg1BitR4/flipflop0/q> has a constant value of 0 in block <Back_end>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <FU_arithmetic_module/tag_reg/Reg1BitR4/flipflop0/q> has a constant value of 0 in block <Back_end>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <FU_logical_module/q_reg/Reg1BitR4/flipflop0/q> has a constant value of 0 in block <Back_end>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <FU_arithmetic_module/q_reg/Reg1BitR4/flipflop0/q> has a constant value of 0 in block <Back_end>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register_File_module/Rob/rob_control0/head_pointer/value_2> has a constant value of 0 in block <Back_end>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register_File_module/Rob/rob_control0/head_pointer/value_3> has a constant value of 0 in block <Back_end>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register_File_module/Rob/rob_control0/head_pointer/value_4> has a constant value of 0 in block <Back_end>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register_File_module/Rob/rob_control0/head_pointer/value_5> has a constant value of 0 in block <Back_end>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register_File_module/Rob/rob_control0/head_pointer/value_6> has a constant value of 0 in block <Back_end>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register_File_module/Rob/rob_control0/head_pointer/value_7> has a constant value of 0 in block <Back_end>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register_File_module/Rob/rob_control0/head_pointer/value_0> has a constant value of 1 in block <Back_end>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <FU_arithmetic_module/Value_in1_reg/Reg4BitR0/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
 WARNING:Xst:2677 - Node <FU_arithmetic_module/Value_in1_reg/Reg4BitR0/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
 WARNING:Xst:2677 - Node <FU_arithmetic_module/Value_in1_reg/Reg4BitR0/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
@@ -1859,28 +1817,20 @@ WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[0].buffer_lines/Value_reg/
 WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[0].buffer_lines/Value_reg/Reg4BitR7/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
 WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[0].buffer_lines/Value_reg/Reg4BitR7/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
 WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[0].buffer_lines/Value_reg/Reg4BitR7/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[0].buffer_lines/exception_reg/flipflop0/q> of sequential type is unconnected in block <Back_end>.
 WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[0].buffer_lines/Fu_type1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
 WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[0].buffer_lines/Fu_type0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[1].buffer_lines/exception_reg/flipflop0/q> of sequential type is unconnected in block <Back_end>.
 WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[1].buffer_lines/Fu_type1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
 WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[1].buffer_lines/Fu_type0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[2].buffer_lines/exception_reg/flipflop0/q> of sequential type is unconnected in block <Back_end>.
 WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[2].buffer_lines/Fu_type1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
 WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[2].buffer_lines/Fu_type0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[3].buffer_lines/exception_reg/flipflop0/q> of sequential type is unconnected in block <Back_end>.
 WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[3].buffer_lines/Fu_type1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
 WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[3].buffer_lines/Fu_type0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[4].buffer_lines/exception_reg/flipflop0/q> of sequential type is unconnected in block <Back_end>.
 WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[4].buffer_lines/Fu_type1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
 WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[4].buffer_lines/Fu_type0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[5].buffer_lines/exception_reg/flipflop0/q> of sequential type is unconnected in block <Back_end>.
 WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[5].buffer_lines/Fu_type1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
 WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[5].buffer_lines/Fu_type0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[6].buffer_lines/exception_reg/flipflop0/q> of sequential type is unconnected in block <Back_end>.
 WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[6].buffer_lines/Fu_type1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
 WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[6].buffer_lines/Fu_type0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[7].buffer_lines/exception_reg/flipflop0/q> of sequential type is unconnected in block <Back_end>.
 WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[7].buffer_lines/Fu_type1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
 WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[7].buffer_lines/Fu_type0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
 WARNING:Xst:2677 - Node <Register_File_module/V_unit/GEN[0].Vreg/Reg4BitR0/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
@@ -2907,287 +2857,11 @@ WARNING:Xst:2677 - Node <Register_File_module/V_unit/GEN[31].Vreg/Reg4BitR7/Reg1
 WARNING:Xst:2677 - Node <Register_File_module/V_unit/GEN[31].Vreg/Reg4BitR7/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
 WARNING:Xst:2677 - Node <Register_File_module/V_unit/GEN[31].Vreg/Reg4BitR7/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
 WARNING:Xst:2677 - Node <Register_File_module/V_unit/GEN[31].Vreg/Reg4BitR7/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[7].buffer_lines/PC_reg/Reg4BitR0/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[7].buffer_lines/PC_reg/Reg4BitR0/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[7].buffer_lines/PC_reg/Reg4BitR0/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[7].buffer_lines/PC_reg/Reg4BitR0/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[7].buffer_lines/PC_reg/Reg4BitR1/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[7].buffer_lines/PC_reg/Reg4BitR1/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[7].buffer_lines/PC_reg/Reg4BitR1/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[7].buffer_lines/PC_reg/Reg4BitR1/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[7].buffer_lines/PC_reg/Reg4BitR2/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[7].buffer_lines/PC_reg/Reg4BitR2/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[7].buffer_lines/PC_reg/Reg4BitR2/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[7].buffer_lines/PC_reg/Reg4BitR2/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[7].buffer_lines/PC_reg/Reg4BitR3/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[7].buffer_lines/PC_reg/Reg4BitR3/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[7].buffer_lines/PC_reg/Reg4BitR3/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[7].buffer_lines/PC_reg/Reg4BitR3/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[7].buffer_lines/PC_reg/Reg4BitR4/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[7].buffer_lines/PC_reg/Reg4BitR4/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[7].buffer_lines/PC_reg/Reg4BitR4/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[7].buffer_lines/PC_reg/Reg4BitR4/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[7].buffer_lines/PC_reg/Reg4BitR5/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[7].buffer_lines/PC_reg/Reg4BitR5/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[7].buffer_lines/PC_reg/Reg4BitR5/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[7].buffer_lines/PC_reg/Reg4BitR5/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[7].buffer_lines/PC_reg/Reg4BitR6/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[7].buffer_lines/PC_reg/Reg4BitR6/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[7].buffer_lines/PC_reg/Reg4BitR6/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[7].buffer_lines/PC_reg/Reg4BitR6/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[7].buffer_lines/PC_reg/Reg4BitR7/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[7].buffer_lines/PC_reg/Reg4BitR7/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[7].buffer_lines/PC_reg/Reg4BitR7/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[7].buffer_lines/PC_reg/Reg4BitR7/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[6].buffer_lines/PC_reg/Reg4BitR0/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[6].buffer_lines/PC_reg/Reg4BitR0/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[6].buffer_lines/PC_reg/Reg4BitR0/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[6].buffer_lines/PC_reg/Reg4BitR0/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[6].buffer_lines/PC_reg/Reg4BitR1/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[6].buffer_lines/PC_reg/Reg4BitR1/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[6].buffer_lines/PC_reg/Reg4BitR1/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[6].buffer_lines/PC_reg/Reg4BitR1/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[6].buffer_lines/PC_reg/Reg4BitR2/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[6].buffer_lines/PC_reg/Reg4BitR2/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[6].buffer_lines/PC_reg/Reg4BitR2/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[6].buffer_lines/PC_reg/Reg4BitR2/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[6].buffer_lines/PC_reg/Reg4BitR3/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[6].buffer_lines/PC_reg/Reg4BitR3/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[6].buffer_lines/PC_reg/Reg4BitR3/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[6].buffer_lines/PC_reg/Reg4BitR3/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[6].buffer_lines/PC_reg/Reg4BitR4/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[6].buffer_lines/PC_reg/Reg4BitR4/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[6].buffer_lines/PC_reg/Reg4BitR4/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[6].buffer_lines/PC_reg/Reg4BitR4/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[6].buffer_lines/PC_reg/Reg4BitR5/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[6].buffer_lines/PC_reg/Reg4BitR5/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[6].buffer_lines/PC_reg/Reg4BitR5/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[6].buffer_lines/PC_reg/Reg4BitR5/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[6].buffer_lines/PC_reg/Reg4BitR6/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[6].buffer_lines/PC_reg/Reg4BitR6/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[6].buffer_lines/PC_reg/Reg4BitR6/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[6].buffer_lines/PC_reg/Reg4BitR6/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[6].buffer_lines/PC_reg/Reg4BitR7/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[6].buffer_lines/PC_reg/Reg4BitR7/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[6].buffer_lines/PC_reg/Reg4BitR7/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[6].buffer_lines/PC_reg/Reg4BitR7/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[5].buffer_lines/PC_reg/Reg4BitR0/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[5].buffer_lines/PC_reg/Reg4BitR0/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[5].buffer_lines/PC_reg/Reg4BitR0/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[5].buffer_lines/PC_reg/Reg4BitR0/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[5].buffer_lines/PC_reg/Reg4BitR1/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[5].buffer_lines/PC_reg/Reg4BitR1/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[5].buffer_lines/PC_reg/Reg4BitR1/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[5].buffer_lines/PC_reg/Reg4BitR1/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[5].buffer_lines/PC_reg/Reg4BitR2/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[5].buffer_lines/PC_reg/Reg4BitR2/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[5].buffer_lines/PC_reg/Reg4BitR2/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[5].buffer_lines/PC_reg/Reg4BitR2/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[5].buffer_lines/PC_reg/Reg4BitR3/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[5].buffer_lines/PC_reg/Reg4BitR3/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[5].buffer_lines/PC_reg/Reg4BitR3/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[5].buffer_lines/PC_reg/Reg4BitR3/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[5].buffer_lines/PC_reg/Reg4BitR4/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[5].buffer_lines/PC_reg/Reg4BitR4/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[5].buffer_lines/PC_reg/Reg4BitR4/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[5].buffer_lines/PC_reg/Reg4BitR4/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[5].buffer_lines/PC_reg/Reg4BitR5/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[5].buffer_lines/PC_reg/Reg4BitR5/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[5].buffer_lines/PC_reg/Reg4BitR5/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[5].buffer_lines/PC_reg/Reg4BitR5/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[5].buffer_lines/PC_reg/Reg4BitR6/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[5].buffer_lines/PC_reg/Reg4BitR6/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[5].buffer_lines/PC_reg/Reg4BitR6/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[5].buffer_lines/PC_reg/Reg4BitR6/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[5].buffer_lines/PC_reg/Reg4BitR7/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[5].buffer_lines/PC_reg/Reg4BitR7/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[5].buffer_lines/PC_reg/Reg4BitR7/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[5].buffer_lines/PC_reg/Reg4BitR7/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[4].buffer_lines/PC_reg/Reg4BitR0/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[4].buffer_lines/PC_reg/Reg4BitR0/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[4].buffer_lines/PC_reg/Reg4BitR0/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[4].buffer_lines/PC_reg/Reg4BitR0/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[4].buffer_lines/PC_reg/Reg4BitR1/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[4].buffer_lines/PC_reg/Reg4BitR1/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[4].buffer_lines/PC_reg/Reg4BitR1/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[4].buffer_lines/PC_reg/Reg4BitR1/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[4].buffer_lines/PC_reg/Reg4BitR2/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[4].buffer_lines/PC_reg/Reg4BitR2/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[4].buffer_lines/PC_reg/Reg4BitR2/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[4].buffer_lines/PC_reg/Reg4BitR2/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[4].buffer_lines/PC_reg/Reg4BitR3/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[4].buffer_lines/PC_reg/Reg4BitR3/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[4].buffer_lines/PC_reg/Reg4BitR3/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[4].buffer_lines/PC_reg/Reg4BitR3/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[4].buffer_lines/PC_reg/Reg4BitR4/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[4].buffer_lines/PC_reg/Reg4BitR4/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[4].buffer_lines/PC_reg/Reg4BitR4/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[4].buffer_lines/PC_reg/Reg4BitR4/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[4].buffer_lines/PC_reg/Reg4BitR5/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[4].buffer_lines/PC_reg/Reg4BitR5/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[4].buffer_lines/PC_reg/Reg4BitR5/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[4].buffer_lines/PC_reg/Reg4BitR5/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[4].buffer_lines/PC_reg/Reg4BitR6/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[4].buffer_lines/PC_reg/Reg4BitR6/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[4].buffer_lines/PC_reg/Reg4BitR6/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[4].buffer_lines/PC_reg/Reg4BitR6/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[4].buffer_lines/PC_reg/Reg4BitR7/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[4].buffer_lines/PC_reg/Reg4BitR7/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[4].buffer_lines/PC_reg/Reg4BitR7/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[4].buffer_lines/PC_reg/Reg4BitR7/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[3].buffer_lines/PC_reg/Reg4BitR0/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[3].buffer_lines/PC_reg/Reg4BitR0/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[3].buffer_lines/PC_reg/Reg4BitR0/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[3].buffer_lines/PC_reg/Reg4BitR0/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[3].buffer_lines/PC_reg/Reg4BitR1/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[3].buffer_lines/PC_reg/Reg4BitR1/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[3].buffer_lines/PC_reg/Reg4BitR1/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[3].buffer_lines/PC_reg/Reg4BitR1/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[3].buffer_lines/PC_reg/Reg4BitR2/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[3].buffer_lines/PC_reg/Reg4BitR2/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[3].buffer_lines/PC_reg/Reg4BitR2/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[3].buffer_lines/PC_reg/Reg4BitR2/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[3].buffer_lines/PC_reg/Reg4BitR3/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[3].buffer_lines/PC_reg/Reg4BitR3/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[3].buffer_lines/PC_reg/Reg4BitR3/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[3].buffer_lines/PC_reg/Reg4BitR3/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[3].buffer_lines/PC_reg/Reg4BitR4/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[3].buffer_lines/PC_reg/Reg4BitR4/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[3].buffer_lines/PC_reg/Reg4BitR4/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[3].buffer_lines/PC_reg/Reg4BitR4/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[3].buffer_lines/PC_reg/Reg4BitR5/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[3].buffer_lines/PC_reg/Reg4BitR5/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[3].buffer_lines/PC_reg/Reg4BitR5/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[3].buffer_lines/PC_reg/Reg4BitR5/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[3].buffer_lines/PC_reg/Reg4BitR6/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[3].buffer_lines/PC_reg/Reg4BitR6/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[3].buffer_lines/PC_reg/Reg4BitR6/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[3].buffer_lines/PC_reg/Reg4BitR6/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[3].buffer_lines/PC_reg/Reg4BitR7/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[3].buffer_lines/PC_reg/Reg4BitR7/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[3].buffer_lines/PC_reg/Reg4BitR7/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[3].buffer_lines/PC_reg/Reg4BitR7/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[2].buffer_lines/PC_reg/Reg4BitR0/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[2].buffer_lines/PC_reg/Reg4BitR0/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[2].buffer_lines/PC_reg/Reg4BitR0/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[2].buffer_lines/PC_reg/Reg4BitR0/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[2].buffer_lines/PC_reg/Reg4BitR1/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[2].buffer_lines/PC_reg/Reg4BitR1/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[2].buffer_lines/PC_reg/Reg4BitR1/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[2].buffer_lines/PC_reg/Reg4BitR1/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[2].buffer_lines/PC_reg/Reg4BitR2/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[2].buffer_lines/PC_reg/Reg4BitR2/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[2].buffer_lines/PC_reg/Reg4BitR2/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[2].buffer_lines/PC_reg/Reg4BitR2/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[2].buffer_lines/PC_reg/Reg4BitR3/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[2].buffer_lines/PC_reg/Reg4BitR3/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[2].buffer_lines/PC_reg/Reg4BitR3/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[2].buffer_lines/PC_reg/Reg4BitR3/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[2].buffer_lines/PC_reg/Reg4BitR4/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[2].buffer_lines/PC_reg/Reg4BitR4/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[2].buffer_lines/PC_reg/Reg4BitR4/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[2].buffer_lines/PC_reg/Reg4BitR4/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[2].buffer_lines/PC_reg/Reg4BitR5/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[2].buffer_lines/PC_reg/Reg4BitR5/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[2].buffer_lines/PC_reg/Reg4BitR5/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[2].buffer_lines/PC_reg/Reg4BitR5/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[2].buffer_lines/PC_reg/Reg4BitR6/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[2].buffer_lines/PC_reg/Reg4BitR6/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[2].buffer_lines/PC_reg/Reg4BitR6/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[2].buffer_lines/PC_reg/Reg4BitR6/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[2].buffer_lines/PC_reg/Reg4BitR7/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[2].buffer_lines/PC_reg/Reg4BitR7/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[2].buffer_lines/PC_reg/Reg4BitR7/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[2].buffer_lines/PC_reg/Reg4BitR7/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[1].buffer_lines/PC_reg/Reg4BitR0/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[1].buffer_lines/PC_reg/Reg4BitR0/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[1].buffer_lines/PC_reg/Reg4BitR0/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[1].buffer_lines/PC_reg/Reg4BitR0/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[1].buffer_lines/PC_reg/Reg4BitR1/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[1].buffer_lines/PC_reg/Reg4BitR1/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[1].buffer_lines/PC_reg/Reg4BitR1/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[1].buffer_lines/PC_reg/Reg4BitR1/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[1].buffer_lines/PC_reg/Reg4BitR2/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[1].buffer_lines/PC_reg/Reg4BitR2/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[1].buffer_lines/PC_reg/Reg4BitR2/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[1].buffer_lines/PC_reg/Reg4BitR2/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[1].buffer_lines/PC_reg/Reg4BitR3/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[1].buffer_lines/PC_reg/Reg4BitR3/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[1].buffer_lines/PC_reg/Reg4BitR3/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[1].buffer_lines/PC_reg/Reg4BitR3/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[1].buffer_lines/PC_reg/Reg4BitR4/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[1].buffer_lines/PC_reg/Reg4BitR4/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[1].buffer_lines/PC_reg/Reg4BitR4/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[1].buffer_lines/PC_reg/Reg4BitR4/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[1].buffer_lines/PC_reg/Reg4BitR5/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[1].buffer_lines/PC_reg/Reg4BitR5/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[1].buffer_lines/PC_reg/Reg4BitR5/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[1].buffer_lines/PC_reg/Reg4BitR5/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[1].buffer_lines/PC_reg/Reg4BitR6/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[1].buffer_lines/PC_reg/Reg4BitR6/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[1].buffer_lines/PC_reg/Reg4BitR6/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[1].buffer_lines/PC_reg/Reg4BitR6/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[1].buffer_lines/PC_reg/Reg4BitR7/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[1].buffer_lines/PC_reg/Reg4BitR7/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[1].buffer_lines/PC_reg/Reg4BitR7/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[1].buffer_lines/PC_reg/Reg4BitR7/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[0].buffer_lines/PC_reg/Reg4BitR0/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[0].buffer_lines/PC_reg/Reg4BitR0/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[0].buffer_lines/PC_reg/Reg4BitR0/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[0].buffer_lines/PC_reg/Reg4BitR0/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[0].buffer_lines/PC_reg/Reg4BitR1/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[0].buffer_lines/PC_reg/Reg4BitR1/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[0].buffer_lines/PC_reg/Reg4BitR1/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[0].buffer_lines/PC_reg/Reg4BitR1/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[0].buffer_lines/PC_reg/Reg4BitR2/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[0].buffer_lines/PC_reg/Reg4BitR2/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[0].buffer_lines/PC_reg/Reg4BitR2/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[0].buffer_lines/PC_reg/Reg4BitR2/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[0].buffer_lines/PC_reg/Reg4BitR3/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[0].buffer_lines/PC_reg/Reg4BitR3/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[0].buffer_lines/PC_reg/Reg4BitR3/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[0].buffer_lines/PC_reg/Reg4BitR3/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[0].buffer_lines/PC_reg/Reg4BitR4/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[0].buffer_lines/PC_reg/Reg4BitR4/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[0].buffer_lines/PC_reg/Reg4BitR4/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[0].buffer_lines/PC_reg/Reg4BitR4/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[0].buffer_lines/PC_reg/Reg4BitR5/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[0].buffer_lines/PC_reg/Reg4BitR5/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[0].buffer_lines/PC_reg/Reg4BitR5/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[0].buffer_lines/PC_reg/Reg4BitR5/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[0].buffer_lines/PC_reg/Reg4BitR6/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[0].buffer_lines/PC_reg/Reg4BitR6/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[0].buffer_lines/PC_reg/Reg4BitR6/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[0].buffer_lines/PC_reg/Reg4BitR6/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[0].buffer_lines/PC_reg/Reg4BitR7/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[0].buffer_lines/PC_reg/Reg4BitR7/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[0].buffer_lines/PC_reg/Reg4BitR7/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[0].buffer_lines/PC_reg/Reg4BitR7/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
 
 Mapping all equations...
 Building and optimizing final netlist ...
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[0].buffer_lines/Ri_reg/Reg1BitR4/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[0].buffer_lines/Ri_reg/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[0].buffer_lines/Ri_reg/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[0].buffer_lines/Ri_reg/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-WARNING:Xst:2677 - Node <Register_File_module/Rob/gen[0].buffer_lines/Ri_reg/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <Back_end>.
-Found area constraint ratio of 100 (+ 5) on block Back_end, actual ratio is 1.
-WARNING:Xst:1426 - The value init of the FF/Latch Register_File_module/Rob/gen[0].buffer_lines/valid_reg/flipflop0/q hinder the constant cleaning in the block Back_end.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch Register_File_module/Rob/gen[1].buffer_lines/valid_reg/flipflop0/q hinder the constant cleaning in the block Back_end.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch Register_File_module/Rob/gen[2].buffer_lines/valid_reg/flipflop0/q hinder the constant cleaning in the block Back_end.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch Register_File_module/Rob/gen[3].buffer_lines/valid_reg/flipflop0/q hinder the constant cleaning in the block Back_end.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch Register_File_module/Rob/gen[4].buffer_lines/valid_reg/flipflop0/q hinder the constant cleaning in the block Back_end.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch Register_File_module/Rob/gen[5].buffer_lines/valid_reg/flipflop0/q hinder the constant cleaning in the block Back_end.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch Register_File_module/Rob/gen[6].buffer_lines/valid_reg/flipflop0/q hinder the constant cleaning in the block Back_end.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1426 - The value init of the FF/Latch Register_File_module/Rob/gen[7].buffer_lines/valid_reg/flipflop0/q hinder the constant cleaning in the block Back_end.
-   You should achieve better results by setting this init to 1.
+Found area constraint ratio of 100 (+ 5) on block Back_end, actual ratio is 2.
+FlipFlop Register_File_module/Rob/rob_control0/head_pointer/value_1 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -3195,8 +2869,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 161
- Flip-Flops                                            : 161
+# Registers                                            : 439
+ Flip-Flops                                            : 439
 
 =========================================================================
 
@@ -3225,29 +2899,29 @@ Design Statistics
 # IOs                              : 86
 
 Cell Usage :
-# BELS                             : 375
+# BELS                             : 787
 #      GND                         : 1
-#      LUT2                        : 13
-#      LUT2_D                      : 1
-#      LUT2_L                      : 9
-#      LUT3                        : 44
-#      LUT3_D                      : 5
-#      LUT3_L                      : 13
-#      LUT4                        : 220
-#      LUT4_D                      : 31
-#      LUT4_L                      : 25
-#      MUXF5                       : 12
-#      VCC                         : 1
-# FlipFlops/Latches                : 161
+#      LUT2                        : 45
+#      LUT2_D                      : 5
+#      LUT2_L                      : 2
+#      LUT3                        : 126
+#      LUT3_D                      : 7
+#      LUT3_L                      : 27
+#      LUT4                        : 452
+#      LUT4_D                      : 33
+#      LUT4_L                      : 26
+#      MUXF5                       : 47
+#      MUXF6                       : 16
+# FlipFlops/Latches                : 439
 #      FD                          : 4
-#      FDC                         : 63
-#      FDCE                        : 86
-#      FDRE                        : 7
-#      FDSE                        : 1
+#      FDC                         : 71
+#      FDCE                        : 347
+#      FDRE                        : 15
+#      FDSE                        : 2
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 53
-#      IBUF                        : 20
+# IO Buffers                       : 85
+#      IBUF                        : 52
 #      OBUF                        : 33
 =========================================================================
 
@@ -3256,11 +2930,11 @@ Device utilization summary:
 
 Selected Device : 3s1600efg320-5 
 
- Number of Slices:                      202  out of  14752     1%  
- Number of Slice Flip Flops:            161  out of  29504     0%  
- Number of 4 input LUTs:                361  out of  29504     1%  
+ Number of Slices:                      410  out of  14752     2%  
+ Number of Slice Flip Flops:            439  out of  29504     1%  
+ Number of 4 input LUTs:                723  out of  29504     2%  
  Number of IOs:                          86
- Number of bonded IOBs:                  54  out of    250    21%  
+ Number of bonded IOBs:                  86  out of    250    34%  
  Number of GCLKs:                         1  out of     24     4%  
 
 ---------------------------
@@ -3284,25 +2958,25 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-Clk                                | BUFGP                  | 161   |
+Clk                                | BUFGP                  | 439   |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
 ----------------------------------------
------------------------------------+---------------------------------------------------+-------+
-Control Signal                     | Buffer(FF name)                                   | Load  |
------------------------------------+---------------------------------------------------+-------+
-PC_exception_0_OBUF(XST_GND:G)     | NONE(CDBunit_module/sel_reg/Reg1BitR0/flipflop0/q)| 149   |
------------------------------------+---------------------------------------------------+-------+
+--------------------------------------------+---------------------------------------------------+-------+
+Control Signal                              | Buffer(FF name)                                   | Load  |
+--------------------------------------------+---------------------------------------------------+-------+
+FU_arithmetic_module/q_mid_out<4>(XST_GND:G)| NONE(CDBunit_module/sel_reg/Reg1BitR0/flipflop0/q)| 418   |
+--------------------------------------------+---------------------------------------------------+-------+
 
 Timing Summary:
 ---------------
 Speed Grade: -5
 
-   Minimum period: 10.669ns (Maximum Frequency: 93.733MHz)
-   Minimum input arrival time before clock: 9.932ns
-   Maximum output required time after clock: 12.511ns
-   Maximum combinational path delay: 7.742ns
+   Minimum period: 13.343ns (Maximum Frequency: 74.946MHz)
+   Minimum input arrival time before clock: 13.325ns
+   Maximum output required time after clock: 12.707ns
+   Maximum combinational path delay: 7.609ns
 
 Timing Detail:
 --------------
@@ -3310,117 +2984,125 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'Clk'
-  Clock period: 10.669ns (frequency: 93.733MHz)
-  Total number of paths / destination ports: 77703 / 202
+  Clock period: 13.343ns (frequency: 74.946MHz)
+  Total number of paths / destination ports: 682871 / 506
 -------------------------------------------------------------------------
-Delay:               10.669ns (Levels of Logic = 8)
-  Source:            CDBunit_module/sel_reg/Reg1BitR0/flipflop0/q (FF)
-  Destination:       RS_unit_arithemtic_module/GEN[0].RS_reg_lines/Qk_reg/Reg1BitR2/flipflop0/q (FF)
+Delay:               13.343ns (Levels of Logic = 13)
+  Source:            Register_File_module/Rob/rob_control0/head_pointer/value_0 (FF)
+  Destination:       RS_unit_arithemtic_module/GEN[0].RS_reg_lines/Qk_reg/Reg1BitR1/flipflop0/q (FF)
   Source Clock:      Clk rising
   Destination Clock: Clk rising
 
-  Data Path: CDBunit_module/sel_reg/Reg1BitR0/flipflop0/q to RS_unit_arithemtic_module/GEN[0].RS_reg_lines/Qk_reg/Reg1BitR2/flipflop0/q
+  Data Path: Register_File_module/Rob/rob_control0/head_pointer/value_0 to RS_unit_arithemtic_module/GEN[0].RS_reg_lines/Qk_reg/Reg1BitR1/flipflop0/q
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              4   0.514   0.529  CDBunit_module/sel_reg/Reg1BitR0/flipflop0/q (CDBunit_module/sel_reg/Reg1BitR0/flipflop0/q)
-     LUT4_D:I2->O         14   0.612   0.880  CDBunit_module/Q_mux/mux5Bit2/mux1/output_and00011 (CDB<33>)
-     LUT4_D:I2->O          1   0.612   0.387  RS_unit_arithemtic_module/GEN[0].RS_reg_lines/comparator_j_and000026 (RS_unit_arithemtic_module/GEN[0].RS_reg_lines/comparator_j_and000026)
-     LUT4:I2->O            1   0.612   0.387  RS_unit_arithemtic_module/GEN[0].RS_reg_lines/ready_for_exec_and000649 (RS_unit_arithemtic_module/GEN[0].RS_reg_lines/ready_for_exec_and000649)
-     LUT4:I2->O           18   0.612   0.911  RS_unit_arithemtic_module/GEN[0].RS_reg_lines/ready_for_exec_and000661 (RS_unit_arithemtic_module/ready_for_exec<0>)
-     LUT4:I3->O            3   0.612   0.454  RS_unit_arithemtic_module/control/available14 (RS_unit_arithemtic_module/control/available14)
-     LUT4:I3->O            8   0.612   0.646  Issue_unit_module/issueRS<1>1 (issueRS<1>)
-     LUT4:I3->O           11   0.612   0.796  RS_unit_arithemtic_module/control/control_enable_out<0> (RS_unit_arithemtic_module/control_enable<0>)
-     LUT4:I3->O            1   0.612   0.000  RS_unit_arithemtic_module/GEN[0].RS_reg_lines/Qk_reg/Reg1BitR2/mux0/output1 (RS_unit_arithemtic_module/GEN[0].RS_reg_lines/Qk_reg/Reg1BitR2/muxOut)
-     FDC:D                     0.268          RS_unit_arithemtic_module/GEN[0].RS_reg_lines/Qk_reg/Reg1BitR2/flipflop0/q
+     FDSE:C->Q            26   0.514   1.140  Register_File_module/Rob/rob_control0/head_pointer/value_0 (Register_File_module/Rob/rob_control0/head_pointer/value_0)
+     LUT2:I1->O            1   0.612   0.000  Register_File_module/Rob/rob_control0/pointer_mux0000<0>_SW0_SW2_G (N334)
+     MUXF5:I1->O           2   0.278   0.383  Register_File_module/Rob/rob_control0/pointer_mux0000<0>_SW0_SW2 (N228)
+     LUT4:I3->O           16   0.612   0.909  Register_File_module/Rob/rob_control0/Msub_pointer_addsub0002_cy<0>1_1 (Register_File_module/Rob/rob_control0/Msub_pointer_addsub0002_cy<0>1)
+     LUT3:I2->O            1   0.612   0.000  Register_File_module/Rob/rob_control0/Mmux_j_flags_mux0003_4_f51 (Register_File_module/Rob/rob_control0/Mmux_j_flags_mux0003_4_f51)
+     MUXF5:I0->O           1   0.278   0.000  Register_File_module/Rob/rob_control0/Mmux_j_flags_mux0003_4_f5 (Register_File_module/Rob/rob_control0/Mmux_j_flags_mux0003_4_f5)
+     MUXF6:I0->O          12   0.451   0.969  Register_File_module/Rob/rob_control0/Mmux_j_flags_mux0003_2_f6 (Register_File_module/Rob/rob_control0/j_flags_mux0003)
+     LUT3:I0->O            1   0.612   0.000  Register_File_module/Rob/rob_control0/forward_sel_j<2>94_SW1_F (N377)
+     MUXF5:I0->O           2   0.278   0.383  Register_File_module/Rob/rob_control0/forward_sel_j<2>94_SW1 (N140)
+     LUT4:I3->O            1   0.612   0.360  Register_File_module/Rob/rob_control0/forward_sel_j<2>144_SW1 (N182)
+     LUT4:I3->O            9   0.612   0.700  Register_File_module/Rob/rob_control0/forward_sel_j<2>193 (Register_File_module/Rob/forward_sel_j<2>)
+     LUT4:I3->O            2   0.612   0.383  Register_File_module/Rob/Qj<0>_SW1 (N211)
+     LUT4:I3->O            5   0.612   0.541  Register_File_module/Rob/Qj<0> (Qj<0>)
+     LUT4:I3->O            1   0.612   0.000  RS_unit_logical_module/GEN[1].RS_reg_lines/Qj_reg/Reg1BitR0/mux0/output1 (RS_unit_logical_module/GEN[1].RS_reg_lines/Qj_reg/Reg1BitR0/muxOut)
+     FDC:D                     0.268          RS_unit_logical_module/GEN[1].RS_reg_lines/Qj_reg/Reg1BitR0/flipflop0/q
     ----------------------------------------
-    Total                     10.669ns (5.678ns logic, 4.991ns route)
-                                       (53.2% logic, 46.8% route)
+    Total                     13.343ns (7.575ns logic, 5.768ns route)
+                                       (56.8% logic, 43.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk'
-  Total number of paths / destination ports: 6904 / 204
+  Total number of paths / destination ports: 141630 / 742
 -------------------------------------------------------------------------
-Offset:              9.932ns (Levels of Logic = 9)
+Offset:              13.325ns (Levels of Logic = 13)
   Source:            IF_Rk<3> (PAD)
-  Destination:       RS_unit_arithemtic_module/GEN[1].RS_reg_lines/Qk_reg/Reg1BitR0/flipflop0/q (FF)
+  Destination:       RS_unit_arithemtic_module/GEN[0].RS_reg_lines/Qk_reg/Reg1BitR1/flipflop0/q (FF)
   Destination Clock: Clk rising
 
-  Data Path: IF_Rk<3> to RS_unit_arithemtic_module/GEN[1].RS_reg_lines/Qk_reg/Reg1BitR0/flipflop0/q
+  Data Path: IF_Rk<3> to RS_unit_arithemtic_module/GEN[0].RS_reg_lines/Qk_reg/Reg1BitR1/flipflop0/q
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             7   1.106   0.754  IF_Rk_3_IBUF (IF_Rk_3_IBUF)
-     LUT4:I0->O            2   0.612   0.532  Register_File_module/Rob/gen[5].buffer_lines/k_equal67 (Register_File_module/Rob/gen[5].buffer_lines/k_equal67)
-     LUT3:I0->O            4   0.612   0.529  Register_File_module/Rob/gen[5].buffer_lines/k_equal82 (Register_File_module/Rob/k_flags<5>)
-     LUT4:I2->O            1   0.612   0.360  Register_File_module/Rob/rob_control0/forward_sel_k<2>_SW0 (N60)
-     LUT4:I3->O            6   0.612   0.572  Register_File_module/Rob/rob_control0/forward_sel_k<2> (Register_File_module/Rob/forward_sel_k<2>)
-     LUT4:I3->O            1   0.612   0.387  Register_File_module/Rob/Mmux_Qk338 (Register_File_module/Rob/Mmux_Qk338)
-     LUT4_D:I2->LO         1   0.612   0.169  Register_File_module/Rob/Mmux_Qk370 (N329)
-     LUT4:I1->O            1   0.612   0.360  RS_unit_arithemtic_module/control/control_enable_out<1>28_SW6 (N108)
-     LUT4:I3->O            1   0.612   0.000  RS_unit_arithemtic_module/GEN[1].RS_reg_lines/Qk_reg/Reg1BitR0/mux0/output1 (RS_unit_arithemtic_module/GEN[1].RS_reg_lines/Qk_reg/Reg1BitR0/muxOut)
-     FDC:D                     0.268          RS_unit_arithemtic_module/GEN[1].RS_reg_lines/Qk_reg/Reg1BitR0/flipflop0/q
+     IBUF:I->O             8   1.106   0.795  IF_Rk_3_IBUF (IF_Rk_3_IBUF)
+     LUT4:I0->O            1   0.612   0.509  Register_File_module/Rob/gen[5].buffer_lines/k_equal67 (Register_File_module/Rob/gen[5].buffer_lines/k_equal67)
+     LUT3:I0->O            8   0.612   0.795  Register_File_module/Rob/gen[5].buffer_lines/k_equal82 (Register_File_module/Rob/k_flags<5>)
+     LUT3:I0->O            1   0.612   0.000  Register_File_module/Rob/rob_control0/Mmux_k_flags_mux0003_3_f51 (Register_File_module/Rob/rob_control0/Mmux_k_flags_mux0003_3_f51)
+     MUXF5:I0->O           1   0.278   0.000  Register_File_module/Rob/rob_control0/Mmux_k_flags_mux0003_3_f5 (Register_File_module/Rob/rob_control0/Mmux_k_flags_mux0003_3_f5)
+     MUXF6:I1->O          12   0.451   0.969  Register_File_module/Rob/rob_control0/Mmux_k_flags_mux0003_2_f6 (Register_File_module/Rob/rob_control0/k_flags_mux0003)
+     LUT3:I0->O            1   0.612   0.000  Register_File_module/Rob/rob_control0/forward_sel_k<2>94_SW1_F (N375)
+     MUXF5:I0->O           2   0.278   0.383  Register_File_module/Rob/rob_control0/forward_sel_k<2>94_SW1 (N137)
+     LUT4:I3->O            1   0.612   0.360  Register_File_module/Rob/rob_control0/forward_sel_k<2>144_SW1 (N179)
+     LUT4:I3->O            9   0.612   0.700  Register_File_module/Rob/rob_control0/forward_sel_k<2>193 (Register_File_module/Rob/forward_sel_k<2>)
+     LUT4:I3->O            2   0.612   0.383  Register_File_module/Rob/Qk<0>_SW1 (N208)
+     LUT4:I3->O            5   0.612   0.541  Register_File_module/Rob/Qk<0> (Qk<0>)
+     LUT4:I3->O            1   0.612   0.000  RS_unit_logical_module/GEN[1].RS_reg_lines/Qk_reg/Reg1BitR0/mux0/output1 (RS_unit_logical_module/GEN[1].RS_reg_lines/Qk_reg/Reg1BitR0/muxOut)
+     FDC:D                     0.268          RS_unit_logical_module/GEN[1].RS_reg_lines/Qk_reg/Reg1BitR0/flipflop0/q
     ----------------------------------------
-    Total                      9.932ns (6.270ns logic, 3.662ns route)
-                                       (63.1% logic, 36.9% route)
+    Total                     13.325ns (7.889ns logic, 5.436ns route)
+                                       (59.2% logic, 40.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk'
-  Total number of paths / destination ports: 329 / 1
+  Total number of paths / destination ports: 12953 / 33
 -------------------------------------------------------------------------
-Offset:              12.511ns (Levels of Logic = 8)
-  Source:            CDBunit_module/sel_reg/Reg1BitR0/flipflop0/q (FF)
-  Destination:       accepted (PAD)
+Offset:              12.707ns (Levels of Logic = 7)
+  Source:            Register_File_module/Rob/rob_control0/head_pointer/value_3 (FF)
+  Destination:       PC_exception<31> (PAD)
   Source Clock:      Clk rising
 
-  Data Path: CDBunit_module/sel_reg/Reg1BitR0/flipflop0/q to accepted
+  Data Path: Register_File_module/Rob/rob_control0/head_pointer/value_3 to PC_exception<31>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              4   0.514   0.529  CDBunit_module/sel_reg/Reg1BitR0/flipflop0/q (CDBunit_module/sel_reg/Reg1BitR0/flipflop0/q)
-     LUT4_D:I2->O         14   0.612   0.880  CDBunit_module/Q_mux/mux5Bit2/mux1/output_and00011 (CDB<33>)
-     LUT4_D:I2->O          1   0.612   0.387  RS_unit_arithemtic_module/GEN[0].RS_reg_lines/comparator_j_and000026 (RS_unit_arithemtic_module/GEN[0].RS_reg_lines/comparator_j_and000026)
-     LUT4:I2->O            1   0.612   0.387  RS_unit_arithemtic_module/GEN[0].RS_reg_lines/ready_for_exec_and000649 (RS_unit_arithemtic_module/GEN[0].RS_reg_lines/ready_for_exec_and000649)
-     LUT4:I2->O           18   0.612   0.911  RS_unit_arithemtic_module/GEN[0].RS_reg_lines/ready_for_exec_and000661 (RS_unit_arithemtic_module/ready_for_exec<0>)
-     LUT4:I3->O            3   0.612   0.454  RS_unit_arithemtic_module/control/available14 (RS_unit_arithemtic_module/control/available14)
-     LUT4_D:I3->LO         1   0.612   0.103  RS_unit_arithemtic_module/control/available15 (N346)
-     LUT4:I3->O           17   0.612   0.893  Issue_unit_module/accepted1 (Instr_valid)
-     OBUF:I->O                 3.169          accepted_OBUF (accepted)
+     FDRE:C->Q            17   0.514   0.923  Register_File_module/Rob/rob_control0/head_pointer/value_3 (Register_File_module/Rob/rob_control0/head_pointer/value_3)
+     LUT3:I2->O            1   0.612   0.509  Register_File_module/Rob/rob_control0/head_exception35 (Register_File_module/Rob/rob_control0/head_exception35)
+     LUT4:I0->O            9   0.612   0.727  Register_File_module/Rob/rob_control0/head_exception57 (Register_File_module/Rob/rob_control0/head_exception57)
+     LUT3:I2->O           27   0.612   1.102  Register_File_module/Rob/rob_control0/head_exception67 (Register_File_module/Rob/exception_valid)
+     LUT4:I2->O           32   0.612   1.225  Register_File_module/Rob/PC_exception_and00051 (Register_File_module/Rob/PC_exception_and0005)
+     LUT4:I0->O            1   0.612   0.509  Register_File_module/Rob/PC_exception<9>4 (Register_File_module/Rob/PC_exception<9>4)
+     LUT4:I0->O            1   0.612   0.357  Register_File_module/Rob/PC_exception<9>36 (PC_exception_9_OBUF)
+     OBUF:I->O                 3.169          PC_exception_9_OBUF (PC_exception<9>)
     ----------------------------------------
-    Total                     12.511ns (7.967ns logic, 4.544ns route)
-                                       (63.7% logic, 36.3% route)
+    Total                     12.707ns (7.355ns logic, 5.352ns route)
+                                       (57.9% logic, 42.1% route)
 
 =========================================================================
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 3 / 1
 -------------------------------------------------------------------------
-Delay:               7.742ns (Levels of Logic = 4)
-  Source:            issue (PAD)
+Delay:               7.609ns (Levels of Logic = 4)
+  Source:            FU_type<1> (PAD)
   Destination:       accepted (PAD)
 
-  Data Path: issue to accepted
+  Data Path: FU_type<1> to accepted
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             1   1.106   0.426  issue_IBUF (issue_IBUF)
-     LUT4:I1->O           17   0.612   0.923  Issue_unit_module/issueRS<1>141 (N5)
-     LUT4:I2->O           17   0.612   0.893  Issue_unit_module/accepted1 (Instr_valid)
+     IBUF:I->O             1   1.106   0.509  FU_type_1_IBUF (FU_type_1_IBUF)
+     LUT4:I0->O            4   0.612   0.529  Issue_unit_module/issueRS<1>1171 (N5)
+     LUT4:I2->O           29   0.612   1.072  Issue_unit_module/accepted1 (Instr_valid)
      OBUF:I->O                 3.169          accepted_OBUF (accepted)
     ----------------------------------------
-    Total                      7.742ns (5.499ns logic, 2.243ns route)
-                                       (71.0% logic, 29.0% route)
+    Total                      7.609ns (5.499ns logic, 2.110ns route)
+                                       (72.3% logic, 27.7% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 50.00 secs
-Total CPU time to Xst completion: 49.63 secs
+Total REAL time to Xst completion: 55.00 secs
+Total CPU time to Xst completion: 55.11 secs
  
 --> 
 
 Total memory usage is 443052 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings : 2268 (   0 filtered)
+Number of warnings : 1958 (   0 filtered)
 Number of infos    :    2 (   0 filtered)
 
